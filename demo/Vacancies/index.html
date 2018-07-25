@@ -4,9 +4,48 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	
+	<form action="#" method="post" class="resume-form">
+		<div class="btn-close"></div>
+		<div class="resume-box"></div>
+		<h2>хочешь стать частью нашей команды?</h2>
+		<p class="resume-form-text">Тогда заполни контакты и отправляй своё резюме!</p>
+		<div class="form-wrapper">
+			<div class="button-wrapper">
+				<input type="text" placeholder="Ваше имя">
+				<input type="text" placeholder="Телефон">
+				<input type="button" name='file' value='Прикрепить файл' class="offer-button">	
+			</div>
+			<input type="submit" name='submit-button' value='Отправить' class="offer-button button-gray">
+		</div>
+	</form>
+
+
+	<form action="#" method="post" class="resume-form-conditions">
+		<div class="btn-close"></div>
+		<h2>хочешь стать частью нашей команды?</h2>
+		<p class="resume-form-text">Тогда заполни контакты и отправляй своё резюме!</p>
+		<div class="form-wrapper">
+			<div class="button-wrapper-conditions">
+				<div class="row-form">
+					<input type="text" placeholder="Ваше имя">
+					<input type="text" placeholder="Телефон">
+				</div>
+				<p class="resume-form-textarea">Введите ваше предложение:</p>
+				<textarea name="comment" cols="40" rows="3"></textarea>
+				<input type="submit" name='file' value='Отправить' class="offer-button right-button">	
+			</div>
+		</div>
+	</form>
+
+
+	<div class="overlay-popup"></div>
+
+
 
 	<section class="top-section">
 			<header class="top-header">				
@@ -30,26 +69,932 @@
 					<a class="top-header-phone-link" href="tel:+78126157350">8 (812) 615-73-50</a>
 				</div>
 			</header>
+
+			<section class="tablet-rewards">				
+				<div class="tablet-rewards-wrapper">
+					<div class="tablet-rewards-item"><span>15 лет</span>компании</div>
+					<div class="tablet-rewards-item"><span>56 сотрудников</span>в команде</div>
+					<div class="tablet-rewards-item"><span>16 798 дел</span>закрыто в 2017</div>
+					<div class="tablet-rewards-item"><span>24 публикаций</span>в СМИ</div>
+				</div>
+			</section>
 			<div class="offer">
-				<img src="img/Search.png" alt="Ищем менеджера" class="main-text">
+				<div class="main-text-wrapper">
+					<img src="img/Search.png" alt="Ищем менеджера" class="main-text">
+				</div>		
 				<p class="offer-description">
 					В «семью» крупнейшей юридической компании СПБ для постоянной работы и карьерного роста.
 				</p>
-				<button class="offer-button">Хочу работать у вас</button>
+				<button class="offer-button open-popup">Хочу работать у вас</button>
 			</div>
+	</section>
+
+	<section class="mobile-rewards">
+		<div class="wrapper-rewards">
+			<div class="row">
+				<div class="mobile-rewards-item"><span>15 лет</span>компании</div>
+				<div class="mobile-rewards-item"><span>56 сотрудников</span>в команде</div>
+			</div>	
+			<div class="row">
+				<div class="mobile-rewards-item"><span>16 798 дел</span>закрыто в 2017</div>
+				<div class="mobile-rewards-item"><span>24 публикаций</span>в СМИ</div>
+			</div>
+		</div>
+
 	</section>
 	
 	<section class="manager-section">
 		<h2 class="manager-section-header">Нам нужны</h2>
 		<p class="manager-section-description">самостоятельные менеджеры двух типов</p>
+		<div class="manager-row">
+			<div class="manager-left">
+				<div class="manager-header manager-header-left">
+					<p class="btn-back-header-left">Назад</p>
+					<h2 class="manager-header-item manager-header-item-left">Менеджер по текущим клиентам</h2>
+				</div>
+				<img src="img/girl.png" alt="Менеджер по текущим клиентам" class="manager-image-left">
+				<div class="manager-content-wrapper">
+
+					<div class="manager-content manager-content-blue">
+						
+						<p class="manager-content-text">
+							Юридическую работу выполняют юристы, Ваша задача, быть в курсе всех нюансов по клиенту, движения дела, и быть готовым всегда ответить на вопросы, поставить правильные задачи юристам, отследить их исполнение.
+						</p>
+						<p class="manager-content-descr orange-star">Оклад</p>
+						<p class="manager-content-salary">
+							от 50 000 руб.
+						</p>
+						<button class="btn btn-left">Узнать подробнее</button>
+						<button class="btn btn-back-left">Назад</button>
+					</div>
+
+					
+
+					<div  class="vacancies-description vacancies-description-left vacanciesSrollLeft" >
+							<div class="term">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Срок набора</h3>
+									<div class="term-wrapper">
+										<div class="term-date term-date-blue">
+											Июнь-декабрь <br>2018 года
+										</div>
+										<div class="term-image">
+											<img src="img/date-image.png" alt="06-12/2018">
+										</div>
+									</div>
+								</div>
+
+							</div>	
+
+							<div class="duties dutiesLeft">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Обязанности</h3>
+
+									<ul class="duties-list-blue">
+										<div class="container-left">
+											<div class="progress-left">
+											
+											</div>
+										</div>
+										<li>
+											<h4>Телефонное/личное консультирование клиентов  по юридическим услугам.</h4>
+											<p>Наши маркетологи и партнеры приводят новых клиентов, которые и являются основой развития Юридического  центра. Ваша задача дать необходимую информацию и презентовать услуги компании так, чтобы клиент захотел заключить договор или прийти на консультацию.</p>
+										</li>
+										<li>
+											<h4>Информирование клиента о порядке предоставления  услуг фирмы и ценах на услуги.</h4>
+											<p>Менеджеры  консультируют по стоимости услуг клиентов, которые пришли в офис. Юристы этим не занимаются.  Здесь вам понадобятся хорошие навыки презентации  и коммуникации.</p>
+										</li>
+										<li>
+											<h4>Ведение истории общения в CRM.</h4>
+											<p>Менеджер сталкивается с потенциальными клиентами, которые хотят просто получить справку по телефону, проконсультироваться или сразу заключить договор.  Все они вносится в CRM-систему для оценки  собственной эффективности и работы с клиентом.</p>
+										</li>
+										<li>
+											<h4>Взаимодействие с юридическим отделом.</h4>
+											<p>Вы продаете юридические услуги. Поэтому иногда  требуется отвечать клиентуна его вопросы в реальном времени. Также, вы являетесь связующим звеном между юристом и клиентом, которого он ведет. Постоянные контакты с юридическим отделом неотъемлемая часть работы наших менеджеров.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="demands">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Требования к вакансии</h3>
+									<ul class="demands-list demands-list-blue">
+										<li>
+											<span class="item-list-blue"></span>
+											<p class="demands-list-header-blue">Желание продавать юридические услуги</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-blue"></span>
+											<p class="demands-list-header-blue">Навыки планирования и расстановки приоритетов</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-blue"></span>
+											<p class="demands-list-header-blue">Соблюдение стандартов и уровня сервиса компании</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-blue"></span>
+											<p class="demands-list-header-blue">Умение грамотно общаться и поддерживать диалог</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-blue"></span>
+											<p class="demands-list-header-blue">Умение системно оценивать ситуацию и выстраивать долгосрочные отношения с клиентом</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-blue"></span>
+											<p class="demands-list-header-blue">Ориентированность на клиентов</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-blue"></span>
+											<p class="demands-list-header-blue">Высшее образование</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="experience">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Опыт</h3>
+									<p class="sub-header">Опыт ведения продаж от 2 лет.</p>
+									<p>Опыт ведения продаж от полугода. Мы серьезная компания. Наши клиенты физические и юридические лица. Крупные и авторитетные компании. Поэтому, опыт ведения продаж будет вашим преимуществом.</p>
+								</div>
+							</div>
+
+							<div class="proposal">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Что мы предлагаем</h3>
+									<ul class="proposal-list">
+										<li>
+											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<p class="proposal-list-header">Условия работы</p>
+											<ul class="hidden-content">
+												<li>
+													<p class="sub-header">Формальный</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+
+													<p class="sub-header">Неформальный</p>
+													<ul class="inner-list">
+														<li>Коллектив нашей компании — основа успешного развития бизнеса. </li>
+														<li>Подарки на день рождения от компании.</li>
+														<li>Проведение корпоративов.</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<p class="proposal-list-header">Коллектив</p>
+											<ul class="hidden-content">
+												<li>
+													<p class="sub-header">Формальный</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<p class="proposal-list-header">Обучение</p>
+											<ul class="hidden-content">
+												<li>
+													<p class="sub-header">Формальный</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="work-day">
+								<div class="wrapper">
+									<h3 class="vacancies-header center-header">Типичный рабочий день</h3>
+									<ul class="work-day-list">
+										<li class="work-day-list-item">День начинается с <span>собрания</span>, которое проводит  руководитель отдела.</li>
+										<li class="work-day-list-item">После начинается <span>обзвон клиентов.</span></li>
+										<li class="work-day-list-item">Менеджер сталкивается с  <span>потенциальными клиентами,</span> которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они  <span>вносится в CRM-систему</span> для оценки собственной эффективности и дальнейшей работы  с клиентом.</li>
+										<li class="row-work">
+											<div class="row-work-item row-work-item-left"><span>20-40 звонков людям</span> оставившим заявку,  <br>необходимо сделать  менеджеру в день </div>
+											<div class="row-work-item row-work-item-right"><span>5 консультаций с юристом</span> — это нормальный результат</div>
+										</li>
+										<li class="row-work">
+											<div class="row-work-item attention-blue">Каждый менеджер применяет техники продаж, которым обучают в компании, и отшлифовывает их сотнями разговоров. Если есть трудности – всегда поможет  коллега.</div>
+										</li>
+										<li class="work-day-list-item">Менеджеры также консультируют по стоимости людей, которые пришли  <span>в офис</span> и заключают договоры.</li>
+										<li class="work-day-list-item">Неотъемлемая и законная часть рабочего дня –  <span>часовой обеденный перерыв.</span> Его можно провести в обеденном зале или в ближайших заведениях. </li>
+										<li class="work-day-list-item">У нас восьмичасовой рабочий день. Если останетесь  <span>дополнительно</span> – компания оплатит время.<br>Увидимся завтра!</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="about">
+								<div class="wrapper">
+									<h3 class="vacancies-header">О компании</h3>
+									<div class="about-text">
+										<p>История Юридического консорциума «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права.</p>
+										
+										<p>Профильность специалистов вместе с высоким уровнем качества предоставления услуг позволили компании войти в топ-3 рейтинга Pravo.ru по количеству юристов и топ-10 по количеству выручки.</p>
+
+										<p>Команда «ВЫСШЕЙ ИНСТАНЦИИ» состоит из профессионалов с огромной практикой и великолепным высшим образованием. Наши юристы регулярно выступают экспертами в таких СМИ, как BFM.RU, Pravo.ru, «Известия», «ВЕСТИ», «Россия 1», «Росбалт», «Санкт-Петербург.ру».</p>
+										<a href="#" class="link text-overlay-link">Читать полностью</a>
+										<div class="about-text-overlay">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="target">
+								<div class="wrapper">
+									<div class="targets">
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/calendar.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">Планы компании через<br>три года
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/list.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">
+												Карьерный рост внутри компании
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/grafic1.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">Принципы компании
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/bag.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">Миссия компании
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="decision">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Как принимается решение</h3>
+									<div class="decision-row">
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-row-header">Оценка резюме</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-blue decision-6">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header-blue">Официальное трудоустройство</span>
+													Резюме получает менеджер  по персоналу. После оценки назначается собеседование
+												</p>
+											</div>	
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-row-header">Собеседование </p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-blue decision-7">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header-blue">Официальное трудоустройство</span>
+													На этом этапе рекрутер задает вопросы, касающиеся образования соискателя, его опыта, полученных навыков и знаний
+												</p>
+											</div>
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-row-header">Оплачиваемый  испытательный  день</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-blue decision-8">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header-blue">Официальное трудоустройство</span>
+													После удачного прохождения мы предлагаем пройти стажировочный день, где мы сможем посмотреть  на вашу работу, а вы оценить  p>уровень компании
+												</p>
+											</div>
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-row-header">Оплачиваемый испытательный срок</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-blue decision-9">
+												
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header-blue">Официальное трудоустройство</span>
+													Следом за стажировочным днем предлагается заключение контракта  на испытательный срок:  от 1 до 3 месяцев
+												</p>
+											</div>
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-row-header">Официальное трудоустройство</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-blue decision-10">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header-blue">Официальное трудоустройство</span>
+													Может быть оформлено  до окончания испытательного срока
+												</p>
+											</div>
+										</div>
+									</div>								
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="wrapper">
+									<h3 class="vacancies-header header-blue">Отзывы</h3>
+									<div class="review-slider">
+										<div class="review-slider-item">
+											<div class="video-wrapper">
+												<div class="play-button">
+													
+												</div>
+												<video class="video" src="" width="100%" poster=""></video>
+											</div>
+											
+											<div class="review-slider-text">
+												<p class="review-slider-header">Aлексей Владимирович</p>
+												<p class="review-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+											</div>
+										</div>
+										<div class="review-slider-item">
+											<div class="video-wrapper">
+												<div class="play-button">
+													
+												</div>
+												<video class="video" src="" width="100%" poster=""></video>
+											</div>
+											
+											<div class="review-slider-text">
+												<p class="review-slider-header">Aлексей Владимирович</p>
+												<p class="review-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+											</div>
+										</div>
+										<div class="review-slider-item">
+											<div class="video-wrapper">
+												<div class="play-button">
+												
+												</div>
+												<video class="video" src="" width="100%" poster=""></video>
+											</div>
+											
+											<div class="review-slider-text">
+												<p class="review-slider-header">Aлексей Владимирович</p>
+												<p class="review-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+
+							<div class="press">
+								<div class="wrapper">
+									<h3 class="vacancies-header header-blue">Сми о компании</h3>
+									<div class="press-slider">
+										<div class="press-slider-item">
+											<div class="press-company-wrapper">
+												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
+											</div>
+											
+											<div class="press-slider-text">
+												<p class="press-slider-date">18.05.2018</p>
+												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+												<a href="#" class="press-link">Ссылка на публикацию</a>
+											</div>
+										</div>
+										<div class="press-slider-item">
+											<div class="press-company-wrapper">
+												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
+											</div>
+											
+											<div class="press-slider-text">
+												<p class="press-slider-date">18.05.2018</p>
+												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+												<a href="#" class="press-link">Ссылка на публикацию</a>
+											</div>
+										</div>
+										<div class="press-slider-item">
+											<div class="press-company-wrapper">
+												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
+											</div>
+											
+											<div class="press-slider-text">
+												<p class="press-slider-date">18.05.2018</p>
+												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+												<a href="#" class="press-link">Ссылка на публикацию</a>
+											</div>
+										</div>
+									</div>		
+								</div>
+							</div>
+
+							<div class="map">
+								<h3 class="vacancies-header ">Работай в благоустроенном офисе в центре города, <br><span>5 минут от метро площадь восстания<span></h3>
+								<p class="vacancies-header address">Лиговский, 21</p>
+								<div class="map-content">
+									<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6f827b0e2b2d7966ef1452fa10c7ca69b1f4b6246485d0a95bcf5291e11fffc3&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+								</div>
+							</div>
+
+							<footer class="manager-footer">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Хочешь стать частью команды?</h3>
+									<div class="send-block">
+										<p class="manager-footer-offer">Тогда отправляй своё резюме!</p>
+										<a href="#" class="btn-resume-blue"><img src="img/arrow_resume.svg" alt="Отправляй"></a>
+									</div>	
+								</div>
+							</footer>
+					</div>
+				</div>
+			</div>
+			<div class="manager-right">
+				<div class="manager-header manager-header-right">
+					<h2 class="manager-header-item manager-header-item-right">Менеджер по потенциальным клиентам</h2>
+					<p class="btn btn-back-header-right">Назад</p>
+				</div>
+				<img src="img/man.png" alt="Менеджер по потенциальным клиентам" class="manager-image-right">
+				<div class="manager-content-wrapper">
+					<div class="manager-content manager-content-orange">
+						
+						<p class="manager-content-text">
+							Нам нужен бронепоезд от продаж, с приятным голосом, коммуникативными навыками. Умением принимать отказы. Нам в команду мечты, нужны эффективные продажники, которые умеют делать деньги с холодных звонков, и хотят иметь деньги, за свою работу.
+						</p>
+						<p class="manager-content-descr blue-star">Оклад</p>
+						<p class="manager-content-descr blue-star">% с продаж</p>
+						<p class="manager-content-salary">
+							до 150 000р
+						</p>
+						<button class="btn btn-right">Узнать подробнее</button>
+						<button class="btn btn-back-right">Назад</button>
+					</div>
+					<div class="vacancies-description vacancies-description-right vacanciesSrollRight">
+							<div class="term">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Срок набора</h3>
+									<div class="term-wrapper">
+										<div class="term-date term-date-orange">
+											Июнь-декабрь <br>2018 года
+										</div>
+										<div class="term-image">
+											<img src="img/manager-orange-date.png" alt="06-12/2018">
+										</div>
+									</div>
+								</div>
+
+							</div>	
+
+							<div class="duties dutiesRight">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Обязанности</h3>
+									<ul class="duties-list-orange">
+										<div class="container-right">
+											<div class="progress-right">
+											
+											</div>
+										</div>
+										<li>
+											<h4>Телефонное/личное консультирование клиентов  по юридическим услугам.</h4>
+											<p>Наши маркетологи и партнеры приводят новых клиентов, которые и являются основой развития Юридического  центра. Ваша задача дать необходимую информацию и презентовать услуги компании так, чтобы клиент захотел заключить договор или прийти на консультацию.</p>
+										</li>
+										<li>
+											<h4>Информирование клиента о порядке предоставления  услуг фирмы и ценах на услуги.</h4>
+											<p>Менеджеры  консультируют по стоимости услуг клиентов, которые пришли в офис. Юристы этим не занимаются.  Здесь вам понадобятся хорошие навыки презентации  и коммуникации.</p>
+										</li>
+										<li>
+											<h4>Ведение истории общения в CRM.</h4>
+											<p>Менеджер сталкивается с потенциальными клиентами, которые хотят просто получить справку по телефону, проконсультироваться или сразу заключить договор.  Все они вносится в CRM-систему для оценки  собственной эффективности и работы с клиентом.</p>
+										</li>
+										<li>
+											<h4>Взаимодействие с юридическим отделом.</h4>
+											<p>Вы продаете юридические услуги. Поэтому иногда  требуется отвечать клиентуна его вопросы в реальном времени. Также, вы являетесь связующим звеном между юристом и клиентом, которого он ведет. Постоянные контакты с юридическим отделом неотъемлемая часть работы наших менеджеров.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="demands">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Требования к вакансии</h3>
+									
+									<ul class="demands-list demands-list-orange">
+										<li>
+											<span class="item-list-orange"></span>
+											<p class="demands-list-header-orange">Желание продавать юридические услуги</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-orange"></span>
+											<p class="demands-list-header-orange">Навыки планирования и расстановки приоритетов</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-orange"></span>
+											<p class="demands-list-header-orange">Соблюдение стандартов и уровня сервиса компании</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-orange"></span>
+											<p class="demands-list-header-orange">Умение грамотно общаться и поддерживать диалог</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-orange"></span>
+											<p class="demands-list-header-orange">Умение системно оценивать ситуацию и выстраивать долгосрочные отношения с клиентом</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-orange"></span>
+											<p class="demands-list-header-orange">Ориентированность на клиентов</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+										<li>
+											<span class="item-list-orange"></span>
+											<p class="demands-list-header-orange">Высшее образование</p>
+											<p class="demands-list-subheader">Вы продаете важные и необходимые для людей услуги. Поэтому необходимо понимать, что это за продукт и каким образом его можно реализовать. Но самое главное это желание.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="experience experience-orange">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Опыт</h3>
+									<p class="sub-header-orange">Опыт ведения продаж от 2 лет.</p>
+									<p>Опыт ведения продаж от полугода. Мы серьезная компания. Наши клиенты физические и юридические лица. Крупные и авторитетные компании. Поэтому, опыт ведения продаж будет вашим преимуществом.</p>
+								</div>
+							</div>
+
+							<div class="proposal">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Что мы предлагаем</h3>
+									<ul class="proposal-list">
+										<li>
+											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<p class="proposal-list-header">Условия работы</p>
+											<ul class="hidden-content">
+												<li>
+													<p class="sub-header">Формальный</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<p class="proposal-list-header">Коллектив</p>
+											<ul class="hidden-content">
+												<li>
+													<p class="sub-header">Формальный</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<p class="proposal-list-header">Обучение</p>
+											<ul class="hidden-content">
+												<li>
+													<p class="sub-header">Формальный</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="work-day-orange">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Типичный рабочий день</h3>
+									<ul class="work-day-list-orange">
+										<li class="work-day-list-orange-item">День начинается с собрания, которое проводит  руководитель отдела.</li>
+										<li class="work-day-list-orange-item">После начинается обзвон клиентов.</li>
+										<li class="work-day-list-orange-item">Менеджер сталкивается с потенциальными клиентами, которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они вносится в CRM-систему для оценки собственной эффективности и дальнейшей работы  с клиентом.</li>
+										<li class="work-day-list-orange-item">Менеджеры также консультируют по стоимости людей, которые пришли в офис и заключают договоры.</li>
+										<li class="work-day-list-orange-item">Неотъемлемая и законная часть рабочего дня – часовой обеденный перерыв. Его можно провести в обеденном зале или в ближайших заведениях. </li>
+										<li class="work-day-list-orange-item">У нас восьмичасовой рабочий день. Если останетесь дополнительно – компания оплатит время.<br>Увидимся завтра!</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="about">
+								<div class="wrapper">
+									<h3 class="vacancies-header">О компании</h3>
+									<div class="about-text">
+										<p>История Юридического консорциума «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права.</p>
+										
+										<p>Профильность специалистов вместе с высоким уровнем качества предоставления услуг позволили компании войти в топ-3 рейтинга Pravo.ru по количеству юристов и топ-10 по количеству выручки.</p>
+
+										<p>Команда «ВЫСШЕЙ ИНСТАНЦИИ» состоит из профессионалов с огромной практикой и великолепным высшим образованием. Наши юристы регулярно выступают экспертами в таких СМИ, как BFM.RU, Pravo.ru, «Известия», «ВЕСТИ», «Россия 1», «Росбалт», «Санкт-Петербург.ру».</p>
+										<a href="#" class="link text-overlay-link">Читать полностью</a>
+										<div class="about-text-overlay">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="target">
+								<div class="wrapper">
+									<div class="targets">
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/calendar.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">Планы компании через<br>три года
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/list.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">
+												Карьерный рост внутри компании
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/grafic1.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">Принципы компании
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+										<div class="targets-item">
+											<div class="targets-image-wrapper">
+												<img src="img/bag.svg" alt="" class="targets-item-image">
+											</div>
+											<p class="targets-item-header">Миссия компании
+												<span class="tragets-information">
+													<span class="tragets-information-drop">
+														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+													</span>
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="decision-orange">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Как принимается решение</h3>
+									<div class="decision-row">
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-orange-row-header-orange">Оценка резюме</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-orange-item decision-1">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header">Оценка резюме</span>
+													Резюме получает менеджер  по персоналу. После оценки назначается собеседование
+												</p>
+											</div>	
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-orange-row-header-orange">Собеседование </p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-orange-item decision-2">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header">Собеседование </span>
+													На этом этапе рекрутер задает вопросы, касающиеся образования соискателя, его опыта, полученных навыков и знаний
+												</p>
+											</div>
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-orange-row-header-orange">Оплачиваемый  испытательный  день</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-orange-item decision-3">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header">Оплачиваемый испытательный срок</span>
+													После удачного прохождения мы предлагаем пройти стажировочный день, где мы сможем посмотреть  на вашу работу, а вы оценить  p>уровень компании
+												</p>
+											</div>
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-orange-row-header-orange">Оплачиваемый испытательный срок</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-orange-item decision-4">
+													
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header">Оплачиваемый испытательный срок</span>
+													Следом за стажировочным днем предлагается заключение контракта  на испытательный срок:  от 1 до 3 месяцев
+												</p>
+											</div>
+										</div>
+										<div class="decision-row-wrapper">
+											<div class="decision-row-header-wrapper">
+												<p class="decision-orange-row-header-orange">Официальное трудоустройство</p>
+											</div>
+											<div class="decision-right-wrapper">
+												<div class="decision-image-wrapper decision-orange-item decision-5">
+												
+												</div>
+												<p class="decision-row-text">
+													<span class="mobile-header">Официальное трудоустройство</span>
+													Может быть оформлено  до окончания испытательного срока
+												</p>
+											</div>
+										</div>
+									</div>								
+								</div>
+							</div>
+
+							<div class="review">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Отзывы</h3>
+									<div class="review-slider">
+										<div class="review-slider-item">
+											<div class="video-wrapper">
+												<div class="play-button">
+													
+												</div>
+												<video class="video" src="" width="100%" poster=""></video>
+											</div>
+											
+											<div class="review-slider-text">
+												<p class="review-slider-header">Aлексей Владимирович</p>
+												<p class="review-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+											</div>
+										</div>
+										<div class="review-slider-item">
+											<div class="video-wrapper">
+												<div class="play-button">
+													
+												</div>
+												<video class="video" src="" width="100%" poster=""></video>
+											</div>
+											
+											<div class="review-slider-text">
+												<p class="review-slider-header">Aлексей Владимирович</p>
+												<p class="review-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+											</div>
+										</div>
+										<div class="review-slider-item">
+											<div class="video-wrapper">
+												<div class="play-button">
+												
+												</div>
+												<video class="video" src="" width="100%" poster=""></video>
+											</div>
+											
+											<div class="review-slider-text">
+												<p class="review-slider-header">Aлексей Владимирович</p>
+												<p class="review-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+
+							<div class="press">
+								<div class="wrapper">
+									<h3 class="vacancies-header">Сми о компании</h3>
+									<div class="press-slider">
+										<div class="press-slider-item-orange">
+											<div class="press-company-wrapper">
+												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
+											</div>
+											
+											<div class="press-slider-text">
+												<p class="press-slider-date">18.05.2018</p>
+												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+												<a href="#" class="press-link">Ссылка на публикацию</a>
+											</div>
+										</div>
+										<div class="press-slider-item">
+											<div class="press-company-wrapper">
+												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
+											</div>
+											
+											<div class="press-slider-text">
+												<p class="press-slider-date">18.05.2018</p>
+												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+												<a href="#" class="press-link">Ссылка на публикацию</a>
+											</div>
+										</div>
+										<div class="press-slider-item">
+											<div class="press-company-wrapper">
+												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
+											</div>
+											
+											<div class="press-slider-text">
+												<p class="press-slider-date">18.05.2018</p>
+												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
+												<a href="#" class="press-link">Ссылка на публикацию</a>
+											</div>
+										</div>
+									</div>		
+								</div>
+							</div>
+
+							<div class="map-orange">
+								<h3 class="vacancies-header">Работай в благоустроенном офисе в центре города, <br><span>5 минут от метро площадь восстания<span></h3>
+								<p class="vacancies-header address">Лиговский, 21</p>
+								<div class="map-content">
+									<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6f827b0e2b2d7966ef1452fa10c7ca69b1f4b6246485d0a95bcf5291e11fffc3&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+								</div>
+							</div>
+
+							<footer class="manager-footer-orange">
+								<div class="wrapper">
+									<div class="manager-footer-orange-wrapper">
+										<h3 class="vacancies-header">Хочешь стать частью команды?</h3>
+										<div class="send-block">
+											<p class="manager-footer-orange-offer">Тогда отправляй своё резюме!</p>
+											<a href="#" class="btn-resume-orange">
+												<img src="img/orange-arrow.svg" alt="Отправляй">
+											</a>
+										</div>	
+									</div>
+									
+								</div>
+								
+							</footer>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<footer class="main-footer">
 		<div class="offer-wrapper">
 			<p class="main-footer-offer">
-				Хочешь работать с нами на своих условиях? Ждём твоего предложения
+				Хочешь работать с нами на своих условиях? Ждём твоего <a href="#" class="proposal-link open-text-area">предложения</a>
 			</p>
 		</div>
+
 		<div class="social">
 			<p class="share">Поделиcь с друзьями:</p>
 			<div class="social-items">
@@ -62,5 +1007,8 @@
 		</div>
 	</footer>
 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
