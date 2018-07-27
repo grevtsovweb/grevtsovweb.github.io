@@ -1,7 +1,11 @@
 $(function(){
-
-	$('.review-slider').slick();
-	$('.press-slider').slick();
+	$(document).ready(function(){
+		$('.review-slider-blue').slick();
+		$('.press-slider-blue').slick();
+		$('.review-slider-orange').slick();
+		$('.press-slider-orange').slick();
+	});
+	
 
 
 
