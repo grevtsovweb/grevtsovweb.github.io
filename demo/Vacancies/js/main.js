@@ -1,7 +1,5 @@
 $(function(){
 
-
-
 	$('.review-slider').slick();
 	$('.press-slider').slick();
 
