@@ -1487,3 +1487,18 @@ body.outlook p {
 
 .line-trought {
   text-decoration: line-through; }
+
+.padding-table {
+  padding-bottom: 10px !important; }
+
+.padding-none {
+  padding-bottom: 0px !important; }
+
+.padding-table-left {
+  padding-left: 15px; }
+
+@media only screen and (max-width: 616px) {
+  .padding-table-left {
+    padding-left: 0px !important; }
+  .padding-table-bottom {
+    padding-bottom: 0px !important; } }
