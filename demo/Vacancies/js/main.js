@@ -1,14 +1,22 @@
+
 $(function(){
+
+
+	
 	$(document).ready(function(){
 		$('.review-slider-blue').slick();
 		$('.press-slider-blue').slick();
 		$('.review-slider-orange').slick();
 		$('.press-slider-orange').slick();
 	});
+
+	$(document).ready(function(){
+		$('#phone-textarea').mask('+7 (999) 999-99-99');
+		$('#phone-top').mask('+7 (999) 999-99-99');
+	});
+
+
 	
-
-
-
 	var topSection = $('.top-section');
 
 	$(window).on('scroll', function(){
@@ -286,6 +294,8 @@ $(function(){
 		}	
 	});
 
+
 });
+
 
 

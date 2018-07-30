@@ -4,28 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
-	<form action="#" method="post" class="resume-form">
+	<form action="mail.php" method="post" class="resume-form">
 		<div class="btn-close"></div>
 		<div class="resume-box"></div>
 		<h2>хочешь стать частью нашей команды?</h2>
 		<p class="resume-form-text">Тогда заполни контакты и отправляй своё резюме!</p>
 		<div class="form-wrapper">
 			<div class="button-wrapper">
-				<input type="text" placeholder="Ваше имя">
-				<input type="text" placeholder="Телефон">
-				<input type="button" name='file' value='Прикрепить файл' class="offer-button">	
+				<input type="text" name="name" placeholder="Ваше имя">
+				<input id="phone-top" name="phone" type="text" placeholder="Телефон">
+				<input type="file" name="file" id="upload"  data-multiple-caption="{count} файла выбрано" multiple class="offer-button inputfile hide">
+				<label for="upload"><span>Прикрепить резюме</span></label>	
 			</div>
 			<input type="submit" name='submit-button' value='Отправить' class="offer-button button-gray">
 		</div>
 	</form>
 
 
-	<form action="#" method="post" class="resume-form-conditions">
+	<form action="mail.php" method="post" class="resume-form-conditions">
 		<div class="btn-close"></div>
 		<h2>хочешь стать частью нашей команды?</h2>
 		<p class="resume-form-text">Тогда заполни контакты и отправляй своё резюме!</p>
@@ -33,11 +35,11 @@
 			<div class="button-wrapper-conditions">
 				<div class="row-form">
 					<input type="text" placeholder="Ваше имя">
-					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="Телефон" id="phone-textarea">
 				</div>
 				<p class="resume-form-textarea">Введите ваше предложение:</p>
-				<textarea name="comment" cols="40" rows="3"></textarea>
-				<input type="submit" name='file' value='Отправить' class="offer-button right-button">	
+				<textarea name="comment" cols="40" rows="3" placeholder="Ввести предложение..."></textarea>
+				<input type="submit" name='submit' value='Отправить' class="offer-button right-button">	
 			</div>
 		</div>
 	</form>
@@ -131,7 +133,7 @@
 
 					
 
-					<div  class="vacancies-description vacancies-description-left vacanciesSrollLeft" >
+					<div  class="vacancies-description vacancies-description-left vacanciesSrollLeft scrollbar-inner" >
 							<div class="term">
 								<div class="wrapper">
 									<h3 class="vacancies-header">Срок набора</h3>
@@ -533,7 +535,7 @@
 							</div>
 
 							<div class="map">
-								<h3 class="vacancies-header ">Работай в благоустроенном офисе в центре города, <br><span>5 минут от метро площадь восстания<span></h3>
+								<h3 class="vacancies-header ">Работай в благоустроенном офисе в центре города, <br><span >5 минут от метро площадь восстания<span></h3>
 								<p class="vacancies-header address">Лиговский, 21</p>
 								<div class="map-content">
 									<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6f827b0e2b2d7966ef1452fa10c7ca69b1f4b6246485d0a95bcf5291e11fffc3&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
@@ -545,7 +547,7 @@
 									<h3 class="vacancies-header">Хочешь стать частью команды?</h3>
 									<div class="send-block">
 										<p class="manager-footer-offer">Тогда отправляй своё резюме!</p>
-										<a href="#" class="btn-resume-blue"><img src="img/arrow_resume.svg" alt="Отправляй"></a>
+										<img src="img/arrow_resume.svg" alt="Отправляй" class="manager-arrow">
 									</div>	
 								</div>
 							</footer>
@@ -573,7 +575,8 @@
 						<button class="btn btn-right btn-hidden btn-second-right">Хочу работать у вас</button>
 						<button class="btn btn-back-right">Назад</button>
 					</div>
-					<div class="vacancies-description vacancies-description-right vacanciesSrollRight">
+
+					<div class="vacancies-description vacancies-description-right vacanciesSrollRight scrollbar-inner">
 							<div class="term">
 								<div class="wrapper">
 									<h3 class="vacancies-header">Срок набора</h3>
@@ -740,52 +743,52 @@
 
 							<div class="target">
 								<div class="wrapper">
-									<div class="targets">
+									<div class="targets-orange">
 										<div class="targets-item">
-											<div class="targets-image-wrapper">
+											<div class="targets-orange-image-wrapper">
 												<img src="img/calendar.svg" alt="" class="targets-item-image">
 											</div>
-											<p class="targets-item-header">Планы компании через<br>три года
-												<span class="tragets-information">
-													<span class="tragets-information-drop">
-														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+											<p class="targets-orange-item-header">Планы компании через<br>три года
+												<span class="tragets-orange-information">
+													<span class="tragets-orange-information-drop">
+														<span class="targets-orange-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
 													</span>
 												</span>
 											</p>
 										</div>
-										<div class="targets-item">
-											<div class="targets-image-wrapper">
+										<div class="targets-orange-item">
+											<div class="targets-orange-image-wrapper">
 												<img src="img/list.svg" alt="" class="targets-item-image">
 											</div>
-											<p class="targets-item-header">
+											<p class="targets-orange-item-header">
 												Карьерный рост внутри компании
-												<span class="tragets-information">
-													<span class="tragets-information-drop">
-														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+												<span class="tragets-orange-information">
+													<span class="tragets-orange-information-drop">
+														<span class="targets-orange-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
 													</span>
 												</span>
 											</p>
 										</div>
-										<div class="targets-item">
+										<div class="targets-orange-item">
 											<div class="targets-image-wrapper">
 												<img src="img/grafic1.svg" alt="" class="targets-item-image">
 											</div>
-											<p class="targets-item-header">Принципы компании
-												<span class="tragets-information">
-													<span class="tragets-information-drop">
-														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+											<p class="targets-orange-item-header">Принципы компании
+												<span class="tragets-orange-information">
+													<span class="tragets-orange-information-drop">
+														<span class="targets-orange-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
 													</span>
 												</span>
 											</p>
 										</div>
-										<div class="targets-item">
-											<div class="targets-image-wrapper">
+										<div class="targets-orange-item">
+											<div class="targets-orange-image-wrapper">
 												<img src="img/bag.svg" alt="" class="targets-item-image">
 											</div>
-											<p class="targets-item-header">Миссия компании
-												<span class="tragets-information">
-													<span class="tragets-information-drop">
-														<span class="targets-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
+											<p class="targets-orange-item-header">Миссия компании
+												<span class="tragets-orange-information">
+													<span class="tragets-orange-information-drop">
+														<span class="targets-orange-main-word">Наша цель</span> - предоставлять юридические услуги наивысшего качества по приемлемым ценам, улучшающие жизнь сегодняшнего и будущего поколений по всей России.
 													</span>
 												</span>
 											</p>
@@ -971,13 +974,13 @@
 							<footer class="manager-footer-orange">
 								<div class="wrapper">
 									<div class="manager-footer-orange-wrapper">
-										<h3 class="vacancies-header">Хочешь стать частью команды?</h3>
-										<div class="send-block">
-											<p class="manager-footer-orange-offer">Тогда отправляй своё резюме!</p>
-											<a href="#" class="btn-resume-orange">
-												<img src="img/orange-arrow.svg" alt="Отправляй">
-											</a>
-										</div>	
+										<div class="manager-footer-inner">
+											<h3 class="vacancies-header">Хочешь стать частью команды?</h3>
+											<div class="send-block">
+												<p class="manager-footer-orange-offer">Тогда отправляй своё резюме!</p>
+													<img src="img/orange-arrow.svg" alt="Отправляй" class="manager-arrow">
+											</div>	
+										</div>
 									</div>
 									
 								</div>
@@ -1001,17 +1004,24 @@
 		<div class="social">
 			<p class="share">Поделиcь с друзьями:</p>
 			<div class="social-items">
-				<a href="#" class="social-item"><img width="37px" height="34px" src="img/vk.svg" alt="Вконтакте"></a>
-				<a href="#" class="social-item"><img width="37px" height="34px" src="img/fb.svg" alt="Фэйсбук"></a>
-				<a href="#" class="social-item">
-					<img width="37px" height="34px" src="img/twitter.svg" alt="Твиттер">
-				</a>
+				<div class="ya-share2" data-services="vkontakte,facebook,twitter"></div>
+			<!-- 	<a href="#" class="social-item"><img width="37px" height="34px" src="img/vk.svg" alt="Вконтакте"></a>
+			<a href="#" class="social-item"><img width="37px" height="34px" src="img/fb.svg" alt="Фэйсбук"></a>
+			<a href="#" class="social-item">
+				<img width="37px" height="34px" src="img/twitter.svg" alt="Твиттер">
+			</a> -->
 			</div>
 		</div>
 	</footer>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+	<script src="//yastatic.net/share2/share.js"></script>
+	<script src="js/file.js"></script>
 	<script src="js/main.js"></script>
+
+
 </body>
 </html>
