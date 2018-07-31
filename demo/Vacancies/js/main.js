@@ -1,23 +1,27 @@
 
 $(function(){
 
-	$(function() {  
-	    $(".vacancies-description-left").niceScroll({
-	    	cursorcolor:"#ECECEC",
-	    	cursorwidth: "5px",
-	    	cursorfixedheight: 110,
-	    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
-	    });
+	
+	$(function() { 
+		if($(window).width() > '768'){ 
+		    $(".vacancies-description-left").niceScroll({
+		    	cursorcolor:"#ECECEC",
+		    	cursorwidth: "5px",
+		    	cursorfixedheight: 110,
+		    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
+		    });
+		}
 	});
-
-	$(function() {  
-	    $(".vacancies-description-right").niceScroll({
-	    	cursorcolor:"#ECECEC",
-	    	cursorwidth: "5px",
-	    	cursorfixedheight: 110,
-	    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
-	    });
-	});
+	$(function() { 
+			if($(window).width() > '768'){ 
+			    $(".vacancies-description-right").niceScroll({
+			    	cursorcolor:"#ECECEC",
+			    	cursorwidth: "5px",
+			    	cursorfixedheight: 110,
+			    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
+			    });
+			}
+		});
 		
 	$(document).ready(function(){
 		$('.review-slider-blue').slick();
