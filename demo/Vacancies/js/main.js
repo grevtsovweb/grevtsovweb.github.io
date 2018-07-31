@@ -1,8 +1,24 @@
 
 $(function(){
 
+	$(function() {  
+	    $(".vacancies-description-left").niceScroll({
+	    	cursorcolor:"#ECECEC",
+	    	cursorwidth: "5px",
+	    	cursorfixedheight: 110,
+	    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
+	    });
+	});
 
-	
+	$(function() {  
+	    $(".vacancies-description-right").niceScroll({
+	    	cursorcolor:"#ECECEC",
+	    	cursorwidth: "5px",
+	    	cursorfixedheight: 110,
+	    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
+	    });
+	});
+		
 	$(document).ready(function(){
 		$('.review-slider-blue').slick();
 		$('.press-slider-blue').slick();
@@ -278,22 +294,23 @@ $(function(){
 
 	});
 
+	if($(window).width() > '768'){
+		$('.vacanciesSrollLeft').scroll(function(){
+			var ratio = $('.vacanciesSrollLeft').scrollTop() / (($('.dutiesLeft').height() - 200) / 100) ;
+			if(ratio < 110){
+				$('.progress-left').css('top', -100 + ratio  + '%');
+			}
+		});
+	}
 
-	$('.vacanciesSrollLeft').scroll(function(){
-		var ratio = $('.vacanciesSrollLeft').scrollTop() / (($('.dutiesLeft').height() - 200) / 100) ;
-		if(ratio < 110){
-			$('.progress-left').css('top', -100 + ratio  + '%');
-		}
-	});
-
-
-	$('.vacanciesSrollRight').scroll(function(){
-		var ratio = $('.vacanciesSrollRight').scrollTop() / (($('.dutiesRight').height() - 200) / 100) ;
-		if(ratio < 110){
-			$('.progress-right').css('top', -100 + ratio  + '%');
-		}	
-	});
-
+	if($(window).width() > '768'){
+		$('.vacanciesSrollRight').scroll(function(){
+			var ratio = $('.vacanciesSrollRight').scrollTop() / (($('.dutiesRight').height() - 200) / 100) ;
+			if(ratio < 110){
+				$('.progress-right').css('top', -100 + ratio  + '%');
+			}	
+		});
+	}
 
 });
 

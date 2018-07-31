@@ -20,7 +20,5 @@ window.onload = function(){
 		});
 	});
 
-
-
 };
 
