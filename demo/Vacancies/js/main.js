@@ -1,35 +1,39 @@
+$(document).ready(function(){
+	$('.review-slider-blue').slick();
+	$('.press-slider-blue').slick();
+
+});
+
+$(document).ready(function(){
+	$('.review-slider-orange').slick();
+	$('.press-slider-orange').slick();
+});
+
+
+$(function() { 
+	if($(window).width() > '768'){ 
+	    $(".vacancies-description-left").niceScroll({
+	    	cursorcolor:"#ECECEC",
+	    	cursorwidth: "5px",
+	    	cursorfixedheight: 110,
+	    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
+	    });
+	}
+});
+$(function() { 
+	if($(window).width() > '768'){ 
+	    $(".vacancies-description-right").niceScroll({
+	    	cursorcolor:"#ECECEC",
+	    	cursorwidth: "5px",
+	    	cursorfixedheight: 110,
+	    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
+	    });
+	}
+});
 
 $(function(){
-
 	
-	$(function() { 
-		if($(window).width() > '768'){ 
-		    $(".vacancies-description-left").niceScroll({
-		    	cursorcolor:"#ECECEC",
-		    	cursorwidth: "5px",
-		    	cursorfixedheight: 110,
-		    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
-		    });
-		}
-	});
-	$(function() { 
-			if($(window).width() > '768'){ 
-			    $(".vacancies-description-right").niceScroll({
-			    	cursorcolor:"#ECECEC",
-			    	cursorwidth: "5px",
-			    	cursorfixedheight: 110,
-			    	railpadding: { top: 0, right: 0, left: 10, bottom: 0 }
-			    });
-			}
-		});
 		
-	$(document).ready(function(){
-		$('.review-slider-blue').slick();
-		$('.press-slider-blue').slick();
-		$('.review-slider-orange').slick();
-		$('.press-slider-orange').slick();
-	});
-
 	$(document).ready(function(){
 		$('#phone-textarea').mask('+7 (999) 999-99-99');
 		$('#phone-top').mask('+7 (999) 999-99-99');
@@ -156,6 +160,9 @@ $(function(){
 			itemContent.slideToggle(200);
 	});
 
+
+
+
 	$('.text-overlay-link').on('click', function(e){
 
 		e.preventDefault();
@@ -185,6 +192,8 @@ $(function(){
 			$('.btn-back-footer-left').addClass('active-footer');
 		}
 
+
+
 		$('.manager-section-header').addClass('hide-text');
 		$('.manager-section-description').addClass('hide-text');
 		$('.btn-first-left').addClass('btn-hidden');
@@ -197,6 +206,10 @@ $(function(){
 		$('.manager-section').addClass('manager-section-active-left');
 
 		$('.vacancies-description-left').addClass('active-vacancies-description');
+
+		setTimeout(function(){
+		  $('.vacancies-description-left').getNiceScroll().resize()
+		}, 500);
 
 	});
 
@@ -218,8 +231,15 @@ $(function(){
 		$('.btn-back-left').removeClass('show');
 		$('.manager-section').removeClass('manager-section-active-left');
 		$('.vacancies-description-left').removeClass('active-vacancies-description');
-
+		
+		$('.vacancies-description-left').animate({
+	        scrollTop: $('.term').offset().top
+	    }, 20);
+	
+	
 	});
+
+
 
 	$('.btn-back-footer-left').on('click', function(){
 
@@ -321,6 +341,11 @@ $(function(){
 		$('.manager-section').removeClass('manager-section-active-right');
 
 		$('.vacancies-description-right').removeClass('active-vacancies-description-right');
+
+		$('.vacancies-description-right').animate({
+	        scrollTop: $('.term').offset().top
+	    }, 20);
+
 	});
 
 	$('.btn-back-footer-right').on('click', function(){
