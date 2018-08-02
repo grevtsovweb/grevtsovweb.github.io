@@ -8,6 +8,16 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
+	<svg style="display: none">
+
+		<symbol id="red-arrow" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect width="10.8871" height="1.28084" rx="0.64042" transform="translate(7.53442 9) scale(0.969761 -1.02935) rotate(45)" fill="#F83D5E"/>
+		<rect width="10.8871" height="1.28084" rx="0.64042" transform="translate(7.46558 8.85645) scale(0.969761 1.02935) rotate(-135)" fill="#F83D5E"/>
+		</symbol>
+
+	</svg>
 	
 	<form action="mail.php" method="post" class="resume-form" enctype="multipart/form-data">
 		<div class="btn-close"></div>
@@ -121,7 +131,7 @@
 						<p class="manager-content-text">
 							Юридическую работу выполняют юристы, Ваша задача, быть в курсе всех нюансов по клиенту, движения дела, и быть готовым всегда ответить на вопросы, поставить правильные задачи юристам, отследить их исполнение.
 						</p>
-						<p class="manager-content-descr orange-star">Оклад</p>
+						<p class="manager-content-descr orange-star ">Оклад</p>
 						<p class="manager-content-salary">
 							от 50 000 руб.
 						</p>
@@ -233,7 +243,9 @@
 									<h3 class="vacancies-header">Что мы предлагаем</h3>
 									<ul class="proposal-list">
 										<li>
-											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<svg width="15" height="9" class="arrow-list">
+												<use xlink:href='#red-arrow'/>
+											</svg>
 											<p class="proposal-list-header">Условия работы</p>
 											<ul class="hidden-content">
 												<li>
@@ -250,7 +262,9 @@
 											</ul>
 										</li>
 										<li>
-											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<svg width="15" height="9" class="arrow-list">
+												<use xlink:href='#red-arrow'/>
+											</svg>
 											<p class="proposal-list-header">Коллектив</p>
 											<ul class="hidden-content">
 												<li>
@@ -260,7 +274,9 @@
 											</ul>
 										</li>
 										<li>
-											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<svg width="15" height="9" class="arrow-list">
+												<use xlink:href='#red-arrow'/>
+											</svg>
 											<p class="proposal-list-header">Обучение</p>
 											<ul class="hidden-content">
 												<li>
@@ -454,7 +470,7 @@
 												<div class="play-button">
 													
 												</div>
-												<video class="video" src="" width="100%" poster=""></video>
+												<video class="video" src="" width="100%" poster="" height="100%"></video>
 											</div>
 											
 											<div class="review-slider-text">
@@ -682,7 +698,9 @@
 									<h3 class="vacancies-header">Что мы предлагаем</h3>
 									<ul class="proposal-list">
 										<li>
-											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<svg width="15" height="9" class="arrow-list">
+												<use xlink:href='#red-arrow'/>
+											</svg>
 											<p class="proposal-list-header">Условия работы</p>
 											<ul class="hidden-content">
 												<li>
@@ -692,7 +710,9 @@
 											</ul>
 										</li>
 										<li>
-											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<svg width="15" height="9" class="arrow-list">
+												<use xlink:href='#red-arrow'/>
+											</svg>
 											<p class="proposal-list-header">Коллектив</p>
 											<ul class="hidden-content">
 												<li>
@@ -702,7 +722,9 @@
 											</ul>
 										</li>
 										<li>
-											<img class="arrow-list" src="img/red-arrow.svg" alt="Показать текст">
+											<svg width="15" height="9" class="arrow-list">
+												<use xlink:href='#red-arrow'/>
+											</svg>
 											<p class="proposal-list-header">Обучение</p>
 											<ul class="hidden-content">
 												<li>
@@ -986,7 +1008,7 @@
 										<div class="manager-footer-inner">
 											<h3 class="vacancies-header">Хочешь стать частью нашей команды?</h3>
 											<div class="send-block">
-												<p class="manager-footer-orange-offer">Тогда отправляй <span class="block">своё резюме!</span></p>
+												<p class="manager-footer-orange-offer">Тогда отправляй <span class="block">своё резюме!</span></p>	
 													<img src="img/orange-arrow.svg" alt="Отправляй" class="manager-arrow">
 											</div>	
 										</div>
@@ -1016,11 +1038,6 @@
 			<p class="share">Поделиcь с друзьями:</p>
 			<div class="social-items">
 				<div class="ya-share2" data-services="vkontakte,facebook,twitter"></div>
-			<!-- 	<a href="#" class="social-item"><img width="37px" height="34px" src="img/vk.svg" alt="Вконтакте"></a>
-			<a href="#" class="social-item"><img width="37px" height="34px" src="img/fb.svg" alt="Фэйсбук"></a>
-			<a href="#" class="social-item">
-				<img width="37px" height="34px" src="img/twitter.svg" alt="Твиттер">
-			</a> -->
 			</div>
 		</div>
 	</footer>

@@ -418,6 +418,26 @@ $(function(){
 		    }, 20);
 		});
 	}
+
+
+
+	$('.video-wrapper').on('click', function(){
+
+		var $this = $(this),
+			video = $this.children('.video');
+			playBtn = $this.children('.play-button');
+
+		if(video[0].paused){
+			video[0].play();
+			video.prop("controls",true);
+			playBtn.addClass('hidden-content');
+		}else{
+			video[0].pause();
+			
+		}
+	});
+	
+
 });
 
 
