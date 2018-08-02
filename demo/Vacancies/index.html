@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Вакансии</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
-	<form action="mail.php" method="post" class="resume-form">
+	<form action="mail.php" method="post" class="resume-form" enctype="multipart/form-data">
 		<div class="btn-close"></div>
 		<div class="resume-box"></div>
 		<h2>хочешь стать частью нашей команды?</h2>
@@ -18,7 +18,7 @@
 			<div class="button-wrapper">
 				<input type="text" name="name" placeholder="Ваше имя">
 				<input id="phone-top" name="phone" type="text" placeholder="Телефон">
-				<input type="file" name="file" id="upload"  data-multiple-caption="{count} файла выбрано" multiple class="offer-button inputfile hide">
+				<input type="file" name="file" id="upload"  data-multiple-caption="{count} файл выбран" multiple class="offer-button inputfile hide">
 				<label for="upload"><span>Прикрепить резюме</span></label>	
 			</div>
 			<input type="submit" name='submit-button' value='Отправить' class="offer-button button-gray">
@@ -33,8 +33,8 @@
 		<div class="form-wrapper">
 			<div class="button-wrapper-conditions">
 				<div class="row-form">
-					<input type="text" placeholder="Ваше имя">
-					<input type="text" placeholder="Телефон" id="phone-textarea">
+					<input type="text" placeholder="Ваше имя" name="name">
+					<input type="text" placeholder="Телефон" id="phone-textarea" name="phone">
 				</div>
 				<p class="resume-form-textarea">Введите ваше предложение:</p>
 				<textarea name="comment" cols="40" rows="3" placeholder="Ввести предложение..."></textarea>
@@ -238,7 +238,7 @@
 											<ul class="hidden-content">
 												<li>
 													<p class="sub-header">Формальный</p>
-													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
 
 													<p class="sub-header">Неформальный</p>
 													<ul class="inner-list">
@@ -277,15 +277,15 @@
 								<div class="wrapper">
 									<h3 class="vacancies-header center-header">Типичный рабочий день</h3>
 									<ul class="work-day-list">
-										<li class="work-day-list-item">День начинается с <span>собрания</span>, которое проводит  руководитель отдела.</li>
+										<li class="work-day-list-item">День начинается с <span>собрания</span>, которое проводит руководитель отдела.</li>
 										<li class="work-day-list-item">После начинается <span>обзвон клиентов.</span></li>
-										<li class="work-day-list-item">Менеджер сталкивается с  <span>потенциальными клиентами,</span> которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они  <span>вносится в CRM-систему</span> для оценки собственной эффективности и дальнейшей работы  с клиентом.</li>
+										<li class="work-day-list-item">Менеджер сталкивается с  <span>потенциальными клиентами,</span> которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они  <span>вносится в CRM-систему</span> для оценки собственной эффективности и дальнейшей работы с клиентом.</li>
 										<li class="row-work">
-											<div class="row-work-item row-work-item-left"><span>20-40 звонков людям</span> оставившим заявку,  <br>необходимо сделать  менеджеру в день </div>
+											<div class="row-work-item row-work-item-left"><span>20-40 звонков людям</span> оставившим заявку, <br>необходимо сделать менеджеру в день </div>
 											<div class="row-work-item row-work-item-right"><span>5 консультаций с юристом</span> — это нормальный результат</div>
 										</li>
 										<li class="row-work">
-											<div class="row-work-item attention-blue">Каждый менеджер применяет техники продаж, которым обучают в компании, и отшлифовывает их сотнями разговоров. Если есть трудности – всегда поможет  коллега.</div>
+											<div class="row-work-item attention-blue">Каждый менеджер применяет техники продаж, которым обучают в компании, и отшлифовывает их сотнями разговоров. Если есть трудности – всегда поможет коллега.</div>
 										</li>
 										<li class="work-day-list-item">Менеджеры также консультируют по стоимости людей, которые пришли  <span>в офис</span> и заключают договоры.</li>
 										<li class="work-day-list-item">Неотъемлемая и законная часть рабочего дня –  <span>часовой обеденный перерыв.</span> Его можно провести в обеденном зале или в ближайших заведениях. </li>
@@ -381,7 +381,7 @@
 												</div>
 												<p class="decision-row-text">
 													<span class="mobile-header-blue">Оценка резюме</span>
-													Резюме получает менеджер  по персоналу. После оценки назначается собеседование
+													Резюме получает менеджер по персоналу. После оценки назначается собеседование
 												</p>
 											</div>	
 										</div>
@@ -401,7 +401,7 @@
 										</div>
 										<div class="decision-row-wrapper">
 											<div class="decision-row-header-wrapper">
-												<p class="decision-row-header">Оплачиваемый  испытательный  день</p>
+												<p class="decision-row-header">Оплачиваемый испытательный день</p>
 											</div>
 											<div class="decision-right-wrapper">
 												<div class="decision-image-wrapper decision-blue decision-8">
@@ -409,7 +409,7 @@
 												</div>
 												<p class="decision-row-text">
 													<span class="mobile-header-blue">Оплачиваемый  испытательный  день</span>
-													После удачного прохождения мы предлагаем пройти стажировочный день, где мы сможем посмотреть  на вашу работу, а вы оценить  p>уровень компании
+													После удачного прохождения мы предлагаем пройти стажировочный день, где мы сможем посмотреть на вашу работу, а вы оценить уровень компании
 												</p>
 											</div>
 										</div>
@@ -423,7 +423,7 @@
 												</div>
 												<p class="decision-row-text">
 													<span class="mobile-header-blue">Оплачиваемый испытательный срок</span>
-													Следом за стажировочным днем предлагается заключение контракта  на испытательный срок:  от 1 до 3 месяцев
+													Следом за стажировочным днем предлагается заключение контракта на испытательный срок: от 1 до 3 месяцев
 												</p>
 											</div>
 										</div>
@@ -437,7 +437,7 @@
 												</div>
 												<p class="decision-row-text">
 													<span class="mobile-header-blue">Официальное трудоустройство</span>
-													Может быть оформлено  до окончания испытательного срока
+													Может быть оформлено до окончания испытательного срока
 												</p>
 											</div>
 										</div>
@@ -534,7 +534,7 @@
 							</div>
 
 							<div class="map">
-								<h3 class="vacancies-header ">Работай в благоустроенном офисе в центре города, <br><span >5 минут от метро площадь восстания<span></h3>
+								<h3 class="vacancies-header ">Работай в благоустроенном офисе в центре города,<br><span>5 минут от метро площадь восстания<span></h3>
 								<p class="vacancies-header address">Лиговский, 21</p>
 								<div class="map-wrapper">
 									<div class="map-wrapper-border-blue">
@@ -687,7 +687,7 @@
 											<ul class="hidden-content">
 												<li>
 													<p class="sub-header">Формальный</p>
-													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение  с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
+													<p class="proposal-list-text">Высокий профессионализм, правильное делегирование полномочий, корректное общение с подчиненными и коллегами. Наш менеджер по персоналу помогает влиться в коллектив с первого дня работы.</p>
 												</li>
 											</ul>
 										</li>
@@ -719,9 +719,9 @@
 								<div class="wrapper">
 									<h3 class="vacancies-header">Типичный рабочий день</h3>
 									<ul class="work-day-list-orange">
-										<li class="work-day-list-orange-item">День начинается с собрания, которое проводит  руководитель отдела.</li>
+										<li class="work-day-list-orange-item">День начинается с собрания, которое проводит руководитель отдела.</li>
 										<li class="work-day-list-orange-item">После начинается обзвон клиентов.</li>
-										<li class="work-day-list-orange-item">Менеджер сталкивается с потенциальными клиентами, которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они вносится в CRM-систему для оценки собственной эффективности и дальнейшей работы  с клиентом.</li>
+										<li class="work-day-list-orange-item">Менеджер сталкивается с потенциальными клиентами, которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они вносится в CRM-систему для оценки собственной эффективности и дальнейшей работы с клиентом.</li>
 										<li class="work-day-list-orange-item">Менеджеры также консультируют по стоимости людей, которые пришли в офис и заключают договоры.</li>
 										<li class="work-day-list-orange-item">Неотъемлемая и законная часть рабочего дня – часовой обеденный перерыв. Его можно провести в обеденном зале или в ближайших заведениях. </li>
 										<li class="work-day-list-orange-item">У нас восьмичасовой рабочий день. Если останетесь дополнительно – компания оплатит время.<br>Увидимся завтра!</li>
@@ -816,7 +816,7 @@
 												</div>
 												<p class="decision-row-text">
 													<span class="mobile-header">Оценка резюме</span>
-													Резюме получает менеджер  по персоналу. После оценки назначается собеседование
+													Резюме получает менеджер по персоналу. После оценки назначается собеседование
 												</p>
 											</div>	
 										</div>
@@ -836,15 +836,15 @@
 										</div>
 										<div class="decision-row-wrapper">
 											<div class="decision-row-header-wrapper">
-												<p class="decision-orange-row-header-orange">Оплачиваемый  испытательный  день</p>
+												<p class="decision-orange-row-header-orange">Оплачиваемый испытательный день</p>
 											</div>
 											<div class="decision-right-wrapper">
 												<div class="decision-image-wrapper decision-orange-item decision-3">
 													
 												</div>
 												<p class="decision-row-text">
-													<span class="mobile-header">Оплачиваемый испытательный срок</span>
-													После удачного прохождения мы предлагаем пройти стажировочный день, где мы сможем посмотреть  на вашу работу, а вы оценить  уровень компании
+													<span class="mobile-header">Оплачиваемый испытательный день</span>
+													После удачного прохождения мы предлагаем пройти стажировочный день, где мы сможем посмотреть на вашу работу, а вы оценить уровень компании
 												</p>
 											</div>
 										</div>
@@ -858,7 +858,7 @@
 												</div>
 												<p class="decision-row-text">
 													<span class="mobile-header">Оплачиваемый испытательный срок</span>
-													Следом за стажировочным днем предлагается заключение контракта  на испытательный срок:  от 1 до 3 месяцев
+													Следом за стажировочным днем предлагается заключение контракта на испытательный срок: от 1 до 3 месяцев
 												</p>
 											</div>
 										</div>
@@ -872,7 +872,7 @@
 												</div>
 												<p class="decision-row-text">
 													<span class="mobile-header">Официальное трудоустройство</span>
-													Может быть оформлено  до окончания испытательного срока
+													Может быть оформлено до окончания испытательного срока
 												</p>
 											</div>
 										</div>
@@ -969,7 +969,7 @@
 							</div>
 
 							<div class="map-orange">
-								<h3 class="vacancies-header">Работай в благоустроенном офисе в центре города, <br><span>5 минут от метро площадь восстания<span></h3>
+								<h3 class="vacancies-header">Работай в благоустроенном офисе в центре города,<br><span>5 минут от метро площадь восстания<span></h3>
 								<p class="vacancies-header address">Лиговский, 21</p>
 								<div class="map-wrapper">
 									<div class="map-wrapper-border-orange">

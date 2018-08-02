@@ -115,7 +115,12 @@ $(function(){
 		var that = $(this),
 			itemBox = that.find('.item-list-blue'),
 			itemContent = that.find('.demands-list-subheader');
-
+			setTimeout(function(){
+			  $('.vacancies-description-left').getNiceScroll().resize()
+			}, 500);
+			setTimeout(function(){
+			  $('.vacancies-description-right').getNiceScroll().resize()
+			}, 500);
 			itemBox.toggleClass('item-list-blue-active');
 			itemContent.slideToggle(200);
 	});
@@ -125,7 +130,12 @@ $(function(){
 		var that = $(this),
 			itemBox = that.find('.item-list-orange'),
 			itemContent = that.find('.demands-list-subheader');
-
+			setTimeout(function(){
+			  $('.vacancies-description-left').getNiceScroll().resize()
+			}, 500);
+			setTimeout(function(){
+			  $('.vacancies-description-right').getNiceScroll().resize()
+			}, 500);
 			itemBox.toggleClass('item-list-orange-active');
 			itemContent.slideToggle(200);
 	});
@@ -136,7 +146,12 @@ $(function(){
 		var that = $(this),
 			itemBox = that.find('.arrow-list'),
 			itemContent = that.find('.hidden-content');
-
+			setTimeout(function(){
+			  $('.vacancies-description-left').getNiceScroll().resize()
+			}, 500);
+			setTimeout(function(){
+			  $('.vacancies-description-right').getNiceScroll().resize()
+			}, 500);
 			itemBox.toggleClass('rotate-arrow');
 			itemContent.slideToggle(200);
 	});
