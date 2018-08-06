@@ -505,7 +505,7 @@ $(function(){
 
 	//скролл к верху при открытии оранжевого менеджера 
 
-	if($(window).width() < '768'){
+	if($(window).width() < '1200'){
 		$("#btn-scroll").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $("#scroll-to").offset().top
