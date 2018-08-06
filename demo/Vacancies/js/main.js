@@ -505,7 +505,13 @@ $(function(){
 
 	//скролл к верху при открытии оранжевого менеджера 
 
-	if($(window).width() < '1200'){
+	if($(window).width() < '1200' && $(window).width() > '768'){
+		$("#btn-scroll").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#scroll-to-tablet").offset().top
+		    }, 20);
+		});
+	}else if($(window).width() < '768'){
 		$("#btn-scroll").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $("#scroll-to").offset().top
