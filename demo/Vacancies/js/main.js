@@ -536,7 +536,11 @@ $(function(){
 			
 		}
 	});
-	
+
+
+	if($(window).width() < '460'){
+		$('textarea').attr('placeholder', 'Введите ваше предложение:');
+	}
 
 });
 
