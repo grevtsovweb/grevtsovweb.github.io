@@ -184,7 +184,15 @@ $(function(){
 
 		$('.about-text-overlay').toggleClass('hide-text');
 		$('.text-overlay-link').toggleClass('link-down');
+		$('.about-text').toggleClass('height-fixed');
 
+		setTimeout(function(){
+		  $('.vacancies-description-left').getNiceScroll().resize()
+		}, 500);
+
+		setTimeout(function(){
+		  $('.vacancies-description-right').getNiceScroll().resize()
+		}, 500);
 
 	});
 
