@@ -45,6 +45,7 @@ $(function(){
 	$(document).ready(function(){
 		$('#phone-textarea').mask('+7 (999) 999-99-99');
 		$('#phone-top').mask('+7 (999) 999-99-99');
+		$('.main-form-field').mask('+7 (999) 999-99-99');
 	});
 
 
@@ -57,6 +58,15 @@ $(function(){
 		topSection.css('background-position', '0 '  + $(window).scrollTop() / 2 + 'px');
 
 	});
+
+
+	$('#agree').change(function() {
+
+		$('.submit-enable').prop('disabled', function(i, val) {
+			return !val;
+		})
+	});
+
 
 
 	//открытие верхнего popup
@@ -212,8 +222,8 @@ $(function(){
 		}
 
 		if( $(window).width() < '1200' ){
-			$('.main-footer .btn-footer').removeClass('btn-hidden');
-			$('.main-footer').addClass('footer-higher');
+			$('.form-main .btn-footer').removeClass('btn-hidden');
+			$('.form-main').addClass('footer-higher');
 		}
 
 		if( $(window).width() < '768'){
@@ -318,8 +328,8 @@ $(function(){
 		$('.index-sticky').removeClass('show-sticky');
 
 		$('.btn-footer').removeClass('btn-move-right');
-		$('.main-footer .btn-footer').addClass('btn-hidden');
-		$('.main-footer').removeClass('footer-higher');
+		$('.form-main .btn-footer').addClass('btn-hidden');
+		$('.form-main').removeClass('footer-higher');
 	});
 
 
@@ -343,8 +353,8 @@ $(function(){
 		$('.btn-back-header-left').removeClass('active-left');
 
 		$('.vacancies-description-left').removeClass('active-vacancies-description');
-		$('.main-footer').removeClass('footer-higher');
-		$('.main-footer .btn-footer').addClass('btn-hidden');
+		$('.form-main').removeClass('footer-higher');
+		$('.form-main .btn-footer').addClass('btn-hidden');
 	});
 
 	$('.btn-first-right').on('click', function(e){
@@ -362,8 +372,8 @@ $(function(){
 		}
 
 		if( $(window).width() < '1200' ){
-			$('.main-footer .btn-footer').removeClass('btn-hidden');
-			$('.main-footer').addClass('footer-higher');
+			$('.form-main .btn-footer').removeClass('btn-hidden');
+			$('.form-main').addClass('footer-higher');
 		}
 
 		if( $(window).width() < '768'){
@@ -462,8 +472,8 @@ $(function(){
 		$('.btn-back-footer-right').removeClass('active-footer');
 		$('.index-sticky').removeClass('show-sticky');
 		$('.btn-footer').removeClass('btn-move-right');
-		$('.main-footer .btn-footer').addClass('btn-hidden');
-		$('.main-footer').removeClass('footer-higher');
+		$('.form-main .btn-footer').addClass('btn-hidden');
+		$('.form-main').removeClass('footer-higher');
 	});
 
 	$('.btn-back-header-right').on('click', function(){
@@ -485,8 +495,8 @@ $(function(){
 		$('.btn-back-header-right').removeClass('active-right');
 
 		$('.vacancies-description-right').removeClass('active-vacancies-description-right');
-		$('.main-footer').removeClass('footer-higher');
-		$('.main-footer .btn-footer').addClass('btn-hidden');
+		$('.form-main').removeClass('footer-higher');
+		$('.form-main .btn-footer').addClass('btn-hidden');
 	});
 
 

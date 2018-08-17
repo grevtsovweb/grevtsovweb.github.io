@@ -1170,10 +1170,41 @@
 		</div>
 	</section>
 
-	<footer class="main-footer">
+
+	<section class="form-main">
 		<p class="btn-back-footer-left">назад</p>
 		<p class="btn-back-footer-right">назад</p>
 		<button class="btn-footer btn-hidden">Хочу работать у вас</button>
+		<div class="form-address">
+			<div class="form-address-img"></div>
+			<form action="mail3.php" method="post" class="form-address-inner">
+				<h4 class="form-header">Получите наши <span class="red-text">контакты&nbsp;по&nbsp;смс</span></h4>
+				<p class="main-form-description">Оставьте свой номер телефона и получите наши контакты через 10 секунд</p>
+				<input class="main-form-field" name="phone" type="tel" placeholder="Ваш телефон">
+				<input class="main-form-submit" type="submit" value="Получить контакты">
+			</form>
+		</div>
+		<div class="form-question">
+			<form action="mail.php" method="post" class="form-question-inner">
+				<div class="form-header-wrapper">
+					<h4 class="form-header">У вас остались <span class="red-text">вопросы? Мы</span>&nbsp;на&nbsp;них&nbsp;<span class="red-text">ответим!</span></h4>
+					<p class="main-form-description">Наш HR-менеджер свяжется с вами в&nbsp;течение 10 секунд и ответит на все ваши вопросы</p>
+				</div>
+				<div class="input-wrapper">
+					<input class="main-form-field" name="phone" type="tel" placeholder="Ваш телефон">
+					<input class="main-form-submit submit-enable" type="submit" value="Перезвонить мне">
+					<label for="agree" class="agree-label">
+						<input id="agree" type="checkbox" name="agree-field" class="visually-hidden" checked>
+						<span class="checkbox-indicator"></span>Даю согласие на обработку моих персональных данных
+					</label>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="main-footer">
+		
+
 		<div class="offer-wrapper">
 			<p class="main-footer-offer">
 				Хочешь работать с нами на своих условиях?<span class="block"> Ждём твоего <a href="#" class="proposal-link open-text-area">предложения</a></span>
