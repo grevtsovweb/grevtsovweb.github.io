@@ -15,7 +15,7 @@ $(document).ready(function(){
 // инициализация nicescroll
 
 $(function() { 
-	if($(window).width() > '768'){ 
+	if($(window).width() > '767'){ 
 	    $(".vacancies-description-left").niceScroll({
 	    	cursorcolor:"#ECECEC",
 	    	cursorwidth: "5px",
@@ -26,7 +26,7 @@ $(function() {
 });
 
 $(function() { 
-	if($(window).width() > '768'){ 
+	if($(window).width() > '767'){ 
 	    $(".vacancies-description-right").niceScroll({
 	    	cursorcolor:"#ECECEC",
 	    	cursorwidth: "5px",
@@ -211,11 +211,11 @@ $(function(){
 
 		e.preventDefault();
 
-		if( $(window).width() < '1200' && $(window).width() > '768' ){
+		if( $(window).width() < '1200' && $(window).width() > '767' ){
 			$('.btn-back-header-left').addClass('active-left');
 		}
 
-		if( $(window).width() < '1200' && $(window).width() > '768' ){
+		if( $(window).width() < '1200' && $(window).width() > '767' ){
 			$('.btn-second-left').addClass('btn-left-active');
 			$('.manager-image-left').addClass('hide-manager');
 			$('.manager-content').addClass('min-height');	
@@ -226,7 +226,7 @@ $(function(){
 			$('.form-main').addClass('footer-higher');
 		}
 
-		if( $(window).width() < '768'){
+		if( $(window).width() < '767'){
 			$('.btn-back-footer-left').addClass('active-footer');
 			$('.index-sticky').addClass('show-sticky');
 		}
@@ -234,7 +234,7 @@ $(function(){
 		$('.manager-section-header').addClass('hide-text');
 		$('.manager-section-description').addClass('hide-text');
 
-		if( $(window).width() > '768'){
+		if( $(window).width() > '767'){
 			$('.btn-first-left').addClass('btn-hidden');
 		}
 
@@ -256,7 +256,7 @@ $(function(){
 
 		// sticky button
 
-		if( $(window).width() < '768'){
+		if( $(window).width() < '767'){
 
 			var postion = $('.manager-left').offset().top,
 		    	height = $('.manager-left').height();
@@ -361,11 +361,11 @@ $(function(){
 
 		e.preventDefault();
 
-		if( $(window).width() < '1200' && $(window).width() > '768' ){
+		if( $(window).width() < '1200' && $(window).width() > '767' ){
 			$('.btn-back-header-right').addClass('active-right');
 		}
 
-		if( $(window).width() < '1200' && $(window).width() > '768' ){
+		if( $(window).width() < '1200' && $(window).width() > '767' ){
 			$('.btn-second-right').addClass('btn-right-active');
 			$('.manager-image-right').addClass('hide-manager');
 			$('.manager-content').addClass('min-height');
@@ -376,14 +376,14 @@ $(function(){
 			$('.form-main').addClass('footer-higher');
 		}
 
-		if( $(window).width() < '768'){
+		if( $(window).width() < '767'){
 			$('.btn-back-footer-right').addClass('active-footer');
 			$('.index-sticky').addClass('show-sticky');
 		}
 
 		$('.manager-section-header').addClass('hide-text');
 		$('.manager-section-description').addClass('hide-text');
-		if( $(window).width() > '768'){
+		if( $(window).width() > '767'){
 			$('.btn-first-right').addClass('btn-hidden');
 		}
 		
@@ -401,7 +401,7 @@ $(function(){
 
 		// sticky button
 
-		if( $(window).width() < '768'){
+		if( $(window).width() < '767'){
 
 			var postion = $('.manager-right').offset().top,
 		    	height = $('.manager-right').height();
@@ -502,7 +502,7 @@ $(function(){
 
 	//анимация progres-bar
 
-	if($(window).width() > '768'){
+	if($(window).width() > '767'){
 		$('.vacanciesSrollLeft').scroll(function(){
 			var ratio = $('.vacanciesSrollLeft').scrollTop() / (($('.dutiesLeft').height() - 200) / 100) ;
 			if(ratio < 110){
@@ -511,7 +511,7 @@ $(function(){
 		});
 	}
 
-	if($(window).width() > '768'){
+	if($(window).width() > '767'){
 		$('.vacanciesSrollRight').scroll(function(){
 			var ratio = $('.vacanciesSrollRight').scrollTop() / (($('.dutiesRight').height() - 200) / 100) ;
 			if(ratio < 110){
@@ -523,13 +523,13 @@ $(function(){
 
 	//скролл к верху при открытии оранжевого менеджера 
 
-	if($(window).width() < '1200' && $(window).width() > '768'){
+	if($(window).width() < '1200' && $(window).width() > '767'){
 		$("#btn-scroll").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $("#scroll-to-tablet").offset().top
 		    }, 20);
 		});
-	}else if($(window).width() < '768'){
+	}else if($(window).width() < '767'){
 		$("#btn-scroll").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $("#scroll-to").offset().top
