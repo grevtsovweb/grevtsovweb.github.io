@@ -3,13 +3,13 @@
 
 $(document).ready(function(){
 	$('.review-slider-blue').slick();
-	$('.press-slider-blue').slick();
+
 
 });
 
 $(document).ready(function(){
 	$('.review-slider-orange').slick();
-	$('.press-slider-orange').slick();
+
 });
 
 // инициализация nicescroll
@@ -231,6 +231,7 @@ $(function(){
 			$('.index-sticky').addClass('show-sticky');
 		}
 
+		$('.review-slider-blue').slick('reinit');
 		$('.manager-section-header').addClass('hide-text');
 		$('.manager-section-description').addClass('hide-text');
 
@@ -387,6 +388,7 @@ $(function(){
 			$('.btn-first-right').addClass('btn-hidden');
 		}
 		
+		$('.review-slider-orange').slick('reinit');
 		$('.btn-second-right').addClass('btn-show');
 		$('.manager-left').addClass('hide-manager');
 		$('.manager-right').addClass('manager-wrapper-move');
