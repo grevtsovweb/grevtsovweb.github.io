@@ -6,10 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<meta property="og:url" content="https://grevtsovweb.github.io/demo/Vacancies/"/>
 	<meta property="og:image"content="img/girl.png"/>
 	<meta property="og:image:width" content="446"/>
 	<meta property="og:image:height" content="560"/>
+	<link rel="icon" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="icon" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
 </head>
 <body>
 
@@ -17,89 +22,139 @@
 	<svg style="display: none">
 
 		<symbol id="red-arrow" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<rect width="10.8871" height="1.28084" rx="0.64042" transform="translate(7.53442 9) scale(0.969761 -1.02935) rotate(45)" fill="#F83D5E"/>
-		<rect width="10.8871" height="1.28084" rx="0.64042" transform="translate(7.46558 8.85645) scale(0.969761 1.02935) rotate(-135)" fill="#F83D5E"/>
+			<rect width="10.8871" height="1.28084" rx="0.64042" transform="translate(7.53442 9) scale(0.969761 -1.02935) rotate(45)" fill="#F83D5E"/>
+			<rect width="10.8871" height="1.28084" rx="0.64042" transform="translate(7.46558 8.85645) scale(0.969761 1.02935) rotate(-135)" fill="#F83D5E"/>
 		</symbol>
+
+		<symbol id="calendar" viewBox="0 0 47 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="1" y="1" width="45" height="45" rx="4" transform="translate(0 5)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(8 15)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(20 15)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(31 15)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(8 26)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(20 26)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(31 26)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(8 37)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(20 37)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="6" height="6" rx="1" transform="translate(31 37)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="4" height="10" rx="2" transform="translate(8)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="4" height="10" rx="2" transform="translate(33)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+		</symbol>
+
+		<symbol id="list" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect width="42" height="2" rx="1" transform="translate(30 41.5977) rotate(-23.4501)" fill="#F83D5E"/>
+			<rect width="10" height="2" rx="1" transform="translate(69.4026 25.6733) scale(-1 1) rotate(-21.5499)" fill="#F83D5E"/>
+			<rect width="10" height="2" rx="1" transform="translate(69.5391 25.9878) rotate(111.55)" fill="#F83D5E"/>
+			<rect x="1" y="1" width="9.72727" height="27.5556" rx="2" transform="translate(30 51.4443)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="9.72727" height="31.7778" rx="2" transform="translate(45.6364 47.2222)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="9.72727" height="36" rx="2" transform="translate(61.2727 43)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+		</symbol>
+
+		<symbol id="bag" viewBox="0 0 62 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="1" y="1" width="27" height="25" rx="4" transform="translate(17)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="60" height="42" rx="4" transform="translate(0 8)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+			<path d="M0 0C10.6667 4.33333 37.5 10.4 59.5 0" transform="translate(1 24)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="11" height="10" rx="1" transform="translate(25 23)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+		</symbol>
+
+		<svg id="grafic" viewBox="0 0 43 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="1" y="1" width="41" height="54" rx="4" transform="translate(0 6)" stroke="#F83D5E" stroke-width="2"/>
+			<rect x="1" y="1" width="23" height="10" rx="1" transform="translate(9)" fill="white" stroke="#F83D5E" stroke-width="2"/>
+			<rect width="13" height="2" rx="1" transform="translate(21 21)" fill="#F83D5E"/>
+			<rect width="8" height="2" rx="1" transform="translate(10.4373 23.6567) rotate(-45)" fill="#F83D5E"/>
+			<rect width="5.13321" height="2" rx="1" transform="translate(13.0439 23.6567) scale(-1 1) rotate(-45)" fill="#F83D5E"/>
+			<rect width="13" height="2" rx="1" transform="translate(21 32)" fill="#F83D5E"/>
+			<rect width="8" height="2" rx="1" transform="translate(10.4373 34.6567) rotate(-45)" fill="#F83D5E"/>
+			<rect width="5.13321" height="2" rx="1" transform="translate(13.0439 34.6567) scale(-1 1) rotate(-45)" fill="#F83D5E"/>
+			<rect width="13" height="2" rx="1" transform="translate(21 43)" fill="#F83D5E"/>
+			<rect width="8" height="2" rx="1" transform="translate(10.4373 45.6567) rotate(-45)" fill="#F83D5E"/>
+			<rect width="5.13321" height="2" rx="1" transform="translate(13.0439 45.6567) scale(-1 1) rotate(-45)" fill="#F83D5E"/>
+		</svg>
 
 	</svg>
 	
-	<form action="mail.php" method="post" class="resume-form" enctype="multipart/form-data">
-		<div class="btn-close"></div>
-		<div class="resume-box"></div>
-		<h2>хочешь стать частью нашей команды?</h2>
-		<p class="resume-form-text">Тогда заполни контакты и отправляй своё&nbsp;резюме!</p>
-		<div class="form-wrapper">
-			<div class="button-wrapper">
-				<input type="text" name="name" placeholder="Ваше имя">
-				<input id="phone-top" name="phone" type="tel" placeholder="Телефон">
-				<input type="file" name="file" id="upload"  data-multiple-caption="{count} файл выбран" multiple class="offer-button inputfile hide">
-				<label for="upload"><span>Прикрепить резюме</span></label>	
-			</div>
-			<input type="submit" name='submit-button' value='Отправить' class="offer-button button-gray">
-		</div>
-	</form>
-
-
-	<form action="mail.php" method="post" class="resume-form-conditions">
-		<div class="btn-close"></div>
-		<h2>хочешь работать с нами на&nbsp;своих&nbsp;условиях?</h2>
-		<p class="resume-form-conditions-text">Тогда заполни контакты и отправляй своё резюме!</p>
-		<div class="form-wrapper">
-			<div class="button-wrapper-conditions">
-				<div class="row-form">
-					<input type="text" placeholder="Ваше имя" name="name">
-					<input type="tel" placeholder="Телефон" id="phone-textarea" name="phone">
+	<div id="static_chaser_1">
+		<div id="talkingHead_1"></div>
+		<form id="static_chaser_form_1" class="resume-form" enctype="multipart/form-data">
+			<div class="btn-close"></div>
+			<div class="resume-box"></div>
+			<h2>хочешь стать частью нашей команды?</h2>
+			<p class="resume-form-text">Тогда заполни контакты и отправляй своё&nbsp;резюме!</p>
+			<div class="form-wrapper">
+				<div class="button-wrapper">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input id="custom-chaser-phone-input_1" class="phone-top" name="phone" type="tel" placeholder="Телефон" required>
+					<input type="file" name="file" id="upload"  data-multiple-caption="{count} файл выбран" multiple class="offer-button inputfile hide">
+					<label for="upload"><span>Прикрепить резюме</span></label>	
 				</div>
-				<p class="resume-form-textarea">Введите ваше предложение:</p>
-				<textarea name="comment" cols="40" rows="4" placeholder="Ввести предложение..."></textarea>
-				<input type="submit" name='submit' value='Отправить' class="offer-button right-button">	
+				<input id="custom-chaser-phone-call-button_1" type="submit" name='submit-button' value='Отправить' class="offer-button button-gray">
 			</div>
-		</div>
-	</form>
+		</form>
+	</div>
+
+	<div id="static_chaser_2">
+		<div id="talkingHead_2"></div>
+		<form id="static_chaser_form_2" class="resume-form-conditions">
+			<div class="btn-close"></div>
+			<h2>хочешь работать с нами на&nbsp;своих&nbsp;условиях?</h2>
+			<p class="resume-form-conditions-text">Тогда заполни контакты и отправляй своё резюме!</p>
+			<div class="form-wrapper">
+				<div class="button-wrapper-conditions">
+					<div class="row-form">
+						<input type="text" placeholder="Ваше имя" name="name">
+						<input id="custom-chaser-phone-input_2" class="phone-textarea"  type="tel" placeholder="Телефон"  name="phone" required>
+					</div>
+					<p class="resume-form-textarea">Введите ваше предложение:</p>
+					<textarea name="comment" cols="40" rows="4" placeholder="Ввести предложение..."></textarea>
+					<input id="custom-chaser-phone-call-button_2" type="submit" name='submit' value='Отправить' class="offer-button right-button">	
+				</div>
+			</div>
+		</form>
+	</div>
 	<div class="overlay-popup"></div>
 
 
 
 	<section class="top-section">
-			<header class="top-header">				
-				<div class="top-header-logo">
-					<div class="company-wrapper">
-						<p class="company-wrapper-name">Высшая инстанция</p>
-						<p class="company-wrapper-description"><span>Топ-3 в Pravo.ru <br></span> 2017-2018</p>
-					</div>
-					<div class="company-wrapper-sub">
-						Специализированный юридический консорциум №1
-					</div>
+		<header class="top-header">				
+			<div class="top-header-logo">
+				<div class="company-wrapper">
+					<p class="company-wrapper-name">Высшая инстанция</p>
+					<p class="company-wrapper-description"><span>Топ-3 в Pravo.ru <br></span> 2017-2018</p>
 				</div>
-				<div class="top-header-rewards">
-					<div class="top-header-rewards-item"><span>15 лет</span>компании</div>
-					<div class="top-header-rewards-item"><span>56 сотрудников</span>в команде</div>
-					<div class="top-header-rewards-item"><span>16 798 дел</span>закрыто в 2017</div>
-					<div class="top-header-rewards-item"><span>24 публикаций</span>в СМИ</div>
+				<div class="company-wrapper-sub">
+					Специализированный юридический консорциум №1
 				</div>
-				<div class="top-header-phone">
-					Санкт-Петербург
-					<a class="top-header-phone-link" href="tel:+78126157350">8 (812) 615-73-50</a>
-				</div>
-			</header>
-
-			<section class="tablet-rewards">				
-				<div class="tablet-rewards-wrapper">
-					<div class="tablet-rewards-item"><span>15 лет</span>компании</div>
-					<div class="tablet-rewards-item"><span>56 сотрудников</span>в команде</div>
-					<div class="tablet-rewards-item"><span>16 798 дел</span>закрыто в 2017</div>
-					<div class="tablet-rewards-item"><span>24 публикаций</span>в СМИ</div>
-				</div>
-			</section>
-			<div class="offer">
-				<div class="main-text-wrapper">
-					<img src="img/Search.png" alt="Ищем менеджера" class="main-text">
-				</div>		
-				<p class="offer-description">
-					В «семью» крупнейшей юридической компании СПБ для постоянной работы и карьерного роста.
-				</p>
-				<button class="offer-button open-popup button-bottom">Хочу работать у вас</button>
 			</div>
+			<div class="top-header-rewards">
+				<div class="top-header-rewards-item"><span>15 лет</span>компании</div>
+				<div class="top-header-rewards-item"><span>56 сотрудников</span>в команде</div>
+				<div class="top-header-rewards-item"><span>16 798 дел</span>закрыто в 2017</div>
+				<div class="top-header-rewards-item"><span>24 публикаций</span>в СМИ</div>
+			</div>
+			<div class="top-header-phone">
+				Санкт-Петербург
+				<a class="top-header-phone-link" href="tel:+78126157350">8 (812) 615-73-50</a>
+			</div>
+		</header>
+
+		<section class="tablet-rewards">				
+			<div class="tablet-rewards-wrapper">
+				<div class="tablet-rewards-item"><span>15 лет</span>компании</div>
+				<div class="tablet-rewards-item"><span>56 сотрудников</span>в команде</div>
+				<div class="tablet-rewards-item"><span>16 798 дел</span>закрыто в 2017</div>
+				<div class="tablet-rewards-item"><span>24 публикаций</span>в СМИ</div>
+			</div>
+		</section>
+		<div class="offer">
+			<div class="main-text-wrapper">
+				<img src="img/Search.png" alt="Ищем менеджера" class="main-text">
+			</div>		
+			<p class="offer-description">
+				В «семью» крупнейшей юридической компании СПБ для постоянной работы и карьерного роста.
+			</p>
+			<button class="offer-button open-popup button-bottom">Хочу работать у вас</button>
+		</div>
 	</section>
 
 
@@ -152,7 +207,7 @@
 
 					
 					
-					<div  class="vacancies-description vacancies-description-left vacanciesSrollLeft scrollbar-inner" data-simplebar>
+					<div  class="vacancies-description vacancies-description-left vacanciesSrollLeft scrollbar-inner">
 							<div class="term">
 								<div class="wrapper">
 									<h3 class="vacancies-header">Срок набора</h3>
@@ -325,26 +380,7 @@
 								</div>
 							</div>
 
-							<div class="work-day">
-								<div class="wrapper">
-									<h3 class="vacancies-header center-header">Типичный рабочий день</h3>
-									<ul class="work-day-list">
-										<li class="work-day-list-item">День начинается с <span>собрания</span>, которое проводит руководитель отдела.</li>
-										<li class="work-day-list-item">После начинается <span>обзвон клиентов.</span></li>
-										<li class="work-day-list-item">Менеджер сталкивается с  <span>потенциальными клиентами,</span> которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они  <span>вносится в CRM-систему</span> для оценки собственной эффективности и дальнейшей работы с клиентом.</li>
-										<li class="row-work">
-											<div class="row-work-item row-work-item-left"><span>20-40 звонков людям</span> оставившим заявку, <br>необходимо сделать менеджеру в день </div>
-											<div class="row-work-item row-work-item-right"><span>5 консультаций с юристом</span> — это нормальный результат</div>
-										</li>
-										<li class="row-work">
-											<div class="row-work-item attention-blue">Каждый менеджер применяет техники продаж, которым обучают в компании, и отшлифовывает их сотнями разговоров. Если есть трудности – всегда поможет коллега.</div>
-										</li>
-										<li class="work-day-list-item">Менеджеры также консультируют по стоимости людей, которые пришли  <span>в офис</span> и заключают договоры.</li>
-										<li class="work-day-list-item">Неотъемлемая и законная часть рабочего дня –  <span>часовой обеденный перерыв.</span> Его можно провести в обеденном зале или в ближайших заведениях. </li>
-										<li class="work-day-list-item">У нас восьмичасовой рабочий день. Если останетесь  <span>дополнительно</span> – компания оплатит время.<br>Увидимся завтра!</li>
-									</ul>
-								</div>
-							</div>
+						
 
 							<div class="about">
 								<div class="wrapper">
@@ -371,7 +407,10 @@
 									<div class="targets">
 										<div class="targets-item">
 											<div class="targets-image-wrapper">
-												<img src="img/calendar.svg" alt="" class="targets-item-image">
+												<!-- <img src="img/calendar.svg" alt="" class="targets-item-image"> -->
+												<svg width="47" height="52" class="targets-item-image">
+													<use xlink:href='#calendar'/>
+												</svg>
 											</div>
 											<p class="targets-item-header">Планы компании через<br>три года
 												<span class="tragets-information target-1">
@@ -383,7 +422,10 @@
 										</div>
 										<div class="targets-item">
 											<div class="targets-image-wrapper">
-												<img src="img/list.svg" alt="" class="targets-item-image">
+												<!-- <img src="img/list.svg" alt="" class="targets-item-image"> -->
+												<svg width="106" height="106" class="targets-item-image">
+													<use xlink:href='#list'/>
+												</svg>
 											</div>
 											<p class="targets-item-header">
 												Карьерный рост внутри компании
@@ -396,7 +438,9 @@
 										</div>
 										<div class="targets-item">
 											<div class="targets-image-wrapper">
-												<img src="img/grafic1.svg" alt="" class="targets-item-image">
+												<svg width="43" height="62" class="targets-item-image">
+													<use xlink:href='#grafic'/>
+												</svg>
 											</div>
 											<p class="targets-item-header">Принципы компании
 												<span class="tragets-information target-3">
@@ -413,7 +457,9 @@
 										</div>
 										<div class="targets-item">
 											<div class="targets-image-wrapper">
-												<img src="img/bag.svg" alt="" class="targets-item-image">
+												<svg width="62" height="52" class="targets-item-image">
+													<use xlink:href='#bag'/>
+												</svg>
 											</div>
 											<p class="targets-item-header">Миссия компании
 												<span class="tragets-information target-4">
@@ -435,7 +481,7 @@
 											<div class="decision-row-header-wrapper">
 												<p class="decision-row-text">После рассмотрения и оценки <span class="blue-text">резюме</span> <span class="nowrap">HR-менеджер</span> приглашает на личное <span class="blue-text">собеседование.</span></p>
 											</div>	
-											<div class="decision-img"><img src="img/decision.png" alt="Как принимается решение"></div>
+											<div class="decision-img"><div class="decision-img-inner decision-img-inner-blue"></div><!-- <img src="img/decision.png" alt="Как принимается решение"> --></div>
 										</div>
 
 									</div>								
@@ -501,48 +547,7 @@
 								</div>
 							</div>
 
-							<div class="press">
-								<div class="wrapper">
-									<h3 class="vacancies-header header-blue">Сми о компании</h3>
-								</div>
-								<div class="wrapper-slider">
-									<div class="press-slider press-slider-blue">
-										<div class="press-slider-item">
-											<div class="press-company-wrapper">
-												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
-											</div>
-											
-											<div class="press-slider-text">
-												<p class="press-slider-date">18.05.2018</p>
-												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
-												<a href="#" class="press-link">Ссылка на публикацию</a>
-											</div>
-										</div>
-										<div class="press-slider-item">
-											<div class="press-company-wrapper">
-												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
-											</div>
-											
-											<div class="press-slider-text">
-												<p class="press-slider-date">18.05.2018</p>
-												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
-												<a href="#" class="press-link">Ссылка на публикацию</a>
-											</div>
-										</div>
-										<div class="press-slider-item">
-											<div class="press-company-wrapper">
-												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
-											</div>
-											
-											<div class="press-slider-text">
-												<p class="press-slider-date">18.05.2018</p>
-												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
-												<a href="#" class="press-link">Ссылка на публикацию</a>
-											</div>
-										</div>
-									</div>		
-								</div>
-							</div>
+					
 
 							<div class="map">
 								<h3 class="vacancies-header ">Работай в благоустроенном офисе в центре города,<br><span>5 минут от ст. метро чернышевская<span></h3>
@@ -798,26 +803,7 @@
 								</div>
 							</div>
 
-							<div class="work-day-orange">
-								<div class="wrapper">
-									<h3 class="vacancies-header">Типичный рабочий день</h3>
-									<ul class="work-day-list-orange">
-										<li class="work-day-list-orange-item">День начинается с собрания, которое проводит руководитель отдела.</li>
-										<li class="work-day-list-orange-item">После начинается обзвон клиентов.</li>
-										<li class="work-day-list-orange-item">Менеджер сталкивается с потенциальными клиентами, которые хотят просто получить справку по телефону, или проконсультироваться, или сразу заключить договор. Все они вносится в CRM-систему для оценки собственной эффективности и дальнейшей работы с клиентом.</li>
-										<li class="row-work">
-											<div class="row-work-item row-work-item-left"><span class="orange">20-40 звонков людям</span> оставившим заявку, <br>необходимо сделать менеджеру в день </div>
-											<div class="row-work-item row-work-item-right"><span class="orange">5 консультаций с юристом</span> — это нормальный результат</div>
-										</li>
-										<li class="row-work">
-											<div class="row-work-item attention-orange">Каждый менеджер применяет техники продаж, которым обучают в компании, и отшлифовывает их сотнями разговоров. Если есть трудности – всегда поможет коллега.</div>
-										</li>
-										<li class="work-day-list-orange-item">Менеджеры также консультируют по стоимости людей, которые пришли в офис и заключают договоры.</li>
-										<li class="work-day-list-orange-item">Неотъемлемая и законная часть рабочего дня – часовой обеденный перерыв. Его можно провести в обеденном зале или в ближайших заведениях. </li>
-										<li class="work-day-list-orange-item">У нас восьмичасовой рабочий день. Если останетесь дополнительно – компания оплатит время.<br>Увидимся завтра!</li>
-									</ul>
-								</div>
-							</div>
+						
 
 							<div class="about">
 								<div class="wrapper">
@@ -843,7 +829,9 @@
 									<div class="targets-orange">
 										<div class="targets-item">
 											<div class="targets-orange-image-wrapper">
-												<img src="img/calendar.svg" alt="" class="targets-item-image">
+												<svg width="47" height="52" class="targets-item-image">
+													<use xlink:href='#calendar'/>
+												</svg>
 											</div>
 											<p class="targets-orange-item-header">Планы компании через<br>три года
 												<span class="tragets-orange-information target-1">
@@ -855,7 +843,9 @@
 										</div>
 										<div class="targets-orange-item">
 											<div class="targets-orange-image-wrapper">
-												<img src="img/list.svg" alt="" class="targets-item-image">
+												<svg width="106" height="106" class="targets-item-image">
+													<use xlink:href='#list'/>
+												</svg>
 											</div>
 											<p class="targets-orange-item-header">
 												Карьерный рост внутри компании
@@ -868,7 +858,9 @@
 										</div>
 										<div class="targets-orange-item">
 											<div class="targets-image-wrapper">
-												<img src="img/grafic1.svg" alt="" class="targets-item-image">
+												<svg width="43" height="62" class="targets-item-image">
+													<use xlink:href='#grafic'/>
+												</svg>
 											</div>
 											<p class="targets-orange-item-header">Принципы компании
 												<span class="tragets-orange-information target-3">
@@ -885,7 +877,9 @@
 										</div>
 										<div class="targets-orange-item">
 											<div class="targets-orange-image-wrapper">
-												<img src="img/bag.svg" alt="" class="targets-item-image">
+												<svg width="62" height="52" class="targets-item-image">
+													<use xlink:href='#bag'/>
+												</svg>
 											</div>
 											<p class="targets-orange-item-header">Миссия компании
 												<span class="tragets-orange-information target-4">
@@ -907,7 +901,7 @@
 											<div class="decision-row-header-wrapper">
 												<p class="decision-row-text">После рассмотрения и оценки <span class="orange-text">резюме</span> <span class="nowrap">HR-менеджер</span> приглашает на личное <span class="orange-text">собеседование.</span></p>
 											</div>	
-											<div class="decision-img"><img src="img/decision-orange.png" alt="Как принимается решение"></div>	
+											<div class="decision-img"><div class="decision-img-inner decision-img-inner-orange"></div><!-- <img src="img/decision-orange.png" alt="Как принимается решение"> --></div>	
 										</div>
 									</div>								
 								</div>
@@ -971,48 +965,7 @@
 								</div>
 							</div>
 
-							<div class="press">
-								<div class="wrapper">
-									<h3 class="vacancies-header">Сми о компании</h3>
-								</div>
-								<div class="wrapper-slider">
-									<div class="press-slider press-slider-orange">
-										<div class="press-slider-item-orange">
-											<div class="press-company-wrapper">
-												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
-											</div>
-											
-											<div class="press-slider-text">
-												<p class="press-slider-date">18.05.2018</p>
-												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
-												<a href="#" class="press-link">Ссылка на публикацию</a>
-											</div>
-										</div>
-										<div class="press-slider-item-orange">
-											<div class="press-company-wrapper">
-												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
-											</div>
-											
-											<div class="press-slider-text">
-												<p class="press-slider-date">18.05.2018</p>
-												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
-												<a href="#" class="press-link">Ссылка на публикацию</a>
-											</div>
-										</div>
-										<div class="press-slider-item-orange">
-											<div class="press-company-wrapper">
-												<img src="img/lenta.png" alt="Лента" width="171px" height="30px">
-											</div>
-											
-											<div class="press-slider-text">
-												<p class="press-slider-date">18.05.2018</p>
-												<p class="press-slider-text-item">История «ВЫСШАЯ ИНСТАНЦИЯ» началась в 2008 году, когда учредителем – Иваном Шевельковым, было принято решение о создании  юридической фирмы, где будут работать только профильные юристы по каждой категории права. </p>
-												<a href="#" class="press-link">Ссылка на публикацию</a>
-											</div>
-										</div>
-									</div>		
-								</div>
-							</div>
+				
 
 							<div class="map-orange">
 								<h3 class="vacancies-header">Работай в благоустроенном офисе в центре города,<br><span>5 минут от ст. метро чернышевская<span></h3>
@@ -1058,19 +1011,20 @@
 			<form action="mail3.php" method="post" class="form-address-inner">
 				<h4 class="form-header">Получите наши <span class="red-text">контакты&nbsp;по&nbsp;смс</span></h4>
 				<p class="main-form-description">Оставьте свой номер телефона и получите наши контакты через 10&nbsp;секунд</p>
-				<input class="main-form-field" name="phone" type="tel" placeholder="Ваш телефон">
+				<input class="main-form-field" name="phone" type="tel" placeholder="Ваш телефон" required>
 				<input class="main-form-submit" type="submit" value="Получить контакты">
 			</form>
 		</div>
-		<div class="form-question">
-			<form action="mail.php" method="post" class="form-question-inner">
+		<div id="static_chaser" class="form-question">
+			<div id="talkingHead"></div>
+			<form id="static_chaser_form" class="form-question-inner">
 				<div class="form-header-wrapper">
 					<h4 class="form-header">У вас остались <span class="red-text">вопросы? Мы</span>&nbsp;на&nbsp;них&nbsp;<span class="red-text">ответим!</span></h4>
 					<p class="main-form-description">Наш HR-менеджер свяжется с вами в&nbsp;течение 10 секунд и ответит на все ваши вопросы</p>
 				</div>
 				<div class="input-wrapper">
-					<input class="main-form-field" name="phone" type="tel" placeholder="Ваш телефон">
-					<input class="main-form-submit submit-enable" type="submit" value="Перезвонить мне">
+					<input id="custom-chaser-phone-input" class="main-form-field" name="phone" type="tel" placeholder="Ваш телефон" required>
+					<input id="custom-chaser-phone-call-button" class="main-form-submit submit-enable" value="Перезвонить мне" type="submit">
 					<label for="agree" class="agree-label">
 						<input id="agree" type="checkbox" name="agree-field" class="visually-hidden" checked>
 						<span class="checkbox-indicator"></span>Даю согласие на обработку моих персональных данных
@@ -1106,22 +1060,9 @@
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/main.js"></script>
 	
-	
 	<!-- Подключение chaser.ru -->
-	
-	<script type='text/javascript'> 
-		(function(w, d) { 
-		w.CH_SERVER_NAME = '//chaser.ru'; 
-		w.CH_HASH = 'aba36cc3760e0b1c6a655f019a68b878'; 
-		var p = d.createElement('script'), 
-		s = d.getElementsByTagName('head')[0]; 
-		p.type = 'text/javascript'; 
-		p.charset = 'utf-8'; 
-		p.async = 'true'; 
-		p.src = (d.location.protocol == 'https:' ? 'https:' : 'http:') + w.CH_SERVER_NAME + '/widget/1.1/js/widget.js'; 
-		s.appendChild(p); 
-		})(window, document); 
-	</script>
 
+
+	
 </body>
 </html>
