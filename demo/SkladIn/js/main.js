@@ -26,6 +26,69 @@ $(function(){
 
 	openCatalog();
 
+	$(".slider-ui").slider({
+		min: 2456,
+		max: 156789,
+		values: [0,156789],
+		range: true,
+		stop: function(event, ui) {
+			$(".range__price-input_min").val($(".slider-ui").slider("values",0));
+			$(".range__price-input_max").val($(".slider-ui").slider("values",1));
+			
+	    },
+	    slide: function(event, ui){
+			$(".range__price-input_min").val($(".slider-ui").slider("values",0));
+			$(".range__price-input_max").val($(".slider-ui").slider("values",1));
+	    }
+	});
+
+	$(".range__price-input_min").change(function(e){
+
+		e.preventDefault();
+
+		var value1=$(".range__price-input_min").val();
+		var value2=$(".range__price-input_max").val();
+
+	    if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$(".range__price-input_min").val(value1);
+		}
+		$(".slider-ui").slider("values",0,value1);	
+	});
+
+		
+	$(".range__price-input_max").change(function(e){
+
+		e.preventDefault();
+			
+		var value1=$(".range__price-input_min").val();
+		var value2=$(".range__price-input_max").val();
+		
+		if (value2 > 1000) { value2 = 1000; $(".range__price-input_max").val(1000)}
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$(".range__price-input_max").val(value2);
+		}
+		$(".slider-ui").slider("values",1,value2);
+	});
+
+
+
+	// фильтрация ввода в поля
+	$('input').keypress(function(event){
+		var key, keyChar;
+		if(!event) var event = window.event;
+		
+		if (event.keyCode) key = event.keyCode;
+		else if(event.which) key = event.which;
+	
+		if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 ) return true;
+		keyChar=String.fromCharCode(key);
+		
+		if(!/\d/.test(keyChar))	return false;
+	
+	});
 
 
 });
@@ -238,5 +301,9 @@ $(function(){
 
 		
 	}
+
+
+
+	
 
 
