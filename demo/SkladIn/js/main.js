@@ -276,6 +276,41 @@ $(function(){
 	}
 
 
+	// увеличение количества товара
+
+	$('.quantity__minus').on('click', function(e) {
+	    e.preventDefault();
+
+	    var $this = $(this);
+	    var $input = $this.closest('.quantity').find('.quantity__input');
+	    var value = parseInt($input.val());
+	 
+	    if (value > 1) {
+	        value = value - 1;
+	    } else {
+	        value = 1;
+	    }
+	 
+	  $input.val(value);
+	 
+	});
+	 
+	$('.quantity__plus').on('click', function(e) {
+	    e.preventDefault();
+	    var $this = $(this);
+	    var $input = $this.closest('.quantity').find('.quantity__input');
+	    var value = parseInt($input.val());
+	 
+	    if (value < 100) {
+	        value = value + 1;
+	    } else {
+	        value =100;
+	    }
+	 
+	    $input.val(value);
+	});
+
+
 
 
 	
