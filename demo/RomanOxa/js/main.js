@@ -5,7 +5,7 @@ $(function(){
 	$('.slider-posts').owlCarousel({
 	  loop:true,
 	  nav:true,
-	  navText: ['<svg><use xlink:href="/img/sprites/general.svg#arrow-slider"/></svg>','<svg><use xlink:href="/img/sprites/general.svg#arrow-slider"/></svg>']
+	  navText: ['<svg><use xlink:href="img/sprites/general.svg#arrow-slider"/></svg>','<svg><use xlink:href="img/sprites/general.svg#arrow-slider"/></svg>']
 
 
 	});
@@ -15,7 +15,7 @@ $(function(){
 	  loop:true,
 	  nav:true,
 	  items: 1,
-	  navText: ['<svg><use xlink:href="/img/sprites/general.svg#arrow-slider"/></svg>','<svg><use xlink:href="/img/sprites/general.svg#arrow-slider"/></svg>']
+	  navText: ['<svg><use xlink:href="img/sprites/general.svg#arrow-slider"/></svg>','<svg><use xlink:href="img/sprites/general.svg#arrow-slider"/></svg>']
 
 	});
 
