@@ -43,11 +43,17 @@ $(function(){
 
 				logo.removeClass('header__logo_large');
 			}else{
-				header.removeClass('header_fixed')
-					.addClass('header_transparent')
-					.addClass('header_large');
+				header.removeClass('header_fixed');
+					
 
-				logo.addClass('header__logo_large');
+				if($('.page').hasClass('header-transparent')){
+
+					header.addClass('header_transparent')
+						.addClass('header_large');
+					logo.addClass('header__logo_large');
+				}
+
+				
 			}
 	});
 
