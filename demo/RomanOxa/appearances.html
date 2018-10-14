@@ -10,25 +10,99 @@
 </head>
 <body class="page">
 
-	<header class="header">
-		<div class="header__logo">
-			<img src="img/logo.svg" alt="RomanOxa" class="logo">
-		</div>
-		<nav class="header__nav">
-			<ul class="nav">
-				<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
-			</ul>
-		</nav>
-		<div class="header__audio"></div>
-		<div class="header__menu">
-			<div class="hamburger">
-				<span class="hamburger__item"></span>
+	<audio class="player" src="" ></audio>
+	<div class="popup">
+		<div class="popup__close"></div>
+		<div class="popup__video">
+			<button class="play-btn popup__play">
+
+			</button>
+			<video width="100%" height="100%" src=""></video>
+		</div>	
+		<div class="popup__descr">
+			<p class="popup__text">Голос - это инструмент</p>
+			<a href="#" class="link">Подробнее об обучении</a>
+		</div>	
+	</div>
+	<div class="overlay">
+		
+	</div>
+
+	<header class="header header-js">
+			<div class="header__logo header__logo_large">
+				<img src="img/logo.svg" alt="RomanOxa" class="logo">
 			</div>
-		</div>
+			<nav class="header__nav">
+				<ul class="nav">
+					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+				</ul>
+			</nav>
+			<div class="header__audio">
+				<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='11'>
+					<button class="play-btn header__play-btn play-btn-audio-js">
+						
+					</button>
+					<div class="audio__container">
+						<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+						<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+					</div>
+			
+
+				</div>
+				<div class="header__audio-item-inner">
+					<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='12'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+						<audio src=""></audio>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='13'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+				
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/William Black & Nevve – Hallucinate.mp3' data-id='14'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<div class="hamburger hamburger-js">
+					<span class="hamburger__item"></span>
+				</div>
+			</div>
+			<div class="header__audio-m">
+				<div class="play-area header__audio-m__play-area play-area-js">
+
+					<span class="play-area__pulse"></span>
+					<span class="play-area__btn"></span>
+					<svg>
+						<use xlink:href="img/sprites/general.svg#play"/>
+					</svg>
+					
+				</div>
+			</div>
 	</header>
 	<div class="sub-header sub-header_appearances">
 		<div class="sub-header__container">
@@ -103,10 +177,10 @@
 	<section class="b-form">
 		<div class="b-form__container">
 			<p class="title title_l b-form__title">Пригласить нас выступить</p>
-			<form action="" class="form b-form__inner">
-				<input type="text" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Ваше имя">
-				<input type="text" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="E-mail">
-				<input type="phone" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Телефон">
+			<form action="mail.php" method="post" class="form b-form__inner">
+				<input type="text" name="name" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Ваше имя">
+				<input type="text" name="mail" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="E-mail">
+				<input type="phone" name="phone" class="form__input form__col_3 form__col_md_6 form__col_xs_12 input-mask-js" placeholder="Телефон" required>
 				<input type="submit" class="form__submit main-btn form__col_3 form__col_md_6 form__col_xs_12" value="Отправить">
 			</form>
 		</div>
@@ -116,41 +190,45 @@
 		<div class="b-video__container">
 			<div class="b-video__inner">
 				<div class="b-video__col_3">
-					<div class="video b-video__video">
-						<button class="play-btn video__play">
-							<svg>
-								<use xlink:href="img/sprites/general.svg#play"/>
-							</svg>
+					<div class="video b-video__video video_js" style="background-image: url('img/video-posters/video-4.jpg')">
+						<div class="video__title">
+							<p class="video__title-text video__title-text_small">Bel Canto Роман<br> Вадимович Сладкопевец<br> мастер класс part 05</p>
+						</div>
+						<button class="play-btn video__play video__play_small">
+							
 						</button>
-						<video width="100%" height="100%" src=""></video>
+						<video width="100%" height="100%" src="video/Sample320.mp4"></video>
 					</div>
 				</div>
 				<div class="b-video__col_6">
-					<div class="video b-video__video">
+					<div class="video b-video__video video_js" style="background-image: url('img/video-posters/video-1.jpg')">
+						<div class="video__title">
+							<p class="video__title-text">Nessun Dorma Roman<br> Sladkopevets Bel Canto</p>
+						</div>
 						<button class="play-btn video__play">
-							<svg>
-								<use xlink:href="img/sprites/general.svg#play"/>
-							</svg>
+						
 						</button>
-						<video width="100%" height="100%" src=""></video>
+						<video width="100%" height="100%" src="video/Sample320.mp4"></video>
 					</div>
 				</div>
 				<div class="b-video__col_3">
-					<div class="video b-video__video video_size_s">
-						<button class="play-btn video__play">
-							<svg>
-								<use xlink:href="img/sprites/general.svg#play"/>
-							</svg>
+					<div class="video b-video__video video_size_s video_js" style="background-image: url('img/video-posters/video-3.jpg')">
+						<div class="video__title">
+							<p class="video__title-text video__title-text_small">Bel Canto Роман<br> Вадимович Сладкопевец<br> мастер класс part 05</p>
+						</div>
+						<button class="play-btn video__play video__play_small">
+							
 						</button>
-						<video width="100%" height="100%" src=""></video>
+						<video width="100%" height="100%" src="video/Sample320.mp4"></video>
 					</div>
-					<div class="video  video_size_s">
-						<button class="play-btn video__play">
-							<svg>
-								<use xlink:href="img/sprites/general.svg#play"/>
-							</svg>
+					<div class="video  video_size_s video_js" style="background-image: url('img/video-posters/video-2.jpg')">
+						<div class="video__title">
+							<p class="video__title-text video__title-text_small">Bel Canto Роман<br> Сладкопевец Истина о<br> постановке голоса</p>
+						</div>
+						<button class="play-btn video__play video__play_small">
+							
 						</button>
-						<video width="100%" height="100%" src=""></video>
+						<video width="100%" height="100%" src="video/Sample320.mp4"></video>
 					</div>
 				</div>
 			</div>
@@ -160,10 +238,10 @@
 	<section class="b-form">
 		<div class="b-form__container">
 			<p class="title title_l b-form__title">Пригласить нас выступить</p>
-			<form action="" class="form b-form__inner">
-				<input type="text" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Ваше имя">
-				<input type="text" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="E-mail">
-				<input type="phone" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Телефон">
+			<form action="mail.php" method="post" class="form b-form__inner">
+				<input type="text" name="name" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Ваше имя">
+				<input type="text" name="mail" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="E-mail">
+				<input type="phone" name="phone" class="form__input form__col_3 form__col_md_6 form__col_xs_12 input-mask-js" placeholder="Телефон">
 				<input type="submit" class="form__submit main-btn form__col_3 form__col_md_6 form__col_xs_12" value="Отправить">
 			</form>
 		</div>
@@ -217,8 +295,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/owl.carousel.min.js"><\/script>')</script>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/masonry.pkgd.min.js"><\/script>')</script>		
+	<script>window.jQuery || document.write('<script src="js/masonry.pkgd.min.js"><\/script>')</script>	
 
+		
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

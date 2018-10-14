@@ -9,26 +9,83 @@
 
 </head>
 <body class="page">
+	<audio class="player" src=""></audio>
 
-	<header class="header">
-		<div class="header__logo">
-			<img src="img/logo.svg" alt="RomanOxa" class="logo">
-		</div>
-		<nav class="header__nav">
-			<ul class="nav">
-				<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
-			</ul>
-		</nav>
-		<div class="header__audio"></div>
-		<div class="header__menu">
-			<div class="hamburger">
-				<span class="hamburger__item"></span>
+	<header class="header header-js">
+			<div class="header__logo header__logo_large">
+				<img src="img/logo.svg" alt="RomanOxa" class="logo">
 			</div>
-		</div>
+			<nav class="header__nav">
+				<ul class="nav">
+					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+				</ul>
+			</nav>
+			<div class="header__audio">
+				<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='11'>
+					<button class="play-btn header__play-btn play-btn-audio-js">
+						
+					</button>
+					<div class="audio__container">
+						<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+						<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+					</div>
+			
+
+				</div>
+				<div class="header__audio-item-inner">
+					<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='12'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+						<audio src=""></audio>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='13'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+				
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/William Black & Nevve – Hallucinate.mp3' data-id='14'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<div class="hamburger hamburger-js">
+					<span class="hamburger__item"></span>
+				</div>
+			</div>
+			<div class="header__audio-m">
+				<div class="play-area header__audio-m__play-area play-area-js">
+
+					<span class="play-area__pulse"></span>
+					<span class="play-area__btn"></span>
+					<svg>
+						<use xlink:href="img/sprites/general.svg#play"/>
+					</svg>
+					
+				</div>
+			</div>
 	</header>
 	<div class="sub-header sub-header_music">
 		<div class="sub-header__container">
@@ -61,11 +118,27 @@
 							<img src="img/music-card_1.jpg" alt="Оксана Ланщикова">
 						</div>
 						<div class="music-card__content">
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
+							<div class="audio music-card__audio audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='0'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
+								</button>
+								<div class="audio__container ">
+									<span class="audio__title">Musical freak - opera don de Paris</span>
+									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
+									<div class="bar">
+										
+										<div class="bar__load"></div>
+										<div class="bar__progress">
+											
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="audio music-card__audio audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='1'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
 								</button>
 								<div class="audio__container">
 									<span class="audio__title">Musical freak - opera don de Paris</span>
@@ -74,18 +147,15 @@
 										
 										<div class="bar__load"></div>
 										<div class="bar__progress">
-											<div class="bar__handler"></div>
+											
 										</div>
 									</div>
 								</div>
-								<audio src=""></audio>
 
 							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
+							<div class="audio music-card__audio audio-js" data-src='audio/William Black & Nevve – Hallucinate.mp3' data-id='2'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
 								</button>
 								<div class="audio__container">
 									<span class="audio__title">Musical freak - opera don de Paris</span>
@@ -94,18 +164,31 @@
 										
 										<div class="bar__load"></div>
 										<div class="bar__progress">
-											<div class="bar__handler"></div>
+											
 										</div>
 									</div>
 								</div>
-								<audio src=""></audio>
+							</div>
+							<div class="audio music-card__audio audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='3'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
+								</button>
+								<div class="audio__container ">
+									<span class="audio__title">Musical freak - opera don de Paris</span>
+									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
+									<div class="bar">
+										
+										<div class="bar__load"></div>
+										<div class="bar__progress">
+
+										</div>
+									</div>
+								</div>
 
 							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
+							<div class="audio music-card__audio audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='4'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
 								</button>
 								<div class="audio__container">
 									<span class="audio__title">Musical freak - opera don de Paris</span>
@@ -114,54 +197,12 @@
 										
 										<div class="bar__load"></div>
 										<div class="bar__progress">
-											<div class="bar__handler"></div>
+											
 										</div>
 									</div>
 								</div>
-								<audio src=""></audio>
 
-							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
-								</button>
-								<div class="audio__container">
-									<span class="audio__title">Musical freak - opera don de Paris</span>
-									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
-									<div class="bar">
-										
-										<div class="bar__load"></div>
-										<div class="bar__progress">
-											<div class="bar__handler"></div>
-										</div>
-									</div>
-								</div>
-								<audio src=""></audio>
-
-							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
-								</button>
-								<div class="audio__container">
-									<span class="audio__title">Musical freak - opera don de Paris</span>
-									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
-									<div class="bar">
-										
-										<div class="bar__load"></div>
-										<div class="bar__progress">
-											<div class="bar__handler"></div>
-										</div>
-									</div>
-								</div>
-								<audio src=""></audio>
-
-							</div>
-							
+							</div>							
 						</div>
 					</div>
 				</div>
@@ -173,11 +214,26 @@
 							<img src="img/music-card_2.jpg" alt="Роман Сладковец">
 						</div>
 						<div class="music-card__content">
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
+							<div class="audio music-card__audio audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='5'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
+								</button>
+								<div class="audio__container ">
+									<span class="audio__title">Musical freak - opera don de Paris</span>
+									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
+									<div class="bar">
+										
+										<div class="bar__load"></div>
+										<div class="bar__progress">
+											
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="audio music-card__audio audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='6'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
 								</button>
 								<div class="audio__container">
 									<span class="audio__title">Musical freak - opera don de Paris</span>
@@ -186,18 +242,15 @@
 										
 										<div class="bar__load"></div>
 										<div class="bar__progress">
-											<div class="bar__handler"></div>
+											
 										</div>
 									</div>
 								</div>
-								<audio src=""></audio>
 
 							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
+							<div class="audio music-card__audio audio-js" data-src='audio/William Black & Nevve – Hallucinate.mp3' data-id='7'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
 								</button>
 								<div class="audio__container">
 									<span class="audio__title">Musical freak - opera don de Paris</span>
@@ -206,18 +259,31 @@
 										
 										<div class="bar__load"></div>
 										<div class="bar__progress">
-											<div class="bar__handler"></div>
+											
 										</div>
 									</div>
 								</div>
-								<audio src=""></audio>
+							</div>
+							<div class="audio music-card__audio audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='8'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
+								</button>
+								<div class="audio__container ">
+									<span class="audio__title">Musical freak - opera don de Paris</span>
+									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
+									<div class="bar">
+										
+										<div class="bar__load"></div>
+										<div class="bar__progress">
+											
+										</div>
+									</div>
+								</div>
 
 							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
+							<div class="audio music-card__audio audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='9'>
+								<button class="play-btn audio__play-btn play-btn-audio-js">
+									
 								</button>
 								<div class="audio__container">
 									<span class="audio__title">Musical freak - opera don de Paris</span>
@@ -226,53 +292,12 @@
 										
 										<div class="bar__load"></div>
 										<div class="bar__progress">
-											<div class="bar__handler"></div>
+											
 										</div>
 									</div>
 								</div>
-								<audio src=""></audio>
 
-							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
-								</button>
-								<div class="audio__container">
-									<span class="audio__title">Musical freak - opera don de Paris</span>
-									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
-									<div class="bar">
-										
-										<div class="bar__load"></div>
-										<div class="bar__progress">
-											<div class="bar__handler"></div>
-										</div>
-									</div>
-								</div>
-								<audio src=""></audio>
-
-							</div>
-							<div class="audio music-card__audio">
-								<button class="play-btn audio__play-btn">
-									<svg>
-										<use xlink:href="img/sprites/general.svg#play"/>
-									</svg>
-								</button>
-								<div class="audio__container">
-									<span class="audio__title">Musical freak - opera don de Paris</span>
-									<span class="audio__singer">Сладковец Роман - Ланщикова Оксана</span>
-									<div class="bar">
-										
-										<div class="bar__load"></div>
-										<div class="bar__progress">
-											<div class="bar__handler"></div>
-										</div>
-									</div>
-								</div>
-								<audio src=""></audio>
-
-							</div>
+							</div>							
 						</div>
 					</div>
 				</div>

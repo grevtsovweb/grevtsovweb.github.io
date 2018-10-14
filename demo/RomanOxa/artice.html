@@ -10,25 +10,82 @@
 </head>
 <body class="page article">
 
-	<header class="header">
-		<div class="header__logo">
-			<img src="img/logo.svg" alt="RomanOxa" class="logo">
-		</div>
-		<nav class="header__nav">
-			<ul class="nav">
-				<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
-			</ul>
-		</nav>
-		<div class="header__audio"></div>
-		<div class="header__menu">
-			<div class="hamburger">
-				<span class="hamburger__item"></span>
+	<audio class="player" src="" ></audio>
+	<header class="header header_transparent header_large header-js">
+			<div class="header__logo header__logo_large">
+				<img src="img/logo.svg" alt="RomanOxa" class="logo">
 			</div>
-		</div>
+			<nav class="header__nav">
+				<ul class="nav">
+					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+				</ul>
+			</nav>
+			<div class="header__audio">
+				<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='11'>
+					<button class="play-btn header__play-btn play-btn-audio-js">
+						
+					</button>
+					<div class="audio__container">
+						<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+						<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+					</div>
+			
+
+				</div>
+				<div class="header__audio-item-inner">
+					<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='12'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+						<audio src=""></audio>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='13'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+				
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/William Black & Nevve – Hallucinate.mp3' data-id='14'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<div class="hamburger hamburger-js">
+					<span class="hamburger__item"></span>
+				</div>
+			</div>
+			<div class="header__audio-m">
+				<div class="play-area header__audio-m__play-area play-area-js">
+
+					<span class="play-area__pulse"></span>
+					<span class="play-area__btn"></span>
+					<svg>
+						<use xlink:href="img/sprites/general.svg#play"/>
+					</svg>
+					
+				</div>
+			</div>
 	</header>
 	<div class="article__sub-header">
 		<div class="article__container">
@@ -103,7 +160,7 @@
 					</div>
 				</div>
 				<aside class="article__aside article__col_4">
-					<article class="posts__card news-card grid-item">
+					<a class="posts__card news-card grid-item">
 						<div class="news-card__img news-card__img_size_s">
 							<img src="img/news-card/news-size-s.jpg" alt="Как правильно тренировать свои голосовые связки">
 						</div>
@@ -119,8 +176,8 @@
 								Голос напрямую связан с состоянием человека. Часто “зажатый” голос является индикатором внутренних проблем, неуверенности и скромности.
 							</p>
 						</div>
-					</article>
-					<article class="posts__card news-card grid-item">
+					</a>
+					<a class="posts__card news-card grid-item">
 						<div class="news-card__img news-card__img_size_l">
 							<img src="img/news-card/news-size-l.jpg" alt="Как правильно тренировать свои голосовые связки">
 						</div>
@@ -136,7 +193,7 @@
 								Голос напрямую связан с состоянием человека. Часто “зажатый” голос является индикатором внутренних проблем, неуверенности и скромности.
 							</p>
 						</div>
-					</article>
+					</a>
 				</aside>
 
 			</div>

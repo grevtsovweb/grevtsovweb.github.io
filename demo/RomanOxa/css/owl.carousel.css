@@ -199,6 +199,12 @@
   background-color: transparent;
 }
 
+@media screen and (max-width: 992px) {
+  .owl-nav{
+    display:  none;
+  }
+}
+
 .owl-prev{
   display: none;
 }
@@ -231,4 +237,8 @@
 
 .owl-stage{
   height: 100%;
+}
+
+.owl-dots {
+  display: none;
 }

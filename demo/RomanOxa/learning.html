@@ -11,25 +11,82 @@
 
 </head>
 <body class="page">
-	<header class="header">
-		<div class="header__logo">
-			<img src="img/logo.svg" alt="RomanOxa" class="logo">
-		</div>
-		<nav class="header__nav">
-			<ul class="nav">
-				<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
-			</ul>
-		</nav>
-		<div class="header__audio"></div>
-		<div class="header__menu">
-			<div class="hamburger">
-				<span class="hamburger__item"></span>
+	<audio class="player" src="" ></audio>
+	<header class="header header-js">
+			<div class="header__logo header__logo_large">
+				<img src="img/logo.svg" alt="RomanOxa" class="logo">
 			</div>
-		</div>
+			<nav class="header__nav">
+				<ul class="nav">
+					<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Выступления</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+				</ul>
+			</nav>
+			<div class="header__audio">
+				<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='11'>
+					<button class="play-btn header__play-btn play-btn-audio-js">
+						
+					</button>
+					<div class="audio__container">
+						<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+						<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+					</div>
+			
+
+				</div>
+				<div class="header__audio-item-inner">
+					<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='12'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+						<audio src=""></audio>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='13'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+				
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+					<div class="audio header__audio-item audio-js" data-src='audio/William Black & Nevve – Hallucinate.mp3' data-id='14'>
+						<button class="play-btn header__play-btn play-btn-audio-js">
+					
+						</button>
+						<div class="audio__container">
+							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
+							<span class="audio__singer header__audio-singer">Сладковец Роман - Ланщикова Оксана</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<div class="hamburger hamburger-js">
+					<span class="hamburger__item"></span>
+				</div>
+			</div>
+			<div class="header__audio-m">
+				<div class="play-area header__audio-m__play-area play-area-js">
+
+					<span class="play-area__pulse"></span>
+					<span class="play-area__btn"></span>
+					<svg>
+						<use xlink:href="img/sprites/general.svg#play"/>
+					</svg>
+					
+				</div>
+			</div>
 	</header>
 
 	<section class="top-learning">
@@ -122,10 +179,10 @@
 					<p class="promo__descr">Записавшись сейчас, вы получите скидку на обучение до <span class="promo__descr-span">20%</span></p>
 				</div>
 				<div class="promo__col_4 promo__offset-left_1 promo__offset-left_md_no promo__col_sm_12">
-					<form action="" class="form promo__form">
-						<input type="text" class="form__input promo__input" placeholder="Ваше имя">
-						<input type="text" class="form__input promo__input" placeholder="E-mail">
-						<input type="phone" class="form__input promo__input" placeholder="Телефон">
+					<form action="mail.php" method="post" class="form promo__form">
+						<input type="text" name="name" class="form__input promo__input" placeholder="Ваше имя">
+						<input type="text" name="mail" class="form__input promo__input" placeholder="E-mail">
+						<input type="phone" name="phone" class="form__input promo__input input-mask-js" placeholder="Телефон">
 						<input type="submit" class="form__submit main-btn promo__submit" value="Отправить">
 					</form>
 				</div>
@@ -239,10 +296,10 @@
 	<section class="b-form">
 		<div class="b-form__container">
 			<p class="title title_l b-form__title">Запишитесь на&nbsp;пробный урок</p>
-			<form action="" class="form b-form__inner">
-				<input type="text" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Ваше имя">
-				<input type="text" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="E-mail">
-				<input type="phone" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Телефон">
+			<form action="mail.php" method="post" class="form b-form__inner">
+				<input type="text" name="name" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Ваше имя">
+				<input type="text" name="mail" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="E-mail">
+				<input type="phone" name="phone" class="form__input form__col_3 form__col_md_6 form__col_xs_12 input-mask-js" placeholder="Телефон">
 				<input type="submit" class="form__submit main-btn form__col_3 form__col_md_6 form__col_xs_12" value="Отправить">
 			</form>
 		</div>
