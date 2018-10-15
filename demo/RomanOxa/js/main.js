@@ -265,10 +265,15 @@ $(function(){
 			btn = $('.play-btn-audio-js'),
 			id = container.attr('data-id'),
 			srcAudio = container.attr('data-src'),
+			currentTrack = $('.audio-js[data-id='+ID+']'),
+			currentBtn = currentTrack.find('.play-btn-audio-js'),
+			currentTitle = currentTrack.find('.header__audio-title').html(),
+			currentAuthor = currentTrack.find('.header__audio-singer').html(),
+			playerTitle = $('.m-menu-audio__title'),
+			playerAuthor = $('.m-menu-audio__author'),
 			curTime,
 			cur = -100;
 
-			console.log(barContainer);
 			
 
 			player[0].volume = .2;
@@ -315,6 +320,10 @@ $(function(){
 				if(player[0].paused){
 					player[0].play();
 					$this.addClass('play-btn_active');
+					mainPlayBtn.addClass('m-menu-audio__play_active');
+
+					playerTitle.html(currentTitle);
+					playerAuthor.html(currentAuthor);
 				}else{
 					player[0].pause();
 					btn.removeClass('play-btn_active');
@@ -326,6 +335,10 @@ $(function(){
 				player.attr('src', srcAudio);
 				player[0].play();	
 				$this.addClass('play-btn_active');
+				mainPlayBtn.addClass('m-menu-audio__play_active');
+
+				playerTitle.html(currentTitle);
+				playerAuthor.html(currentAuthor);
 			}
 
 
