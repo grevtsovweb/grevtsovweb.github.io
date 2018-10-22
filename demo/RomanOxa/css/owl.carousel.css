@@ -226,6 +226,23 @@
   fill: #000000;
 }
 
+@media screen and (max-width: 1450px) {
+  .owl-next{
+    width: 70px;
+  }
+}
+@media screen and (max-width: 1315px) {
+  .owl-next{
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .owl-next{
+    width: 70px;
+  }
+}
+
 .owl-item{
   height: 100%;
   width: 100%;

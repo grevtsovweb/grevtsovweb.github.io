@@ -90,6 +90,7 @@
 
 		</div>
 	</div>
+	
 	<header class="header header-js">
 			<div class="header__logo header__logo_large">
 				<img src="img/logo.svg" alt="RomanOxa" class="logo">
@@ -106,7 +107,7 @@
 			<div class="header__audio">
 				<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='11'>
 					<button class="play-btn header__play-btn play-btn-audio-js">
-						
+						<span class="header__play-btn-inner"></span>
 					</button>
 					<div class="audio__container">
 						<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
@@ -118,7 +119,7 @@
 				<div class="header__audio-item-inner">
 					<div class="audio header__audio-item audio-js" data-src='audio/Deorro ft. MAKJ - Bring It Back.mp3' data-id='12'>
 						<button class="play-btn header__play-btn play-btn-audio-js">
-					
+							<span class="header__play-btn-inner"></span>
 						</button>
 						<div class="audio__container">
 							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
@@ -129,7 +130,7 @@
 					</div>
 					<div class="audio header__audio-item audio-js" data-src='audio/Jada Facer - Creep.mp3' data-id='13'>
 						<button class="play-btn header__play-btn play-btn-audio-js">
-				
+							<span class="header__play-btn-inner"></span>
 						</button>
 						<div class="audio__container">
 							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
@@ -139,7 +140,7 @@
 					</div>
 					<div class="audio header__audio-item audio-js" data-src='audio/William Black & Nevve – Hallucinate.mp3' data-id='14'>
 						<button class="play-btn header__play-btn play-btn-audio-js">
-					
+							<span class="header__play-btn-inner"></span>
 						</button>
 						<div class="audio__container">
 							<span class="audio__title header__audio-title">Musical freak - opera don de Paris</span>
@@ -198,8 +199,8 @@
 		</div>
 	</div>
 
-	<section class="info info_border-bottom">
-		<div class="info__container">
+	<section class="info">
+		<div class="info__container info_border-bottom_s">
 			<div class="info__inner">
 				<div class="info__title info__col_4 info__col_md_12">
 					<p class="title title_l">
@@ -258,9 +259,19 @@
 				</div>
 				<div class="promo__col_4 promo__offset-left_1 promo__offset-left_md_no promo__col_sm_12">
 					<form action="mail.php" method="post" class="form promo__form">
-						<input type="text" name="name" class="form__input promo__input" placeholder="Ваше имя">
-						<input type="text" name="mail" class="form__input promo__input" placeholder="E-mail">
-						<input type="phone" name="phone" class="form__input promo__input input-mask-js" placeholder="Телефон">
+						<div class="form__field">
+							<input id="name" type="text" name="name" class="form__input promo__input" placeholder="Ваше имя">
+							<label class="form__label-dark" for="name">Ваше имя</label>
+						</div>
+						<div class="form__field">
+							<input id="E-mail" type="text" name="mail" class="form__input promo__input" placeholder="E-mail">
+							<label class="form__label-dark" for="E-mail">E-mail</label>
+						</div>
+						<div class="form__field">
+							<input id="phone" type="phone" name="phone" class="form__input promo__input input-mask-js" placeholder="Телефон">
+							<label  class="form__label-dark" for="phone">Телефон</label>
+						</div>
+						
 						<input type="submit" class="form__submit main-btn promo__submit" value="Отправить">
 					</form>
 				</div>
@@ -344,7 +355,7 @@
 		<div class="info__container">
 			<div class="info__inner">
 				<div class="info__content info__col_4 info__offset-left_4 info__offset-left_md_no info__col_md_12">
-					<p class="title title_low">
+					<p class="title title_low title_l">
 						Голос - это индикатор состояния человека
 					</p>
 					<p class="text">
@@ -355,8 +366,8 @@
 						Казалось бы - голос это инструмент, в первую очередь нужный певцам и актёрам. Но на самом деле, раскрывая свой голос, человек раскрывает себя.
 					</p>
 				</div>
-				<div class="info__content info__col_4 info__col_md_12">
-					<p class="title title_low">
+				<div class="info__content info__col_4 info__col_md_12 info_pt_40_sm">
+					<p class="title title_low title_l">
 						Мы выглядим так как мы говорим
 					</p>
 					<p class="text">
@@ -375,9 +386,18 @@
 		<div class="b-form__container">
 			<p class="title title_l b-form__title">Запишитесь на&nbsp;пробный урок</p>
 			<form action="mail.php" method="post" class="form b-form__inner">
-				<input type="text" name="name" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="Ваше имя">
-				<input type="text" name="mail" class="form__input form__col_3 form__col_md_6 form__col_xs_12" placeholder="E-mail">
-				<input type="phone" name="phone" class="form__input form__col_3 form__col_md_6 form__col_xs_12 input-mask-js" placeholder="Телефон">
+				<div class="form__field form__col_3 form__col_md_6 form__col_xs_12">
+					<input id="name_1" type="text" name="name" class="form__input" placeholder="Ваше имя">
+					<label for="name_1">Ваше имя</label>
+				</div>
+				<div class="form__field form__col_3 form__col_md_6 form__col_xs_12">
+					<input id="mail_1" type="text" name="mail" class="form__input" placeholder="E-mail">
+					<label for="mail_1">E-mail</label>
+				</div>
+				<div class="form__field form__col_3 form__col_md_6 form__col_xs_12">
+					<input id="phone_1" type="phone" name="phone" class="form__input input-mask-js" placeholder="Телефон" required>
+					<label for="phone_1">Телефон</label>
+				</div>
 				<input type="submit" class="form__submit main-btn form__col_3 form__col_md_6 form__col_xs_12" value="Отправить">
 			</form>
 		</div>
@@ -458,15 +478,15 @@
 					<p class="name-first name__first">Роман</p>
 					<p class="name-second name__second">Сладковец</p>
 					<a href="#" class="link link_mobile-no">Читать биографию</a>
-					<a href="#" class="footer__phone footer__text_gray-m">+7 (921) 999-22-11</a>
-					<span class="footer__mail footer__text_gray-m">r.sladkovec@romanoxa.ru</span>
+					<a href="#" class="footer__phone">+7 (921) 999-22-11</a>
+					<span class="footer__mail">r.sladkovec@romanoxa.ru</span>
 				</div>
 				<div class="name__item name__col_6 name__col_sm_12">
 					<p class="name-first name__first">Оксана</p>
 					<p class="name-second name__second">Ланщикова</p>
 					<a href="#" class="link link_mobile-no">Читать биографию</a>
-					<a href="#" class="footer__phone footer__text_gray-m">+7 (921) 999-22-11</a>
-					<span class="footer__mail footer__text_gray-m">o.sladkovec@romanoxa.ru</span>
+					<a href="#" class="footer__phone">+7 (921) 999-22-11</a>
+					<span class="footer__mail">o.sladkovec@romanoxa.ru</span>
 				</div>			
 			</div>	
 		</div>	
