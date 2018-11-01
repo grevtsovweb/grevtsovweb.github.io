@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Bonfuse</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body class="page">
+	<header class="header page__header">
+		<div class="header__top">
+			<a href="#" class="header__logo">
+				<img src="img/logo.svg" alt="Bonfuse" class="logo">
+			</a>
+			<div class="header__top-info">
+				<a href="tel:+74956655138" class="header__contact-item">
+					<span class="header__contact-icon">
+						<svg>
+							<use xlink:href="img/sprite/sprite.svg#phone"/>
+						</svg>
+					</span>
+					+7 (495) 66-55-138
+				</a>
+				<a href="tel:+73832000766" class="header__contact-item">
+					<span class="header__contact-icon">
+						<svg>
+							<use xlink:href="img/sprite/sprite.svg#phone"/>
+						</svg>
+					</span>
+					+7 (383) 200-07-66
+				</a>
+				<div class="header__contact-item">
+					<span class="header__contact-icon">
+						<svg>
+							<use xlink:href="img/sprite/sprite.svg#mail"/>
+						</svg>
+					</span>
+					info@bonfuse.ru
+				</div>
+			</div>
+		</div>
+		<div class="header__nav">
+			<a href="#" class="header__catalog">
+				Каталог продукции
+			</a>
+			<nav class="header__nav-block">
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Главная</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Услуги</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Кейсы</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">О компании</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Блог</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Оптовикам</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__user-block">
+				<a href="#" class="header__search">
+					<svg>
+						<use xlink:href="img/sprite/sprite.svg#search"/>
+					</svg>
+				</a>
+				<a href="#" class="header__cart">
+					<span class="header__cart-count">
+						3
+					</span>
+					<svg>
+						<use xlink:href="img/sprite/sprite.svg#cart"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="page__content">
+		
+		<div class="page__breadcrumbs">
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs__item">
+					<a href="#" class="breadcrumbs__link">Главная</a>
+				</li>
+				<li class="breadcrumbs__item">
+					<a href="#" class="breadcrumbs__link">Каталог</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page__content-inner">
+			<div class="page__good-header">
+				<h1 class="h1">
+					Кофе коста-рика трес милагрос
+				</h1>
+				<p class="page__good-code">актикул: 227089</p>
+			</div>
+			<div class="good-card">
+				<div class="good-card__product">
+					<div class="good-card__gallery">
+						<div class="good-card__fullsize">
+							<img src="img/good-card/good-card.jpg" alt="Кофе коста-рика трес милагрос" class="good-card__fullsize-img">
+						</div>
+						<ul class="good-card__thumbs">
+							<li class="good-card__thumbs-item">
+								<div class="good-card__thumbs-link" data-src="img/good-card/good-card.jpg">
+									<img src="img/good-card/good-card-thumbs/good-card-thumbs.jpg" alt="Кофе коста-рика трес милагрос" class="good-card__thumbs-img">
+								</div>
+							</li>
+							<li class="good-card__thumbs-item">
+								<div class="good-card__thumbs-link" data-src="img/good-card/good-card.jpg">
+									<img src="img/good-card/good-card-thumbs/good-card-thumbs.jpg" alt="Кофе коста-рика трес милагрос" class="good-card__thumbs-img">
+								</div>
+							</li>
+							<li class="good-card__thumbs-item">
+								<div class="good-card__thumbs-link" data-src="img/good-card/good-card.jpg">
+									<img src="img/good-card/good-card-thumbs/good-card-thumbs.jpg" alt="Кофе коста-рика трес милагрос" class="good-card__thumbs-img">
+								</div>
+							</li>
+							<li class="good-card__thumbs-item">
+								<div class="good-card__thumbs-link" data-src="img/good-card/good-card.jpg">
+									<img src="img/good-card/good-card-thumbs/good-card-thumbs.jpg" alt="Кофе коста-рика трес милагрос" class="good-card__thumbs-img">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="good-card__info">
+						<div class="good-card__interaction">
+							<div class="good-card__interaction-inner">
+								<p class="good-card__price">19 590 <span class="good-card__price_s">руб.</span></p>
+								<div class="quantity good-card__quantity">
+									<button class="quantity__minus">-</button>
+									<input type="number" class="quantity__input" value="1" step="1" min="1">
+									<button class="quantity__plus">+</button>
+								</div>
+								<button class="btn btn_blue good-card__btn">
+									<span class="btn__good-icon">	
+										<svg>
+											<use xlink:href="img/sprite/sprite.svg#cart"></use>
+										</svg>
+									</span>
+									В корзину
+								</button>
+							</div>
+							<p class="good-card__availability">
+								<span class="good-card__availability-icon">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#availability"/>
+									</svg>
+								</span>
+								Есть в наличии
+							</p>
+						</div>
+						<div class="good-card__descr">
+							<h3 class="good-card__descr-title">
+								Описание:
+							</h3>
+							<p class="good-card__descr-text">
+								Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических районах Восточной и Западной Африки. Культивируется во всех тропических странах, особенно широко в Латинской Америке и Индии. Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических районах Восточной и Западной Африки. Культивируется во всех тропических странах, особенно широко в Латинской Америке и Индии.
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="good-card__review">
+					<p class="good-card__review-title">Отзывы:</p>
+					<a href="#" class="good-card__review-link">Написать отзыв</a>
+					<div class="good-card__review-slider">
+						<div class="owl-review">
+							<div class="owl-review__item">
+								<div class="owl-review__avatar">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#avatar"/>
+									</svg>
+								</div>
+								<div class="owl-review__info">
+									<p class="owl-review__author">Тим Кутумбаев</p>
+									<div class="owl-review__review-info">
+										<div class="owl-review__rate">
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+										</div>
+										<span class="owl-review__date">Сегодня в 21:30</span>
+									</div>
+									<p class="owl-review__text">Пока грелась кофеварка, я вскрыл новую пачку кофе Paulig Arabica и спросонья включил любимую радиостанцию по пути в душ. По радио передавали старую добрую композицию вокально-инструментального ансамбля Nirvana. Старые песни со временем, постепенно становятся старше, но ...</p>
+								</div>
+							</div>
+							<div class="owl-review__item">
+								<div class="owl-review__avatar">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#avatar"/>
+									</svg>
+								</div>
+								<div class="owl-review__info">
+									<p class="owl-review__author">Федя Петечкин</p>
+									<div class="owl-review__review-info">
+										<div class="owl-review__rate">
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+										</div>
+										<span class="owl-review__date">Сегодня в 21:30</span>
+									</div>
+									<p class="owl-review__text">Пока грелась кофеварка, я вскрыл новую пачку кофе Paulig Arabica и спросонья включил любимую радиостанцию по пути в душ. По радио передавали старую добрую композицию вокально-инструментального ансамбля Nirvana. Старые песни со временем, постепенно становятся старше, но ...</p>
+								</div>
+							</div>
+							<div class="owl-review__item">
+								<div class="owl-review__avatar">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#avatar"/>
+									</svg>
+								</div>
+								<div class="owl-review__info">
+									<p class="owl-review__author">Тим Кутумбаев</p>
+									<div class="owl-review__review-info">
+										<div class="owl-review__rate">
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+										</div>
+										<span class="owl-review__date">Сегодня в 21:30</span>
+									</div>
+									<p class="owl-review__text">Пока грелась кофеварка, я вскрыл новую пачку кофе Paulig Arabica и спросонья включил любимую радиостанцию по пути в душ. По радио передавали старую добрую композицию вокально-инструментального ансамбля Nirvana. Старые песни со временем, постепенно становятся старше, но ...</p>
+								</div>
+							</div>
+							<div class="owl-review__item">
+								<div class="owl-review__avatar">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#avatar"/>
+									</svg>
+								</div>
+								<div class="owl-review__info">
+									<p class="owl-review__author">Федя Петечкин</p>
+									<div class="owl-review__review-info">
+										<div class="owl-review__rate">
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon owl-review__rate-icon_active">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+											<span class="owl-review__rate-icon">
+												<svg>
+													<use xlink:href="img/sprite/sprite.svg#rate-star"/>
+												</svg>
+											</span>
+										</div>
+										<span class="owl-review__date">Сегодня в 21:30</span>
+									</div>
+									<p class="owl-review__text">Пока грелась кофеварка, я вскрыл новую пачку кофе Paulig Arabica и спросонья включил любимую радиостанцию по пути в душ. По радио передавали старую добрую композицию вокально-инструментального ансамбля Nirvana. Старые песни со временем, постепенно становятся старше, но ...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="catalog">
+				<h2 class="h1 catalog__good-header">Похожие товары</h2>
+				<div class="catalog__goods">
+					<div class="catalog__col-5">
+						<article class="good catalog__good">
+							<a href="#" class="good__img">
+								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
+							</a>
+							<div class="good__info">
+								<p class="good__title-category">
+									Кофе и смеси
+								</p>
+								<a href="#" class="good__title-link">
+									<h2 class="good__title">
+										Кофе коста-рика трес милагрос
+									</h2>
+								</a>
+								<p class="good__descr">
+									Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических ...
+								</p>
+								<div class="good__bottom">
+									<p class="good__price">19 590 <span class="good__value">руб.</span></p>
+									
+									<button class="good__btn btn btn_blue">
+										<span class="btn__good-icon">	
+											<svg>
+												<use xlink:href="img/sprite/sprite.svg#cart"/>
+											</svg>
+										</span>
+										В корзину
+									</button>
+						
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="catalog__col-5">
+						<article class="good catalog__good">
+							<a href="#" class="good__img">
+								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
+							</a>
+							<div class="good__info">
+								<p class="good__title-category">
+									Кофе и смеси
+								</p>
+								<a href="#" class="good__title-link">
+									<h2 class="good__title">
+										Кофе коста-рика трес милагрос
+									</h2>
+								</a>
+								<p class="good__descr">
+									Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических ...
+								</p>
+								<div class="good__bottom">
+									<p class="good__price">19 590 <span class="good__value">руб.</span></p>
+									
+									<button class="good__btn btn btn_blue">
+										<span class="btn__good-icon">	
+											<svg>
+												<use xlink:href="img/sprite/sprite.svg#cart"/>
+											</svg>
+										</span>
+										В корзину
+									</button>
+						
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="catalog__col-5">
+						<article class="good catalog__good">
+							<a href="#" class="good__img">
+								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
+							</a>
+							<div class="good__info">
+								<p class="good__title-category">
+									Кофе и смеси
+								</p>
+								<a href="#" class="good__title-link">
+									<h2 class="good__title">
+										Кофе коста-рика трес милагрос
+									</h2>
+								</a>
+								<p class="good__descr">
+									Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических ...
+								</p>
+								<div class="good__bottom">
+									<p class="good__price">19 590 <span class="good__value">руб.</span></p>
+									
+									<button class="good__btn btn btn_blue">
+										<span class="btn__good-icon">	
+											<svg>
+												<use xlink:href="img/sprite/sprite.svg#cart"/>
+											</svg>
+										</span>
+										В корзину
+									</button>
+						
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="catalog__col-5">
+						<article class="good catalog__good">
+							<a href="#" class="good__img">
+								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
+							</a>
+							<div class="good__info">
+								<p class="good__title-category">
+									Кофе и смеси
+								</p>
+								<a href="#" class="good__title-link">
+									<h2 class="good__title">
+										Кофе коста-рика трес милагрос
+									</h2>
+								</a>
+								<p class="good__descr">
+									Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических ...
+								</p>
+								<div class="good__bottom">
+									<p class="good__price">19 590 <span class="good__value">руб.</span></p>
+									
+									<button class="good__btn btn btn_blue">
+										<span class="btn__good-icon">	
+											<svg>
+												<use xlink:href="img/sprite/sprite.svg#cart"/>
+											</svg>
+										</span>
+										В корзину
+									</button>
+						
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<button class="catalog__more btn btn_more">
+					Загрузить еще
+					<span class="btn__more-icon">
+						<svg>
+							<use xlink:href="img/sprite/sprite.svg#load"/>
+						</svg>
+					</span>
+				</button>
+			</div>
+		</div>
+		
+
+	</div>
+
+
+	<footer class="footer">
+		<div class="footer__info">
+			<div class="footer__social">
+				<a href="#" class="footer__logo">
+					<img src="img/logo.svg" alt="Bonfuse" class="logo">
+				</a>
+				<ul class="footer__social-links social-links">
+					<li>
+						<a href="#" class="social-links__link">
+							<svg>
+								<use xlink:href="img/sprite/sprite.svg#vk"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="social-links__link">
+							<svg>
+								<use xlink:href="img/sprite/sprite.svg#inst"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="social-links__link">
+							<svg>
+								<use xlink:href="img/sprite/sprite.svg#facebook"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="social-links__link">
+							<svg>
+								<use xlink:href="img/sprite/sprite.svg#youtube"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+	
+			</div>
+			<div class="footer__info-group">
+				<div class="footer__info-item">
+					<span class="footer__info-title">Пишите:</span>
+					<span class="footer__info-contact">
+						info@bonfuse.ru
+					</span>
+				</div>
+				<div class="footer__info-item">
+					<span class="footer__info-title">Звоните:</span>
+					<span class="footer__info-contact">
+						+7 (495) 792 45 65
+					</span>
+					<span class="footer__info-contact">
+						+7 (926) 108-33-26‬
+					</span>
+				</div>
+				<div class="footer__info-item">
+					<span class="footer__info-title">Заходите в гости:</span>
+					<span class="footer__info-contact">
+						г. Москва, Тишинская площадь, дом 1, стр. 1, ТВК "Тишинка" 2 этаж
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer__nav">
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-header">Главная</h3>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">О нас</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">О кофе</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">В продаже</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Новости</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Акции</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-header">Услуги</h3>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Аренда оборудования</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Обучение</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Сервис</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-header">Кейсы</h3>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Все кейсы</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Новинки</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Популярные</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-header">О компании</h3>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Кто мы</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Сертификаты</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Оборудование</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-header">Блог</h3>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Новости компании</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Полезные статьи</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__nav-item">
+				<h3 class="footer__nav-header">Оптовикам</h3>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">В офис</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">HoReCaе</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Ритейл</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Стать дистребьютером</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-rights">
+				<span class="footer__bottom-text footer__bottom-copyright">© Bonfuse 2018 - все права защищены.</span>
+				<span class="footer__bottom-text">Копирование материалов сайта разрешено только при условии установки ссылки на первоисточник</span>
+			</div>
+			<div class="footer__bottom-policy">
+				<a href="#" class="footer__policy-link">
+					Пользовательское соглашение
+				</a>
+				<a href="#" class="footer__policy-link">
+					Политика конфиденциальности
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
