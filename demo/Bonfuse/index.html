@@ -1,264 +1,193 @@
 <!DOCTYPE html>
 <html lang="ru">
-<link rel="stylesheet" href="styles/style.css">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Bonfuse</title>
+	<link rel="stylesheet" href="styles/style.css">
+
 </head>
-<body class="page">
+<body class="page main-page">
 
-
-	<header class="header page__header">
-		<div class="header__top">
-			<a href="#" class="header__logo">
+	
+	<div class="header-fix">
+		
+		<div class="header-fix__content">
+			<div class="header-fix__hamburger">
+				<a href="#" class="hamburger">
+					<span class="hamburger__inner"></span>
+				</a>
+			</div>
+			<a href="#" class="header-fix__logo">
 				<img src="img/logo.svg" alt="Bonfuse" class="logo">
 			</a>
-			<div class="header__top-info">
-				<a href="tel:+74956655138" class="header__contact-item">
-					<span class="header__contact-icon">
-						<svg>
-							<use xlink:href="img/sprite/sprite.svg#phone"/>
-						</svg>
-					</span>
-					+7 (495) 66-55-138
-				</a>
-				<a href="tel:+73832000766" class="header__contact-item">
-					<span class="header__contact-icon">
-						<svg>
-							<use xlink:href="img/sprite/sprite.svg#phone"/>
-						</svg>
-					</span>
-					+7 (383) 200-07-66
-				</a>
-				<div class="header__contact-item">
-					<span class="header__contact-icon">
-						<svg>
-							<use xlink:href="img/sprite/sprite.svg#mail"/>
-						</svg>
-					</span>
-					info@bonfuse.ru
-				</div>
-			</div>
-		</div>
-		<div class="header__nav">
-			<a href="#" class="header__catalog">
-				Каталог продукции
+			<ul class="header-fix__nav">
+				<li class="header-fix__nav-item">
+					<a href="#" class="header-fix__nav-link">О нас</a>
+				</li>
+				<li class="header-fix__nav-item">
+					<a href="#" class="header-fix__nav-link">О кофе</a>
+				</li>
+				<li class="header-fix__nav-item">
+					<a href="#" class="header-fix__nav-link">В продаже</a>
+				</li>
+				<li class="header-fix__nav-item">
+					<a href="#" class="header-fix__nav-link">Акция</a>
+				</li>
+				<li class="header-fix__nav-item">
+					<a href="#" class="header-fix__nav-link">Новости</a>
+				</li>
+				<li class="header-fix__nav-item">
+					<a href="#" class="header-fix__nav-link">Контакты</a>
+				</li>
+			</ul>
+			<a href="#" class="btn header-fix__btn">
+				интернет - магазин
+				<span class="header-fix__btn-icon">
+					<svg>
+						<use xlink:href="img/sprite/sprite.svg#cart-arrow"/>
+					</svg>
+				</span>
 			</a>
-			<nav class="header__nav-block">
-				<ul class="header__nav-list">
-					<li class="header__nav-item">
-						<a href="#" class="header__nav-link">Главная</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="#" class="header__nav-link">Услуги</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="#" class="header__nav-link">Кейсы</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="#" class="header__nav-link">О компании</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="#" class="header__nav-link">Блог</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="#" class="header__nav-link">Оптовикам</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="#" class="header__nav-link">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__user-block">
-				<a href="#" class="header__search">
-					<svg>
-						<use xlink:href="img/sprite/sprite.svg#search"/>
-					</svg>
-				</a>
-				<a href="#" class="header__cart">
-					<span class="header__cart-count">
-						3
-					</span>
-					<svg>
-						<use xlink:href="img/sprite/sprite.svg#cart"/>
-					</svg>
-				</a>
-			</div>
 		</div>
-	</header>
-
-	<footer class="footer">
-		<div class="footer__info">
-			<div class="footer__social">
-				<a href="#" class="footer__logo">
-					<img src="img/logo.svg" alt="Bonfuse" class="logo">
-				</a>
-				<ul class="footer__social-links social-links">
-					<li>
-						<a href="#" class="social-links__link">
-							<svg>
-								<use xlink:href="img/sprite/sprite.svg#vk"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="social-links__link">
-							<svg>
-								<use xlink:href="img/sprite/sprite.svg#inst"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="social-links__link">
-							<svg>
-								<use xlink:href="img/sprite/sprite.svg#facebook"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="social-links__link">
-							<svg>
-								<use xlink:href="img/sprite/sprite.svg#youtube"/>
-							</svg>
-						</a>
-					</li>
-				</ul>
+		
 	
-			</div>
-			<div class="footer__info-group">
-				<div class="footer__info-item">
-					<span class="footer__info-title">Пишите:</span>
-					<span class="footer__info-contact">
-						info@bonfuse.ru
-					</span>
+	</div>
+
+	<ul class="social-fix social-links">
+		<li>
+			<a href="#" class="social-links__link">
+				<svg>
+					<use xlink:href="img/sprite/sprite.svg#vk"></use>
+				</svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="social-links__link">
+				<svg>
+					<use xlink:href="img/sprite/sprite.svg#inst"></use>
+				</svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="social-links__link">
+				<svg>
+					<use xlink:href="img/sprite/sprite.svg#facebook"></use>
+				</svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="social-links__link">
+				<svg>
+					<use xlink:href="img/sprite/sprite.svg#youtube"></use>
+				</svg>
+			</a>
+		</li>
+	</ul>
+
+	<div class="balloon balloon-move balloon-js"></div>
+	<div class="balloon-2 balloon-2-js"></div>
+	<div class="balloon-3 balloon-3-js"></div>
+	<div class="cloud cloud-move"></div>
+	<section class="section section-js">
+		<div class="section__container">
+			<div class="section__offer">
+				<div class="section__info">
+					<span class="section__subtitle">Производим и поставляем</span>
+					<h1 class="section__title">Кофе высочайшего качества</h1>
+					<p class="section__descr">Прекрасный кофе и итальянское оборудование «под ключ» для мощного роста продаж и выхода вашего бизнеса на новый уровень!</p>
 				</div>
-				<div class="footer__info-item">
-					<span class="footer__info-title">Звоните:</span>
-					<span class="footer__info-contact">
-						+7 (495) 792 45 65
-					</span>
-					<span class="footer__info-contact">
-						+7 (926) 108-33-26‬
-					</span>
+			</div>	
+			<div class="section__benefits">
+				<div class="section__benefit-item wow fadeInUp">
+					<h3 class="section__benefit-title">С 2014 года на рынке</h3>
+					<p class="section__benefit-descr">
+						На профессиональном рынке<br>производства и доставки кофе
+					</p>
 				</div>
-				<div class="footer__info-item">
-					<span class="footer__info-title">Заходите в гости:</span>
-					<span class="footer__info-contact">
-						г. Москва, Тишинская площадь, дом 1, стр. 1, ТВК "Тишинка" 2 этаж
-					</span>
+				<div class="section__benefit-item wow fadeInUp">
+					<h3 class="section__benefit-title">10 профессионалов в команде</h3>
+					<p class="section__benefit-descr">
+						- Дипломированные обжарщики<br>
+
+						- Бариста с международной сертификацией<br>
+
+						- Судьи национальных чемпионатов, прошедшие обучение по программе WCEP
+					</p>
+				</div>
+				<div class="section__benefit-item wow fadeInUp">
+					<h3 class="section__benefit-title">Производство до 100 тонн</h3>
+					<p class="section__benefit-descr">
+						Ежемесечная отгрузка свежеобжаренного кофе
+					</p>
+				</div>
+				<div class="section__benefit-item wow fadeInUp">
+					<h3 class="section__benefit-title">Rehm & Co</h3>
+					<p class="section__benefit-descr">
+						Мы являемся представителями одного из самых крупных кофейных трейдеров в мире
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="footer__nav">
-			<div class="footer__nav-item">
-				<h3 class="footer__nav-header">Главная</h3>
-				<ul class="footer__nav-list">
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">О нас</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">О кофе</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">В продаже</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Новости</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Акции</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Контакты</a>
-					</li>
-				</ul>
+	</section>
+	<section class="section-process">
+		<div class="section-process__container">
+			<div class="section-process__item wow fadeInUp">
+				<div class="section-process__item-img">
+					<img class="section-process__item-img_1" src="img/main-page/item-1.png" alt="Поиск зерна">
+				</div>
+				<div class="section-process__item-info">
+					<h3 class="section-process__item-title section-process__item-title_01">Поиск зерна</h3>
+					<p class="section-process__item-descr">
+						В поисках лучшего кофе мы путешествуем по всему миру. Мы преодолеваем тысячи километров, общаемся с десятками фермеров и дегустируем огромное количество образцов кофе, отбирая лучшие.
+					</p>
+				</div>
 			</div>
-			<div class="footer__nav-item">
-				<h3 class="footer__nav-header">Услуги</h3>
-				<ul class="footer__nav-list">
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Аренда оборудования</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Обучение</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Сервис</a>
-					</li>
-				</ul>
+			<div class="section-process__item wow fadeInUp">
+				<div class="section-process__item-img">
+					<img class="section-process__item-img_2" src="img/main-page/item-2.png" alt="Процесс обжарки">
+				</div>
+				<div class="section-process__item-info">
+					<h3 class="section-process__item-title section-process__item-title_02">Процесс обжарки</h3>
+					<p class="section-process__item-descr">
+						Мы используем самое современное европейское оборудование. Каждую партию (не более 60 кг за раз) мы бережно обжариваем по авторским рецептурам и немедленно упаковываем. Весь кофе обжаривается на заказ и сразу после этого отправляется к клиенту, это обеспечивает максимальную свежесть продукта.
+					</p>
+				</div>
 			</div>
-			<div class="footer__nav-item">
-				<h3 class="footer__nav-header">Кейсы</h3>
-				<ul class="footer__nav-list">
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Все кейсы</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Новинки</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Популярные</a>
-					</li>
-				</ul>
+			<div class="section-process__item wow fadeInUp">
+				<div class="section-process__item-img">
+					<img class="section-process__item-img_3" src="img/main-page/item-3.png" alt="Дегустация">
+				</div>
+				<div class="section-process__item-info">
+					<h3 class="section-process__item-title section-process__item-title_03">Дегустация</h3>
+					<p class="section-process__item-descr">
+						Ежедневно мы проводим дегустации кофе в собственной лаборатории. Качество прожарки, аромат и вкус кофе имеют для нас решающее значение.
+					</p>
+				</div>
 			</div>
-			<div class="footer__nav-item">
-				<h3 class="footer__nav-header">О компании</h3>
-				<ul class="footer__nav-list">
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Кто мы</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Сертификаты</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Оборудование</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__nav-item">
-				<h3 class="footer__nav-header">Блог</h3>
-				<ul class="footer__nav-list">
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Новости компании</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Полезные статьи</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__nav-item">
-				<h3 class="footer__nav-header">Оптовикам</h3>
-				<ul class="footer__nav-list">
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">В офис</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">HoReCaе</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Ритейл</a>
-					</li>
-					<li class="footer__nav-item">
-						<a href="#" class="footer__nav-link">Стать дистребьютером</a>
-					</li>
-				</ul>
+			<div class="section-process__item wow fadeInUp">
+				<div class="section-process__item-img">
+					<img class="section-process__item-img_2" src="img/main-page/item-2.png" alt="Стиль обжарки">
+				</div>
+				<div class="section-process__item-info">
+					<h3 class="section-process__item-title section-process__item-title_04">Стиль обжарки</h3>
+					<p class="section-process__item-descr">
+						Omni Философия данного стиля заключается в том, что кофе жарится, не привязываясь к определенному стилю заваривания (турка, фильтр кофемашина, кемекс и т.д.). В этом случае вкус кофе будет раскрываться максимально ярко, независимо от способа приготовления. Каждый моносорт и купаж жарится по своему индивидуальному рецепту.
+					</p>
+				</div>
 			</div>
 		</div>
-		<div class="footer__bottom">
-			<div class="footer__bottom-rights">
-				<span class="footer__bottom-text footer__bottom-copyright">© Bonfuse 2018 - все права защищены.</span>
-				<span class="footer__bottom-text">Копирование материалов сайта разрешено только при условии установки ссылки на первоисточник</span>
-			</div>
-			<div class="footer__bottom-policy">
-				<a href="#" class="footer__policy-link">
-					Пользовательское соглашение
-				</a>
-				<a href="#" class="footer__policy-link">
-					Политика конфиденциальности
-				</a>
-			</div>
-		</div>
-	</footer>
+	</section>
+
+	
+
+
+	
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
