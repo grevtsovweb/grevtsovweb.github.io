@@ -3760,8 +3760,7 @@
     transform: translateY(-700px); } }
 
 .hide-balloon {
-  -webkit-transform: translateY(-700px) !important;
-  transform: translateY(-700px) !important;
+  top: -100% !important;
   -webkit-transition: 2s ease-out;
   transition: 2s ease-out; }
 

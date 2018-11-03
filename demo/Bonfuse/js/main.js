@@ -80,11 +80,11 @@ $(function(){
 
 			balloon2.css('transform', 'translate(' + -200 + 'px' +',' + -1000 + 'px' + ')');
 			balloon3.css('transform', 'translate(' + 200 + 'px' +',' + -1000 + 'px' + ')');
-			balloon.removeClass('balloon-move');
+			
 			cloud.addClass('hide-cloud');
-			setTimeout(function(){
-				balloon.addClass('hide-balloon');
-			}, 20);
+			
+			balloon.addClass('hide-balloon');
+			
 			
 
 			/*balloon.addClass('hide-baloon');
@@ -96,7 +96,8 @@ $(function(){
 			balloon3.css('transform', 'scale(' + (1 - sectionOffset / 3000) + ')' + 'translateY(' + (-sectionOffset / 4) + 'px' + ')');
 			balloon.removeClass('hide-balloon');
 			cloud.removeClass('hide-cloud');
-			
+			balloon.removeClass('hide-balloon');
+
 		
 			
 			/*balloon.removeClass('hide-baloon');
