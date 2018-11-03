@@ -55,12 +55,27 @@ $(function(){
 	$(window).on('scroll', function(){
 
 		var sectionOffset = $(window).scrollTop(),
+			sectionOfferOffset = $('.section__offer').height() + 200,
 			sectionHeight = section.height();
 
 		/*balloon2.css('transform', 'scale(' + (1 - sectionOffset / 3000) + ')' + 'translateY(' + (-sectionOffset / 4) + 'px' + ')');
 
 		balloon3.css('transform', 'scale(' + (1 - sectionOffset / 3000) + ')' + 'translateY(' + (-sectionOffset / 4) + 'px' + ')');*/
 	
+		if( $(window).scrollTop() > sectionOfferOffset &&  $(window).scrollTop() < sectionHeight - 200){
+			$('.coffee-bean').addClass('coffee-bean-show');
+			$('.coffee-bean-1').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (-sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+			$('.coffee-bean-2').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (-sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+			$('.coffee-bean-3').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (-sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+			$('.coffee-bean-5').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (-sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+			$('.coffee-bean-8').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+			$('.coffee-bean-9').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+			$('.coffee-bean-10').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+			$('.coffee-bean-12').css({'transform': 'scale(' + (1 + sectionOffset / 3000) + ')' + 'translate(' + (sectionOffset / 10) + 'px' + ',' + (-sectionOffset / 100) + 'px' + ')', 'transition': '.3s ease-in'});
+		}else{
+			$('.coffee-bean').removeClass('coffee-bean-show');
+		}
+
 		if( $(window).scrollTop() > sectionHeight - 200){
 
 			balloon2.css('transform', 'translate(' + -200 + 'px' +',' + -1000 + 'px' + ')');
@@ -81,6 +96,7 @@ $(function(){
 			balloon3.css('transform', 'scale(' + (1 - sectionOffset / 3000) + ')' + 'translateY(' + (-sectionOffset / 4) + 'px' + ')');
 			balloon.removeClass('hide-balloon');
 			cloud.removeClass('hide-cloud');
+			
 		
 			
 			/*balloon.removeClass('hide-baloon');

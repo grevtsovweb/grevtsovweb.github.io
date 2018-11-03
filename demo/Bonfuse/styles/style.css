@@ -3768,6 +3768,106 @@
 .hide-cloud {
   display: none; }
 
+.coffee-bean-1 {
+  width: 95px;
+  height: 95px;
+  background: url("../img/main-page/coffe/1.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  top: 160px;
+  left: 65px;
+  z-index: 200; }
+
+.coffee-bean-2 {
+  width: 91px;
+  height: 112px;
+  background: url("../img/main-page/coffe/2.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  top: 250px;
+  left: 435px;
+  z-index: 200; }
+
+.coffee-bean-3 {
+  width: 76px;
+  height: 85px;
+  background: url("../img/main-page/coffe/3.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  top: 100px;
+  left: 550px;
+  z-index: 200; }
+
+.coffee-bean-5 {
+  width: 184px;
+  height: 231px;
+  background: url("../img/main-page/coffe/5.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  bottom: 10%;
+  left: 102px;
+  z-index: 200; }
+
+.coffee-bean-8 {
+  width: 69px;
+  height: 79px;
+  background: url("../img/main-page/coffe/8.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  top: 10%;
+  right: 380px;
+  z-index: 200; }
+
+.coffee-bean-9 {
+  width: 166px;
+  height: 230px;
+  background: url("../img/main-page/coffe/9.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  top: 20%;
+  right: -10px;
+  z-index: 200; }
+
+.coffee-bean-10 {
+  width: 91px;
+  height: 73px;
+  background: url("../img/main-page/coffe/10.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  top: 50%;
+  right: 30%;
+  z-index: 200; }
+
+.coffee-bean-12 {
+  width: 60px;
+  height: 84px;
+  background: url("../img/main-page/coffe/12.png") no-repeat center;
+  background-size: cover;
+  position: fixed;
+  bottom: 10%;
+  right: 50%;
+  z-index: 200; }
+
+.coffee-bean {
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  visibility: hidden;
+  opacity: 0; }
+
+.coffee-bean-show {
+  -webkit-transition: -webkit-transform .1s ease-in;
+  transition: -webkit-transform .1s ease-in;
+  transition: transform .1s ease-in;
+  transition: transform .1s ease-in, -webkit-transform .1s ease-in;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1; }
+
 @-webkit-keyframes bounce {
   from,
   20%,
