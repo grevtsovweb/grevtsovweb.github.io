@@ -3519,6 +3519,7 @@
     .section-process__item:not(:last-child) {
       margin-bottom: 70px; }
   .section-process__item-img {
+    position: relative;
     width: 52%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6331,6 +6332,67 @@
     animation: unset !important;
     -webkit-transition: none !important;
     transition: none !important; } }
+
+.video-btn {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer; }
+  .video-btn__inner {
+    width: 60px;
+    height: 60px;
+    background-color: #00ADFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%; }
+  .video-btn__icon {
+    width: 18px;
+    height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .video-btn__icon svg {
+      width: 100%;
+      height: 100%;
+      fill: #ffffff; }
+  .video-btn_green {
+    right: 30%;
+    top: 20%; }
+    .video-btn_green .video-btn__inner {
+      background-color: #538B28; }
+  .video-btn_yellow {
+    right: 76%;
+    top: 23%; }
+    .video-btn_yellow .video-btn__inner {
+      background-color: #FFCC6C; }
+    .video-btn_yellow .video-btn__icon svg {
+      fill: #552014; }
 
 .balloon {
   -webkit-transition: 2s ease-out;
