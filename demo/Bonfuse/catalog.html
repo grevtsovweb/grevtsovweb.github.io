@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-<link rel="stylesheet" href="styles/style.css">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Bonfuse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="page">
 	<header class="header page__header">
@@ -89,6 +91,61 @@
 			</div>
 		</div>
 	</header>
+
+	<div class="m-header">
+		<div class="m-header__content">
+			<div class="m-header__hamburger">
+				<a href="#" class="hamburger hamburger-js-m">
+					<span class="hamburger__inner"></span>
+				</a>
+			</div>
+			<div class="m-header__logo">
+				<img src="img/logo.svg" alt="Bonfuse" class="logo">
+			</div>
+			<a href="#" class="m-header__shop">
+				<span class="m-header__shop-icon">
+					<svg>
+						<use xlink:href="img/sprite/sprite.svg#cart-arrow"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+		<div class="m-header__dropdown m-header__dropdown-js">
+			<div class="m-header__dropdown-wrapper">
+				<div class="m-header__dropdown-inner">
+				<ul class="m-header__dropdown-list">
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Главная</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Услуги</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Кейсы</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">О компании</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Блог</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Оптовикам</a>
+					</li>
+				</ul>
+				<a href="mailto:info@bonfuse.ru" class="btn btn_blue m-header__btn">
+					info@bonfuse.ru
+				</a>
+				<a href="tel:+74957924565" class="btn btn_blue m-header__btn">
+					+7 (495) 792 45 65
+				</a>
+				<a href="tel:+79261083326‬" class="btn btn_blue m-header__btn">
+					+7 (926) 108-33-26‬
+				</a>
+				</div>
+			</div>
+		</div>
 	
 	<div class="page__content">
 		
@@ -103,21 +160,23 @@
 			</ul>
 		</div>
 		<div class="page__content-inner">
-			<h1 class="h1">
+			<h1 class="h1 h1_m">
 				Каталог
 			</h1>
 			<div class="catalog">
 				<div class="catalog__filter">
 					<div class="filter">
-						<div class="filter__select">
-							<select name="" id="">
-								<option value="По цене">По цене</option>
-							</select>
-						</div>
-						<div class="filter__select">
-							<select name="" id="">
-								<option value="По цене">По цене</option>
-							</select>
+						<div class="filter__wrap-m">
+							<div class="filter__select">
+								<select name="" id="">
+									<option value="По цене">По цене</option>
+								</select>
+							</div>
+							<div class="filter__select">
+								<select name="" id="">
+									<option value="По цене">По цене</option>
+								</select>
+							</div>
 						</div>
 						<input type="text" class="filter__search" placeholder="Поиск кофе">
 						<div class="filter__toggle">
@@ -135,7 +194,7 @@
 					</div>
 				</div>	
 				<div class="catalog__goods">
-					<div class="catalog__col-5">
+					<div class="catalog__col-5 catalog__col-md-10">
 						<article class="good catalog__good">
 							<a href="#" class="good__img">
 								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
@@ -168,7 +227,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="catalog__col-5">
+					<div class="catalog__col-5 catalog__col-md-10">
 						<article class="good catalog__good">
 							<a href="#" class="good__img">
 								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
@@ -201,7 +260,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="catalog__col-5">
+					<div class="catalog__col-5 catalog__col-md-10">
 						<article class="good catalog__good">
 							<a href="#" class="good__img">
 								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
@@ -234,7 +293,7 @@
 							</div>
 						</article>
 					</div>
-					<div class="catalog__col-5">
+					<div class="catalog__col-5 catalog__col-md-10">
 						<article class="good catalog__good">
 							<a href="#" class="good__img">
 								<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">

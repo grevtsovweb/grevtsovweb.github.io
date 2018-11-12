@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-<link rel="stylesheet" href="styles/style.css">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Bonfuse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="page">
 	<header class="header page__header">
@@ -89,6 +91,60 @@
 			</div>
 		</div>
 	</header>
+	<div class="m-header">
+		<div class="m-header__content">
+			<div class="m-header__hamburger">
+				<a href="#" class="hamburger hamburger-js-m">
+					<span class="hamburger__inner"></span>
+				</a>
+			</div>
+			<div class="m-header__logo">
+				<img src="img/logo.svg" alt="Bonfuse" class="logo">
+			</div>
+			<a href="#" class="m-header__shop">
+				<span class="m-header__shop-icon">
+					<svg>
+						<use xlink:href="img/sprite/sprite.svg#cart-arrow"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+		<div class="m-header__dropdown m-header__dropdown-js">
+			<div class="m-header__dropdown-wrapper">
+				<div class="m-header__dropdown-inner">
+				<ul class="m-header__dropdown-list">
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Главная</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Услуги</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Кейсы</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">О компании</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Блог</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Оптовикам</a>
+					</li>
+				</ul>
+				<a href="mailto:info@bonfuse.ru" class="btn btn_blue m-header__btn">
+					info@bonfuse.ru
+				</a>
+				<a href="tel:+74957924565" class="btn btn_blue m-header__btn">
+					+7 (495) 792 45 65
+				</a>
+				<a href="tel:+79261083326‬" class="btn btn_blue m-header__btn">
+					+7 (926) 108-33-26‬
+				</a>
+				</div>
+			</div>
+		</div>
 	
 		<div class="article-item">
 			<div class="article-item__banner">
@@ -105,7 +161,7 @@
 								</li>
 							</ul>
 						
-							<h1 class="h1">
+							<h1 class="h1 article-item__header-m">
 								Самая кофейная новость из всех кофейных
 							</h1>
 							<div class="article-item__info-inner">
@@ -141,7 +197,7 @@
 				<p>Итак, вот причины, которые могут простимулировать вас включить кофе (конечно, натуральный) в свое каждодневное меню:</p>
 				<p>Ваш метаболизм ускорится на 11%. Следовательно, вы похудеете и сможете, наконец, приобретать стильную и модную одежду. Например, Victoria Beckham одежда рассчитана, в основном, на миниатюрных дам, и, выпивая по чашечке кофе, вы скоро присоединитесь к их числу.<br> Ваша печень станет более здоровой. Потребление кофе доказано уменьшает риск развития цирроза на целых 80%, а рака печени – на 40%.<br>Думать станет легче. Нейроны мозга под воздействием кофеина и некоторых иных содержащихся в кофе веществ начинают работать быстрее, что улучшает мозговую деятельность. <br>Вы станете моложе. Нужные для омоложения и запуска процессов регенерации нутриенты и антиоксиданты тоже есть в кофе.</p>
 				<div class="article-item__gallery">
-					<div class="article-item__col-6">
+					<div class="article-item__col-6 article-item__col-md-10">
 						<img src="img/article-item/1.jpg" alt="Самая кофейная новость из всех кофейных" class="article-item__img">
 					</div>
 					<div class="article-item__gallery-column article-item__col-2">
@@ -169,11 +225,11 @@
 				<div class="popular__container">
 					<h2 class="h1">Похожие новости</h2>
 					<div class="blog__articles page__similar-news">
-						<div class="blog__col-5">
+						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img">
-										<img src="img/article.jpg" alt="Самая кофейная новость из всех кофейных">
+									<div class="article__img" style="background-image: url('../img/article.jpg');">
+										
 									</div>
 									<div class="article__info">
 										<h2 class="article__title">
@@ -186,11 +242,11 @@
 								</article>
 							</a>
 						</div>
-						<div class="blog__col-5">
+						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img">
-										<img src="img/article.jpg" alt="Самая кофейная новость из всех кофейных">
+									<div class="article__img" style="background-image: url('../img/article.jpg');">
+										
 									</div>
 									<div class="article__info">
 										<h2 class="article__title">
@@ -203,11 +259,11 @@
 								</article>
 							</a>
 						</div>
-						<div class="blog__col-5">
+						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img">
-										<img src="img/article.jpg" alt="Самая кофейная новость из всех кофейных">
+									<div class="article__img" style="background-image: url('../img/article.jpg');">
+										
 									</div>
 									<div class="article__info">
 										<h2 class="article__title">
@@ -220,11 +276,11 @@
 								</article>
 							</a>
 						</div>
-						<div class="blog__col-5">
+						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img">
-										<img src="img/article.jpg" alt="Самая кофейная новость из всех кофейных">
+									<div class="article__img" style="background-image: url('../img/article.jpg');">
+										
 									</div>
 									<div class="article__info">
 										<h2 class="article__title">

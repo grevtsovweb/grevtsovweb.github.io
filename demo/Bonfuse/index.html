@@ -4,7 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bonfuse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles/style.css">
+
 
 </head>
 <body class="page main-page">
@@ -14,7 +16,7 @@
 		
 		<div class="header-fix__content">
 			<div class="header-fix__hamburger">
-				<a href="#" class="hamburger">
+				<a href="#" class="hamburger hamburger-fix-js">
 					<span class="hamburger__inner"></span>
 				</a>
 			</div>
@@ -51,8 +53,108 @@
 			</a>
 		</div>
 		
+		<div class="header-fix__dropdown header-fix__dropdown-js">
+			<div class="header-fix__dropdown-container">
+				<div class="header-fix__dropdown-inner">
+					<ul class="header-fix__dropdown-menu">
+						<li class="header-fix__dropdown-item">
+							<a href="#" class="header-fix__dropdown-link">Главная</a>
+						</li>
+						<li class="header-fix__dropdown-item">
+							<a href="#" class="header-fix__dropdown-link">Услуги</a>
+						</li>
+						<li class="header-fix__dropdown-item">
+							<a href="#" class="header-fix__dropdown-link">Кейсы</a>
+						</li>
+						<li class="header-fix__dropdown-item">
+							<a href="#" class="header-fix__dropdown-link">О компании</a>
+						</li>
+						<li class="header-fix__dropdown-item">
+							<a href="#" class="header-fix__dropdown-link">Блог</a>
+						</li>
+						<li class="header-fix__dropdown-item">
+							<a href="#" class="header-fix__dropdown-link">Оптовикам</a>
+						</li>
+					</ul>
+					<ul class="header-fix__dropdown-info">
+						<li class="header-fix__dropdown-info-item">
+							<span class="header-fix__info-title">Пишите нам:</span>
+							<p class="header-fix__info-descr">info@bonfuse.ru</p>
+						</li>
+						<li class="header-fix__dropdown-info-item">
+							<span class="header-fix__info-title">Звоните нам:</span>
+							<p class="header-fix__info-descr">+7 (495) 792 45 65</p>
+							<p class="header-fix__info-descr">+7 (926) 108-33-26‬</p>
+						</li>
+						<li class="header-fix__dropdown-info-item">
+							<span class="header-fix__info-title">Заходите в гости:</span>
+							<p class="header-fix__info-descr">г. Москва, Тишинская площадь, дом&nbsp;1,&nbsp;стр.&nbsp;1, ТВК "Тишинка" 2 этаж</p>
+						</li>
+					</ul>
+					<div class="header-fix__dropdown-map">
+						
+					</div>
+				</div>
+			</div>
+	
+		</div>
 	
 	</div>
+	<div class="m-header m-header_transparent">
+		<div class="m-header__content">
+			<div class="m-header__hamburger">
+				<a href="#" class="hamburger hamburger-js-m">
+					<span class="hamburger__inner"></span>
+				</a>
+			</div>
+			<div class="m-header__logo">
+				<img src="img/logo.svg" alt="Bonfuse" class="logo">
+			</div>
+			<a href="#" class="m-header__shop">
+				<span class="m-header__shop-icon">
+					<svg>
+						<use xlink:href="img/sprite/sprite.svg#cart-arrow"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+	
+	<div class="m-header__dropdown m-header__dropdown-js">
+			<div class="m-header__dropdown-wrapper">
+				<div class="m-header__dropdown-inner">
+				<ul class="m-header__dropdown-list">
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Главная</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Услуги</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Кейсы</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">О компании</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Блог</a>
+					</li>
+					<li class="m-header__dropdown-item">
+						<a href="#" class="m-header__dropdown-link">Оптовикам</a>
+					</li>
+				</ul>
+				<a href="mailto:info@bonfuse.ru" class="btn btn_blue m-header__btn">
+					info@bonfuse.ru
+				</a>
+				<a href="tel:+74957924565" class="btn btn_blue m-header__btn">
+					+7 (495) 792 45 65
+				</a>
+				<a href="tel:+79261083326‬" class="btn btn_blue m-header__btn">
+					+7 (926) 108-33-26‬
+				</a>
+				</div>
+			</div>
+		</div>
 
 	<ul class="social-fix social-links">
 		<li>
@@ -155,19 +257,8 @@
 	<section class="section-process">
 		<div class="section-process__container">
 			<div class="section-process__item wow fadeInUp" data-wow-offset="100">
-				<div class="section-process__item-img">
-					<div class="video-btn video-btn_green">
-						<div class="video-btn__inner">
-							<span class="video-btn__icon">
-								<svg>
-									<use xlink:href="img/sprite/sprite.svg#video-btn"></use>
-								</svg>
-							</span>
-						</div>
-					</div>
-					<img class="section-process__item-img_1" src="img/main-page/item-1.png" alt="Поиск зерна">
-				</div>
-				<div class="section-process__item-info">
+				<div class="section-process__item-info ">
+					<img class="section-process__item-img" src="img/main-page/item-1.png" alt="Поиск зерна" width="187px" height="163px">
 					<h3 class="section-process__item-title section-process__item-title_01">Поиск зерна</h3>
 					<p class="section-process__item-descr">
 						В поисках лучшего кофе мы путешествуем по всему миру. Мы преодолеваем тысячи километров, общаемся с десятками фермеров и дегустируем огромное количество образцов кофе, отбирая лучшие.
@@ -175,19 +266,8 @@
 				</div>
 			</div>
 			<div class="section-process__item wow fadeInUp" data-wow-offset="100">
-				<div class="section-process__item-img">
-					<div class="video-btn video-btn_yellow">
-						<div class="video-btn__inner">
-							<span class="video-btn__icon">
-								<svg>
-									<use xlink:href="img/sprite/sprite.svg#video-btn"></use>
-								</svg>
-							</span>
-						</div>
-					</div>
-					<img class="section-process__item-img_2" src="img/main-page/item-2.png" alt="Процесс обжарки">
-				</div>
-				<div class="section-process__item-info">
+				<div class="section-process__item-info section-process__item-info_2">
+					<img class="section-process__item-img" src="img/main-page/item-2.png" alt="Процесс обжарки" width="176px" height="152px">
 					<h3 class="section-process__item-title section-process__item-title_02">Процесс обжарки</h3>
 					<p class="section-process__item-descr">
 						Мы используем самое современное европейское оборудование. Каждую партию (не более 60 кг за раз) мы бережно обжариваем по авторским рецептурам и немедленно упаковываем. Весь кофе обжаривается на заказ и сразу после этого отправляется к клиенту, это обеспечивает максимальную свежесть продукта.
@@ -195,10 +275,8 @@
 				</div>
 			</div>
 			<div class="section-process__item wow fadeInUp" data-wow-offset="100">
-				<div class="section-process__item-img">
-					<img class="section-process__item-img_3" src="img/main-page/item-3.png" alt="Дегустация">
-				</div>
-				<div class="section-process__item-info">
+				<div class="section-process__item-info section-process__item-info_3">
+					<img class="section-process__item-img" src="img/main-page/item-3.png" alt="Процесс обжарки" width="159px" height="168px">
 					<h3 class="section-process__item-title section-process__item-title_03">Дегустация</h3>
 					<p class="section-process__item-descr">
 						Ежедневно мы проводим дегустации кофе в собственной лаборатории. Качество прожарки, аромат и вкус кофе имеют для нас решающее значение.
@@ -206,10 +284,8 @@
 				</div>
 			</div>
 			<div class="section-process__item wow fadeInUp" data-wow-offset="100">
-				<div class="section-process__item-img">
-					<img class="section-process__item-img_2" src="img/main-page/item-2.png" alt="Стиль обжарки">
-				</div>
-				<div class="section-process__item-info">
+				<div class="section-process__item-info section-process__item-info_4">
+					<img class="section-process__item-img" src="img/main-page/item-4.png" alt="Процесс обжарки" width="156px" height="152px">
 					<h3 class="section-process__item-title section-process__item-title_04" data-wow-offset="100">Стиль обжарки</h3>
 					<p class="section-process__item-descr">
 						Omni Философия данного стиля заключается в том, что кофе жарится, не привязываясь к определенному стилю заваривания (турка, фильтр кофемашина, кемекс и т.д.). В этом случае вкус кофе будет раскрываться максимально ярко, независимо от способа приготовления. Каждый моносорт и купаж жарится по своему индивидуальному рецепту.
@@ -218,7 +294,118 @@
 			</div>
 		</div>
 	</section>
-	<div class="section-slider">
+	<div class="hit-slider">
+		<div class="hit-slider__container">
+			<h1 class="h1">Популярные позиции <a href="#" class="section-slider__header-link">магазина</a></h1>
+			<a href="#" class="section-slider__link">
+				<svg>
+					<use xlink:href="img/sprite/sprite.svg#goods-table"></use>
+				</svg>
+			</a>
+			<div class="hit-slider__content hit-slider__content-1">
+				<div class="hit-slider__item">
+					<article class="good">
+						<a href="#" class="good__img">
+							<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
+						</a>
+						<div class="good__info">
+							<p class="good__title-category">
+								Кофе и смеси
+							</p>
+							<a href="#" class="good__title-link">
+								<h2 class="good__title">
+									Кофе коста-рика трес милагрос
+								</h2>
+							</a>
+							<p class="good__descr">
+								Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических ...
+							</p>
+							<div class="good__bottom">
+								<p class="good__price">19 590 <span class="good__value">руб.</span></p>
+								
+								<button class="good__btn btn btn_blue">
+									<span class="btn__good-icon">	
+										<svg>
+											<use xlink:href="img/sprite/sprite.svg#cart"/>
+										</svg>
+									</span>
+									В корзину
+								</button>
+					
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="hit-slider__item">
+					<article class="good">
+						<a href="#" class="good__img">
+							<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
+						</a>
+						<div class="good__info">
+							<p class="good__title-category">
+								Кофе и смеси
+							</p>
+							<a href="#" class="good__title-link">
+								<h2 class="good__title">
+									Кофе коста-рика трес милагрос
+								</h2>
+							</a>
+							<p class="good__descr">
+								Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических ...
+							</p>
+							<div class="good__bottom">
+								<p class="good__price">19 590 <span class="good__value">руб.</span></p>
+								
+								<button class="good__btn btn btn_blue">
+									<span class="btn__good-icon">	
+										<svg>
+											<use xlink:href="img/sprite/sprite.svg#cart"/>
+										</svg>
+									</span>
+									В корзину
+								</button>
+					
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="hit-slider__item">
+					<article class="good">
+						<a href="#" class="good__img">
+							<img src="img/good-1.jpg" alt="Кофе коста-рика трес милагрос">
+						</a>
+						<div class="good__info">
+							<p class="good__title-category">
+								Кофе и смеси
+							</p>
+							<a href="#" class="good__title-link">
+								<h2 class="good__title">
+									Кофе коста-рика трес милагрос
+								</h2>
+							</a>
+							<p class="good__descr">
+								Кофейное дерево — вечнозеленый кустарник или дерево, естественно произрастающее в тропических ...
+							</p>
+							<div class="good__bottom">
+								<p class="good__price">19 590 <span class="good__value">руб.</span></p>
+								
+								<button class="good__btn btn btn_blue">
+									<span class="btn__good-icon">	
+										<svg>
+											<use xlink:href="img/sprite/sprite.svg#cart"/>
+										</svg>
+									</span>
+									В корзину
+								</button>
+					
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="section-slider">
 		<div class="section-slider__container">
 			<h1 class="h1">Популярные позиции <a href="#" class="section-slider__header-link">магазина</a></h1>
 			<a href="#" class="section-slider__link">
@@ -328,7 +515,100 @@
 				</div>
 			</div>
 		</div>	
-	</div>
+	</div> -->
+	<section class="section-offer">
+		<div class="section-offer__container">
+			<div class="section-offer__inner">
+				<div class="section-offer__item">
+					<img src="img/main-page/offer-1.jpg" alt="Бьем любую цену в России" class="section-offer__img">
+					<span class="section-offer__subtitle">В россии</span>
+					<p class="section-offer__title">Бьем любую цену</p>
+					<p class="section-offer__descr">
+						Присылайте нам цену по которой вы покупает кофе, какой кофе и ежемесячный объем и мы сделаем вам предложение выгоднее
+					</p>
+					<button class="btn btn_blue btn_rounded section-offer__btn">принять участие в акции</button>
+				</div>
+				<div class="section-offer__item">
+					<img src="img/main-page/offer-2.jpg" alt="Бьем любую цену в России" class="section-offer__img">
+					<span class="section-offer__subtitle">Доставка по москве и МО</span>
+					<p class="section-offer__title">Бесплатно</p>
+					<p class="section-offer__descr">
+						При заказе от 1 500 руб. доставка по москве и Московской области бесплатно.
+					</p>
+					<button class="btn btn_blue btn_rounded section-offer__btn">Заказать сейчас</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="banner-ad">
+		<div class="banner-ad__inner">
+			<div class="banner-ad__container">
+				<div class="banner-ad__content">
+					<div class="banner-ad__img">
+						<img src="img/main-page/blend.png" alt="Эксклюзивный Бленд">
+					</div>
+					<div class="banner-ad__info">
+						<span class="banner-ad__subtitle">
+							готовится Всего один раз в неделю
+						</span>
+						<h3 class="banner-ad__title">
+							Эксклюзивный Бленд
+						</h3>
+						<ul class="banner-ad__benefits">
+							<li class="banner-ad__benefits-item banner-ad__benefits-item_1">
+								<span class="banner-ad__icon">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#rate-star" />
+									</svg>
+								</span>
+								<p class="banner-ad__benefits-text">
+									Качество 90 из 100
+								</p>
+							</li>
+							<li class="banner-ad__benefits-item banner-ad__benefits-item_2">
+								<span class="banner-ad__icon">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#rate-star" />
+									</svg>
+								</span>
+								<p class="banner-ad__benefits-text">
+									Эксклюзивность, не комерческий сорт
+								</p>
+							</li>
+							<li class="banner-ad__benefits-item banner-ad__benefits-item_3">
+								<span class="banner-ad__icon">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#rate-star" />
+									</svg>
+								</span>
+								<p class="banner-ad__benefits-text">
+									За год собирается всего 50 мешков
+								</p>
+							</li>
+						</ul>
+						<div class="banner-ad__toggles">
+							<button class="btn banner-ad__btn">
+								<span class="banner-ad__btn-icon">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#cart-arrow" />
+									</svg>
+								</span>
+								Заказать сейчас
+							</button>
+							<a href="#" class="banner-ad__link">
+								Узнать подробнее 
+								<span class="banner-ad__link-icon">
+									<svg>
+										<use xlink:href="img/sprite/sprite.svg#link-next" />
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<div class="section-slider section-slider_article">
 		<div class="section-slider__container">
 			<h1 class="h1">Последние <a href="#" class="section-slider__header-link">новости</a></h1>
@@ -341,8 +621,8 @@
 				<div class="section-slider__slider-item">
 					<a href="#" class="article">
 						<article class="article__content">
-							<div class="article__img">
-								<img src="img/article.jpg" alt="Самая кофейная новость из всех кофейных">
+							<div class="article__img" style="background-image: url('../img/article.jpg');">
+								
 							</div>
 							<div class="article__info">
 								<h2 class="article__title">
@@ -358,8 +638,8 @@
 				<div class="section-slider__slider-item">
 					<a href="#" class="article">
 						<article class="article__content">
-							<div class="article__img">
-								<img src="img/article.jpg" alt="Самая кофейная новость из всех кофейных">
+							<div class="article__img" style="background-image: url('../img/article.jpg');">
+								
 							</div>
 							<div class="article__info">
 								<h2 class="article__title">
@@ -375,8 +655,8 @@
 				<div class="section-slider__slider-item">
 					<a href="#" class="article">
 						<article class="article__content">
-							<div class="article__img">
-								<img src="img/article.jpg" alt="Самая кофейная новость из всех кофейных">
+							<div class="article__img" style="background-image: url('../img/article.jpg');">
+								
 							</div>
 							<div class="article__info">
 								<h2 class="article__title">
@@ -391,7 +671,7 @@
 				</div>
 			</div>
 		</div>	
-	</div>
+	</div> 
 
 	
 

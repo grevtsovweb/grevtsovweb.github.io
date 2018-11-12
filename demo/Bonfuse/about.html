@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="page">
+<body class="page page__about">
 	<header class="header page__header">
 		<div class="header__top">
 			<a href="#" class="header__logo">
@@ -91,8 +91,7 @@
 			</div>
 		</div>
 	</header>
-
-	<div class="m-header">
+	<div class="m-header m-header_transparent">
 		<div class="m-header__content">
 			<div class="m-header__hamburger">
 				<a href="#" class="hamburger hamburger-js-m">
@@ -111,7 +110,8 @@
 			</a>
 		</div>
 	</div>
-		<div class="m-header__dropdown m-header__dropdown-js">
+	
+	<div class="m-header__dropdown m-header__dropdown-js">
 			<div class="m-header__dropdown-wrapper">
 				<div class="m-header__dropdown-inner">
 				<ul class="m-header__dropdown-list">
@@ -146,60 +146,177 @@
 				</div>
 			</div>
 		</div>
-	
-	<div class="page__content page__contacts">
-		
-		<div class="page__breadcrumbs">
-			<ul class="breadcrumbs">
-				<li class="breadcrumbs__item">
-					<a href="#" class="breadcrumbs__link">Главная</a>
-				</li>
-				<li class="breadcrumbs__item">
-					<a href="#" class="breadcrumbs__link">Каталог</a>
-				</li>
-			</ul>
-		</div>
-		<div class="page__content-inner">
-			<h1 class="h1">
-				Контакты
-			</h1>
-			<div class="contacts">				
-				<div class="contacts__col-4 contacts__col-sm-10">
-					<div class="contacts__item">
-						<span class="contacts__item-title">Пишите нам:</span>
-						<p class="contacts__item-text">info@bonfuse.ru</p>
+
+	<div class="about">
+		<div class="about__top">
+			<div class="about__container">
+				<div class="about__content">
+					<div class="about__top-logo">
+						<img src="img/about/logo.svg" alt="Bonfuse">
 					</div>
-					<div class="contacts__item">
-						<span class="contacts__item-title">Звоните нам:</span>
-						<p class="contacts__item-text">+7 (495) 792 45 65</p>
-						<p class="contacts__item-text">+7 (926) 108-33-26</p>
-					</div>
-					<div class="contacts__item">
-						<span class="contacts__item-title">Заходите в гости:</span>
-						<p class="contacts__item-text">г. Москва, Тишинская площадь, дом 1, стр. 1, ТВК "Тишинка" 2 этаж</p>
+					<p class="about__top-subtitle">
+						КАЧЕСТВЕННЫЙ КОФЕ НАПРЯМУЮ ОТ ПРОИЗВОДИТЕЛЯ
+					</p>
+					<div class="about__top-arrow">
+						
 					</div>
 				</div>
-				<div class="contacts__col-6">
-					<h2 class="h1">Есть вопросы? <span class="h1_gray">Напишите нам.</span></h2>
-					<form class="form contacts__form">
-						<input class="form__input form__col-5" name="name" type="text"  placeholder="Ваше имя">
-						<input class="form__input form__col-5" name="phone" type="text"  placeholder="Наименование организации">
-						<input class="form__input form__col-5" name="mail" type="phone"  placeholder="Ваш телефон">
-						<input class="form__input form__col-5" name="name" type="text"  placeholder="E-mail">
-						<input class="form__input" name="name" type="text"  placeholder="Суть вопроса ...">
-						<button class="btn btn__submit form__submit_size_l" type="submit" >Все готово, отправляй</button>
-					</form>
-				</div>
-				
 			</div>
 		</div>
-		
-		<div class="page__map">
-			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae842a0d8edc81287dc151e3c3fe3032626ac842123b39da93760e81e307dd066&amp;source=constructor" width="100%" height="410" frameborder="0"></iframe>
+		<div class="about__benefits-container">
+			<div class="about__benefits">
+				<div class="about__col-5 about__col-sm-10">
+					<div class="about__benefits-item">
+						<img width="42px" height="42px" src="img/about/confetti.svg" alt="" class="about__benefits-icon">
+						<div class="about__benefits-info">
+							<p class="about__benefits-title">
+								С 2014 года<br>на&nbsp;рынке
+							</p>
+							<p class="about__benefits-descr">
+								На профессиональном рынке производства и доставки кофе
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="about__col-5 about__col-sm-10">
+					<div class="about__benefits-item">
+						<img width="42px" height="42px" src="img/about/professional.svg" alt="" class="about__benefits-icon">
+						<div class="about__benefits-info">
+							<p class="about__benefits-title">
+								10 профессионалов в&nbsp;команде
+							</p>
+							<ul class="about__benefits-list">
+								<li class="about__benefits-list-item">
+									Дипломированные обжарщики
+								</li>
+								<li class="about__benefits-list-item">
+									Бариста с международной сертификацией
+								</li>
+								<li class="about__benefits-list-item">
+									Судьи национальных чемпионатов, 
+								  прошедшие обучение по программе WCEP
+								</li>
+							</ul>
+							<p class="about__benefits-desct">
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="about__col-5 about__col-sm-10">
+					<div class="about__benefits-item">
+						<img width="42px" height="42px" src="img/about/mass-production.svg" alt="" class="about__benefits-icon">
+						<div class="about__benefits-info">
+							<p class="about__benefits-title">
+								Производство до 100&nbsp;тонн
+							</p>
+							<p class="about__benefits-descr">
+								Ежемесечная отгрузка<br>свежеобжаренного кофе
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="about__col-5 about__col-sm-10">
+					<div class="about__benefits-item">
+						<img width="38px" height="38px" src="img/about/contract.svg" alt="" class="about__benefits-icon">
+						<div class="about__benefits-info">
+							<p class="about__benefits-title">
+								Rehm & Co
+							</p>
+							<p class="about__benefits-descr">
+								Мы являемся представителями одного из самых крупных кофейных трейдеров в мире
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
+	</div>
+	
+	<div class="section-sertificate">
+		<div class="section-sertificate__item">
+			<img src="img/about/sertificate-1.jpg" alt="">
+		</div>
+		<div class="section-sertificate__item">
+			<img src="img/about/sertificate-2.jpg" alt="">
+		</div>
 	</div>
 
+	<div class="section-equipment">
+		
+		<div class="section-equipment__container">
+			<h3 class="section-equipment__header">
+				Наше оборудование
+			</h3>
+			<div class="section-equipment__inner">
+				<div class="section-equipment__col-5 section-equipment__col-md-10">
+					<div class="section-equipment__item section-equipment__item_1">
+						<h4 class="section-equipment__item-header">
+							Качественное оборудование
+						</h4>
+						<p class="section-equipment__item-descr">
+							Мы используем только немецкое оборудование
+						</p>
+					</div>
+				</div>
+				<div class="section-equipment__col-5 section-equipment__col-md-10">
+					<div class="section-equipment__item">
+						<h4 class="section-equipment__item-header">
+							Полная автоматизация
+						</h4>
+						<p class="section-equipment__item-descr">
+							Полная автоматизация позволяет производить кофе на одном уровне качества
+						</p>
+					</div>
+				</div>
+				<div class="section-equipment__col-5 section-equipment__col-md-10">
+					<div class="section-equipment__item">
+						<h4 class="section-equipment__item-header">
+							Производительность 200 кг в час
+						</h4>
+						<p class="section-equipment__item-descr">
+							При такой производительности мы сможем выполнить любой объем работ в поставленый срок
+						</p>
+					</div>
+				</div>
+				<div class="section-equipment__col-5 section-equipment__col-md-10">
+					<div class="section-equipment__item">
+						<h4 class="section-equipment__item-header">
+							Экологичность
+						</h4>
+						<p class="section-equipment__item-descr">
+							Наше оборудование экологичное, так как само удаляет камни и примеси при работе
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section-form section-form_about">
+		<div class="section-form__container">
+			<h3 class="section-form__header section-form__header_about">
+				Есть вопросы?
+			</h3>
+			<p class="section-form__subheader section-form__subheader_about">
+				Озадайте свои вопросы нашему ген директору
+			</p>
+			<form class="form">
+					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="name" type="text" placeholder="Ваше имя">
+					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="phone" type="text" placeholder="Компания">
+					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="mail" type="text" placeholder="E-mail">
+					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="name" type="phone" placeholder="Ваш телефон">
+					<input class="form__input section-form__input form__col-xs-10" name="name" type="text" placeholder="Сопроводительное письмо">
+					<div class="form__row">
+						<div class="stage__form-checkbox">
+							<input id="checkbox-politics" type="checkbox" name="checkbox-politics" checked="">
+							<label for="checkbox-politics" class="section-form__checkbox">Принимаю условия публичной оферты <br>и даю согласие на обработку персональных данных</label>	
+						</div>
+						<button class="btn btn__submit section-form__button form__col-5 form__col-xs-10" type="submit">Отправить</button>
+					</div>
+					
+				</form>
+		</div>
+	</div>
 
 	<footer class="footer">
 		<div class="footer__info">
@@ -373,6 +490,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
