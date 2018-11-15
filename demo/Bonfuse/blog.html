@@ -56,6 +56,17 @@
 					</li>
 					<li class="header__nav-item">
 						<a href="#" class="header__nav-link">Услуги</a>
+						<ul class="header__nav-dropdown">
+							<li class="header__nav-dropdown-item">
+								<a href="#" class="header__nav-dropdown-link">Услуга 1</a>
+							</li>
+							<li class="header__nav-dropdown-item">
+								<a href="#" class="header__nav-dropdown-link">Услуга 1</a>
+							</li>
+							<li class="header__nav-dropdown-item">
+								<a href="#" class="header__nav-dropdown-link">Услуга 1</a>
+							</li>
+						</ul>
 					</li>
 					<li class="header__nav-item">
 						<a href="#" class="header__nav-link">Кейсы</a>
@@ -162,29 +173,34 @@
 				<h1 class="h1">
 					Кофейные новости
 				</h1>
-				<div class="blog">
+				<div class="blog blog_offset">
 					<div class="blog__filter">
 						<div class="filter">
 							<div class="filter__wrap-m">
 								<div class="filter__select">
+									
 									<select name="" id="">
-										<option value="По цене">По цене</option>
+										<option value="" style="display:none;" >Категории</option>
+										<option value="По цене">Кофе</option>
+										<option value="По цене">Чай</option>
 									</select>
 								</div>
 								<div class="filter__select">
 									<select name="" id="">
-										<option value="По цене">По цене</option>
+										<option value="По цене" style="display:none;">Сортировка</option>
+										<option value="По цене">Дешевле</option>
+										<option value="По цене">Дороже</option>
 									</select>
 								</div>
 							</div>
 							<input type="text" class="filter__search" placeholder="Поиск кофе">
 							<div class="filter__toggle">
-								<div class="filter__toggle-item filter__toggle-item_active">
+								<div class="filter__toggle-item  toggle-row-js">
 									<svg>
 										<use xlink:href="img/sprite/sprite.svg#goods-line"/>
 									</svg>
 								</div>
-								<div class="filter__toggle-item ">
+								<div class="filter__toggle-item toggle-block-js filter__toggle-item_active">
 									<svg>
 										<use xlink:href="img/sprite/sprite.svg#goods-table"/>
 									</svg>
@@ -196,7 +212,7 @@
 						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img" style="background-image: url('../img/article.jpg');">
+									<div class="article__img" style="background-image: url('img/article.jpg');">
 										
 									</div>
 									<div class="article__info">
@@ -213,7 +229,7 @@
 						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img" style="background-image: url('../img/article.jpg');">
+									<div class="article__img" style="background-image: url('img/article.jpg');">
 										
 									</div>
 									<div class="article__info">
@@ -230,7 +246,7 @@
 						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img" style="background-image: url('../img/article.jpg');">
+									<div class="article__img" style="background-image: url('img/article.jpg');">
 										
 									</div>
 									<div class="article__info">
@@ -247,7 +263,7 @@
 						<div class="blog__col-5 blog__col-sm-10">
 							<a href="#" class="article">
 								<article class="article__content">
-									<div class="article__img" style="background-image: url('../img/article.jpg');">
+									<div class="article__img" style="background-image: url('img/article.jpg');">
 										
 									</div>
 									<div class="article__info">

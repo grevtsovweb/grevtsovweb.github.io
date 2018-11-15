@@ -56,6 +56,17 @@
 					</li>
 					<li class="header__nav-item">
 						<a href="#" class="header__nav-link">Услуги</a>
+						<ul class="header__nav-dropdown">
+							<li class="header__nav-dropdown-item">
+								<a href="#" class="header__nav-dropdown-link">Услуга 1</a>
+							</li>
+							<li class="header__nav-dropdown-item">
+								<a href="#" class="header__nav-dropdown-link">Услуга 1</a>
+							</li>
+							<li class="header__nav-dropdown-item">
+								<a href="#" class="header__nav-dropdown-link">Услуга 1</a>
+							</li>
+						</ul>
 					</li>
 					<li class="header__nav-item">
 						<a href="#" class="header__nav-link">Кейсы</a>
@@ -301,16 +312,17 @@
 				Озадайте свои вопросы нашему ген директору
 			</p>
 			<form class="form">
-					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="name" type="text" placeholder="Ваше имя">
+					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="name" type="text" placeholder="Представьтесь">
 					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="phone" type="text" placeholder="Компания">
+					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="name" type="phone" placeholder="+7(___) ___-__-__">
 					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="mail" type="text" placeholder="E-mail">
-					<input class="form__input section-form__input form__col-5 form__col-xs-10" name="name" type="phone" placeholder="Ваш телефон">
-					<input class="form__input section-form__input form__col-xs-10" name="name" type="text" placeholder="Сопроводительное письмо">
+
+				
+					
+					<textarea class="form__textarea section-form__input form__col-xs-10" name="name" rows="3" placeholder="Ваш вопрос..."></textarea>
 					<div class="form__row">
-						<div class="stage__form-checkbox">
-							<input id="checkbox-politics" type="checkbox" name="checkbox-politics" checked="">
-							<label for="checkbox-politics" class="section-form__checkbox">Принимаю условия публичной оферты <br>и даю согласие на обработку персональных данных</label>	
-						</div>
+						<input type="file" name="file" id="upload"  data-multiple-caption="{count} файл выбран" multiple class="offer-button inputfile hide">
+						<label for="upload"><span>Прикрепить файл</span></label>	
 						<button class="btn btn__submit section-form__button form__col-5 form__col-xs-10" type="submit">Отправить</button>
 					</div>
 					
@@ -493,6 +505,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
