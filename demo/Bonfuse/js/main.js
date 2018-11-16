@@ -3,6 +3,35 @@ $(function(){
 	$('input[type=phone]').mask('+7 (999) 999-99-99');
 
 
+	if($(window).width() < 992){
+
+		$(window).on('scroll', function(){
+
+			if($(window).scrollTop() > 100){
+
+				$('.m-header').addClass('m-header_fix');
+			}else{
+				$('.m-header').removeClass('m-header_fix');	
+			}		
+		});	
+	}
+
+
+	if(!($('page').hasClass('main-page')) && $(window).width() > 992){
+
+		$(window).on('scroll', function(){
+
+			if($(window).scrollTop() > 100){
+				$('.header-fix').addClass('header-fix_white header-fix_show');
+			}else{
+				$('.header-fix').removeClass('header-fix_white header-fix_show');
+			}
+
+		});
+	}
+
+
+
 	$('.toggle-row-js').on('click', function(e){
 
 		e.preventDefault();
