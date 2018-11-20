@@ -8233,7 +8233,11 @@
       display: none; } }
   .banner-ad__inner {
     padding: 80px 0 90px;
-    background-color: #69CFFF; }
+    background-color: #69CFFF;
+    background-image: url("../img/banner/banner-ad-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
   .banner-ad__container {
     max-width: 1070px;
     padding-left: 30px;
