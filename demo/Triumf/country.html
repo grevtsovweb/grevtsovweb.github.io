@@ -9,7 +9,7 @@
 
 
 </head>
-<body class="page">
+<body class="page page-js">
 
 	<header class="header">
 		
@@ -25,7 +25,27 @@
 		<nav class="header__nav">
 			<ul class="header__nav-list">
 				<li class="header__nav-item">
-					<a href="#" class="header__nav-link">Категории</a>
+					<a href="#" class="header__nav-link">Категории </a>
+					<ul class="header__nav-inner">
+						<li>
+							<a href="#">Туры заграницу</a>
+						</li>
+						<li>
+							<a href="#">Туры по России</a>
+						</li>
+						<li>
+							<a href="#">Туры в Коломну</a>
+						</li>
+						<li>
+							<a href="#">Автобусом из Коломны</a>
+						</li>
+						<li>
+							<a href="#">Школьные эксурсии</a>
+						</li>
+						<li>
+							<a href="#">Корпоративы</a>
+						</li>
+					</ul>
 				</li>
 				<li class="header__nav-item">
 					<a href="#" class="header__nav-link">Отзывы</a>
@@ -55,27 +75,47 @@
 			</p>
 		</div>
 		<div class="header__m-nav">
-			<span class="hamburger header__humburger">
+			<span class="hamburger header__humburger hamburger-js">
 				<span class="hamburger__inner"></span>
 			</span>
 		</div>
 	</header>
 
-	<div class="m-menu">
+	<div class="m-menu m-menu-js">
 		<div class="m-menu__inner">
-			<div class="m-menu__close">
+			<div class="m-menu__close m-menu__close-js">
 				<div class="close">
 					
 				</div>
 			</div>
 			<ul class="m-menu__list">
 				<li class="m-menu__list-item m-menu__list-item-btn">
-					<button class="btn m-menu__btn">
+					<button class="btn m-menu__btn btn__popup-js">
 						Заказать звонок
 					</button>
 				</li>
 				<li class="m-menu__list-item">
-					<a href="#" class="m-menu__list-link">Категории</a>
+					<a href="#" class="m-menu__list-link m-menu__list-link-js">Категории <span class="m-menu__list-link-arrow"></span></a>
+					<ul class="m-menu__list-inner m-menu__list-inner-js">
+						<li>
+							<a href="#">Туры заграницу</a>
+						</li>
+						<li>
+							<a href="#">Туры по России</a>
+						</li>
+						<li>
+							<a href="#">Туры в Коломну</a>
+						</li>
+						<li>
+							<a href="#">Автобусом из Коломны</a>
+						</li>
+						<li>
+							<a href="#">Школьные эксурсии</a>
+						</li>
+						<li>
+							<a href="#">Корпоративы</a>
+						</li>
+					</ul>
 				</li>
 				<li class="m-menu__list-item">
 					<a href="#" class="m-menu__list-link">Отзывы</a>
@@ -134,6 +174,29 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="popup-overlay popup-js">
+		<div class="popup-wrapper">
+			<div class="popup">
+				<div class="popup__close popup__close-js"></div>
+				<div class="popup__inner">
+					<h3 class="popup__header">
+						Заказать звонок
+					</h3>
+					<p class="popup__descr">
+						Введите ваши данные и наши менеджеры свяжутся с вами в ближайшее время
+					</p>
+					<form action="mail.php" method="post" class="form popup__form form-js">
+						<label for="popup__name" class="popup__label">Ваше имя</label>
+						<input id="popup__name" type="text" class="form__input popup__input" placeholder="Ваше имя" name="name">
+						<label for="popup__phone" class="popup__label">Ваш телефон</label>
+						<input id="popup__phone" type="phone" class="form__input popup__input" placeholder="Ваш телефон" required="required" name="phone">
+						<input type="submit" class="btn btn_orange popup__btn" value="Заказать">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<div class="section-header section-header_country" style="background-image: url('img/country.jpg');">
 		<div class="section-header__container">
@@ -171,7 +234,7 @@
 				<h5 class="banner__title text__title">
 					Подберем для вас наиболее подходящий тур
 				</h5>
-				<button class="btn text__btn">
+				<button class="btn text__btn btn__popup-js">
 					Подобрать тур
 				</button>
 			</div>
@@ -249,7 +312,7 @@
 								</span>
 								+7 (985) 500-90-60
 							</a>
-							<button class="btn footer__btn">Заказать звонок</button>
+							<button class="btn footer__btn btn__popup-js">Заказать звонок</button>
 						</div>
 						<div class="footer__social-links">
 							<span class="footer__social-title">Мы в соц. сетях</span>
@@ -289,6 +352,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 	
 </body>
 
