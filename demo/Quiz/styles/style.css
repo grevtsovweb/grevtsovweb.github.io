@@ -369,6 +369,9 @@
       @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 460px), screen and (min-resolution: 144dpi) and (max-width: 460px) {
         .body-slides li:nth-child(1) {
           background-image: url("../img/bg/bg-1x3-m.jpg"); } }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px) and (min-width: 767px), screen and (min-resolution: 144dpi) and (max-width: 1024px) and (min-width: 767px) {
+        .body-slides li:nth-child(1) {
+          background-image: url("../img/bg/bg-1x2-tablet.jpg"); } }
     .body-slides li:nth-child(2) {
       background-image: url("../img/bg/bg-2.jpg");
       -webkit-animation-delay: 6.0s;
@@ -379,6 +382,9 @@
       @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 460px), screen and (min-resolution: 144dpi) and (max-width: 460px) {
         .body-slides li:nth-child(2) {
           background-image: url("../img/bg/bg-2x3-m.jpg"); } }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px) and (min-width: 767px), screen and (min-resolution: 144dpi) and (max-width: 1024px) and (min-width: 767px) {
+        .body-slides li:nth-child(2) {
+          background-image: url("../img/bg/bg-2x2-tablet.jpg"); } }
     .body-slides li:nth-child(3) {
       background-image: url("../img/bg/bg-3.jpg");
       -webkit-animation-delay: 12.0s;
@@ -389,6 +395,9 @@
       @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 460px), screen and (min-resolution: 144dpi) and (max-width: 460px) {
         .body-slides li:nth-child(3) {
           background-image: url("../img/bg/bg-3x3-m.jpg"); } }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px) and (min-width: 767px), screen and (min-resolution: 144dpi) and (max-width: 1024px) and (min-width: 767px) {
+        .body-slides li:nth-child(3) {
+          background-image: url("../img/bg/bg-3x2-tablet.jpg"); } }
     .body-slides li:nth-child(4) {
       background-image: url("../img/bg/bg-4.jpg");
       -webkit-animation-delay: 18.0s;
@@ -399,6 +408,9 @@
       @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 460px), screen and (min-resolution: 144dpi) and (max-width: 460px) {
         .body-slides li:nth-child(4) {
           background-image: url("../img/bg/bg-4x3-m.jpg"); } }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px) and (min-width: 767px), screen and (min-resolution: 144dpi) and (max-width: 1024px) and (min-width: 767px) {
+        .body-slides li:nth-child(4) {
+          background-image: url("../img/bg/bg-4x2-tablet.jpg"); } }
     .body-slides li:nth-child(5) {
       background-image: url("../img/bg/bg-5.jpg");
       -webkit-animation-delay: 24.0s;
@@ -409,6 +421,9 @@
       @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 460px), screen and (min-resolution: 144dpi) and (max-width: 460px) {
         .body-slides li:nth-child(5) {
           background-image: url("../img/bg/bg-5x3-m.jpg"); } }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px) and (min-width: 767px), screen and (min-resolution: 144dpi) and (max-width: 1024px) and (min-width: 767px) {
+        .body-slides li:nth-child(5) {
+          background-image: url("../img/bg/bg-5x2-tablet.jpg"); } }
     .body-slides li:nth-child(6) {
       background-image: url("../img/bg/bg-6.jpg");
       -webkit-animation-delay: 30.0s;
@@ -419,6 +434,9 @@
       @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 460px), screen and (min-resolution: 144dpi) and (max-width: 460px) {
         .body-slides li:nth-child(6) {
           background-image: url("../img/bg/bg-6x3-m.jpg"); } }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px) and (min-width: 767px), screen and (min-resolution: 144dpi) and (max-width: 1024px) and (min-width: 767px) {
+        .body-slides li:nth-child(6) {
+          background-image: url("../img/bg/bg-6x2-tablet.jpg"); } }
     .body-slides li:nth-child(7) {
       background-image: url("../img/bg/bg-7.jpg");
       -webkit-animation-delay: 36.0s;
@@ -429,6 +447,9 @@
       @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 460px), screen and (min-resolution: 144dpi) and (max-width: 460px) {
         .body-slides li:nth-child(7) {
           background-image: url("../img/bg/bg-7x3-m.jpg"); } }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1024px) and (min-width: 767px), screen and (min-resolution: 144dpi) and (max-width: 1024px) and (min-width: 767px) {
+        .body-slides li:nth-child(7) {
+          background-image: url("../img/bg/bg-7x2-tablet.jpg"); } }
 
 @-webkit-keyframes animate-slide {
   0% {
