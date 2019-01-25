@@ -24,6 +24,9 @@
   color: #ffffff;
   overflow-x: hidden;
   overflow-y: hidden; }
+  @media screen and (max-height: 700px) {
+    .page {
+      overflow-y: auto; } }
   @media screen and (max-width: 992px) {
     .page {
       overflow-y: auto; } }
