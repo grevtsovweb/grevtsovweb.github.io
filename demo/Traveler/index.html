@@ -5,6 +5,8 @@
 	<title>Traveler</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload" href="fonts/MuseoSansCyrlRegular/MuseoSansCyrlRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/MuseoSansCyrlSemibold/MuseoSansCyrlSemibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
 </head>
 <body class="page">
@@ -135,18 +137,18 @@
 				</svg>
 			</div>
 			<nav class="main-header__nav">
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="main-header__nav_item text-light">Туры</a>
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="main-header__nav_item text-light">Горячие путевки</a>
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="main-header__nav_item text-light">Новости</a>
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="main-header__nav_item text-light">Контакты</a>
+				<a href="404.html" class="main-header__nav_item text-light">Туры</a>
+				<a href="404.html" class="main-header__nav_item text-light">Горячие путевки</a>
+				<a href="404.html" class="main-header__nav_item text-light">Новости</a>
+				<a href="404.html" class="main-header__nav_item text-light">Контакты</a>
 			</nav>
 			<div class="user-block">
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="user-block__item login-user">
+				<a href="404.html" class="user-block__item login-user">
 					<svg width="20" height="20">
 						<use xlink:href='#user'/>
 					</svg>
 				</a>
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="user-block__item search-form">
+				<a href="404.html" class="user-block__item search-form">
 					<svg width="20" height="20">
 						<use xlink:href='#search'/>
 					</svg>
@@ -161,10 +163,10 @@
 		</header>
 		<div class="mobile-nav">
 			<nav class="mobile-nav-container">
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="mobile-nav__item text-light">Туры</a>
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="mobile-nav__item text-light">Горячие путевки</a>
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="mobile-nav__item text-light">Новости</a>
-				<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="mobile-nav__item text-light">Контакты</a>
+				<a href="404.html" class="mobile-nav__item text-light">Туры</a>
+				<a href="404.html" class="mobile-nav__item text-light">Горячие путевки</a>
+				<a href="404.html" class="mobile-nav__item text-light">Новости</a>
+				<a href="404.html" class="mobile-nav__item text-light">Контакты</a>
 			</nav>
 			<div class="mobile-nav__close"></div>
 		</div>
@@ -174,7 +176,11 @@
 			</svg>
 		</div>
 		<div class="main-offer__image">
-			<img src="img/main-offer-mount.png" alt="">
+			<picture>
+				<source type="image/webp" srcset="img/main-offer-mount.webp 1x" srcset="img/main-offer-mount@2x.webp 2x"></source>
+				<img src="img/main-offer-mount.png" srcset="img/main-offer-mount@2x.png 2x" alt="Изображение гор">
+			</picture>
+			
 		</div>
 	</section>
 	<section class="routes">
@@ -182,9 +188,12 @@
 			<h1 class="header text-dark header_margin-bottom_80">Наши маршруты</h1>
 			<div class="card-flex">
 				<div class="card card_normal">
-					<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="card-wrapper">
+					<a href="404.html" class="card-wrapper">
 						<div class="card__image">
-							<img src="img/card_1.jpg" alt="Байкал">
+							<picture>
+								<source type="image/webp" srcset="img/card_1.webp 1x" srcset="img/card_1@2x.webp 2x"></source>
+								<img src="img/card_1.jpg" srcset="img/card_1@2x.jpg 2x" alt="Байкал">
+							</picture>
 						</div>
 						<div class="card__descr">
 							<h4 class="card__header">Байкал</h4>
@@ -193,9 +202,12 @@
 					</a>
 				</div>
 				<div class="card card_normal">
-					<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="card-wrapper">
+					<a href="404.html" class="card-wrapper">
 						<div class="card__image">
-							<img src="img/card_2.jpg" alt="Гималаи">
+							<picture>
+								<source type="image/webp" srcset="img/card_2.webp 1x" srcset="img/card_2@2x.webp 2x"></source>
+								<img src="img/card_2.jpg" srcset="img/card_2@2x.jpg 2x" alt="Гималаи">
+							</picture>
 						</div>
 						<div class="card__descr">
 							<h4 class="card__header">Гималаи</h4>
@@ -204,9 +216,12 @@
 					</a>
 				</div>
 				<div class="card card_normal">
-					<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="card-wrapper">
+					<a href="404.html" class="card-wrapper">
 						<div class="card__image">
-							<img src="img/card_3.jpg" alt="Йеллоустон">
+							<picture>
+								<source type="image/webp" srcset="img/card_3.webp 1x" srcset="img/card_3@2x.webp 2x"></source>
+								<img src="img/card_3.jpg" srcset="img/card_3@2x.jpg 2x" alt="Йеллоустон">
+							</picture>
 						</div>
 						<div class="card__descr">
 							<h4 class="card__header">Йеллоустон</h4>
@@ -231,14 +246,17 @@
 				</div>
 				<div class="form__mountain scene_js">
 					<div class="scene-cloud parallax_js" data-offset="50"></div>
-					<img src="img/form-mountain.png" alt="">
+					<picture>
+						<source type="image/webp" srcset="img/form-mountain.webp 1x" srcset="img/form-mountain@2x.webp 2x"></source>
+						<img src="img/form-mountain.png" srcset="img/form-mountain@2x.png 2x" alt="Горный хребет">
+					</picture>
 				</div>
 			</form>
 			
 		</div>
 	</section>
 	<footer class="main-footer">
-		<div class="main-footer-logo-container">
+		<div class="main-footer__logo-container">
 			<div class="logo">
 				<svg width="136" height="20">
 					<use xlink:href='#logo'/>
@@ -247,14 +265,14 @@
 				©2018, Traveler Ltd.
 			</div>
 		</div>
-		<div class="main-footer-link-container">
-			<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="main-footer__link text-light">
+		<div class="main-footer__link-container">
+			<a href="404.html" class="main-footer__link text-light">
 			Политика конфеденциальности
 			</a>
-			<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="main-footer__link text-light">
+			<a href="404.html" class="main-footer__link text-light">
 				Новости
 			</a>
-			<a href="https://grevtsovweb.github.io/demo/Traveler/404.html" class="main-footer__link text-light">
+			<a href="404.html" class="main-footer__link text-light">
 				Контакты
 			</a>
 		</div>
