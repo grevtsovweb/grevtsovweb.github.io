@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>123</title>
+	<title>Bitia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="preload" href="fonts/PoppinsLight/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -13,21 +13,21 @@
 		<div class="header__inner">
 			<div class="header__top">
 				<div class="header__logo">
-					<a href="#" class="logo">
-						<img src="img/logo.png" alt="Логотип">
-					</a>
+					<div class="logo">
+						<img src="img/logo.png" alt="Bitia">
+					</div>
 				</div>
 				<div class="header__nav">
 					<nav class="main-nav" aria-label="Основное меню">
 						<ul class="main-nav__list">
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Benefits</a>
+								<a href="#benefits" class="main-nav__link">Benefits</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Service</a>
+								<a href="#service" class="main-nav__link">Service</a>
 							</li>
 							<li class="main-nav__item">
-								<a href="#" class="main-nav__link">Contacts</a>
+								<a href="#contacts" class="main-nav__link">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -42,7 +42,7 @@
 						+ 7 (123) 456 78 91
 					</a>
 				</div>
-				<button class="header__burger burger-js">
+				<button class="header__burger burger-js" title="Главное меню">
 					<div class="burger">
 						<div></div>
 					</div>
@@ -76,9 +76,16 @@
 				<img src="img/table.svg" alt="Table">
 			</picture>
 		</div>
+		<a href="#contacts" class="anchor header__anchor">
+			<div>
+				<svg aria-hidden="true">
+					<use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+		</a>
 	</header>
 
-	<div class="benefit-section">
+	<section id="benefits" class="benefit-section">
 		<div class="benefit-section__inner">
 			<div class="benefit-section__image benefit-section__col">
 				<picture>
@@ -96,8 +103,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="comprehension-section">
+	</section>
+	<section class="comprehension-section">
 		<div class="comprehension-section__inner">
 			<div class="comprehension-section__col comprehension-section__col_left">
 				<div class="comprehension-section__text text">
@@ -115,31 +122,26 @@
 				</picture>
 			</div>
 		</div>
-	</div>
-	<div class="features">
+	</section>
+	<section id="service" class="features">
 		<div class="features__inner">
-			<p class="features__item features__item_web-dev">
-				<!-- <img src="img/note.svg" alt="Web Development" class="feature__item-img"> -->
+			<h3 class="features__item features__item_web-dev">
 				Web Development
-			</p>
-			<p class="features__item features__item_mob-dev">
-				<!-- <img src="img/mobile-dev.svg" alt="Mobile Development" class="feature__item-img"> -->
+			</h3>
+			<h3 class="features__item features__item_mob-dev">
 				Mobile Development
-			</p>
-			<p class="features__item features__item_business">
-				<!-- <img src="img/mackbook.svg" alt="Business Automation" class="feature__item-img"> -->
+			</h3>
+			<h3 class="features__item features__item_business">
 				Business Automation
-			</p>
+			</h3>
 		</div>
-	</div>
-	<div class="contact-section">
+	</section>
+	<footer id="contacts" class="contact-section">
 		<div class="contact-section__inner">
 			<div class="contact-section__col">
 				<div class="contact-section__map">
-					<img src="img/Exclude.svg" class="contact-section__map-canvas">
-					
+					<img src="img/Exclude.svg" class="contact-section__map-canvas">					
 					<div id="map"></div>
-					<!-- <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3482121291!2d36.82510136628262!3d55.581524357416235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1549007624291" height="740" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 				</div>
 			</div>
 			<div class="contact-section__col">
@@ -152,7 +154,7 @@
 						</span>
 						Russian Federation, Moscow
 					</p>
-					<a href="tel:+71234567891" class="contact">
+					<a href="tel:+79164783829" class="contact">
 						<span class="contact-section__contact-icon contact-section__contact-icon_phone">
 							<svg aria-hidden="true">
 								<use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
@@ -171,21 +173,21 @@
 					<div class="contact-section__social">
 						<ul class="social-links">
 							<li>
-								<a href="#" class="social-links__link social-links__link_skype contact-section__social-link">
+								<a href="skype:live:bitia-ru?call" class="social-links__link social-links__link_skype contact-section__social-link" title="Наш Скайп">
 									<svg aria-hidden="true">
 										<use xlink:href="img/sprite/sprite.svg#icon-skype"></use>
 									</svg>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="social-links__link social-links__link_telegram contact-section__social-link">
+								<a href="https://t.me/bitia_ru" class="social-links__link social-links__link_telegram contact-section__social-link" title="Наш Телеграм">
 									<svg aria-hidden="true">
 										<use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
 									</svg>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="social-links__link social-links__link_whatsup contact-section__social-link">
+								<a href="https://api.whatsapp.com/send?phone=79164783829" class="social-links__link social-links__link_whatsup contact-section__social-link" title="Наш Вотсап">
 									<svg aria-hidden="true">
 										<use xlink:href="img/sprite/sprite.svg#icon-whatsup"></use>
 									</svg>
@@ -196,15 +198,15 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 
-	<button class="call-button">
-		<div class="call-button__icon">
+	<a href="#" class="call-button" title="Кнопка обратного звонка" title="Ссылка на секцию">
+		<span class="call-button__icon">
 			<svg aria-hidden="true">
 				<use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
 			</svg>
-		</div>
-	</button>
+		</span>
+	</a>
 
 <script>
 	function initMap() {
@@ -223,38 +225,10 @@
 	        });
 	}
 </script>
-
 	
-
-
-
-	<script>
-
-		document.addEventListener('DOMContentLoaded', function(){
-			var burger = document.querySelector('.burger-js');
-			var mobileMenu = document.querySelector('.mobile-menu-js');
-			var page = document.querySelector('.page-js');
-
-			burger.addEventListener('click', function(e){
-
-				e.preventDefault();
-
-				if(mobileMenu.classList.contains('header__mobile-menu_active')){
-					mobileMenu.classList.remove('header__mobile-menu_active');
-					page.classList.remove('page_unscrollable');
-				}else{
-					mobileMenu.classList.add('header__mobile-menu_active');
-					page.classList.add('page_unscrollable');
-				}
-				
-			});
-
-
-		});
-
-	</script>
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXygnvGVOK9KLXOLOWd9q09mWG1gIW8fs&callback=initMap"
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXygnvGVOK9KLXOLOWd9q09mWG1gIW8fs&callback=initMap"
     async defer></script> 
 </body>
 </html>
