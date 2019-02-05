@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Bitia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="preload" href="fonts/PoppinsLight/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/PoppinsMedium/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+<body class="page page-js">
+	<header class="header">
+		<div class="header__menu">
+			<div class="header__menu-inner">
+				<div class="header__logo">
+					<div class="logo">
+						<img src="img/logo.png" alt="Bitia">
+					</div>
+				</div>
+				<div class="header__nav">
+					<nav class="main-nav" aria-label="Основное меню">
+						<ul class="main-nav__list">
+							<li class="main-nav__item">
+								<a href="#benefits" class="main-nav__link">Benefits</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#service" class="main-nav__link">Service</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#contacts" class="main-nav__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__contact">
+					<a href="tel:+71234567891" class="contact">
+						<span class="contact__icon">
+							<svg aria-hidden="true">
+								<use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
+							</svg>
+						</span>
+						+ 7 (123) 456 78 91
+					</a>
+				</div>
+				<button class="header__burger burger-js" title="Главное меню">
+					<div class="burger">
+						<div></div>
+					</div>
+				</button>
+			</div>
+		</div>
+		<div class="header__inner">
+			<div class="header__col">
+				<div class="header__text">
+					<div class="text">
+						<h1 class="text__title">Simplicity</h1>
+						<p class="text__subtitle">Simplifying everything as much as possible, but not more.</p>
+					</div>
+				</div>
+			</div>
+			<div class="header__col">
+				<div class="header__img">
+					<picture>
+						<source media="(max-width: 750px)" srcset="img/table-m.svg">
+						<img src="img/table.svg" alt="Table">
+					</picture>
+				</div>	
+			</div>
+		</div>
+		<div class="header__mobile-menu mobile-menu-js">
+			<div class="header__mobile-menu-inner">
+				<ul class="header__m-list">
+					<li class="header__m-list-item">
+						<a href="#" class="header__m-list-link">Benefits</a>
+					</li>
+					<li class="header__m-list-item">
+						<a href="#" class="header__m-list-link">Service</a>
+					</li>
+					<li class="header__m-list-item">
+						<a href="#" class="header__m-list-link">Contacts</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a href="#contacts" class="anchor header__anchor">
+			<div>
+				<svg aria-hidden="true">
+					<use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+				</svg>
+			</div>
+		</a>
+	</header>
+
+	<section id="benefits" class="benefit-section">
+		<div class="benefit-section__inner">
+			<div class="benefit-section__col">
+				<div class="benefit-section__image">
+					<picture>
+						<source media="(max-width: 750px)" srcset="img/notebook-m.svg">
+						<img src="img/notebook.svg" alt="Notebook">
+					</picture>
+				</div>
+			</div>
+			<div class="benefit-section__col">
+				<div class="benefit-section__text">
+					<div class="text">
+						<h2 class="text__title">
+							Variability
+						</h2>
+						<p class="text__subtitle">Not being encompassed by narrow-minded conclusions. Presenting on every platform. Working with everything.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="comprehension-section">
+		<div class="comprehension-section__inner">
+			<div class="comprehension-section__col comprehension-section__col_left">
+				<div class="comprehension-section__text">
+					<div class="text">
+						<h2 class="text__title">
+							Comprehension
+						</h2>
+						<p class="text__subtitle">Uniting intuitive acumen and mathematical precision of analysis.</p>
+					</div>
+				</div>
+			</div>
+			<div class="comprehension-section__col">
+				<div class="comprehension-section__image">
+					<picture>
+						<source media="(max-width: 750px)" srcset="img/brain-m.svg">
+						<img src="img/brain.svg" alt="Brain">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="service" class="features">
+		<div class="features__inner">
+			<div class="features__item">
+				<div class="features__item-img">
+					<img src="img/note.svg" alt="Web Development" class="features__item-img">
+				</div>
+				<h3 class="features__item-title">Web Development</h3>
+			</div>
+			<div class="features__item">
+				<div class="features__item-img">
+					<img src="img/mobile-dev.svg" alt="Mobile Development" class="features__item-img">
+				</div>
+				<h3 class="features__item-title">Mobile Development</h3>
+			</div>
+			<div class="features__item">
+				<div class="features__item-img">
+					<img src="img/mackbook.svg" alt="Business Automation">
+				</div>
+				<h3 class="features__item-title">Business Automation</h3>
+			</div>
+		</div>
+	</section>
+	<footer id="contacts" class="contact-section">
+		<div class="contact-section__inner">
+			<div class="contact-section__col">
+				<div class="contact-section__map">
+					<img src="img/Exclude.svg" class="contact-section__map-canvas">					
+					<div id="map"></div>
+				</div>
+			</div>
+			<div class="contact-section__col">
+				<div class="contact-section__info">
+					<p class="contact">
+						<span class="contact-section__contact-icon contact-section__contact-icon_place">
+							<svg aria-hidden="true">
+								<use xlink:href="img/sprite/sprite.svg#icon-place"></use>
+							</svg>
+						</span>
+						Russian Federation, Moscow
+					</p>
+					<a href="tel:+79164783829" class="contact">
+						<span class="contact-section__contact-icon contact-section__contact-icon_phone">
+							<svg aria-hidden="true">
+								<use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
+							</svg>
+						</span>
+						+7 (916) 478 38 29
+					</a>
+					<p class="contact">
+						<span class="contact-section__contact-icon contact-section__contact-icon_mail">
+							<svg aria-hidden="true">
+								<use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
+							</svg>
+						</span>
+						contact@bitia.ru
+					</p>
+					<div class="contact-section__social">
+						<ul class="social-links">
+							<li>
+								<a href="skype:live:bitia-ru?call" class="social-links__link social-links__link_skype contact-section__social-link" title="Наш Скайп">
+									<svg aria-hidden="true">
+										<use xlink:href="img/sprite/sprite.svg#icon-skype"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://t.me/bitia_ru" class="social-links__link social-links__link_telegram contact-section__social-link" title="Наш Телеграм">
+									<svg aria-hidden="true">
+										<use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://api.whatsapp.com/send?phone=79164783829" class="social-links__link social-links__link_whatsup contact-section__social-link" title="Наш Вотсап">
+									<svg aria-hidden="true">
+										<use xlink:href="img/sprite/sprite.svg#icon-whatsup"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" class="call-button" title="Кнопка обратного звонка" title="Ссылка на секцию">
+		<span class="call-button__icon">
+			<svg aria-hidden="true">
+				<use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
+			</svg>
+		</span>
+	</a>
+
+<script>
+	function initMap() {
+	    var coordinates = {lat: 55.756843, lng: 37.622632},
+
+	        map = new google.maps.Map(document.getElementById('map'), {
+	            center: coordinates,
+	            zoom: 15,
+	            styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+	        }),
+
+	        marker = new google.maps.Marker({
+	            position: coordinates,
+	            map: map,
+	            icon: 'img/place.png'
+	        });
+	}
+</script>
+	
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXygnvGVOK9KLXOLOWd9q09mWG1gIW8fs&callback=initMap"
+    async defer></script> 
+</body>
+</html>
