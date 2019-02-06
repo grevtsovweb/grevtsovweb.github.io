@@ -1,6 +1,6 @@
 $(function() {
-    $(".main-nav").on("click","a", scrolling);
-    $(".header").on("click",".anchor", scrolling);
+    $(".menu__link").on("click","a", scrolling);
+    $(".section").on("click",".anchor", scrolling);
 
     function scrolling(e){
         e.preventDefault();

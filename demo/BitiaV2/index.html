@@ -9,30 +9,31 @@
 	<link rel="preload" href="fonts/PoppinsMedium/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body class="page page-js">
-	<header class="header">
-		<div class="header__menu">
-			<div class="header__menu-inner">
-				<div class="header__logo">
+	<header class="section section_header">
+	
+		<div class="menu">
+			<div class="menu__inner">
+				<div class="menu__logo">
 					<div class="logo">
 						<img src="img/logo.png" alt="Bitia">
 					</div>
 				</div>
-				<div class="header__nav">
-					<nav class="main-nav" aria-label="Основное меню">
-						<ul class="main-nav__list">
-							<li class="main-nav__item">
-								<a href="#benefits" class="main-nav__link">Benefits</a>
+				<div class="menu__nav">
+					<nav class="menu__main-nav" aria-label="Main menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#benefits" class="menu__link">Benefits</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#service" class="main-nav__link">Service</a>
+							<li class="menu__item">
+								<a href="#service" class="menu__link">Service</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#contacts" class="main-nav__link">Contacts</a>
+							<li class="menu__item">
+								<a href="#contacts" class="menu__link">Contacts</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="header__contact">
+				<div class="menu__contact">
 					<a href="tel:+71234567891" class="contact">
 						<span class="contact__icon">
 							<svg aria-hidden="true">
@@ -42,29 +43,24 @@
 						+ 7 (123) 456 78 91
 					</a>
 				</div>
-				<button class="header__burger burger-js" title="Главное меню">
+				<button class="menu__burger burger-js" title="Главное меню">
 					<div class="burger">
 						<div></div>
 					</div>
 				</button>
 			</div>
 		</div>
-		<div class="header__inner">
-			<div class="header__col">
-				<div class="header__text">
+		<div class="section__container section__container_header">
+			<div class="section__col">
+				<div class="section__text section__text_left">
 					<div class="text">
 						<h1 class="text__title">Simplicity</h1>
 						<p class="text__subtitle">Simplifying everything as much as possible, but not more.</p>
 					</div>
 				</div>
 			</div>
-			<div class="header__col">
-				<div class="header__img">
-					<picture>
-						<source media="(max-width: 750px)" srcset="img/table-m.svg">
-						<img src="img/table.svg" alt="Table">
-					</picture>
-				</div>	
+			<div class="section__col">
+				
 			</div>
 		</div>
 		<div class="header__mobile-menu mobile-menu-js">
@@ -91,18 +87,15 @@
 		</a>
 	</header>
 
-	<section id="benefits" class="benefit-section">
-		<div class="benefit-section__inner">
-			<div class="benefit-section__col">
-				<div class="benefit-section__image">
-					<picture>
-						<source media="(max-width: 750px)" srcset="img/notebook-m.svg">
-						<img src="img/notebook.svg" alt="Notebook">
-					</picture>
+	<section id="benefits" class="section section_benefit">
+		<div class="section__container">
+			<div class="section__col">
+				<div class="image image_benefit">
+					
 				</div>
 			</div>
-			<div class="benefit-section__col">
-				<div class="benefit-section__text">
+			<div class="section__col">
+				<div class="section__text section__text_right">
 					<div class="text">
 						<h2 class="text__title">
 							Variability
@@ -113,10 +106,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="comprehension-section">
-		<div class="comprehension-section__inner">
-			<div class="comprehension-section__col comprehension-section__col_left">
-				<div class="comprehension-section__text">
+	<section class="section section_comprehension">
+		<div class="section__container">
+			<div class="section__col">
+				<div class="section__text section__text_left">
 					<div class="text">
 						<h2 class="text__title">
 							Comprehension
@@ -125,50 +118,53 @@
 					</div>
 				</div>
 			</div>
-			<div class="comprehension-section__col">
-				<div class="comprehension-section__image">
-					<picture>
-						<source media="(max-width: 750px)" srcset="img/brain-m.svg">
-						<img src="img/brain.svg" alt="Brain">
-					</picture>
+			<div class="section__col">
+				<div class="image image_comprehension">
+
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="service" class="features">
-		<div class="features__inner">
-			<div class="features__item">
-				<div class="features__item-img">
-					<img src="img/note.svg" alt="Web Development" class="features__item-img">
+	<section id="service" class="section section_service ">
+		<div class="section__container section__container_service">
+			<div class="section__col">
+				<div class="feature">
+					<div class="feature__img">
+						<img src="img/note.svg" alt="Web Development">
+					</div>
+					<h3 class="feature__title">Web Development</h3>
 				</div>
-				<h3 class="features__item-title">Web Development</h3>
 			</div>
-			<div class="features__item">
-				<div class="features__item-img">
-					<img src="img/mobile-dev.svg" alt="Mobile Development" class="features__item-img">
+			<div class="section__col">
+				<div class="feature">
+					<div class="feature__img">
+						<img src="img/mobile-dev.svg" alt="Mobile Development">
+					</div>
+					<h3 class="feature__title">Mobile Development</h3>
 				</div>
-				<h3 class="features__item-title">Mobile Development</h3>
 			</div>
-			<div class="features__item">
-				<div class="features__item-img">
-					<img src="img/mackbook.svg" alt="Business Automation">
+			<div class="section__col">
+				<div class="feature">
+					<div class="feature__img">
+						<img src="img/mackbook.svg" alt="Business Automation">
+					</div>
+					<h3 class="feature__title">Business Automation</h3>
 				</div>
-				<h3 class="features__item-title">Business Automation</h3>
 			</div>
 		</div>
 	</section>
-	<footer id="contacts" class="contact-section">
-		<div class="contact-section__inner">
-			<div class="contact-section__col">
-				<div class="contact-section__map">
-					<img src="img/Exclude.svg" class="contact-section__map-canvas">					
+	<footer id="contacts" class="section section_footer">
+		<div class="section__container">
+			<div class="section__col">
+				<div class="section__map">
+					<img src="img/Exclude.svg" class="section__map-canvas">					
 					<div id="map"></div>
 				</div>
 			</div>
-			<div class="contact-section__col">
-				<div class="contact-section__info">
+			<div class="section__col">
+				<div class="section__info">
 					<p class="contact">
-						<span class="contact-section__contact-icon contact-section__contact-icon_place">
+						<span class="section__contact-icon section__contact-icon_place">
 							<svg aria-hidden="true">
 								<use xlink:href="img/sprite/sprite.svg#icon-place"></use>
 							</svg>
@@ -176,7 +172,7 @@
 						Russian Federation, Moscow
 					</p>
 					<a href="tel:+79164783829" class="contact">
-						<span class="contact-section__contact-icon contact-section__contact-icon_phone">
+						<span class="section__contact-icon section__contact-icon_phone">
 							<svg aria-hidden="true">
 								<use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
 							</svg>
@@ -184,31 +180,31 @@
 						+7 (916) 478 38 29
 					</a>
 					<p class="contact">
-						<span class="contact-section__contact-icon contact-section__contact-icon_mail">
+						<span class="section__contact-icon section__contact-icon_mail">
 							<svg aria-hidden="true">
 								<use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
 							</svg>
 						</span>
 						contact@bitia.ru
 					</p>
-					<div class="contact-section__social">
+					<div class="section__social">
 						<ul class="social-links">
 							<li>
-								<a href="skype:live:bitia-ru?call" class="social-links__link social-links__link_skype contact-section__social-link" title="Наш Скайп">
+								<a href="skype:live:bitia-ru?call" class="social-links__link social-links__link_skype" title="Наш Скайп">
 									<svg aria-hidden="true">
 										<use xlink:href="img/sprite/sprite.svg#icon-skype"></use>
 									</svg>
 								</a>
 							</li>
 							<li>
-								<a href="https://t.me/bitia_ru" class="social-links__link social-links__link_telegram contact-section__social-link" title="Наш Телеграм">
+								<a href="https://t.me/bitia_ru" class="social-links__link social-links__link_telegram" title="Наш Телеграм">
 									<svg aria-hidden="true">
 										<use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
 									</svg>
 								</a>
 							</li>
 							<li>
-								<a href="https://api.whatsapp.com/send?phone=79164783829" class="social-links__link social-links__link_whatsup contact-section__social-link" title="Наш Вотсап">
+								<a href="https://api.whatsapp.com/send?phone=79164783829" class="social-links__link social-links__link_whatsup" title="Наш Вотсап">
 									<svg aria-hidden="true">
 										<use xlink:href="img/sprite/sprite.svg#icon-whatsup"></use>
 									</svg>
