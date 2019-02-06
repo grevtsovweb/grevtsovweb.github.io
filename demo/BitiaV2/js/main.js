@@ -1,5 +1,5 @@
 $(function() {
-    $(".menu__link").on("click","a", scrolling);
+    $(".menu__link").on("click", scrolling);
     $(".section").on("click",".anchor", scrolling);
 
     function scrolling(e){
