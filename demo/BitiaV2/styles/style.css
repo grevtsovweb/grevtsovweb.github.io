@@ -393,7 +393,7 @@ html {
     @media screen and (max-width: 750px) {
       .section__map {
         width: 100%;
-        height: 728px; } }
+        height: 600px; } }
     .section__map #map {
       width: 100%;
       height: 100%; }
@@ -404,10 +404,12 @@ html {
     content: '';
     left: 0;
     top: -1px;
-    z-index: 2;
+    z-index: 10;
     pointer-events: none; }
     @media screen and (max-width: 750px) {
       .section__map-canvas {
+        height: 100%;
+        top: 0;
         width: 100%; } }
   .section__info {
     display: -webkit-box;
@@ -483,8 +485,7 @@ html {
     width: 100%; }
     .section__image-mobile img {
       width: 100%;
-      max-width: 100%;
-      margin-top: 40px; }
+      max-width: 100%; }
     @media screen and (min-width: 750px) {
       .section__image-mobile {
         display: none; } }
@@ -494,6 +495,9 @@ html {
     bottom: 0;
     -webkit-transform: translate(-50%);
     transform: translate(-50%); }
+    @media screen and (max-width: 750px) {
+      .section__anchor {
+        display: none; } }
   .section_header {
     height: 95vh;
     background-image: url("../img/table.svg");
@@ -506,10 +510,16 @@ html {
         background-size: auto 100%; } }
     @media screen and (max-width: 1024px) {
       .section_header {
-        background-position: calc(100% + 600px) center; } }
+        background-position: calc(100% + 35vh) center; } }
     @media screen and (max-width: 768px) {
       .section_header {
-        background-position: calc(100% + 500px) center; } }
+        background-position: calc(100% + 200px) center; } }
+    @media screen and (max-height: 1200px) and (max-width: 768px) {
+      .section_header {
+        background-position: calc(100% + 45vh) center; } }
+    @media screen and (max-width: 1024px) and (min-width: 769px) and (orientation: portrait) {
+      .section_header {
+        background-position: calc(100% + 100vh / 2) center; } }
     @media screen and (max-width: 750px) {
       .section_header {
         background-image: none;
@@ -593,6 +603,8 @@ html {
       .section_benefit {
         height: auto;
         padding-bottom: 0; } }
+    .section_benefit .section__image-mobile img {
+      margin-top: 20px; }
   .section_comprehension {
     height: 80vh;
     padding-top: 5vh;
@@ -606,6 +618,8 @@ html {
       .section_comprehension {
         height: auto;
         padding-top: 0; } }
+    .section_comprehension .section__image-mobile img {
+      margin-top: 20px; }
   .section_service {
     height: 100%;
     padding-top: 10vh;
@@ -679,7 +693,7 @@ html {
       padding-top: 30px; } }
   .menu__inner {
     margin-left: 10%;
-    margin-right: 50vh;
+    margin-right: 48vh;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
