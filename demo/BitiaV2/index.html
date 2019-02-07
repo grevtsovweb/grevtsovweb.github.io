@@ -63,32 +63,38 @@
 				
 			</div>
 		</div>
-		<div class="header__mobile-menu mobile-menu-js">
-			<div class="header__mobile-menu-inner">
-				<ul class="header__m-list">
-					<li class="header__m-list-item">
-						<a href="#" class="header__m-list-link">Benefits</a>
+		<div class="section__mobile-menu mobile-menu-js">
+			<div class="section__mobile-menu-inner">
+				<ul class="section__m-list">
+					<li class="section__m-list-item">
+						<a href="#benefits" class="section__m-list-link">Benefits</a>
 					</li>
-					<li class="header__m-list-item">
-						<a href="#" class="header__m-list-link">Service</a>
+					<li class="section__m-list-item">
+						<a href="#service" class="section__m-list-link">Service</a>
 					</li>
-					<li class="header__m-list-item">
-						<a href="#" class="header__m-list-link">Contacts</a>
+					<li class="section__m-list-item">
+						<a href="#contacts" class="section__m-list-link">Contacts</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<a href="#contacts" class="anchor header__anchor">
+		<a href="#contacts" class="anchor section__anchor">
 			<div>
 				<svg aria-hidden="true">
 					<use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
 				</svg>
 			</div>
 		</a>
+		<div class="section__image-mobile">
+			<picture>
+				<source media="(max-width: 1100px)" srcset="img/table-m.svg">
+				<img src="img/table.svg" alt="Table">
+			</picture>
+		</div>
 	</header>
 
 	<section id="benefits" class="section section_benefit">
-		<div class="section__container">
+		<div class="section__container">	
 			<div class="section__col">
 				<div class="image image_benefit">
 					
@@ -103,6 +109,12 @@
 						<p class="text__subtitle">Not being encompassed by narrow-minded conclusions. Presenting on every platform. Working with everything.</p>
 					</div>
 				</div>
+			</div>
+			<div class="section__image-mobile">
+				<picture>
+					<source media="(max-width: 750px)" srcset="img/notebook-m.svg">
+					<img src="img/notebook.svg" alt="Notebook">
+				</picture>
 			</div>
 		</div>
 	</section>
@@ -122,13 +134,19 @@
 				<div class="image image_comprehension">
 
 				</div>
+				<div class="section__image-mobile">
+					<picture>
+						<source media="(max-width: 750px)" srcset="img/brain-m.svg">
+						<img src="img/comprehension.svg" alt="Brain">
+					</picture>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="service" class="section section_service ">
 		<div class="section__container section__container_service">
 			<div class="section__col">
-				<div class="feature">
+				<div class="feature section__feature">
 					<div class="feature__img">
 						<img src="img/note.svg" alt="Web Development">
 					</div>
@@ -136,7 +154,7 @@
 				</div>
 			</div>
 			<div class="section__col">
-				<div class="feature">
+				<div class="feature section__feature">
 					<div class="feature__img">
 						<img src="img/mobile-dev.svg" alt="Mobile Development">
 					</div>
@@ -144,7 +162,7 @@
 				</div>
 			</div>
 			<div class="section__col">
-				<div class="feature">
+				<div class="feature section__feature">
 					<div class="feature__img">
 						<img src="img/mackbook.svg" alt="Business Automation">
 					</div>
