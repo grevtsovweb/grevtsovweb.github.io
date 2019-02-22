@@ -10,27 +10,44 @@
 	<link rel="preload" href="fonts/RobotoMedium/RobotoMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/RobotoRegular/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/RobotoItalic/RobotoItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="icon" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="icon" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
 <body class="page page-js">
 
-	<div class="popup-overlay popup-js">
+	<div class="popup-overlay popup-form-js">
 		<div class="popup-wrapper">
 			<div class="popup">
 				<div class="popup__close popup__close-js"></div>
 				<div class="popup__inner">
 					<h3 class="popup__header">
-						Заказать звонок
+						Оставьте заявку сейчас и&nbsp;мы подберём Вам профессионала <b>за 15 дней</b>
 					</h3>
-					<p class="popup__descr">
-						Введите ваши данные и наши менеджеры свяжутся с вами в ближайшее время
-					</p>
 					<form action="mail.php" method="post" class="form popup__form form-js">
-						<label for="popup__name" class="popup__label">Ваше имя</label>
-						<input id="popup__name" type="text" class="form__input popup__input" placeholder="Ваше имя" name="name">
-						<label for="popup__phone" class="popup__label">Ваш телефон</label>
-						<input id="popup__phone" type="phone" class="form__input popup__input" placeholder="Ваш телефон" required="required" name="phone">
-						<input type="submit" class="btn btn_orange popup__btn" value="Заказать">
-					</form>
+						<input name="vacancy" type="text" class="field field_stroke form__input  popup__input" placeholder="Вакансия на должность">
+					  	<input name="price" type="text" class="field field_stroke form__input  popup__input" placeholder="Предлагаемая ЗП">
+					  	<input name="name" type="text" class="field field_stroke form__input  popup__input" placeholder="Ваше имя">
+					  	<input name="phone" type="phone" class="field field_stroke form__input  popup__input" placeholder="Номер телефона">
+					  	<div class="form__checkbox form__agree-wrap">
+							<input id="checkbox-agree" type="checkbox" name="checkbox-politics" checked="">
+							<label for="checkbox-agree"><span>Нажимая на кнопку “Получить кандидата”, Вы даете свое согласие на&nbsp;обработку персональных данных</span></label>
+						</div>
+					  	<button type="submit" class="form__input btn popup__submit">Получить кандидата</button>
+					 </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-overlay popup-thanks-js">
+		<div class="popup-wrapper">
+			<div class="popup">
+				<div class="popup__close popup__close-js"></div>
+				<div class="popup__inner">
+					<h3 class="popup__header">
+						Сообщение доставлено!
+					</h3>
+					<p class="popup__thanks-text">Спасибо, что доверили нам подбор вашего персонала. В ближайшее время менеджер свяжется с Вами!</p>
 				</div>
 			</div>
 		</div>
@@ -39,7 +56,7 @@
 		<div class="header__inner">
 			<div class="header__logo">
 				<div class="logo">
-					<img src="img/logo.svg" alt="Логотип" width="64" height="30">
+					<img src="img/logo.svg" alt="Логотип">
 					<p class="logo__descr header__logo-descr">
 						Кадровое агентство по подбору персонала
 					</p>
@@ -56,8 +73,14 @@
 								<use xlink:href="img/sprite/sprite.svg#icon-place"></use>
 							</svg>
 						</span>
-						Выборгское шоссе 369к6
+						<span class="address__text">Выборгское шоссе 369к6</span>
 					</p>
+					<div class="address__select-wrapper">
+						<select name="place" class="address__select">
+							<option value="Выборгское шоссе 369к6">Санкт-Петербург</option>
+							<option value="Красная пл. д.1">Москва</option>
+						</select>
+					</div>
 				</div>
 			</div>
 			<div class="header__phone">
@@ -79,9 +102,14 @@
 				</p>
 			</div>
 			<div class="header__menu-m">
-				<button class="burger">
-			  		<div></div>
-			  	</button>
+				<a href="tel:+78008888888" class="header__phone-mobile" title="Наш телефон">
+					<svg>
+						<use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
+					</svg>
+				</a>
+				<!-- <button class="burger">
+							  		<div></div>
+							  	</button> -->
 			</div>
 		</div>
 	</header>
@@ -90,7 +118,8 @@
 			<div class="header-section__offer">
 				<h1 class="title header-section__title">Подберем компетентных сотрудников без предоплаты</h1>
 				<p class="subtitle header-section__subtitle">Ищем профессионалов по уникальной методике, с гарантией 100 дней</p>
-				<button class="btn">Найти сотрудников</button>
+				<button class="btn open-popup-js">Найти сотрудников</button>
+				<p class="header-section__person"><b>Елена</b> управляющий партнёр</p>
 				<blockquote class="header-section__blockquote">
 					Вы платите за результат, а не за обещания, после&nbsp;проверки сотрудников на деле, а не на словах
 				</blockquote>
@@ -111,9 +140,7 @@
 					<p>Возможен ли найм профессионала быстро и недорого?</p>
 				</div>
 			</div>
-			<video class="video" poster="img/section-video/video-bg.jpg" src="video/presentation.mp4">
-				
-			</video>
+			<iframe id="main-video" src="https://www.youtube.com/embed/OdKCzhU7kQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
 		</div>
 	</div>
 	<div class="section-how">
@@ -125,102 +152,104 @@
 					<button class="btn btn_white section-how__button">Что делают другие</button>
 				</div>
 				<div class="section-how__tab-container section-how__tab-container_active">
-					<div class="section-how__col-4 section-how__col-md-12">
+					<div class="section-how__col-4 section-how__col-md-6 section-how__col-xs-12">
 						<ul class="section-how__tab-list">
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-1.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Разрабатываем уникальную, «продающую» вакансию, привлекающую от 100 до 300 кандидатов больше чем стандартная вакансия;
+										Разрабатываем уникальную, <b>«продающую» вакансию</b>, привлекающую от 100 до 300 кандидатов больше чем стандартная вакансия;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-2.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Ищем по нашей базе, размещаем «премиальную» вакансию в топе лучших ресурсов по поиску работы hh.ru и другие;
+										Ищем по нашей базе, размещаем <b>«премиальную»</b> вакансию в топе лучших ресурсов по поиску работы hh.ru и другие;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-3.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Получаем отклики кандидатов, наши специалисты по уникальной методике отбирают лучших;
+										Получаем отклики кандидатов, наши специалисты по уникальной методике <b>отбирают лучших;</b>
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-4.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Проводим интервью и с помощью тестовых вопросов или заданий, отбираем лучших из лучших;
+										<b>Проводим интервью</b> и с помощью тестовых вопросов или заданий, отбираем лучших из лучших;
 									</p>
 								</div>
 							</li>
 						</ul>
 					</div>
-					<div class="section-how__col-4 section-how__col-md-12">
-						<div class="section-how__img">
-							<img src="img/section-how/person-1.png" alt="HR мэнеджер">
+					<div class="section-how__col-4 section-how__col-md-12 section-how__col-xs-12 section-how__col-last">
+						<div class="section-how__img wow fadeInUp" data-wow-offset="100">
+							<picture>
+								<img src="img/section-how/person-1.png" srcset="img/section-how/person-1@2x.png 2x" alt="HR мэнеджер">
+							</picture>		
 						</div>
-						<div class="feature feature_content-center">
+						<div class="feature feature_content-center wow fadeInUp" data-wow-offset="100">
 							<div class="feature__icon">
 								<img src="img/tab-icon/icon-9.svg" alt="Уникальная методика">
 							</div>
 							<p class="feature__text">
-								Бесплатно подберём нового кандидата, если что-то пошло не так. Замена по гарантии.
+								Бесплатно подберём нового кандидата, если что-то пошло не так. <b>Замена по гарантии.</b>
 							</p>
 						</div>
 					</div>
-					<div class="section-how__col-4 section-how__col-md-12">
+					<div class="section-how__col-4 section-how__col-md-6 section-how__col-xs-12">
 						<ul class="section-how__tab-list">
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-5.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Приглашаем кандидатов вышедших в финал к Вам на собеседование;
+										<b>Приглашаем кандидатов</b> вышедших в финал к Вам на собеседование;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-6.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Проверяем отобранного Вами кандидата, запрашиваем рекомендации с прошлого места работы, проверяем через нашу службу безопасности;
+										Проверяем отобранного Вами кандидата, <b>запрашиваем рекомендации</b> с прошлого места работы, проверяем через нашу <b>службу безопасности;</b>
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-7.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Передаём Вам компетентного специалиста, прошедшего все этапы проверок и отбора;
+										<b>Передаём</b> Вам компетентного специалиста, прошедшего <b>все этапы</b> проверок и отбора;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-8.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Помогаем составить план на испытательный срок, для адаптации на новом рабочем месте и проверки его компетенций на деле;
+										<b>Помогаем составить план</b> на испытательный срок, для адаптации на новом рабочем месте и проверки его компетенций на деле;
 									</p>
 								</div>
 							</li>
@@ -229,94 +258,96 @@
 					
 				</div>
 				<div class="section-how__tab-container">
-					<div class="section-how__col-4 section-how__col-md-12">
+					<div class="section-how__col-4 section-how__col-md-6 section-how__col-xs-12">
 						<ul class="section-how__tab-list">
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-10.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Платя предоплату агентству, есть риск купить кота в мешке и потерять время и деньги;
+										Платя предоплату агентству, есть риск купить кота в мешке и <b>потерять время и деньги;</b>
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-11.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Нерадивые агентства обещают быстро и профессионально, но по факту не выходят на связь и затягивают сроки;
+										<b>Нерадивые агентства обещают</b> быстро и профессионально, но по факту не выходят на связь и затягивают сроки;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-12.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Собственник ищет кадры сам, тратит уйму времени и сил, но никогда не считал, сколько стоит его время, потраченное на поиск, просмотр, отбор, собеседования, испытательный срок и т.д;
+										Собственник ищет кадры сам, <b>тратит уйму времени и сил,</b> но никогда не считал, сколько стоит его время, потраченное на поиск, просмотр, отбор, собеседования, испытательный срок и т.д;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature feature_content-right">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-13.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Обещают, что всё сделают за Вас, но Вы тратите уйму своего времени на каждом из этапов;
+										<b>Обещают, что всё сделают за Вас,</b> но Вы тратите уйму своего времени на каждом из этапов;
 									</p>
 								</div>
 							</li>
 						</ul>
 					</div>
-					<div class="section-how__col-4 section-how__col-md-12">
-						<div class="section-how__img">
-							<img src="img/section-how/person-2.png" alt="HR мэнеджер">
+					<div class="section-how__col-4 section-how__col-md-6 section-how__md-none">
+						<div class="section-how__img wow fadeInUp" data-wow-offset="100">
+							<picture>
+								<img src="img/section-how/person-2.png" srcset="img/section-how/person-2@2x.png 2x" alt="HR мэнеджер">
+							</picture>	
 						</div>
 					</div>
-					<div class="section-how__col-4 section-how__col-md-12">
+					<div class="section-how__col-4 section-how__col-md-6 section-how__col-xs-12">
 						<ul class="section-how__tab-list">
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-14.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Штатный HR не может закрыть вакансию под разными предлогами, Вы не в состоянии проверить факты;
+										<b>Штатный HR не может закрыть вакансию</b> под&nbsp;разными предлогами, Вы не в состоянии проверить факты;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-15.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Компания недополучает прибыль, пока незакрыта вакансия, задачи закрывают коллеги и собственник;
+										<b>Компания недополучает прибыль,</b> пока незакрыта вакансия, задачи закрывают коллеги и собственник;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-16.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Обещают найти профессионала, но по факту присылают посредственных кандидатов без проверки;
+										Обещают найти профессионала, но по факту <b>присылают посредственных кандидатов</b> без проверки;
 									</p>
 								</div>
 							</li>
-							<li class="section-how__tab-list-item">
+							<li class="section-how__tab-list-item wow fadeInUp" data-wow-offset="100">
 								<div class="feature">
 									<div class="feature__icon">
 										<img src="img/tab-icon/icon-17.svg" alt="Уникальная методика">
 									</div>
 									<p class="feature__text">
-										Кандидаты быстро сбегают. Потеря времени и конфиденциальной информации.
+										<b>Кандидаты быстро сбегают.</b> Потеря времени и конфиденциальной информации.
 									</p>
 								</div>
 							</li>
@@ -331,9 +362,11 @@
 		<div class="section-become-partner__text">
 			<h3 class="title section-become-partner__title">Наши кандидаты увеличивают прибыль Вашего бизнеса</h1>
 			<p class="subtitle section-become-partner__subtitle">Мы лучшие по качеству нанятых профессионалов по отзывам наших партнёров</p>
-			<button class="btn">Стать партнёром</button>
+			<button class="btn open-popup-js">Стать партнёром</button>
 		</div> 
-		<img class="section-become-partner__footer" src="img/section-become-partner/section-become-partner-footer.svg" alt="">
+		<object type="image/svg+xml" data="img/section-become-partner/section-become-partner-footer.svg" class="section-become-partner__footer">
+					</object>
+		<!-- <img class="section-become-partner__footer" src="img/section-become-partner/section-become-partner-footer.svg" alt=""> -->
 	</section>
 	<section class="section-partners">
 		<div class="section-partners__inner">
@@ -342,15 +375,15 @@
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/sport-master.png" alt="Спортмастер">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://www.sportmaster.ru/" class="section-partners__item-hover">
+							sportmaster.ru
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/lamoda.png" alt="Ламода">
-						<a href="#" class="section-partners__item-hover">
+						<a href="https://www.lamoda.ru/" class="section-partners__item-hover">
 							lamoda.ru
 						</a>
 					</div>
@@ -358,80 +391,80 @@
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/defa.png" alt="Дефа">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="http://defagroup.com/" class="section-partners__item-hover">
+							defagroup.com
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/k-rauta.png" alt="К-раута">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="http://www.k-rauta.com/" class="section-partners__item-hover">
+							k-rauta.com
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/deeper.png" alt="Дипер">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://deepersonar.com/ru/ru_ru" class="section-partners__item-hover">
+							deepersonar.com
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/finntrail.png" alt="Финтраил">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://finntrail.ru/" class="section-partners__item-hover">
+							finntrail.ru
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/mindal.png" alt="Миндаль">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://vk.com/mindal.nail" class="section-partners__item-hover">
+							mindal
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/vw.png" alt="Фольксваген">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://www.volkswagen.ru/ru.html" class="section-partners__item-hover">
+							www.volkswagen.ru
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/amocrm.png" alt="Амоцрм">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://www.amocrm.ru/" class="section-partners__item-hover">
+							amocrm.ru
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/telfin.png" alt="Телфин">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://www.telphin.ru/" class="section-partners__item-hover">
+							telphin.ru
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/cdek.png" alt="Сдек">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://www.cdek.ru/" class="section-partners__item-hover">
+							cdek.ru
 						</a>
 					</div>
 				</div>
 				<div class="section-partners__col-3 section-partners__col-md-6">
 					<div class="section-partners__item">
 						<img src="img/partners/ione.png" alt="Ай-ван">
-						<a href="#" class="section-partners__item-hover">
-							lamoda.ru
+						<a href="https://i1-web.ru/" class="section-partners__item-hover">
+							i1-web.ru
 						</a>
 					</div>
 				</div>
@@ -462,95 +495,95 @@
 									</div>
 								</div>
 								<p class="review__text">
-									“Заказал услуги у компании «TvoyHR»  и не ошибся. С помощью консультанта подобрали персонал. Получил быстро. После проверки, я понял, что нашел именно того сотрудника, которого искал. Обязательно еще воспользуюсь услугами компании”
+									“Неожиданно уволился менеджер на ключевой для компании позиции. Каждый день простоя - большие потери для меня. Заказал подбор у компании «TvoyHR»  и не ошибся. В течение 5 дней мне предложили 5 кандидатов довольно высокого уровня. В итоге выбрали самого подходящего. С момента обращения прошло 13 дней. Менджером доволен полностью, тем более удалось избежать значительных потерь прибыли, к которым уже был готов!”
 								</p>
 							</div>
 						</li>
 						<li class="review__list-item">
 							<div class="review__list-img">
 								<picture>
-									<source media="(max-width: 576px)" srcset="img/review/aleynik-m.jpg">
-									<img src="img/review/aleynik.jpg" alt="Андрей Алейник">
+									<source media="(max-width: 576px)" srcset="img/review/cuper-m.jpg">
+									<img src="img/review/cuper.jpg" alt="Кирилл Купер">
 								</picture>
 							</div>
 							<div class="review__list-content">
 								<div class="review__blockquote">
 									<div class="review__blockquote-name">
-										<p class="review__name">Андрей Алейник</p>
-										<p class="review__position">Генеральный директор компании «Дефа»</p>
+										<p class="review__name">Кирилл Купер</p>
+										<p class="review__position">Управляющий партнёр ООО «Энерджи групп»</p>
 									</div>
 									<div class="review__blockquote-logo">
-										<img src="img/review/logo/defa.png" alt="Дефа">
+										<img src="img/review/logo/deeper.png" alt="Дипер">
 									</div>
 								</div>
 								<p class="review__text">
-									“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab placeat, cumque consequatur. Optio pariatur assumenda veniam praesentium quisquam! Impedit quasi ab odit delectus, iste sint voluptatem porro necessitatibus itaque a.”
+									“Дважды нанимали коммерческого директора сами. Тратили по два-три месяца на каждого чтобы,  перестроить бизнес модель под них. Давали авансы, даже при том что результаты были низкие. В итоге полгода без нормального руководителя, напрасно потраченное время и деньги. Заказали подбор у «TvoyHR» и закрыли позицию за 15 дней, как и было обещано. Единственное о чем жалеем - что потратили столько времени на самостоятельные поиски.”
 								</p>
 							</div>
 						</li>
 						<li class="review__list-item">
 							<div class="review__list-img">
 								<picture>
-									<source media="(max-width: 576px)" srcset="img/review/aleynik-m.jpg">
-									<img src="img/review/aleynik.jpg" alt="Андрей Алейник">
+									<source media="(max-width: 576px)" srcset="img/review/chunkin-m.jpg">
+									<img src="img/review/chunkin.jpg" alt="Александр Чункин">
 								</picture>
 							</div>
 							<div class="review__list-content">
 								<div class="review__blockquote">
 									<div class="review__blockquote-name">
-										<p class="review__name">Андрей Алейник</p>
-										<p class="review__position">Генеральный директор компании «Дефа»</p>
+										<p class="review__name">Александр Чункин</p>
+										<p class="review__position">Генеральный директор компании «Финнтрейл»</p>
 									</div>
 									<div class="review__blockquote-logo">
-										<img src="img/review/logo/defa.png" alt="Дефа">
+										<img src="img/review/logo/finntrail.png" alt="Финтрэил">
 									</div>
 								</div>
 								<p class="review__text">
-									“Voluptates quas perspiciatis culpa quaerat tempora in possimus totam aperiam iusto soluta deleniti placeat quidem quod dolore nemo delectus, ratione, expedita laboriosam.”
+									“До обращения в «TvoyHR» у меня уже был опыт работы с HR-агентствами. И я бы его не назвал положительным. В другой компании по предоплате 50% я получил 10 посредственных сотрудников. Причем быстро, но таких, каких бы я даже сам не отобрал. В итоге только промучались с ними, так и не оставив ни одного. А «TvoyHR» всего через 14 дней дали мне 2 сотрудников с пометкой “огонь” и 3 с пометкой “профи”. За один день я принял решение и уже пол года как работаем с одиним из тех парней с пометкой “огонь”! И могу сказать, что он и в правду такой!”
 								</p>
 							</div>
 						</li>
 						<li class="review__list-item">
 							<div class="review__list-img">
 								<picture>
-									<source media="(max-width: 576px)" srcset="img/review/aleynik-m.jpg">
-									<img src="img/review/aleynik.jpg" alt="Андрей Алейник">
+									<source media="(max-width: 576px)" srcset="img/review/ivanov-m.jpg">
+									<img src="img/review/ivanov.jpg" alt="Иванов Сергей">
 								</picture>
 							</div>
 							<div class="review__list-content">
 								<div class="review__blockquote">
 									<div class="review__blockquote-name">
-										<p class="review__name">Андрей Алейник</p>
-										<p class="review__position">Генеральный директор компании «Дефа»</p>
+										<p class="review__name">Иванов Сергей</p>
+										<p class="review__position">Генеральный директор компании «АйТи Групп»</p>
 									</div>
 									<div class="review__blockquote-logo">
-										<img src="img/review/logo/defa.png" alt="Дефа">
+										<img src="img/review/logo/i-one.png" alt="Ай-уан">
 									</div>
 								</div>
 								<p class="review__text">
-									“Laborum, quae. Cumque vel nemo dignissimos voluptate iste esse nostrum obcaecati. Adipisci soluta placeat voluptates aut, eaque, perferendis sed minus reprehenderit explicabo!”
+									“В связи со спецификой нашей работы нам нужны специалисты в IT сфере. Разработчики, работающие со сложными фреймворками и другими технологиями. Заработная плата специалистов 100-150 тысяч рублей. При этом, большая часть из них работают удалённо и живут в Азиатских и других тёплых странах. Найм такого сотрудника всегда был для меня большим стрессом. Попробовал дать задачу «TvoyHR» и был удивлён. Ребята нашли отличного специалиста, очень ответственного и опытного. Теперь всю команду набираю с «TvoyHR»!”
 								</p>
 							</div>
 						</li>
 						<li class="review__list-item">
 							<div class="review__list-img">
 								<picture>
-									<source media="(max-width: 576px)" srcset="img/review/aleynik-m.jpg">
-									<img src="img/review/aleynik.jpg" alt="Андрей Алейник">
+									<source media="(max-width: 576px)" srcset="img/review/vivdenko-m.jpg">
+									<img src="img/review/vivdenko.jpg" alt="Павел Вивденко">
 								</picture>
 							</div>
 							<div class="review__list-content">
 								<div class="review__blockquote">
 									<div class="review__blockquote-name">
-										<p class="review__name">Андрей Алейник</p>
-										<p class="review__position">Генеральный директор компании «Дефа»</p>
+										<p class="review__name">Павел Вивденко</p>
+										<p class="review__position">Генеральный директор студии Миндаль</p>
 									</div>
 									<div class="review__blockquote-logo">
-										<img src="img/review/logo/defa.png" alt="Дефа">
+										<img src="img/review/logo/Миндаль.png" alt="Миндаль">
 									</div>
 								</div>
 								<p class="review__text">
-									“Sit amet, consectetur adipisicing elit. Nemo libero officiis eligendi repellendus quae ad eius voluptates, saepe. Placeat, quaerat quod, officiis maiores iure ex deleniti labore sequi dolorem! Facilis.”
+									“Обращался в  четыре агенства. Результатов ноль! Думал уже всё, не реально найти топового менеджера. Подбор шёл долго. По одному кандидату в две недели. Посоветовали «TvoyHR». Результат превзошёл все мои ожидания. Без предоплаты в течении уже одной недели мне подобрали 4х кандидатов имеющих высокую квалификацию и отвечающих всем мои требованиям! Советую! ”
 								</p>
 							</div>
 						</li>
@@ -565,22 +598,22 @@
 						</li>
 						<li class="review__tab-list-item">
 							<button class="review__tab-list-link">
-								<img src="img/review/preview/person-1.png" alt="Андрей Алейник">
+								<img src="img/review/preview/cuper.png" alt="Кирилл Купер">
 							</button>
 						</li>
 						<li class="review__tab-list-item">
 							<button class="review__tab-list-link">
-								<img src="img/review/preview/person-2.png" alt="Андрей Алейник">
+								<img src="img/review/preview/chunkin.png" alt="Александр Чункин">
 							</button>
 						</li>
 						<li class="review__tab-list-item">
 							<button class="review__tab-list-link">
-								<img src="img/review/preview/person-3.png" alt="Андрей Алейник">
+								<img src="img/review/preview/ivanov.png" alt="Иванов Сергей">
 							</button>
 						</li>
 						<li class="review__tab-list-item">
 							<button class="review__tab-list-link">
-								<img src="img/review/preview/person-4.png" alt="Андрей Алейник">
+								<img src="img/review/preview/vivdenko.png" alt="Павел Вивденко">
 							</button>
 						</li>
 					</ul>
@@ -590,7 +623,7 @@
 	</div>
 	<section class="section-form">
 		<div class="section-form__inner">
-			<h3 class="title section-form__title">Получите кандидата-профессионалаза 15 дней без предоплаты!</h3>
+			<h3 class="title section-form__title">Получите кандидата-профессионала за 15 дней без предоплаты!</h3>
 			<div class="section-form__content">
 				<div class="section-form__list">
 					<h6 class="section-form__list-title">Оставляя заявку вы получаете:</h6>
@@ -605,24 +638,31 @@
 							Гарантию <span class="section-form__list-item-bold">100 дней на замену.</span>
 						</li>
 					</ul>
+					<p class="section-form__person"><b>Карина</b> HR менеджер</p>
 				</div>
 				<div class="section-form__form">
-					<form action="mail.php" method="post" class="form">
-						<div class="form__select section-form__input">
-							<select name="series" class="form__select-inner">
-								<option value="1">Вакансия на должность</option>
-								<option value="Вакансия на должность 2">Вакансия на должность 2</option>
-							</select>
+					<form action="mail.php" method="post" class="form form-js">
+					<!-- 	<div class="form__select section-form__input">
+						<select name="series" class="form__select-inner">
+							<option value="1">Вакансия на должность</option>
+							<option value="Вакансия на должность 2">Вакансия на должность 2</option>
+						</select>
+					</div>
+					<div class="form__select section-form__input">
+						<select name="money" class="form__select-inner">
+							<option value="1">Предлагаемая ЗП</option>
+							<option value="Предлагаемая ЗП 2">Предлагаемая ЗП 2</option>
+						</select>
+					</div> -->
+						<input name="vacancy" type="text" class="field field_stroke form__input  popup__input" placeholder="Вакансия на должность">
+					  	<input name="price" type="text" class="field field_stroke form__input  popup__input" placeholder="Предлагаемая ЗП">
+					  	<input name="name" type="text" class="field form__input section-form__input"  placeholder="Ваше имя">
+					  	<input name="phone" type="phone" class="field form__input section-form__input" placeholder="Номер телефона">
+					  	<div class="form__checkbox form__agree-wrap section-form__check">
+							<input id="checkbox-agree-2" type="checkbox" name="checkbox-politics-2" checked="">
+							<label for="checkbox-agree-2"><span>Нажимая на кнопку “Получить кандидата”, Вы даете свое согласие на&nbsp;обработку персональных данных</span></label>
 						</div>
-						<div class="form__select section-form__input">
-							<select name="money" class="form__select-inner">
-								<option value="1">Предлагаемая ЗП</option>
-								<option value="Предлагаемая ЗП 2">Предлагаемая ЗП 2</option>
-							</select>
-						</div>
-					  	<input type="text" class="field form__input section-form__input"  placeholder="Ваше имя">
-					  	<input type="phone" class="field form__input section-form__input" placeholder="Номер телефона">
-					  	<input type="submit" class="form__input btn section-form__submit" value="Получить кандидата">
+					  	<button type="submit" class="form__input btn section-form__submit">Получить кандидата</button>
 					  </form>
 				</div>
 			</div>
@@ -671,8 +711,14 @@
 								<use xlink:href="img/sprite/sprite.svg#icon-place"></use>
 							</svg>
 						</span>
-						Выборгское шоссе 369к6
+						<span class="address__text">Выборгское шоссе 369к6</span>
 					</p>
+					<div class="address__select-wrapper">
+						<select name="place-footer" class="address__select">
+							<option value="Выборгское шоссе 369к6">Санкт-Петербург</option>
+							<option value="Красная пл. д.1">Москва</option>
+						</select>
+					</div>
 				</div>
 			</div>
 			<div class="footer__phone">
@@ -698,6 +744,9 @@
 	</footer>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
