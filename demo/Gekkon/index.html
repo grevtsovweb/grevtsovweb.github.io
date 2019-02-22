@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Gekkon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="blocks/page/page.css">
+	<link rel="stylesheet" href="blocks/fonts/fonts.css">
+	<link rel="stylesheet" href="blocks/first-section/first-section.css">
+	<link rel="stylesheet" href="blocks/logo/logo.css">
+	<link rel="stylesheet" href="blocks/main-nav/main-nav.css">
+	<link rel="stylesheet" href="blocks/info-block/info-block.css">
+	<link rel="stylesheet" href="blocks/content/content.css">
+	<link rel="stylesheet" href="blocks/card/card.css">
+	<link rel="stylesheet" href="blocks/footer/footer.css">
+	<link rel="stylesheet" href="blocks/social-links/social-links.css">
+	<link rel="stylesheet" href="blocks/field-select/field-select.css">
+	<link rel="stylesheet" href="blocks/toggle-direction/toggle-direction.css">
+
+</head>
+<body class="page">
+	<header class="first-section">
+		<div class="first-section__top">
+			<div class="first-section__logo">
+				<a href="#" class="logo">
+					<span class="logo__icon">
+						<img src="blocks/logo/logo-img/logo.svg" alt="Gekkon">
+					</span>
+				</a>
+			</div>
+			<div class="first-section__nav">
+				<div class="main-nav">
+					<button class="main-nav__search">
+						<div class="main-nav__search-icon">
+							<svg aria-hidden="true">
+								<use xlink:href="blocks/main-nav/main-nav-img/search.svg#search"></use>
+							</svg>
+						</div>
+					</button>
+					<div class="main-nav__block">
+						<input type="text" class="main-nav__search-input">
+						<nav class="main-nav__nav">
+							<ul class="main-nav__nav-list">
+								<li class="main-nav__nav-list-item">
+									<a href="#" class="main-nav__nav-list-link main-nav__nav-list-link_active">Скалодромы</a>
+								</li>
+								<li class="main-nav__nav-list-item">
+									<a href="#" class="main-nav__nav-list-link">Скалы</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					
+					<button class="main-nav__avatar">
+						<img src="blocks/main-nav/main-nav-img/avatar.jpg" alt="Иванов Иван">
+					</button>
+				</div>
+			</div>
+		</div>
+		<ul class="first-section__items-container">
+			<li class="first-section__item">
+				<div class="first-section__item-wrapper">
+					<h1 class="first-section__item-header">
+						Руководство 
+					</h1>
+					<p class="first-section__item-subtitle">
+						по скалалазанию в твоем городе
+					</p>
+				</div>
+			</li>	
+		</ul>
+		<div class="first-section__bottom">
+			<div class="first-section__info">
+				<div class="first-section__info-inner">
+					<div class="first-section__info-item">
+						<div class="info-block">
+							<div class="info-block__number">
+								25
+							</div>
+							<p class="info-block__descr">
+								Разнообразие
+								троп
+							</p>
+						</div>
+					</div>
+					<div class="first-section__info-item">
+						<div class="info-block">
+							<div class="info-block__number">
+								7
+							</div>
+							<p class="info-block__descr">
+								Больших
+								залов
+							</p>
+						</div>
+					</div>
+					<div class="first-section__info-item">
+						<div class="info-block">
+							<div class="info-block__number">
+								7
+							</div>
+							<p class="info-block__descr">
+								Больших
+								залов
+							</p>
+						</div>
+					</div>				
+				</div>
+				
+				<button class="first-section__info-button">
+					<span class="first-section__info-icon">
+						<svg aria-hidden="true">
+							<use xlink:href="blocks/first-section/first-section-img/arrow.svg#arrow"></use>
+						</svg>
+					</span>	
+				</button>
+			</div>
+			<div class="first-section__decor"></div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="content__container">
+			<div class="content__filter">
+				<div class="content__filter-item content__filter-item_category">
+					<div class="field-select">
+						<label class="field-select__label">
+							<span class="field-select__title">Категория</span>
+							<span class="field-select__wrapper">
+								<select name="series" class="field-select__select">
+									<option value="1">Все</option>
+									<option value="Вакансия на должность 2">Вакансия на должность 2</option>
+								</select>
+							</span>	
+						</label>
+					</div>
+				</div>
+				<div class="content__filter-item content__filter-item_status">
+					<div class="field-select">
+						<label class="field-select__label">
+							<span class="field-select__title">Статут</span>
+							<span class="field-select__wrapper">
+								<select name="series" class="field-select__select">
+									<option value="1">Все</option>
+									<option value="Вакансия на должность 2">Вакансия на должность 2</option>
+								</select>
+							</span>	
+						</label>
+					</div>
+				</div>
+				<div class="content__filter-item content__filter-item_hall">
+					<div class="field-select">
+						<label class="field-select__label">
+							<span class="field-select__title">Зал</span>
+							<span class="field-select__wrapper">
+								<select name="series" class="field-select__select">
+									<option value="1">Все</option>
+									<option value="Вакансия на должность 2">Вакансия на должность 2</option>
+								</select>
+							</span>	
+						</label>
+					</div>
+				</div>
+				<div class="content__toggle">
+					<button class="toggle-direction toggle-direction_active">
+						<svg>
+							<use xlink:href="blocks/toggle-direction/toggle-direction-sprite/toggle-direction-sprite.svg#toggle-table"></use>
+						</svg>
+					</button>
+					<button class="toggle-direction">
+						<svg>
+							<use xlink:href="blocks/toggle-direction/toggle-direction-sprite/toggle-direction-sprite.svg#toggle-list"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="content__inner">
+				<div class="content__col-md-4 content__col-lg-3">
+					<a href="#" class="card content__card">
+						<article href="#" class="card__inner">
+							<div class="card__image">
+								<img src="" alt="Карточка 1">
+							</div>
+							<div class="card__info">
+								<div class="card__header">
+									<h1 class="card__title">Название трассы</h1>
+									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="content__col-md-4 content__col-lg-3">
+					<a href="#" class="card content__card">
+						<article href="#" class="card__inner">
+							<div class="card__image">
+								<img src="" alt="Карточка 1">
+							</div>
+							<div class="card__info">
+								<div class="card__header">
+									<h1 class="card__title">Название трассы</h1>
+									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="content__col-md-4 content__col-lg-3">
+					<a href="#" class="card content__card">
+						<article href="#" class="card__inner">
+							<div class="card__image">
+								<img src="" alt="Карточка 1">
+							</div>
+							<div class="card__info">
+								<div class="card__header">
+									<h1 class="card__title">Название трассы</h1>
+									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="content__col-md-4 content__col-lg-3">
+					<a href="#" class="card content__card">
+						<article href="#" class="card__inner">
+							<div class="card__image">
+								<img src="" alt="Карточка 1">
+							</div>
+							<div class="card__info">
+								<div class="card__header">
+									<h1 class="card__title">Название трассы</h1>
+									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="content__col-md-4 content__col-lg-3">
+					<a href="#" class="card content__card">
+						<article href="#" class="card__inner">
+							<div class="card__image">
+								<img src="" alt="Карточка 1">
+							</div>
+							<div class="card__info">
+								<div class="card__header">
+									<h1 class="card__title">Название трассы</h1>
+									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="content__col-md-4 content__col-lg-3">
+					<a href="#" class="card content__card">
+						<article href="#" class="card__inner">
+							<div class="card__image">
+								<img src="" alt="Карточка 1">
+							</div>
+							<div class="card__info">
+								<div class="card__header">
+									<h1 class="card__title">Название трассы</h1>
+									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__block-group">
+				<div class="footer__item">
+					<h3 class="footer__header">
+						Аккаунт
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								Вход
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								Регистрация
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h3 class="footer__header">
+						Разделы
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								Группы
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								Пользователи
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h3 class="footer__header">
+						Информация
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								Компания
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								Пользователи
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h3 class="footer__header">
+						Помощь
+					</h3>
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								Чат
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#" class="footer__list-link">
+								FAQ
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__social">
+				<h3 class="footer__header">
+					Соцсети
+				</h3>
+				<ul class="social-links">
+					<li>
+						<a href="https://www.instagram.com" class="social-links__link">
+							<svg>
+								<use xlink:href="blocks/social-links/social-links-sprite/social-links-sprite.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://ru-ru.facebook.com/" class="social-links__link">
+							<svg>
+								<use xlink:href="blocks/social-links/social-links-sprite/social-links-sprite.svg#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>	
+					<li>
+						<a href="https://vk.com/club172115153" class="social-links__link">
+							<svg>
+								<use xlink:href="blocks/social-links/social-links-sprite/social-links-sprite.svg#icon-inst"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://vk.com/club172115153" class="social-links__link">
+							<svg>
+								<use xlink:href="blocks/social-links/social-links-sprite/social-links-sprite.svg#icon-youtube"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="blocks/main-nav/main-nav.js"></script>
+</body>
+</html>
