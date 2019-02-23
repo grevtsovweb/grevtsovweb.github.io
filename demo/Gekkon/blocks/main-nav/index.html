@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Logo</title>
+	<link rel="stylesheet" href="../fonts/fonts.css">
+	<link rel="stylesheet" href="main-nav.css">
+	<style>
+
+		html{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			width:  100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: #FAFAFA;
+			font-family: GilroyRegular;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.wrapper{
+			max-width: 600px;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-nav">
+			<button class="main-nav__search">
+				<div class="main-nav__search-icon">
+					<svg aria-hidden="true">
+						<use xlink:href="main-nav-img/search.svg#search"></use>
+					</svg>
+				</div>
+			</button>
+			<div class="main-nav__block">
+				<input type="text" class="main-nav__search-input">
+				<nav class="main-nav__nav">
+					<ul class="main-nav__nav-list">
+						<li class="main-nav__nav-list-item">
+							<a href="#" class="main-nav__nav-list-link main-nav__nav-list-link_active">Скалодромы</a>
+						</li>
+						<li class="main-nav__nav-list-item">
+							<a href="#" class="main-nav__nav-list-link">Скалы</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+			<div class="main-nav__user-block">
+				<button class="main-nav__avatar">
+					<img src="main-nav-img/avatar.jpg" alt="Иванов Иван">
+				</button>
+				<div class="main-nav__user-menu main-nav__user-menu_active">
+					<p class="main-nav__user-name">
+						Иванов Иван
+					</p>
+					<div class="main-nav__user-decor"></div>
+					<ul class="main-nav__user-list">
+						<li class="main-nav__user-item">
+							<a href="" class="main-nav__user-link">Профиль</a>
+						</li>
+						<li class="main-nav__user-item">
+							<a href="#" class="main-nav__user-link">
+								<span class="main-nav__user-icon">
+									<svg aria-hidden="true">
+										<use xlink:href="main-nav-img/exit.svg#exit"></use>
+									</svg>
+								</span>
+								Выйти
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

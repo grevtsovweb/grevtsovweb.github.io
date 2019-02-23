@@ -9,6 +9,8 @@
   cursor: pointer; }
   .toggle-direction:hover svg {
     fill: #006CEB; }
+  .toggle-direction:focus svg {
+    fill: #006CEB; }
   .toggle-direction svg {
     width: 100%;
     height: 100%;

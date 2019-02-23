@@ -1,7 +1,8 @@
 .info-block {
   display: flex;
   color: #ffffff;
-  align-items: center; }
+  align-items: center;
+  font-family: GilroyRegular; }
   .info-block__number {
     width: 70px;
     height: 70px;
@@ -9,7 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.05); }
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    flex-shrink: 0; }
   .info-block__descr {
     margin: 0;
     margin-left: 20px; }

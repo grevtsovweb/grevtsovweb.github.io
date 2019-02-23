@@ -3,7 +3,8 @@
   height: calc(40vh + 186px);
   width: 100%;
   max-width: 100%;
-  position: relative; }
+  position: relative;
+  font-family: GilroyRegular; }
   .first-section__top {
     display: flex;
     width: 100%;
@@ -24,6 +25,9 @@
     flex-grow: 1;
     align-self: flex-end;
     background-color: #FAFAFA; }
+    @media screen and (max-width: 1400px) {
+      .first-section__decor {
+        height: 66px; } }
   .first-section__logo {
     width: 75px;
     height: 75px; }
@@ -55,6 +59,9 @@
     justify-content: center;
     flex-direction: column;
     height: calc(100% - 182px); }
+    @media screen and (max-width: 1400px) {
+      .first-section__item-wrapper {
+        width: 86%; } }
   .first-section__item-header {
     font-size: 70px;
     line-height: 1em;
@@ -68,9 +75,13 @@
   .first-section__info {
     height: auto;
     display: flex;
+    padding-left: 9vw;
     position: relative;
     z-index: 2;
     overflow-x: hidden; }
+    @media screen and (max-width: 1400px) {
+      .first-section__info {
+        padding-left: 7vw; } }
     .first-section__info::before {
       position: absolute;
       content: '';
@@ -92,17 +103,28 @@
     margin: 0;
     padding: 0;
     box-shadow: none;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: background-color .4s ease-out; }
+    @media screen and (max-width: 1400px) {
+      .first-section__info-button {
+        height: 132px;
+        width: 132px; } }
     .first-section__info-button:hover {
+      background-color: #006CEB; }
+    .first-section__info-button:focus {
       background-color: #006CEB; }
   .first-section__info-inner {
     display: flex;
-    margin-left: 9vw;
     padding-top: 55px;
     padding-bottom: 55px;
     margin-right: 9vw;
     position: relative;
     z-index: 2; }
+    @media screen and (max-width: 1400px) {
+      .first-section__info-inner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-right: 0; } }
   .first-section__info-item {
     width: 33.33%;
     max-width: 246px;
@@ -114,6 +136,9 @@
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media screen and (max-width: 1400px) {
+      .first-section__info-icon {
+        width: 80px; } }
     .first-section__info-icon svg {
       width: 100%;
       height: 100%;

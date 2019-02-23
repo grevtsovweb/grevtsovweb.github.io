@@ -1,5 +1,5 @@
 .page {
-  min-width: 320px;
+  min-width: 1000px;
   min-height: 100%;
   width: 100%;
   height: auto;
@@ -12,3 +12,6 @@
   color: #1f1f1f;
   background-color: #FAFAFA;
   overflow-x: hidden; }
+  @media screen and (max-width: 1100px) {
+    .page {
+      overflow-x: scroll; } }

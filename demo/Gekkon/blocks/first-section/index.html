@@ -1,99 +1,140 @@
-<header class="first-section">
-	<div class="first-section__top">
-		<div class="first-section__logo">
-			<a href="#" class="logo">
-				<span class="logo__icon">
-					<img src="blocks/logo/logo-img/logo.svg" alt="Gekkon">
-				</span>
-			</a>
-		</div>
-		<div class="first-section__nav">
-			<div class="main-nav">
-				<button class="main-nav__search">
-					<div class="main-nav__search-icon">
-						<svg aria-hidden="true">
-							<use xlink:href="blocks/main-nav/main-nav-img/search.svg#search"></use>
-						</svg>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" href="../fonts/fonts.css">
+	<link rel="stylesheet" href="../main-nav/main-nav.css">
+	<link rel="stylesheet" href="../info-block/info-block.css">
+	<link rel="stylesheet" href="../logo/logo.css">
+	<link rel="stylesheet" href="first-section.css">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<header class="first-section">
+		<div class="first-section__top">
+			<div class="first-section__logo">
+				<a href="#" class="logo">
+					<span class="logo__icon">
+						<img src="../logo/logo-img/logo.svg" alt="Gekkon">
+					</span>
+				</a>
+			</div>
+			<div class="first-section__nav">
+				<div class="main-nav">
+					<button class="main-nav__search">
+						<div class="main-nav__search-icon">
+							<svg aria-hidden="true">
+								<use xlink:href="../main-nav/main-nav-img/search.svg#search"></use>
+							</svg>
+						</div>
+					</button>
+					<div class="main-nav__block">
+						<input type="text" class="main-nav__search-input">
+						<nav class="main-nav__nav">
+							<ul class="main-nav__nav-list">
+								<li class="main-nav__nav-list-item">
+									<a href="#" class="main-nav__nav-list-link main-nav__nav-list-link_active">Скалодромы</a>
+								</li>
+								<li class="main-nav__nav-list-item">
+									<a href="#" class="main-nav__nav-list-link">Скалы</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
-				</button>
-				<div class="main-nav__block">
-					<input type="text" class="main-nav__search-input">
-					<nav class="main-nav__nav">
-						<ul class="main-nav__nav-list">
-							<li class="main-nav__nav-list-item">
-								<a href="#" class="main-nav__nav-list-link main-nav__nav-list-link_active">Скалодромы</a>
-							</li>
-							<li class="main-nav__nav-list-item">
-								<a href="#" class="main-nav__nav-list-link">Скалы</a>
-							</li>
-						</ul>
-					</nav>
+					
+					<div class="main-nav__user-block">
+						<button class="main-nav__avatar">
+							<img src="../main-nav/main-nav-img/avatar.jpg" alt="Иванов Иван">
+						</button>
+						<div class="main-nav__user-menu main-nav__user-menu_active">
+							<p class="main-nav__user-name">
+								Иванов Иван
+							</p>
+							<div class="main-nav__user-decor"></div>
+							<ul class="main-nav__user-list">
+								<li class="main-nav__user-item">
+									<a href="" class="main-nav__user-link">Профиль</a>
+								</li>
+								<li class="main-nav__user-item">
+									<a href="#" class="main-nav__user-link">
+										<span class="main-nav__user-icon">
+											<svg aria-hidden="true">
+												<use xlink:href="../main-nav/main-nav-img/exit.svg#exit"></use>
+											</svg>
+										</span>
+										Выйти
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<ul class="first-section__items-container">
+			<li class="first-section__item">
+				<div class="first-section__item-wrapper">
+					<h1 class="first-section__item-header">
+						Руководство 
+					</h1>
+					<p class="first-section__item-subtitle">
+						по скалалазанию в твоем городе
+					</p>
+				</div>
+			</li>	
+		</ul>
+		<div class="first-section__bottom">
+			<div class="first-section__info">
+				<div class="first-section__info-inner">
+					<div class="first-section__info-item">
+						<div class="info-block">
+							<div class="info-block__number">
+								25
+							</div>
+							<p class="info-block__descr">
+								Разнообразие
+								троп
+							</p>
+						</div>
+					</div>
+					<div class="first-section__info-item">
+						<div class="info-block">
+							<div class="info-block__number">
+								7
+							</div>
+							<p class="info-block__descr">
+								Больших
+								залов
+							</p>
+						</div>
+					</div>
+					<div class="first-section__info-item">
+						<div class="info-block">
+							<div class="info-block__number">
+								7
+							</div>
+							<p class="info-block__descr">
+								Больших
+								залов
+							</p>
+						</div>
+					</div>				
 				</div>
 				
-				<button class="main-nav__avatar">
-					<img src="blocks/main-nav/main-nav-img/avatar.jpg" alt="Иванов Иван">
+				<button class="first-section__info-button">
+					<span class="first-section__info-icon">
+						<svg aria-hidden="true">
+							<use xlink:href="../first-section/first-section-img/arrow.svg#arrow"></use>
+						</svg>
+					</span>	
 				</button>
 			</div>
+			<div class="first-section__decor"></div>
 		</div>
-	</div>
-	<ul class="first-section__items-container">
-		<li class="first-section__item">
-			<div class="first-section__item-wrapper">
-				<h1 class="first-section__item-header">
-					Руководство 
-				</h1>
-				<p class="first-section__item-subtitle">
-					по скалалазанию в твоем городе
-				</p>
-			</div>
-		</li>	
-	</ul>
-	<div class="first-section__bottom">
-		<div class="first-section__info">
-			<div class="first-section__info-inner">
-				<div class="first-section__info-item">
-					<div class="info-block">
-						<div class="info-block__number">
-							25
-						</div>
-						<p class="info-block__descr">
-							Разнообразие
-							троп
-						</p>
-					</div>
-				</div>
-				<div class="first-section__info-item">
-					<div class="info-block">
-						<div class="info-block__number">
-							7
-						</div>
-						<p class="info-block__descr">
-							Больших
-							залов
-						</p>
-					</div>
-				</div>
-				<div class="first-section__info-item">
-					<div class="info-block">
-						<div class="info-block__number">
-							7
-						</div>
-						<p class="info-block__descr">
-							Больших
-							залов
-						</p>
-					</div>
-				</div>				
-			</div>
-			
-			<button class="first-section__info-button">
-				<span class="first-section__info-icon">
-					<svg aria-hidden="true">
-						<use xlink:href="blocks/first-section/first-section-img/arrow.svg#arrow"></use>
-					</svg>
-				</span>	
-			</button>
-		</div>
-		<div class="first-section__decor"></div>
-	</div>
-</header>
+	</header>
+</body>

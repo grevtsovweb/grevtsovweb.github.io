@@ -4,7 +4,10 @@
   background-color: #0D0D0D;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: box-shadow .4s ease-out; }
+  .logo:focus {
+    box-shadow: 0px 0px 0px 2px rgba(0, 108, 235, 0.7); }
   .logo__icon {
     display: flex;
     align-items: center;

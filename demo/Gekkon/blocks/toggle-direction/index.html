@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Card</title>
+	<link rel="stylesheet" href="../fonts/fonts.css">
+	<link rel="stylesheet" href="toggle-direction.css">
+	<style>
+
+		html{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			width:  100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: #FAFAFA;
+			font-family: GilroyRegular;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.wrapper{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			max-width: 410px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<button class="toggle-direction toggle-direction_active">
+			<svg>
+				<use xlink:href="toggle-direction-sprite/toggle-direction-sprite.svg#toggle-table"></use>
+			</svg>
+		</button>
+		<button class="toggle-direction">
+			<svg>
+				<use xlink:href="toggle-direction-sprite/toggle-direction-sprite.svg#toggle-list"></use>
+			</svg>
+		</button>
+	</div>
+</body>
+</html>

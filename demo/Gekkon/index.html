@@ -51,9 +51,33 @@
 						</nav>
 					</div>
 					
-					<button class="main-nav__avatar">
-						<img src="blocks/main-nav/main-nav-img/avatar.jpg" alt="Иванов Иван">
-					</button>
+					<div class="main-nav__user-block">
+						<button class="main-nav__avatar">
+							<img src="blocks/main-nav/main-nav-img/avatar.jpg" alt="Иванов Иван">
+						</button>
+						<div class="main-nav__user-menu main-nav__user-menu_active">
+							<p class="main-nav__user-name">
+								Иванов Иван
+							</p>
+							<div class="main-nav__user-decor"></div>
+							<ul class="main-nav__user-list">
+								<li class="main-nav__user-item">
+									<a href="" class="main-nav__user-link">Профиль</a>
+								</li>
+								<li class="main-nav__user-item">
+									<a href="#" class="main-nav__user-link">
+										<span class="main-nav__user-icon">
+											<svg aria-hidden="true">
+												<use xlink:href="blocks/main-nav/main-nav-img/exit.svg#exit"></use>
+											</svg>
+										</span>
+										Выйти
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		</div>
