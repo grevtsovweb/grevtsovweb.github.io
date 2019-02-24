@@ -34,6 +34,10 @@
     margin-left: auto; }
   .content__card {
     margin-bottom: 30px; }
+  .content__pagination {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center; }
   .content__col-md-4 {
     width: calc(33.33% - 30px);
     margin-left: 15px;
