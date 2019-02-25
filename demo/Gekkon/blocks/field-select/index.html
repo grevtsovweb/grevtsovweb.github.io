@@ -24,22 +24,31 @@
 		}
 
 		.wrapper{
-			max-width: 410px;
+			max-width: 320px;
+			width: 100%;
 		}
 	</style>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="field-select">
-			<label class="field-select__label">
-				<span class="field-select__title">Категория</span>
-				<span class="field-select__wrapper">
-					<select name="series" class="field-select__select">
-						<option value="1">Все</option>
-						<option value="Вакансия на должность 2">Вакансия на должность 2</option>
-					</select>
-				</span>	
-			</label>
+			<span class="field-select__title">Категория</span>
+			<div class="field-select__container">
+				<div class="field-select__select field-select__select_active" tabindex="0">
+					Все
+				</div>
+				<ul class="field-select__dropdown">
+					<li class="field-select__dropdown-item">
+						Позиция 1
+					</li>
+					<li class="field-select__dropdown-item">
+						Позиция 2
+					</li>
+					<li class="field-select__dropdown-item">
+						Позиция 3
+					</li>
+				</ul>		
+			</div>
 		</div>
 	</div>
 </body>

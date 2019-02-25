@@ -13,7 +13,8 @@
     box-shadow: none;
     background-color: #ffffff;
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    transition: background-color .4s ease-out; }
     .main-nav__search::after {
       content: '';
       position: absolute;
@@ -22,7 +23,7 @@
       bottom: 4px;
       width: 1px;
       background-color: #E6E6E6;
-      z-index: 4; }
+      z-index: 1; }
     .main-nav__search:hover {
       background-color: #006CEB; }
       .main-nav__search:hover svg {
@@ -57,7 +58,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     box-sizing: border-box;
-    display: none; }
+    display: none;
+    font-family: GilroyRegular;
+    font-size: 18px;
+    z-index: 3; }
     .main-nav__search-input_active {
       display: block; }
   .main-nav__nav {

@@ -17,6 +17,9 @@
 	<link rel="stylesheet" href="blocks/field-select/field-select.css">
 	<link rel="stylesheet" href="blocks/toggle-direction/toggle-direction.css">
 	<link rel="stylesheet" href="blocks/pagination/pagination.css">
+	<link rel="preload" href="blocks/fonts/GilroyBold/GilroyBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="blocks/fonts/GilroyMedium/GilroyMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="blocks/fonts/GilroyRegular/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
 </head>
 <body class="page">
@@ -148,41 +151,65 @@
 			<div class="content__filter">
 				<div class="content__filter-item content__filter-item_category">
 					<div class="field-select">
-						<label class="field-select__label">
-							<span class="field-select__title">Категория</span>
-							<span class="field-select__wrapper">
-								<select name="series" class="field-select__select">
-									<option value="1">Все</option>
-									<option value="Вакансия на должность 2">Вакансия на должность 2</option>
-								</select>
-							</span>	
-						</label>
+						<span class="field-select__title">Категория</span>
+						<div class="field-select__container">
+							<div class="field-select__select field-select__select_active" tabindex="0">
+								Все
+							</div>
+							<ul class="field-select__dropdown">
+								<li class="field-select__dropdown-item">
+									Позиция 1
+								</li>
+								<li class="field-select__dropdown-item">
+									Позиция 2
+								</li>
+								<li class="field-select__dropdown-item">
+									Позиция 3
+								</li>
+							</ul>		
+						</div>
 					</div>
 				</div>
 				<div class="content__filter-item content__filter-item_status">
 					<div class="field-select">
-						<label class="field-select__label">
-							<span class="field-select__title">Статут</span>
-							<span class="field-select__wrapper">
-								<select name="series" class="field-select__select">
-									<option value="1">Все</option>
-									<option value="Вакансия на должность 2">Вакансия на должность 2</option>
-								</select>
-							</span>	
-						</label>
+						<span class="field-select__title">Статус</span>
+						<div class="field-select__container">
+							<div class="field-select__select" tabindex="1">
+								Все
+							</div>
+							<ul class="field-select__dropdown">
+								<li class="field-select__dropdown-item">
+									Позиция 1
+								</li>
+								<li class="field-select__dropdown-item">
+									Позиция 2
+								</li>
+								<li class="field-select__dropdown-item">
+									Позиция 3
+								</li>
+							</ul>		
+						</div>
 					</div>
 				</div>
 				<div class="content__filter-item content__filter-item_hall">
 					<div class="field-select">
-						<label class="field-select__label">
-							<span class="field-select__title">Зал</span>
-							<span class="field-select__wrapper">
-								<select name="series" class="field-select__select">
-									<option value="1">Все</option>
-									<option value="Вакансия на должность 2">Вакансия на должность 2</option>
-								</select>
-							</span>	
-						</label>
+						<span class="field-select__title">Зал</span>
+						<div class="field-select__container">
+							<div class="field-select__select" tabindex="2">
+								Все
+							</div>
+							<ul class="field-select__dropdown">
+								<li class="field-select__dropdown-item">
+									Позиция 1
+								</li>
+								<li class="field-select__dropdown-item">
+									Позиция 2
+								</li>
+								<li class="field-select__dropdown-item">
+									Позиция 3
+								</li>
+							</ul>		
+						</div>
 					</div>
 				</div>
 				<div class="content__toggle">
@@ -203,6 +230,21 @@
 					<a href="#" class="card content__card">
 						<article href="#" class="card__inner">
 							<div class="card__image">
+								
+							</div>
+							<div class="card__info">
+								<div class="card__header">
+									<h1 class="card__title">Название трассы</h1>
+									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
+								</div>
+							</div>
+						</article>
+					</a>
+				</div>
+				<div class="content__col-md-4 content__col-lg-3">
+					<a href="#" class="card content__card">
+						<article href="#" class="card__inner">
+							<div class="card__image">
 								<img src="blocks/card/card-image/card-img.jpg" alt="Карточка 1">
 							</div>
 							<div class="card__info">
@@ -218,7 +260,7 @@
 					<a href="#" class="card content__card">
 						<article href="#" class="card__inner">
 							<div class="card__image">
-								<img src="" alt="Карточка 1">
+								<img src="blocks/card/card-image/card-img.jpg" alt="Карточка 1">
 							</div>
 							<div class="card__info">
 								<div class="card__header">
@@ -233,7 +275,7 @@
 					<a href="#" class="card content__card">
 						<article href="#" class="card__inner">
 							<div class="card__image">
-								<img src="" alt="Карточка 1">
+								<img src="blocks/card/card-image/card-img.jpg" alt="Карточка 1">
 							</div>
 							<div class="card__info">
 								<div class="card__header">
@@ -248,7 +290,7 @@
 					<a href="#" class="card content__card">
 						<article href="#" class="card__inner">
 							<div class="card__image">
-								<img src="" alt="Карточка 1">
+								<img src="blocks/card/card-image/card-img.jpg" alt="Карточка 1">
 							</div>
 							<div class="card__info">
 								<div class="card__header">
@@ -263,22 +305,7 @@
 					<a href="#" class="card content__card">
 						<article href="#" class="card__inner">
 							<div class="card__image">
-								<img src="" alt="Карточка 1">
-							</div>
-							<div class="card__info">
-								<div class="card__header">
-									<h1 class="card__title">Название трассы</h1>
-									<time class="card__date" datetime="2018-10-15">15.10.2018</time>
-								</div>
-							</div>
-						</article>
-					</a>
-				</div>
-				<div class="content__col-md-4 content__col-lg-3">
-					<a href="#" class="card content__card">
-						<article href="#" class="card__inner">
-							<div class="card__image">
-								<img src="" alt="Карточка 1">
+								<img src="blocks/card/card-image/card-img.jpg" alt="Карточка 1">
 							</div>
 							<div class="card__info">
 								<div class="card__header">
