@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/style.css">
+	
+</head>
+<body class="page page_unscrollable">
+	<div class="for-mobile">
+		<div class="for-mobile__logo">
+			<svg viewBox="0 0 663 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.5 2V13H20.3V72H31.8V13H51.5V2H0.5ZM69.5039 12.5C72.3039 9.7 72.3039 5.5 69.6039 2.8C66.9039 -2.86102e-06 62.5039 -2.86102e-06 59.8039 2.8C57.1039 5.5 57.1039 9.7 59.8039 12.5C62.6039 15.2 66.8039 15.2 69.5039 12.5ZM70.1039 72V22H59.3039V72H70.1039ZM137.244 20.7C130.344 20.7 125.244 23.3 121.944 28.6C118.844 23.3 114.144 20.7 107.744 20.7C101.444 20.7 96.6438 23.1 93.4438 28V22H82.6438V72H93.4438V44C93.4438 35.3 98.0438 30.8 104.544 30.8C110.544 30.8 113.944 34.8 113.944 41.7V72H124.744V44C124.744 35.2 128.944 30.8 135.644 30.8C141.644 30.8 145.344 34.8 145.344 41.7V72H156.144V41C156.144 28.6 148.544 20.7 137.244 20.7ZM216.002 51.6C216.302 49.7 216.402 48.2 216.402 47.1C216.402 39.8 214.002 33.5 209.302 28.4C204.602 23.3 198.602 20.7 191.302 20.7C183.602 20.7 177.202 23.2 172.302 28.3C167.402 33.3 164.902 39.5 164.902 47C164.902 54.6 167.402 60.9 172.402 65.9C177.402 70.8 184.002 73.3 192.102 73.3C201.802 73.3 209.102 69.7 214.002 62.4L205.102 57.2C202.202 61.3 197.902 63.4 192.202 63.4C183.902 63.4 177.802 59.2 176.202 51.6H216.002ZM176.102 42.8C177.602 35.2 183.202 30.5 191.202 30.5C198.302 30.5 204.002 34.7 205.502 42.8H176.102ZM306.305 2L285.105 37L264.005 2H251.605V72H263.105V22L284.405 57.3H285.805L307.105 22.1V72H318.605V2H306.305ZM371.463 29.1C367.363 23.5 361.563 20.7 353.963 20.7C347.063 20.7 341.263 23.2 336.363 28.3C331.463 33.4 329.063 39.6 329.063 47C329.063 54.3 331.463 60.6 336.363 65.7C341.263 70.8 347.063 73.3 353.963 73.3C361.563 73.3 367.363 70.5 371.463 64.8V72H382.263V22H371.463V29.1ZM344.363 58.5C341.363 55.4 339.863 51.6 339.863 47C339.863 42.4 341.363 38.6 344.363 35.6C347.363 32.5 351.163 31 355.663 31C360.163 31 363.963 32.5 366.963 35.6C369.963 38.6 371.463 42.4 371.463 47C371.463 51.6 369.963 55.4 366.963 58.5C363.963 61.5 360.163 63 355.663 63C351.163 63 347.363 61.5 344.363 58.5ZM421.151 20.7C414.051 20.7 408.951 23.3 405.651 28.4V22H394.851V72H405.651V45.2C405.651 35.5 410.751 30.8 418.351 30.8C425.251 30.8 429.551 34.9 429.551 42.4V72H440.351V41.3C440.351 28.5 432.651 20.7 421.151 20.7ZM491.58 29.1C487.48 23.5 481.68 20.7 474.08 20.7C467.18 20.7 461.38 23.2 456.48 28.3C451.58 33.4 449.18 39.6 449.18 47C449.18 54.3 451.58 60.6 456.48 65.7C461.38 70.8 467.18 73.3 474.08 73.3C481.68 73.3 487.48 70.5 491.58 64.8V72H502.38V22H491.58V29.1ZM464.48 58.5C461.48 55.4 459.98 51.6 459.98 47C459.98 42.4 461.48 38.6 464.48 35.6C467.48 32.5 471.28 31 475.78 31C480.28 31 484.08 32.5 487.08 35.6C490.08 38.6 491.58 42.4 491.58 47C491.58 51.6 490.08 55.4 487.08 58.5C484.08 61.5 480.28 63 475.78 63C471.28 63 467.48 61.5 464.48 58.5ZM554.768 29.4C550.668 23.6 544.868 20.7 537.368 20.7C530.268 20.7 524.368 23.2 519.468 28.3C514.568 33.3 512.168 39.4 512.168 46.5C512.168 53.6 514.568 59.7 519.468 64.8C524.368 69.8 530.268 72.3 537.368 72.3C544.868 72.3 550.668 69.4 554.768 63.6V69.7C554.768 78.4 549.168 83.5 539.868 83.5C532.768 83.5 527.868 80.9 525.268 75.8L515.968 81.2C520.268 89.3 528.168 93.3 539.668 93.3C546.768 93.3 552.868 91.3 557.868 87.2C562.868 83.1 565.368 77.3 565.368 69.7V22H554.768V29.4ZM527.468 57.7C524.468 54.7 522.968 51 522.968 46.5C522.968 42 524.468 38.3 527.468 35.3C530.568 32.3 534.368 30.8 538.868 30.8C543.368 30.8 547.168 32.3 550.168 35.3C553.268 38.3 554.768 42 554.768 46.5C554.768 51 553.268 54.7 550.168 57.7C547.168 60.7 543.368 62.2 538.868 62.2C534.368 62.2 530.568 60.7 527.468 57.7ZM626.256 51.6C626.556 49.7 626.656 48.2 626.656 47.1C626.656 39.8 624.256 33.5 619.556 28.4C614.856 23.3 608.856 20.7 601.556 20.7C593.856 20.7 587.456 23.2 582.556 28.3C577.656 33.3 575.156 39.5 575.156 47C575.156 54.6 577.656 60.9 582.656 65.9C587.656 70.8 594.256 73.3 602.356 73.3C612.056 73.3 619.356 69.7 624.256 62.4L615.356 57.2C612.456 61.3 608.156 63.4 602.456 63.4C594.156 63.4 588.056 59.2 586.456 51.6H626.256ZM586.356 42.8C587.856 35.2 593.456 30.5 601.456 30.5C608.556 30.5 614.256 34.7 615.756 42.8H586.356ZM646.959 22H636.159V72H646.959V46.8C646.959 41.7 648.459 38 651.559 35.8C654.659 33.5 658.259 32.5 662.359 32.8V21.1C654.859 21.1 649.659 24.2 646.959 30.4V22Z" fill="#FFF9F9"/>
+			</svg>
+		</div>
+		
+		<p class="for-mobile__text">Данное приложение предназначено только для устройств с большим экраном. Воспользуйтесь, пожалуйста, компьютером</p>
+	</div>
+	<div class="preloader">
+		<div class="preloader__text">
+
+			<svg  viewBox="0 0 663 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.5 2V13H20.3V72H31.8V13H51.5V2H0.5ZM69.5039 12.5C72.3039 9.7 72.3039 5.5 69.6039 2.8C66.9039 -2.86102e-06 62.5039 -2.86102e-06 59.8039 2.8C57.1039 5.5 57.1039 9.7 59.8039 12.5C62.6039 15.2 66.8039 15.2 69.5039 12.5ZM70.1039 72V22H59.3039V72H70.1039ZM137.244 20.7C130.344 20.7 125.244 23.3 121.944 28.6C118.844 23.3 114.144 20.7 107.744 20.7C101.444 20.7 96.6438 23.1 93.4438 28V22H82.6438V72H93.4438V44C93.4438 35.3 98.0438 30.8 104.544 30.8C110.544 30.8 113.944 34.8 113.944 41.7V72H124.744V44C124.744 35.2 128.944 30.8 135.644 30.8C141.644 30.8 145.344 34.8 145.344 41.7V72H156.144V41C156.144 28.6 148.544 20.7 137.244 20.7ZM216.002 51.6C216.302 49.7 216.402 48.2 216.402 47.1C216.402 39.8 214.002 33.5 209.302 28.4C204.602 23.3 198.602 20.7 191.302 20.7C183.602 20.7 177.202 23.2 172.302 28.3C167.402 33.3 164.902 39.5 164.902 47C164.902 54.6 167.402 60.9 172.402 65.9C177.402 70.8 184.002 73.3 192.102 73.3C201.802 73.3 209.102 69.7 214.002 62.4L205.102 57.2C202.202 61.3 197.902 63.4 192.202 63.4C183.902 63.4 177.802 59.2 176.202 51.6H216.002ZM176.102 42.8C177.602 35.2 183.202 30.5 191.202 30.5C198.302 30.5 204.002 34.7 205.502 42.8H176.102ZM306.305 2L285.105 37L264.005 2H251.605V72H263.105V22L284.405 57.3H285.805L307.105 22.1V72H318.605V2H306.305ZM371.463 29.1C367.363 23.5 361.563 20.7 353.963 20.7C347.063 20.7 341.263 23.2 336.363 28.3C331.463 33.4 329.063 39.6 329.063 47C329.063 54.3 331.463 60.6 336.363 65.7C341.263 70.8 347.063 73.3 353.963 73.3C361.563 73.3 367.363 70.5 371.463 64.8V72H382.263V22H371.463V29.1ZM344.363 58.5C341.363 55.4 339.863 51.6 339.863 47C339.863 42.4 341.363 38.6 344.363 35.6C347.363 32.5 351.163 31 355.663 31C360.163 31 363.963 32.5 366.963 35.6C369.963 38.6 371.463 42.4 371.463 47C371.463 51.6 369.963 55.4 366.963 58.5C363.963 61.5 360.163 63 355.663 63C351.163 63 347.363 61.5 344.363 58.5ZM421.151 20.7C414.051 20.7 408.951 23.3 405.651 28.4V22H394.851V72H405.651V45.2C405.651 35.5 410.751 30.8 418.351 30.8C425.251 30.8 429.551 34.9 429.551 42.4V72H440.351V41.3C440.351 28.5 432.651 20.7 421.151 20.7ZM491.58 29.1C487.48 23.5 481.68 20.7 474.08 20.7C467.18 20.7 461.38 23.2 456.48 28.3C451.58 33.4 449.18 39.6 449.18 47C449.18 54.3 451.58 60.6 456.48 65.7C461.38 70.8 467.18 73.3 474.08 73.3C481.68 73.3 487.48 70.5 491.58 64.8V72H502.38V22H491.58V29.1ZM464.48 58.5C461.48 55.4 459.98 51.6 459.98 47C459.98 42.4 461.48 38.6 464.48 35.6C467.48 32.5 471.28 31 475.78 31C480.28 31 484.08 32.5 487.08 35.6C490.08 38.6 491.58 42.4 491.58 47C491.58 51.6 490.08 55.4 487.08 58.5C484.08 61.5 480.28 63 475.78 63C471.28 63 467.48 61.5 464.48 58.5ZM554.768 29.4C550.668 23.6 544.868 20.7 537.368 20.7C530.268 20.7 524.368 23.2 519.468 28.3C514.568 33.3 512.168 39.4 512.168 46.5C512.168 53.6 514.568 59.7 519.468 64.8C524.368 69.8 530.268 72.3 537.368 72.3C544.868 72.3 550.668 69.4 554.768 63.6V69.7C554.768 78.4 549.168 83.5 539.868 83.5C532.768 83.5 527.868 80.9 525.268 75.8L515.968 81.2C520.268 89.3 528.168 93.3 539.668 93.3C546.768 93.3 552.868 91.3 557.868 87.2C562.868 83.1 565.368 77.3 565.368 69.7V22H554.768V29.4ZM527.468 57.7C524.468 54.7 522.968 51 522.968 46.5C522.968 42 524.468 38.3 527.468 35.3C530.568 32.3 534.368 30.8 538.868 30.8C543.368 30.8 547.168 32.3 550.168 35.3C553.268 38.3 554.768 42 554.768 46.5C554.768 51 553.268 54.7 550.168 57.7C547.168 60.7 543.368 62.2 538.868 62.2C534.368 62.2 530.568 60.7 527.468 57.7ZM626.256 51.6C626.556 49.7 626.656 48.2 626.656 47.1C626.656 39.8 624.256 33.5 619.556 28.4C614.856 23.3 608.856 20.7 601.556 20.7C593.856 20.7 587.456 23.2 582.556 28.3C577.656 33.3 575.156 39.5 575.156 47C575.156 54.6 577.656 60.9 582.656 65.9C587.656 70.8 594.256 73.3 602.356 73.3C612.056 73.3 619.356 69.7 624.256 62.4L615.356 57.2C612.456 61.3 608.156 63.4 602.456 63.4C594.156 63.4 588.056 59.2 586.456 51.6H626.256ZM586.356 42.8C587.856 35.2 593.456 30.5 601.456 30.5C608.556 30.5 614.256 34.7 615.756 42.8H586.356ZM646.959 22H636.159V72H646.959V46.8C646.959 41.7 648.459 38 651.559 35.8C654.659 33.5 658.259 32.5 662.359 32.8V21.1C654.859 21.1 649.659 24.2 646.959 30.4V22Z" fill="#FFF9F9"/>
+			</svg>
+			<div class="preloader__text-shine">
+				<svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 50" enable-background="new 0 0 0 0" xml:space="preserve">
+					<circle fill="#fff" stroke="none" cx="30" cy="20" r="6">
+					<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1"></animate>
+					</circle>
+					<circle fill="#fff" stroke="none" cx="50" cy="20" r="6">
+					<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2"></animate>
+					</circle>
+					<circle fill="#fff" stroke="none" cx="70" cy="20" r="6">
+					<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3"></animate>
+					</circle>
+				</svg>
+			</div>
+		</div>
+		<p class="preloader__text-info">Данная версия сайта носит ознакомительный характер и демонстрирует дизайн продукта.<br>Функционал может быть ограничен.</p>
+	</div>
+	<div class="page__wrapper">
+		<div class="page__header">
+			 <div class="page__toggles">
+			 	<div class="page__toggles-wrapper">
+			 		<button class="page__toggles-item">Месяц</button>
+
+			 		<div class="page__toggles-modal">
+			 			<div class="page__toggles-modal-header">
+			 				<div class="page__toggles-modal-title">Период</div>
+			 				<div class="page__toggles-modal-period">
+			 					<div class="page__toggles-modal-period-item">
+			 						Февраль, 2018
+			 					</div>
+			 				</div>
+			 			</div>
+			 			<div class="page__range">
+			 				
+			 				<div class="range">
+			 					<div class="range__years">
+			 						<div class="range__years-item">2018</div>
+			 						<div class="range__years-item">2019</div>
+			 						<div class="range__years-item">2020</div>
+			 					</div>
+			 					<div class="range__wrapper">
+			 						<div class="range__wrapper-bar">
+				 					</div>
+				 					<div class="range__handler range__handler_left">
+				 						<div class="range__handler-tooltip">
+				 							Февраль, 2018
+				 						</div>
+				 					</div>
+			 					</div>
+			 				</div>
+			 			</div>
+			 			<div class="page__toggles-button-wrapper">
+			 				<button class="page__toggles-button">Применить</button>
+			 			</div>
+			 		</div>
+			 	</div>
+
+			 	<div class="page__toggles-wrapper">
+			 		<button class="page__toggles-item page__toggles-item_active">Период</button>
+
+			 		<!-- Выбор диапазона -->
+			 		<div class="page__toggles-modal">
+			 			<div class="page__toggles-modal-header">
+			 				<div class="page__toggles-modal-title">Период</div>
+			 				<div class="page__toggles-modal-period">
+			 					<div class="page__toggles-modal-period-item">
+			 						Февраль, 2018
+			 					</div>
+			 					<div class="page__toggles-modal-period-separator">
+			 						-
+			 					</div>
+			 					<div class="page__toggles-modal-period-item">
+			 						Октябрь, 2019
+			 					</div>
+			 				</div>
+			 			</div>
+			 			<div class="page__range">
+			 				
+			 				<div class="range">
+			 					<div class="range__years">
+			 						<div class="range__years-item">2018</div>
+			 						<div class="range__years-item">2019</div>
+			 						<div class="range__years-item">2020</div>
+			 					</div>
+			 					<div class="range__wrapper">
+			 						<div class="range__wrapper-bar">
+				 						<div class="range__bar"></div>
+				 					</div>
+				 					<div class="range__handler range__handler_left">
+				 						<div class="range__handler-tooltip">
+				 							Февраль, 2018
+				 						</div>
+				 					</div>
+				 					<div class="range__handler range__handler_right">
+				 						<div class="range__handler-tooltip">
+				 							Октябрь, 2019
+				 						</div>
+				 					</div>
+			 					</div>
+			 				</div>
+			 			</div>
+			 			<div class="page__toggles-button-wrapper">
+			 				<button class="page__toggles-button">Применить</button>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div> 
+			 <div class="page__information">
+			 	<div class="page__month-name">Октябрь, 2019</div>
+			 	<div class="page__month-name-separator">
+			 		-
+			 	</div>
+			 	<div class="page__month-name">Январь, 2020</div>
+			 </div>
+			 <div class="page__user-block">
+			 	<div class="page__user-block-item">
+			 		<button class="message">
+			 			<span class="message__icon">
+			 				<img src="img/notification.svg" alt="Уведомление">
+			 			</span>
+			 			<span class="message__number">
+			 				2
+			 			</span>
+			 		</button>
+			 	</div>
+			 	<div class="page__user-block-item">
+			 		<div class="avatar">
+			 			<img src="img/person.jpg" alt="Аватар" class="avatar__person">
+			 		</div>
+			 	</div>
+			 </div>
+		</div>
+		<div class="page__content">
+			<div class="page__col page__col-md">
+				<div class="month">
+					<div class="month__header">
+						<div class="month__name">Октябрь</div>
+						<div class="month__year">2019</div>
+					</div>
+					<div class="month__calendar">
+						<div class="month__calendar-header">
+							<div class="month__calendar-header-day">
+								Пн
+							</div>
+							<div class="month__calendar-header-day">
+								Вт
+							</div>
+							<div class="month__calendar-header-day">
+								Ср
+							</div>
+							<div class="month__calendar-header-day">
+								Чт
+							</div>
+							<div class="month__calendar-header-day">
+								Пт
+							</div>
+							<div class="month__calendar-header-day">
+								Сб
+							</div>
+							<div class="month__calendar-header-day">
+								Вс
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									30
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									1
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									2
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									3
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									4
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									5
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="qw">
+								<div class="month__calendar-day-date">
+									6
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									7
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									8
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									9
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_red">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									10
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_red">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_open">
+								<div class="month__calendar-day-date">
+									11
+								</div>
+								
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_orange">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									12
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									13
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									14
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									15
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									16
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									17
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									18
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									19
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									20
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									21
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									22
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									23
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_short">
+								<div class="month__calendar-day-date">
+									24
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_orange">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-button">
+										<span class="month__calendar-day-time-point"></span>
+										<span class="month__calendar-day-time-point"></span>
+										<span class="month__calendar-day-time-point"></span>
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									25
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									26
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									27
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									28
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									29
+								</div>
+							</div>
+							<div class="month__calendar-day ">
+								<div class="month__calendar-day-date">
+									30
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									1
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									2
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									3
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									4
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									5
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									6
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									7
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									8
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									9
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									10
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									12
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__col page__col-md">
+				<div class="month">
+					<div class="month__header">
+						<div class="month__name">Октябрь</div>
+						<div class="month__year">2019</div>
+					</div>
+					<div class="month__calendar">
+						<div class="month__calendar-header">
+							<div class="month__calendar-header-day">
+								Пн
+							</div>
+							<div class="month__calendar-header-day">
+								Вт
+							</div>
+							<div class="month__calendar-header-day">
+								Ср
+							</div>
+							<div class="month__calendar-header-day">
+								Чт
+							</div>
+							<div class="month__calendar-header-day">
+								Пт
+							</div>
+							<div class="month__calendar-header-day">
+								Сб
+							</div>
+							<div class="month__calendar-header-day">
+								Вс
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									30
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									1
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									2
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									3
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									4
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									5
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="qw">
+								<div class="month__calendar-day-date">
+									6
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									7
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									8
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									9
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_red">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									10
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_red">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_open">
+								<div class="month__calendar-day-date">
+									11
+								</div>
+								
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_orange">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									12
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									13
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									14
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									15
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									16
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									17
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									18
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									19
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									20
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									21
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									22
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									23
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_short">
+								<div class="month__calendar-day-date">
+									24
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_orange">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-button">
+										<span class="month__calendar-day-time-point"></span>
+										<span class="month__calendar-day-time-point"></span>
+										<span class="month__calendar-day-time-point"></span>
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									25
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									26
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									27
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									28
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									29
+								</div>
+							</div>
+							<div class="month__calendar-day ">
+								<div class="month__calendar-day-date">
+									30
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									1
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									2
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									3
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									4
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									5
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									6
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									7
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									8
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									9
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									10
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									12
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page__col page__col-md">
+				<div class="month">
+					<div class="month__header">
+						<div class="month__name">Октябрь</div>
+						<div class="month__year">2019</div>
+					</div>
+					<div class="month__calendar">
+						<div class="month__calendar-header">
+							<div class="month__calendar-header-day">
+								Пн
+							</div>
+							<div class="month__calendar-header-day">
+								Вт
+							</div>
+							<div class="month__calendar-header-day">
+								Ср
+							</div>
+							<div class="month__calendar-header-day">
+								Чт
+							</div>
+							<div class="month__calendar-header-day">
+								Пт
+							</div>
+							<div class="month__calendar-header-day">
+								Сб
+							</div>
+							<div class="month__calendar-header-day">
+								Вс
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									30
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									1
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									2
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									3
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									4
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									5
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="qw">
+								<div class="month__calendar-day-date">
+									6
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									7
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									8
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									9
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_red">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									10
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_red">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_open">
+								<div class="month__calendar-day-date">
+									11
+								</div>
+								
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_orange">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-add">
+										<img src="img/add.svg" alt="Добавить время">
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									12
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									13
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									14
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									15
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									16
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									17
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									18
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									19
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									20
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									21
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									22
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									23
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_short">
+								<div class="month__calendar-day-date">
+									24
+								</div>
+								<div class="month__calendar-day-timeline">
+									<div class="timeline timeline_orange">
+										<div class="timeline__wrapper">
+											<div class="timeline__indicator"></div>
+										</div>
+										<div class="timeline__tooltip">
+											8 ч 15 мин
+										</div>
+									</div>
+								</div>
+								<div class="month__calendar-day-time">
+									<div class="month__calendar-day-time-item">11:44 - 20:00</div>
+									<button class="month__calendar-day-time-button">
+										<span class="month__calendar-day-time-point"></span>
+										<span class="month__calendar-day-time-point"></span>
+										<span class="month__calendar-day-time-point"></span>
+									</button>
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									25
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									26
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_rest">
+								<div class="month__calendar-day-date">
+									27
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									28
+								</div>
+							</div>
+							<div class="month__calendar-day">
+								<div class="month__calendar-day-date">
+									29
+								</div>
+							</div>
+							<div class="month__calendar-day ">
+								<div class="month__calendar-day-date">
+									30
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									1
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									2
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									3
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									4
+								</div>
+							</div>
+						</div>
+						<div class="month__calendar-week">
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									5
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									6
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									7
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									8
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									9
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									10
+								</div>
+							</div>
+							<div class="month__calendar-day month__calendar-day_unactive">
+								<div class="month__calendar-day-date">
+									12
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="page__sidebar">
+			<div class="sidebar">
+				<div class="sidebar__header">
+					<div class="sidebar__title">9 Октября</div>
+					<div class="sidebar__day-type sidebar__day-type_short">
+						<div class="sidebar__day-type-tooltip">
+							Короткий день
+						</div>
+					</div>
+				</div>
+				<div class="sidebar__item">
+					<div class="sidebar__item-header">Занятость</div>
+					<div class="sidebar__item-data">
+						
+						<div class="sidebar__item-data-value">
+							11:44 - 20:00
+						</div>
+						<div class="sidebar__item-data-value">
+							21:00 - 23:00
+						</div>
+					</div>
+				</div>
+				<div class="sidebar__item-total">
+					<div class="sidebar__item-header">Итого:</div>
+					<div class="sidebar__item-total-data">10 часов 16 мин</div>
+				</div>
+			</div>
+			<div class="sidebar">
+				<div class="sidebar__header">
+					<div class="sidebar__title"><span class="sidebar__title_gray">Статистика за</span> Октябрь</div>
+				</div>
+				<div class="sidebar__table">
+					<div class="sidebar__table-row">
+						<div class="sidebar__table-item">Коротких дней:</div>
+						<div class="sidebar__table-item sidebar__table-item_value">1 день</div>
+					</div>
+					<div class="sidebar__table-row">
+						<div class="sidebar__table-item">Рабочих дней:</div>
+						<div class="sidebar__table-item sidebar__table-item_value">6 дней</div>
+					</div>
+					<div class="sidebar__table-row">
+						<div class="sidebar__table-item">Отработано:</div>
+						<div class="sidebar__table-item sidebar__table-item_value">
+							<div class="sidebar__table-item-indicator">
+								<div class="timeline">
+									<div class="timeline__wrapper">
+										<div class="timeline__indicator"></div>
+									</div>
+								</div>
+							</div>
+							44 ч 05 мин
+						</div>
+					</div>
+				</div>
+				<div class="sidebar__month-result">
+					<div class="notice">
+						Недоработка:
+						<span class="notice__result">
+							3 ч 55 мин
+						</span>
+					</div>
+				</div>
+
+				<!-- Green -->
+
+				<div class="sidebar__month-result" style="display: none;">
+					<div class="notice notice_green">
+						Переработка:
+						<span class="notice__result">
+							3 ч 55 мин
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let preLoader = document.querySelector('.preloader');
+		let page = document.querySelector('.page');
+
+		
+
+		if(window.innerWidth > 1200) {
+			document.querySelector('.for-mobile').classList.add('for-mobile_disable');
+			window.onload = function() {
+
+			setTimeout(function(){
+				preLoader.classList.add('preloader_disable');
+				
+				page.classList.remove('page_unscrollable');
+			}, 1500);
+
+			}
+		}else{
+			
+		}
+
+		let togglesContainer = document.querySelector('.page__toggles');
+		let togglesModals = togglesContainer.querySelectorAll('.page__toggles-modal');
+
+		let buttons = togglesContainer.querySelectorAll('.page__toggles-item');
+		let modals = togglesContainer.querySelectorAll('.page__toggles-modal');
+
+		
+
+		let modalClickHandler = function(button, modal) {
+			button.addEventListener('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+
+				let documentClickHandler = function(){
+					document.addEventListener('click', function(e){
+						e.preventDefault();
+
+						for(let i = 0; i < buttons.length; i++){
+							modals[i].classList.remove('page__toggles-modal_active');
+						}
+						document.removeEventListener('keydown', documentClickHandler);
+					});
+				}
+
+				let windowKeyHandler = function(){
+					document.addEventListener('keydown', function(e){
+						if(e.keyCode === 27) {
+							for(let i = 0; i < modals.length; i++){
+								modals[i].classList.remove('page__toggles-modal_active');
+							}
+						}
+						document.removeEventListener('keydown', windowKeyHandler);			
+					});
+				}
+
+				let removeDocumentClickHandler = function(){
+					document.removeEventListener('keydown', documentClickHandler);
+				}
+
+				let removeWindowKeyHandler = function(){
+					document.removeEventListener('keydown', windowKeyHandler);
+				}
+
+				let isButtonActive = button.classList.contains('page__toggles-item_active');
+				let isModalActive = modal.classList.contains('page__toggles-modal_active');
+
+				documentClickHandler();
+				windowKeyHandler();	
+
+			
+				if(!isButtonActive){
+					for(let i = 0; i < buttons.length; i++){
+						buttons[i].classList.remove('page__toggles-item_active');
+						modals[i].classList.remove('page__toggles-modal_active');
+					}
+
+					button.classList.add('page__toggles-item_active');	
+					modal.classList.add('page__toggles-modal_active');
+
+					
+				}else if(isButtonActive && isModalActive){
+					modal.classList.remove('page__toggles-modal_active');
+
+					removeWindowKeyHandler();
+					removeDocumentClickHandler();			
+				}else if(isButtonActive && !isModalActive){
+					button.classList.add('page__toggles-item_active');
+					modal.classList.add('page__toggles-modal_active');
+
+					removeWindowKeyHandler();
+					removeDocumentClickHandler();
+				}
+
+				
+
+				
+
+	
+
+				
+			});
+		}
+
+		for(let i = 0; i < buttons.length; i++) {
+			let button = buttons[i];
+			let modal = modals[i];
+
+			modalClickHandler(button, modal);
+		}
+	
+
+	
+	</script>
+</body>
+</html>
