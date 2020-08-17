@@ -30,7 +30,7 @@ $(function(){
 
 	$(this).on('mousewheel DOMMouseScroll', function(e){
 
-		e.preventDefault();
+		
 
 		var delta = (e.originalEvent.wheelDelta) ? -e.originalEvent.wheelDelta : e.originalEvent.detail * 20;
 
