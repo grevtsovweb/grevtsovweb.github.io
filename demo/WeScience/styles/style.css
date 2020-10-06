@@ -476,7 +476,8 @@ html {
       .side-picture__background {
         max-height: 165px;
         -webkit-mask-image: url("../img/side-picture/side-picture-bg-sm.svg");
-        mask-image: url("../img/side-picture/side-picture-bg-sm.svg"); } }
+        mask-image: url("../img/side-picture/side-picture-bg-sm.svg");
+        top: 54px; } }
     .side-picture__background_mgu {
       background-image: url("../img/side-picture/mgu.jpg"); }
       @media screen and (max-width: 992px) {
