@@ -308,7 +308,10 @@ html {
     @media screen and (max-width: 720px) {
       .side-picture_orange {
         padding-bottom: 60px;
-        padding-top: 70px; } }
+        padding-top: 70px;
+        min-height: 100vh;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; } }
   .side-picture_bg {
     background-image: url("../img/classes-bg.png");
     background-position: bottom center;
@@ -441,7 +444,7 @@ html {
       @media screen and (max-width: 720px) {
         .side-picture__box::before {
           width: 720px;
-          background-size: auto;
+          background-size: contain;
           background-repeat: repeat;
           left: -300px;
           top: 108px;
@@ -528,8 +531,11 @@ html {
         font-size: 14px; } }
     @media screen and (max-width: 720px) {
       .side-picture__suptitle {
-        margin-bottom: 5px;
+        margin-bottom: 75px;
         font-size: 12px; } }
+    @media screen and (max-width: 340px) {
+      .side-picture__suptitle {
+        margin-bottom: 5px; } }
   .side-picture__title {
     font-family: 'FuturaDemiCReqular', sans-serif;
     font-size: 52px;
