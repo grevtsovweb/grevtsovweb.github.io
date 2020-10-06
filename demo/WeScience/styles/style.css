@@ -6,6 +6,13 @@
   font-display: swap; }
 
 @font-face {
+  font-family: 'MuseoSansBold';
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
   font-family: 'FuturaDemiCReqular';
   src: url("../fonts/FuturaDemiC/FuturaDemiCReqular.woff2") format("woff2");
   font-weight: normal;
@@ -164,6 +171,9 @@ html {
       background-color: #ffffff;
       -webkit-box-shadow: 0px 2px 12px rgba(31, 45, 72, 0.15);
       box-shadow: 0px 2px 12px rgba(31, 45, 72, 0.15); } }
+  @media screen and (max-width: 720px) {
+    .header {
+      height: 54px; } }
   .header__container {
     max-width: 1170px;
     padding-left: 30px;
@@ -201,6 +211,13 @@ html {
     -webkit-box-align: top;
     -ms-flex-align: top;
     align-items: top; }
+    @media screen and (max-width: 720px) {
+      .header__logo {
+        padding-top: 12px;
+        padding-bottom: 12px; } }
+    @media screen and (max-width: 720px) {
+      .header__logo img {
+        height: 28px; } }
   .header__call-block {
     margin-left: auto;
     padding-top: 12px;
@@ -290,7 +307,8 @@ html {
         padding-bottom: 100px; } }
     @media screen and (max-width: 720px) {
       .side-picture_orange {
-        padding-bottom: 60px; } }
+        padding-bottom: 60px;
+        padding-top: 70px; } }
   .side-picture_bg {
     background-image: url("../img/classes-bg.png");
     background-position: bottom center;
@@ -478,7 +496,7 @@ html {
           max-height: 400px; } }
       @media screen and (max-width: 720px) {
         .side-picture__background_main {
-          max-height: 165px;
+          max-height: 180px;
           -webkit-mask-image: url("../img/side-picture/side-picture-bg-sm-orange.svg");
           mask-image: url("../img/side-picture/side-picture-bg-sm-orange.svg"); } }
     .side-picture__background img {
@@ -582,8 +600,8 @@ html {
         margin-top: 26px;
         max-width: 100%; } }
   .side-picture__link-block {
-    padding-bottom: 22px;
-    padding-top: 22px;
+    padding-bottom: 24px;
+    padding-top: 24px;
     position: relative; }
     @media screen and (max-width: 992px) {
       .side-picture__link-block {
@@ -606,7 +624,7 @@ html {
           width: 100%; } }
   .side-picture__main-link {
     color: #ffffff;
-    font-family: 'MuseoSansRegular', sans-serif;
+    font-family: "MuseoSansBold", sans-serif;
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -2636,7 +2654,7 @@ html {
     line-height: 30px;
     text-align: center;
     color: #1F2D48;
-    font-family: "FuturaDemiCReqular", sans-serif;
+    font-family: "MuseoSansBold", sans-serif;
     text-decoration: none;
     cursor: default;
     margin-bottom: 2px;
