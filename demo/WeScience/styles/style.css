@@ -989,6 +989,12 @@ html {
     margin-top: 34px;
     position: relative;
     z-index: 2; }
+    @media screen and (max-width: 992px) {
+      .boxes-choice__box {
+        margin-bottom: 60px; } }
+    @media screen and (max-width: 720px) {
+      .boxes-choice__box {
+        margin-bottom: 30px; } }
   .boxes-choice__box img {
     width: 100%;
     height: auto; }
@@ -1209,8 +1215,6 @@ html {
     margin-top: 0; }
   .boxes-choice__col:nth-child(6n) .boxes-choice__feature {
     margin-top: 0; }
-  .boxes-choice__box {
-    margin-bottom: 60px; }
   .boxes-choice__col_three, .boxes-choice__col_four {
     margin-top: 0; } }
 
