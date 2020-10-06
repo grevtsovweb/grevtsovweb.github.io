@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>WeScience</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="preload" href="fonts/MuseoSansRegular/MuseoSansRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/FuturaDemiC/FuturaDemiCReqular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	
+</head>
+<body class="page">
+	<header class="header header_transparent header-js">
+		<div class="header__container">
+			<div class="header__row">
+				<div class="header__logo">
+					<img src="img/logo-dark.svg" alt="">
+				</div>
+				<div class="header__call-block">
+					<button class="button">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="order-header">
+		<div class="order-header__container">
+			<div class="order-header__row">
+				<div class="order-header__col">
+					<h1 class="order-header__title">Выберите подписку с&nbsp;автоматическим списанием платежа</h1>
+					<p class="order-header__description">Вы можете приостановить или отменить подписку в любой момент. Наборы <b>доставляются  1 раз в месяц</b>, по всей России БЕСПЛАТНО!</p>
+					<div class="order-header__input">
+						<div class="input-radio">
+							<input type="radio" name="subscription" value="month" id="month" checked data-price="1900">
+							<label for="month" class="input-radio__label">
+								<span class="input-radio__row">
+									<span class="input-radio__title">Подписка на месяц</span>
+									<span class="input-radio__price">1900 руб.</span>
+								</span>
+								<span class="input-radio__description">
+									Подпишитесь сейчас и получите Стартовый набор стоимостью  <span class="input-radio__description_line-through">1890 руб.</span> БЕСПЛАТНО!
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="order-header__input">
+						<div class="input-radio">
+							<input type="radio" name="subscription" value="year" id="year">
+							<label for="year" class="input-radio__label">
+								<span class="input-radio__row">
+									<span class="input-radio__title">Годовая подписка</span>
+									<span class="input-radio__price">
+										<span class="input-radio__price_old">1900 руб.</span>
+										<span class="input-radio__price_new">1400 руб.</span>
+									</span>
+								</span>
+								<span class="input-radio__description">
+									16 800 руб./год. Вы экономите 4800 руб. Стоимость набора дешевле, чем 1 занятие с репетитором.
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="order-header__guarantee">
+						<div class="order-header__guarantee-img">
+							<img src="img/order/discount.svg" alt="100% гарантируем возврат денег">
+						</div>
+						100% гарантируем возврат денег или замену набора в случае проблем с доставкой!
+					</div>
+				
+				</div>
+				<div class="order-header__col">
+					<div class="order-header__form-container">
+						<h2 class="order-header__form-title">Введите информацию о себе для подписки</h2>
+						<form class="form" method="post" action="#">
+							<div class="order-header__row-form">
+								<div class="form__row">
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="text" name="name" required="required">
+											<span class="field__placeholder"> 
+												<span>Имя (для доставки)</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="text" name="surname" required="required">
+											<span class="field__placeholder"> 
+												<span>Фамилия (для доставки) *</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="email" name="email" required="required">
+											<span class="field__placeholder"> 
+												<span>E-mail</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="phone" name="phone" required="required">
+											<span class="field__placeholder"> 
+												<span>Номер телефона</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn_sm btn_transparent order-header__address-open">
+								<span class="btn__legend">Вернуться назад</span>
+							</button>
+							<div class="order-header__row-form">
+								<div class="form__row">
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="text" name="country" required="required">
+											<span class="field__placeholder"> 
+												<span>Страна</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="number" name="index" required="required">
+											<span class="field__placeholder"> 
+												<span>Индекс</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="text" name="region" required="required">
+											<span class="field__placeholder"> 
+												<span>Область</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="text" name="town" required="required">
+											<span class="field__placeholder"> 
+												<span>Город</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+										<div class="field">
+											<input class="field__item" type="text" name="street" required="required">
+											<span class="field__placeholder"> 
+												<span>Улица</span> 
+												<span class="field__placeholder-required"> *</span> 
+											</span>
+										</div>
+									</div>
+									<div class="form__col">
+									<div class="form__row">
+										<div class="form__col">
+											<div class="field">
+												<input class="field__item" type="number" name="house" required="required">
+												<span class="field__placeholder"> 
+													<span>Дом</span> 
+													<span class="field__placeholder-required"> *</span> 
+												</span>
+											</div>
+										</div>
+										<div class="form__col">
+											<div class="field">
+												<input class="field__item" type="number" name="apartment" required="required">
+												<span class="field__placeholder"> 
+													<span>Квартира</span> 
+													<span class="field__placeholder-required"> *</span> 
+												</span>
+											</div>
+										</div>
+									</div>
+										
+									
+								</div>
+							</div>
+							
+							<div class="form__total">
+								Всего:
+								<span class="form__total-value">1900 руб.</span>
+								<span class="form__total-benefit">
+									(экономия 4800 руб.)
+								</span>
+							</div>
+							<div class="form__present-free">
+								+ Стартовый набор БЕСПЛАТНО
+							</div>
+							<div class="form__control order-header__control"> 
+								<button href="#" class="button">Оплатить и подписаться</button>
+							</div>
+							<div class="form__footer form__footer_md"> 
+								<label class="check"> 
+									<input class="check__input" type="checkbox" required="required" checked="checked"> 
+									<span class="check__view"></span> 
+									<span class="check__text check__text_center">Нажимая кнопку «Купить билет» я соглашаюсь с <a href="#">Политикой конфиденциальности</a> и <a href="#">Договором оказания услуг по организации мероприятия и политикой возвратов</a></span> 
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section class="how-order">
+		<div class="how-order__container">
+			<h2 class="how-order__title">Как работает подписка?</h2>
+			<div class="how-order__row">
+				<div class="how-order__col">
+					<div class="how-order__item">
+						<div class="how-order__item-img-container">	
+							<div class="how-order__item-img">
+								<img src="img/order/how-order-1.svg" alt="Оформите годовую подписку или на 1 месяц">
+							</div>
+						</div>	
+						<h3 class="how-order__item-title">Оформите годовую подписку или на 1 месяц</h3>
+						<p class="how-order__item-text">
+							Вводите данные и адрес, куда доставлять наборы. Оплата производится автоматически раз в месяц.
+						</p>
+					</div>
+				</div>
+				<div class="how-order__col">
+					<div class="how-order__item">
+						<div class="how-order__item-img-container">	
+							<div class="how-order__item-img">
+								<img src="img/order/how-order-2.svg" alt="Получите первую посылку">
+							</div>
+						</div>	
+						<h3 class="how-order__item-title">Получите первую посылку</h3>
+						<p class="how-order__item-text">
+							Вместе с первыми экспериментами мы привозим бесплатный Стартовый набор.
+						</p>
+					</div>
+				</div>
+				<div class="how-order__col">
+					<div class="how-order__item">
+						<div class="how-order__item-img-container">	
+							<div class="how-order__item-img">
+								<img src="img/order/how-order-3.svg" alt="Новые хим. наборы каждый месяц">
+							</div>
+						</div>	
+						<h3 class="how-order__item-title">Новые хим. наборы каждый месяц</h3>
+						<p class="how-order__item-text">
+							Вместе с первыми экспериментами мы привозим Стартовый набор и очки виртуальной реальности.
+						</p>
+					</div>
+				</div>
+				<div class="how-order__col">
+					<div class="how-order__item">
+						<div class="how-order__item-img-container">	
+							<div class="how-order__item-img">
+								<img src="img/order/how-order-4.svg" alt="Учитесь с радостью!">
+							</div>
+						</div>	
+						<h3 class="how-order__item-title">Учитесь с радостью!</h3>
+						<p class="how-order__item-text">
+							Ставьте опыты, учитесь вместе с детьми. Когда поймете, что знаете всё - сможете отменить подписку в любой момент.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="review">
+		<div class="review__container">
+			<h3 class="review__title">
+				Счастливые обладатели наборов WeScience уже погрузились в захватывающий мир науки!
+			</h3>
+			<div class="review__slider review__slider_js">
+				<div class="review__slider-item">
+					<div class="review-card">
+						<div class="review-card__author">
+							<img src="img/order/review/author.jpg" alt="Иван Иванов">
+						</div>
+						<div class="review-card__info">
+							<p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+							<div class="review-card__author-data">
+								<p class="review-card__author-name">Иван Иванов</p>
+								<p class="review-card__author-place">г. Москва</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="review__slider-item">
+					<div class="review-card">
+						<div class="review-card__author">
+							<img src="img/order/review/author.jpg" alt="Иван Иванов">
+						</div>
+						<div class="review-card__info">
+							<p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+							<div class="review-card__author-data">
+								<p class="review-card__author-name">Иван Иванов</p>
+								<p class="review-card__author-place">г. Москва</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="review__slider-item">
+					<div class="review-card">
+						<div class="review-card__author">
+							<img src="img/order/review/author.jpg" alt="Иван Иванов">
+						</div>
+						<div class="review-card__info">
+							<p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+							<div class="review-card__author-data">
+								<p class="review-card__author-name">Иван Иванов</p>
+								<p class="review-card__author-place">г. Москва</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="review__slider-item">
+					<div class="review-card">
+						<div class="review-card__author">
+							<img src="img/order/review/author.jpg" alt="Иван Иванов">
+						</div>
+						<div class="review-card__info">
+							<p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+							<div class="review-card__author-data">
+								<p class="review-card__author-name">Иван Иванов</p>
+								<p class="review-card__author-place">г. Москва</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section class="address">
+		<div class="address__container">
+			<div class="address__row">
+				<div class="address__col">
+					<div class="address__item">
+						<div class="address__icon">
+							<svg width="36" height="36" aria-hidden="true">
+								<use xlink:href='/img/address/address-sprite.svg#icon-place'/>
+							</svg>
+						</div>
+						<p class="address__title">ул. Автозаводская, д. 14</p>
+						<p class="address__subtitle">г. Москва</p>
+					</div>
+				</div>
+				<div class="address__col">
+					<div class="address__item address__item_decor">
+						<div class="address__icon">
+							<svg width="36" height="36" aria-hidden="true">
+								<use xlink:href='/img/address/address-sprite.svg#icon-phone'/>
+							</svg>
+						</div>
+						<a class="address__title" href="tel:+74994904923">+7 (499) 490-49-23</a>
+						<p class="address__subtitle">с 9:00 до 19:00, ежедневно</p>
+					</div>
+				</div>
+				<div class="address__col">
+					<div class="address__item">
+						<div class="address__icon">
+							<svg width="36" height="36" aria-hidden="true">
+								<use xlink:href='/img/address/address-sprite.svg#icon-mail'/>
+							</svg>
+						</div>
+							<!-- <img src="img/address/mail.svg" alt="hi@wescience.ru"> -->
+						<p class="address__title">hi@wescience.ru</p>
+						<p class="address__subtitle">круглосуточно</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__row">
+				<div class="footer__info">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.svg" alt="WeScience">
+					</a>
+					<p class="footer__about-team">
+						WeScience – команда преподавателей и единомышленников, которые помогают организовать научный досуг, доступный каждому.
+					</p>
+				</div>
+				<div class="footer__contacts">
+					<div class="footer__contacts-text">Если у вас есть вопросы – напишите нам!</div>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link" title="Telegram">
+								<svg width="48" height="48" aria-hidden="true" >
+									<use xlink:href='/img/social/social-sprite.svg#icon-telegram'/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link" title="Whatsapp">
+								<svg width="48" height="48" aria-hidden="true">
+									<use xlink:href='/img/social/social-sprite.svg#icon-whatsapp'/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link" title="Viber">
+								<svg width="48" height="48" aria-hidden="true" >
+									<use xlink:href='/img/social/social-sprite.svg#icon-viber'/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link" title="Messenger">
+								<svg width="48" height="48" aria-hidden="true" >
+									<use xlink:href='/img/social/social-sprite.svg#icon-messenger'/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__rights-block">
+				<div class="footer__rights-block-item footer__rights-block-copyright">
+					<div class="footer__copyright">
+						© 2019 WeScience. Все права защищиены.
+					</div>
+				</div>
+				<div class="footer__rights-block-item">
+					<a href="#" class="footer__link">Политика конфиденциальности</a>
+				</div>
+				<div class="footer__rights-block-item">
+					<a href="#" class="footer__link">Договор оказания услуг и политика возвратов</a>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
