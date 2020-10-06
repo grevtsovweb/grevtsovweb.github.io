@@ -585,6 +585,14 @@ html {
     padding-bottom: 22px;
     padding-top: 22px;
     position: relative; }
+    @media screen and (max-width: 992px) {
+      .side-picture__link-block {
+        padding-top: 25px; } }
+    .side-picture__link-block:not(:last-child) {
+      padding-right: 80px; }
+      @media screen and (max-width: 992px) {
+        .side-picture__link-block:not(:last-child) {
+          padding-right: 0; } }
     .side-picture__link-block:not(:last-child)::after {
       position: absolute;
       content: '';
@@ -614,7 +622,7 @@ html {
       .side-picture__main-link {
         font-size: 32px;
         line-height: 32px;
-        margin-bottom: 30px; } }
+        margin-bottom: 20px; } }
     @media screen and (max-width: 720px) {
       .side-picture__main-link {
         font-size: 24px;
@@ -626,7 +634,7 @@ html {
       width: 11px;
       height: 20px;
       right: 0;
-      top: 8px;
+      top: 9px;
       background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%2220%22%20viewBox%3D%220%200%2012%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M11.4999%2010L1.31475%2020L0.342529%2019.0455L9.55549%2010L0.342529%200.954545L1.31475%200L11.4999%2010Z%22%20fill%3D%22white%22/%3E%0A%3C/svg%3E%0A");
       background-repeat: no-repeat;
       background-position: center;
