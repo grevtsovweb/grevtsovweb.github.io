@@ -15,7 +15,7 @@
 		<div class="header__container">
 			<div class="header__row">
 				<div class="header__logo">
-					<img src="img/logo-dark.svg" alt="">
+					<img src="img/logo.svg" alt="">
 				</div>
 				<div class="header__call-block">
 					<button class="button">Заказать звонок</button>
@@ -27,45 +27,48 @@
 		<div class="order-header__container">
 			<div class="order-header__row">
 				<div class="order-header__col">
-					<h1 class="order-header__title">Выберите подписку с&nbsp;автоматическим списанием платежа</h1>
-					<p class="order-header__description">Вы можете приостановить или отменить подписку в любой момент. Наборы <b>доставляются  1 раз в месяц</b>, по всей России БЕСПЛАТНО!</p>
-					<div class="order-header__input">
-						<div class="input-radio">
-							<input type="radio" name="subscription" value="month" id="month" checked data-price="1900">
-							<label for="month" class="input-radio__label">
-								<span class="input-radio__row">
-									<span class="input-radio__title">Подписка на месяц</span>
-									<span class="input-radio__price">1900 руб.</span>
-								</span>
-								<span class="input-radio__description">
-									Подпишитесь сейчас и получите Стартовый набор стоимостью  <span class="input-radio__description_line-through">1890 руб.</span> БЕСПЛАТНО!
-								</span>
-							</label>
-						</div>
-					</div>
-					<div class="order-header__input">
-						<div class="input-radio">
-							<input type="radio" name="subscription" value="year" id="year">
-							<label for="year" class="input-radio__label">
-								<span class="input-radio__row">
-									<span class="input-radio__title">Годовая подписка</span>
-									<span class="input-radio__price">
-										<span class="input-radio__price_old">1900 руб.</span>
-										<span class="input-radio__price_new">1400 руб.</span>
+					<div class="order-header__info">
+						<h1 class="order-header__title">Выберите подписку с&nbsp;автоматическим списанием платежа</h1>
+						<p class="order-header__description">Вы можете приостановить или отменить подписку в любой момент. Наборы <b>доставляются  1 раз в месяц</b>, по всей России БЕСПЛАТНО!</p>
+						<div class="order-header__input">
+							<div class="input-radio">
+								<input type="radio" name="subscription" value="month" id="month" checked data-price="1900">
+								<label for="month" class="input-radio__label">
+									<span class="input-radio__row">
+										<span class="input-radio__title">Подписка на месяц</span>
+										<span class="input-radio__price">1900 руб.</span>
 									</span>
-								</span>
-								<span class="input-radio__description">
-									16 800 руб./год. Вы экономите 4800 руб. Стоимость набора дешевле, чем 1 занятие с репетитором.
-								</span>
-							</label>
+									<span class="input-radio__description">
+										Подпишитесь сейчас и получите Стартовый набор стоимостью  <span class="input-radio__description_line-through">1890 руб.</span> БЕСПЛАТНО!
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="order-header__input">
+							<div class="input-radio">
+								<input type="radio" name="subscription" value="year" id="year">
+								<label for="year" class="input-radio__label">
+									<span class="input-radio__row">
+										<span class="input-radio__title">Годовая подписка</span>
+										<span class="input-radio__price">
+											<span class="input-radio__price_old">1900 руб.</span>
+											<span class="input-radio__price_new">1400 руб.</span>
+										</span>
+									</span>
+									<span class="input-radio__description">
+										16 800 руб./год. Вы экономите 4800 руб. Стоимость набора дешевле, чем 1 занятие с репетитором.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="order-header__guarantee">
+							<div class="order-header__guarantee-img">
+								<img src="img/order/discount.svg" alt="100% гарантируем возврат денег">
+							</div>
+							100% гарантируем возврат денег или замену набора в случае проблем с доставкой!
 						</div>
 					</div>
-					<div class="order-header__guarantee">
-						<div class="order-header__guarantee-img">
-							<img src="img/order/discount.svg" alt="100% гарантируем возврат денег">
-						</div>
-						100% гарантируем возврат денег или замену набора в случае проблем с доставкой!
-					</div>
+					
 				
 				</div>
 				<div class="order-header__col">
@@ -112,10 +115,10 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn btn_sm btn_transparent order-header__address-open">
-								<span class="btn__legend">Вернуться назад</span>
+							<button class="button button_sm button_transparent button_transparent-dark order-header__address-open order-header__address-open-js">
+								Информация для отправки
 							</button>
-							<div class="order-header__row-form">
+							<div class="order-header__row-form order-header__row-form_border-top order-header__row-form-js order-header__row-form_hidden-sm">
 								<div class="form__row">
 									<div class="form__col">
 										<div class="field">
@@ -163,28 +166,27 @@
 										</div>
 									</div>
 									<div class="form__col">
-									<div class="form__row">
-										<div class="form__col">
-											<div class="field">
-												<input class="field__item" type="number" name="house" required="required">
-												<span class="field__placeholder"> 
-													<span>Дом</span> 
-													<span class="field__placeholder-required"> *</span> 
-												</span>
+										<div class="form__row">
+											<div class="form__col">
+												<div class="field">
+													<input class="field__item" type="number" name="house" required="required">
+													<span class="field__placeholder"> 
+														<span>Дом</span> 
+														<span class="field__placeholder-required"> *</span> 
+													</span>
+												</div>
 											</div>
-										</div>
-										<div class="form__col">
-											<div class="field">
-												<input class="field__item" type="number" name="apartment" required="required">
-												<span class="field__placeholder"> 
-													<span>Квартира</span> 
-													<span class="field__placeholder-required"> *</span> 
-												</span>
+											<div class="form__col">
+												<div class="field">
+													<input class="field__item" type="number" name="apartment" required="required">
+													<span class="field__placeholder"> 
+														<span>Квартира</span> 
+														<span class="field__placeholder-required"> *</span> 
+													</span>
+												</div>
 											</div>
 										</div>
 									</div>
-										
-									
 								</div>
 							</div>
 							
@@ -201,7 +203,7 @@
 							<div class="form__control order-header__control"> 
 								<button href="#" class="button">Оплатить и подписаться</button>
 							</div>
-							<div class="form__footer form__footer_md"> 
+							<div class="form__footer form__footer_md order-header__form-footer"> 
 								<label class="check"> 
 									<input class="check__input" type="checkbox" required="required" checked="checked"> 
 									<span class="check__view"></span> 
@@ -221,8 +223,10 @@
 				<div class="how-order__col">
 					<div class="how-order__item">
 						<div class="how-order__item-img-container">	
-							<div class="how-order__item-img">
-								<img src="img/order/how-order-1.svg" alt="Оформите годовую подписку или на 1 месяц">
+							<div class="how-order__item-img how-order__item-img_blue">
+								<div class="how-order__item-img-inner">
+									<img src="img/order/how-order-1.jpg" alt="Оформите годовую подписку или на 1 месяц">
+								</div>
 							</div>
 						</div>	
 						<h3 class="how-order__item-title">Оформите годовую подписку или на 1 месяц</h3>
@@ -234,8 +238,10 @@
 				<div class="how-order__col">
 					<div class="how-order__item">
 						<div class="how-order__item-img-container">	
-							<div class="how-order__item-img">
-								<img src="img/order/how-order-2.svg" alt="Получите первую посылку">
+							<div class="how-order__item-img how-order__item-img_green">
+								<div class="how-order__item-img-inner">
+									<img src="img/order/how-order-2.jpg" alt="Оформите годовую подписку или на 1 месяц">
+								</div>
 							</div>
 						</div>	
 						<h3 class="how-order__item-title">Получите первую посылку</h3>
@@ -247,8 +253,10 @@
 				<div class="how-order__col">
 					<div class="how-order__item">
 						<div class="how-order__item-img-container">	
-							<div class="how-order__item-img">
-								<img src="img/order/how-order-3.svg" alt="Новые хим. наборы каждый месяц">
+							<div class="how-order__item-img how-order__item-img_yellow">
+								<div class="how-order__item-img-inner">
+									<img src="img/order/how-order-3.jpg" alt="Оформите годовую подписку или на 1 месяц">
+								</div>
 							</div>
 						</div>	
 						<h3 class="how-order__item-title">Новые хим. наборы каждый месяц</h3>
@@ -260,8 +268,10 @@
 				<div class="how-order__col">
 					<div class="how-order__item">
 						<div class="how-order__item-img-container">	
-							<div class="how-order__item-img">
-								<img src="img/order/how-order-4.svg" alt="Учитесь с радостью!">
+							<div class="how-order__item-img how-order__item-img_pink">
+								<div class="how-order__item-img-inner">
+									<img src="img/order/how-order-4.jpg" alt="Оформите годовую подписку или на 1 месяц">
+								</div>
 							</div>
 						</div>	
 						<h3 class="how-order__item-title">Учитесь с радостью!</h3>

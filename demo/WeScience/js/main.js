@@ -22,10 +22,11 @@ $(function() {
 		responsive: {
 			0: {
 				items:1,
-				nav: false
+				nav:false
 			},
 			768: {
-				items:2
+				items:2,
+				nav: true
 			}
 		}
     });
@@ -41,7 +42,8 @@ $(function() {
 				nav: false
 			},
 			768: {
-				items:2
+				items:2,
+				nav: true
 			}
 		}
 	});
@@ -59,7 +61,7 @@ $(function() {
 			button.classList.add('button_active');
 			tabItem.classList.add('boxes-choice__tab-result_active');
 			
-		});
+		}, );
 	}
 
 	for(var i = 0; i < buttons.length; i++) {
@@ -68,5 +70,18 @@ $(function() {
 		addClickListenter(button, tabItem);
 	}
 
+	function openFields () {
+		let buttonOpenFields = document.querySelector('.order-header__address-open-js');
+		let fields = document.querySelector('.order-header__row-form-js');
+
+		buttonOpenFields.addEventListener('click', function(e){
+			e.preventDefault();
+
+			fields.classList.remove('order-header__row-form_hidden-sm');
+			buttonOpenFields.style = 'display: none';
+		})
+	}
+
+	openFields();
     
 });
