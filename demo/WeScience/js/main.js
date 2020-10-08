@@ -74,12 +74,15 @@ $(function() {
 		let buttonOpenFields = document.querySelector('.order-header__address-open-js');
 		let fields = document.querySelector('.order-header__row-form-js');
 
-		buttonOpenFields.addEventListener('click', function(e){
-			e.preventDefault();
-
-			fields.classList.remove('order-header__row-form_hidden-sm');
-			buttonOpenFields.style = 'display: none';
-		})
+		if(buttonOpenFields){
+			buttonOpenFields.addEventListener('click', function(e){
+				e.preventDefault();
+	
+				fields.classList.remove('order-header__row-form_hidden-sm');
+				buttonOpenFields.style = 'display: none';
+			});
+		}
+		
 	}
 
 	openFields();
