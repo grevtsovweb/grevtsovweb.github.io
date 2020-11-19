@@ -10,7 +10,7 @@
 	<link rel="preload" href="fonts/FuturaDemiC/FuturaDemiCReqular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	
 </head>
-<body class="page">
+<body class="page" style="overflow: hidden;">
 	<header class="header header_transparent header-js">
 		<div class="header__container">
 			<div class="header__row">
@@ -454,7 +454,7 @@
 		</div>
 	</footer>
 
-	<div class="modal__overlay" style="display: none;">
+	<div class="modal__overlay">
 		<div class="modal__wrapper">
 			<div class="modal__content">
 				<div class="modal">
@@ -468,24 +468,30 @@
 					<div class="modal__stage-group">
 						<div class="modal__stage-group-button">
 							<button class="button button_transparent-dark button_xs button_uppercase button_active">
-								<span class="modal__stage-button-icon">
-									<img src="" alt="">
+								<span class="button__icon-small button__icon-small_xs-none">
+									<svg width="14" height="14" aria-hidden="true">
+										<use xlink:href='img/common/button-sprite.svg#icon-search'/>
+									</svg>
 								</span>
 								1-й этап
 							</button>
 						</div>
 						<div class="modal__stage-group-button">
 							<button class="button button_transparent-dark button_xs button_uppercase">
-								<span class="modal__stage-button-icon">
-									<img src="" alt="">
+								<span class="button__icon-small button__icon-small_xs-none">
+									<svg width="14" height="14" aria-hidden="true">
+										<use xlink:href='img/common/button-sprite.svg#icon-lamp'/>
+									</svg>
 								</span>
 								2-й этап
 							</button>
 						</div>
 						<div class="modal__stage-group-button">
 							<button class="button button_transparent-dark button_xs button_uppercase">
-								<span class="modal__stage-button-icon">
-									<img src="" alt="">
+								<span class="button__icon-small button__icon-small_xs-none">
+									<svg width="14" height="14" aria-hidden="true">
+										<use xlink:href='img/common/button-sprite.svg#icon-flask'/>
+									</svg>
 								</span>
 								3-й этап
 							</button>

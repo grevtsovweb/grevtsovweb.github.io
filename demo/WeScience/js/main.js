@@ -48,6 +48,38 @@ $(function() {
 		}
 	});
 
+	
+
+	if($(window).width() < 768){
+		$('.explore__slider_js').owlCarousel({
+			margin: 15,
+			nav: false, 
+			navText: ["<img src='img/order/slider/arrow.svg' />","<img src='img/order/slider/arrow.svg' />"],
+			dots: true,
+			responsive: {
+				0: {
+					items:1,
+					nav: false
+				}
+			}
+		});
+	}
+
+	$('.boxes-choice__slider_js').owlCarousel({
+		margin: 15,
+		nav: false, 
+		navText: ["<img src='img/order/slider/arrow.svg' />","<img src='img/order/slider/arrow.svg' />"],
+		dots: true,
+		responsive: {
+			0: {
+				items:1,
+				nav:false
+			}
+		}
+	});
+
+	
+
 
 	var buttons = document.querySelectorAll('.boxes-choice__tab-button-js');
 	var tabItems = document.querySelectorAll('.boxes-choice__tab-result-js');
