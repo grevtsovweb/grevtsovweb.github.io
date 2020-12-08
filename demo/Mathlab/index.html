@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Mathlab</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/favicon.ico" rel="icon" type="image/x-icon">
-	<link rel="stylesheet" href="styles/style.css">	
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mathlab</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="modal-auth-reg modal-auth-reg-js">
+      <div class="modal-auth-reg__container">
+        <div class="modal-auth-reg__close">
+          <button class="modal-auth-reg__close-button modal-auth-reg-close-js"></button>
+        </div>
+        <div class="modal-auth-reg__content">
+          <div class="modal-auth-reg__content-item modal-auth-reg__content-item--active" data-content="0">
+            <div class="modal-auth-reg__title">Запись на онлайн занятия</div>
+            <form class="modal-auth-reg__form">
+              <div class="modal-auth-reg__form-row">
+                <input class="modal-auth-reg__input-text" type="text" value="" placeholder="Ваше имя">
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <input class="modal-auth-reg__input-text modal-auth-reg__input-text--phone" type="text" value="" placeholder="+7 (___)___-__-__">
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <input class="modal-auth-reg__input-text" type="text" value="" placeholder="Ваш e-mail">
+              </div>
+              <div class="modal-auth-reg__form-row modal-auth-reg__form-row--2-col">
+                <input class="modal-auth-reg__input-text" type="text" value="" placeholder="Имя ученика">
+                <div class="modal-auth-reg__select-wrapper">
+                  <select class="modal-auth-reg__select">
+                    <option class="modal-auth-reg__select-option" disabled selected value>Класс</option>
+                    <option class="modal-auth-reg__select-option" value="1">1</option>
+                    <option class="modal-auth-reg__select-option" value="2">2</option>
+                    <option class="modal-auth-reg__select-option" value="3">3</option>
+                    <option class="modal-auth-reg__select-option" value="4">4</option>
+                    <option class="modal-auth-reg__select-option" value="5">5</option>
+                    <option class="modal-auth-reg__select-option" value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <button class="modal-auth-reg__btn" type="submit">Зарегистрироваться</button>
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <div class="modal-auth-reg__text">Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;<a class="modal-auth-reg__text-link" href="#">условия соглашения</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-auth-reg__overlay"></div>
+    </div>
     <section class="first-screen">
       <header class="header">
         <div class="header__container">
@@ -16,7 +61,7 @@
               <nav class="nav"><a class="nav__item" href="#">Почему мы</a><a class="nav__item" href="#">Преподаватели</a><a class="nav__item" href="#">Стоимость</a></nav>
             </div>
           </div>
-          <div class="header__col header__col--right"><a class="header__text" href="tel:+74994904467">+7 (499) 490-44-67</a><a class="header__btn" href="#">Записаться</a>
+          <div class="header__col header__col--right"><a class="header__text" href="tel:+74994904467">+7 (499) 490-44-67</a><a class="header__btn button-open-auth-js" href="#">Записаться</a>
             <button class="header__mobile-menu mobile-menu-button-js"><span class="header__mobile-menu-line"></span></button>
           </div>
           <div class="mobile-menu mobile-menu-js">
@@ -31,7 +76,7 @@
                 <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="tel:+74994904467">+7 (499) 490-44-67</a></li>
               </ul>
               <div class="mobile-menu__button">
-                <button class="button button_full-width">Записаться</button>
+                <button class="button button_full-width button-open-auth-js">Записаться</button>
               </div>
               <div class="mobile-menu__contacts">
                 <div class="mobile-menu__contacts-text">Если у вас есть вопросы – напишите нам!</div>
@@ -60,9 +105,9 @@
       </header>
       <div class="first-screen__container">
         <div class="first-screen__text">
-          <h1 class="first-screen__title">Вы здесь, потому что хотите, чтобы Ваш ребенок знал математику. Этого же хотим и мы.</h1>
+          <h1 class="first-screen__title">Делаем учеников самыми сильными по математике в классе. <span class="first-screen__title_accent">Обучение математике от призеров олимпиад МГУ и Физтеха</span></h1>
           <p class="first-screen__subtitle">
-             Обучение у выпускников <span class="first-screen__subtitle-accent">МехМата и ВМК МГУ</span> им. Ломоносова. Запишитесь на бесплатное пробное занятие.</p>
+             Оставьте заявку на занятие с преподавателями MathLabs</p>
           <div class="first-screen__form-container">
             <form class="form" action="#">
               <div class="form__row">
@@ -84,13 +129,13 @@
           <div class="features-block__col">
                 <div class="feature">
                   <div class="feature__icon"><img src="img/features/feature-1.svg" alt=""></div>
-                  <p class="feature__text">Бесплатно проводим первое тестирование, чтобы определить уровень ученика</p>
+                  <p class="feature__text">Выясняем, на какие темы стоит сделать упор в подготовке. Чаще всего на все :)</p>
                 </div>
           </div>
           <div class="features-block__col">
                 <div class="feature">
                   <div class="feature__icon"><img src="img/features/feature-2.svg" alt=""></div>
-                  <p class="feature__text">Выясняем, на какие темы стоит сделать упор в подготовке. Чаще всего - на все :)</p>
+                  <p class="feature__text">Проводим первое тестирование, чтобы определить уровень ученика</p>
                 </div>
           </div>
           <div class="features-block__col">
@@ -102,7 +147,7 @@
           <div class="features-block__col">
                 <div class="feature">
                   <div class="feature__icon"><img src="img/features/feature-4.svg" alt=""></div>
-                  <p class="feature__text">Точно знаем, как сдавать экзамены, ведь мы сами сдали их на 100 баллов </p>
+                  <p class="feature__text">Точно знаем, как сдавать экзамены, ведь мы сами сдали их на 100 баллов</p>
                 </div>
           </div>
         </div>
@@ -135,9 +180,9 @@
     <section class="banner-section">
       <div class="banner-section__container">
         <div class="banner">
-          <div class="banner__title">Попробуйте бесплатный вводный урок</div>
+          <div class="banner__title">Стать самым сильным по математике в&nbsp;классе</div>
           <div class="banner__button">
-            <button class="button">Оставить заявку</button>
+            <button class="button button-open-auth-js">Оставить заявку</button>
           </div>
         </div>
       </div>
@@ -165,53 +210,55 @@
         <div class="teachers-block__title"> 
           <h2 class="title">Знакомтесь с нашими преподавателями</h2>
         </div>
-        <div class="teachers-block__teacher-card">
-          <div class="teacher-card">
-            <div class="teacher-card__col">
-              <div class="teacher-card__image"><img src="img/teacher-card/teacher-1.jpg" alt="Горяев Альберт"></div>
-            </div>
-            <div class="teacher-card__info-wrapper teacher-card__col">
-              <div class="teacher-card__info">
-                <h3 class="teacher-card__name">Горяев Альберт</h3>
-                <div class="teacher-card__university">Механико-математический факультет МГУ<span class="teacher-card__university-logo"><img src="img/teacher-card/logo-mgu.png" alt="Логотип МГУ"></span></div>
-                <p class="teacher-card__about">Сын ученого, который занимается вопросами космического излучения в РАН. Альберт любит математику так сильно, что берет книги по функциональному анализу даже на встречи с друзьями.</p>
-                <p class="teacher-card__about">Подготовил ряд школьников, которые поступили в ряд ведущих лицеев и математических школ Москвы.</p>
-                <div class="teacher-card__footer">
-                  <div class="teacher-card__footer-item">
-                    <div class="teacher-card__footer-item-title">ЕГЭ по математике</div>
-                    <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
-                  </div>
-                  <div class="teacher-card__footer-item">
-                    <div class="teacher-card__footer-item-title">Доп. экзамен МГУ</div>
-                    <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+        <div class="teachers-block__slider teacher-block__slider-js">
+          <div class="teachers-block__teacher-card">
+            <div class="teacher-card">
+              <div class="teacher-card__col">
+                <div class="teacher-card__image"><img src="img/teacher-card/teacher-1.jpg" alt="Горяев Альберт"></div>
+              </div>
+              <div class="teacher-card__info-wrapper teacher-card__col">
+                <div class="teacher-card__info">
+                  <h3 class="teacher-card__name">Горяев Альберт</h3>
+                  <div class="teacher-card__university">Механико-математический факультет МГУ<span class="teacher-card__university-logo"><img src="img/teacher-card/logo-mgu.png" alt="Логотип МГУ"></span></div>
+                  <p class="teacher-card__about">Сын ученого, который занимается вопросами космического излучения в РАН. Альберт любит математику так сильно, что берет книги по функциональному анализу даже на встречи с друзьями.</p>
+                  <p class="teacher-card__about">Подготовил ряд школьников, которые поступили в ряд ведущих лицеев и математических школ Москвы.</p>
+                  <div class="teacher-card__footer">
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">ЕГЭ по математике</div>
+                      <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+                    </div>
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">Доп. экзамен МГУ</div>
+                      <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="teachers-block__teacher-card">
-          <div class="teacher-card">
-            <div class="teacher-card__info-wrapper teacher-card__col">
-              <div class="teacher-card__info">
-                <h3 class="teacher-card__name">Горяев Альберт</h3>
-                <div class="teacher-card__university">Механико-математический факультет МГУ<span class="teacher-card__university-logo"><img src="img/teacher-card/logo-mgu.png" alt="Логотип МГУ"></span></div>
-                <p class="teacher-card__about">Сын ученого, который занимается вопросами космического излучения в РАН. Альберт любит математику так сильно, что берет книги по функциональному анализу даже на встречи с друзьями.</p>
-                <p class="teacher-card__about">Подготовил ряд школьников, которые поступили в ряд ведущих лицеев и математических школ Москвы.</p>
-                <div class="teacher-card__footer">
-                  <div class="teacher-card__footer-item">
-                    <div class="teacher-card__footer-item-title">ЕГЭ по математике</div>
-                    <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
-                  </div>
-                  <div class="teacher-card__footer-item">
-                    <div class="teacher-card__footer-item-title">Доп. экзамен МГУ</div>
-                    <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+          <div class="teachers-block__teacher-card">
+            <div class="teacher-card">
+              <div class="teacher-card__info-wrapper teacher-card__col">
+                <div class="teacher-card__info">
+                  <h3 class="teacher-card__name">Горяев Альберт</h3>
+                  <div class="teacher-card__university">Механико-математический факультет МГУ<span class="teacher-card__university-logo"><img src="img/teacher-card/logo-mgu.png" alt="Логотип МГУ"></span></div>
+                  <p class="teacher-card__about">Сын ученого, который занимается вопросами космического излучения в РАН. Альберт любит математику так сильно, что берет книги по функциональному анализу даже на встречи с друзьями.</p>
+                  <p class="teacher-card__about">Подготовил ряд школьников, которые поступили в ряд ведущих лицеев и математических школ Москвы.</p>
+                  <div class="teacher-card__footer">
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">ЕГЭ по математике</div>
+                      <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+                    </div>
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">Доп. экзамен МГУ</div>
+                      <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="teacher-card__col">
-              <div class="teacher-card__image"><img src="img/teacher-card/teacher-1.jpg" alt="Горяев Альберт"></div>
+              <div class="teacher-card__col">
+                <div class="teacher-card__image"><img src="img/teacher-card/teacher-1.jpg" alt="Горяев Альберт"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -228,7 +275,7 @@
                   <h4 class="lesson-card__title">Олимпиадная математика</h4>
                   <p class="lesson-card__text">Научим решать задачи, которые встречаются на олимпиадах. Разберем основные методы и подходы к решению задач</p>
                   <div class="lesson-card__button">
-                    <button class="button button_white">Записаться</button>
+                    <button class="button button-open-auth-js button_white">Записаться</button>
                   </div>
                 </div>
           </div>
@@ -237,7 +284,7 @@
                   <h4 class="lesson-card__title">Школьная программа</h4>
                   <p class="lesson-card__text">Поможем разобраться с отдельными темами по математике, решим множество задач.</p>
                   <div class="lesson-card__button">
-                    <button class="button button_white">Записаться</button>
+                    <button class="button button-open-auth-js button_white">Записаться</button>
                   </div>
                 </div>
           </div>
@@ -248,7 +295,7 @@
                   <h4 class="lesson-card__title">ЕГЭ по математике</h4>
                   <p class="lesson-card__text">Научим решать задачи, которые встречаются на олимпиадах. Разберем основные методы и подходы к решению задач</p>
                   <div class="lesson-card__button">
-                    <button class="button">Записаться</button>
+                    <button class="button button-open-auth-js">Записаться</button>
                   </div>
                 </div>
           </div>
@@ -257,7 +304,7 @@
                   <h4 class="lesson-card__title">Международные экзамены</h4>
                   <p class="lesson-card__text">Готовитесь к сдаче GRE или математической части GMAT? Сможем улучшить баллы на сдаче этих экзаменов!</p>
                   <div class="lesson-card__button">
-                    <button class="button">Записаться</button>
+                    <button class="button button-open-auth-js">Записаться</button>
                   </div>
                 </div>
           </div>
@@ -272,19 +319,19 @@
         <div class="lessons-block__row">
           <div class="lessons-block__col">
                 <div class="lesson-card lesson-card_tall lesson-card_blue lesson-card_bg-3">
-                  <h4 class="lesson-card__title">Очные занятия</h4>
-                  <p class="lesson-card__text">Выберите для себя удобное местоположение и время занятий с MathLabs и повышайте ваш уровень математики вместе с ведущими преподавателями математики.</p>
+                  <h4 class="lesson-card__title">Повышение уровня</h4>
+                  <p class="lesson-card__text">Если у вас пробелы в школьном материале или есть непонимание определенных тем, то преподаватели MathLabs смогут повысить уровень учащегося.</p>
                   <div class="lesson-card__button">
-                    <button class="button button_white">Записаться</button>
+                    <button class="button button-open-auth-js button_white">Записаться</button>
                   </div>
                 </div>
           </div>
           <div class="lessons-block__col">
                 <div class="lesson-card lesson-card_tall lesson-card_dark lesson-card_bg-4">
-                  <h4 class="lesson-card__title">Онлайн занятия</h4>
-                  <p class="lesson-card__text">Запишитесь на занятия в группах по 2-3 человека и занимайтесь с репетиторами из ведущих вузов по более доступной цене, чем частный репетитор. Учащиеся разбиваются по уровню знаний и задачам к экзаменам</p>
+                  <h4 class="lesson-card__title">Олимпиадная математика</h4>
+                  <p class="lesson-card__text">Мы победили в самых известных олимпиадах в России и точно знаем, как подготовить школьника к призовым местам. Это интересный путь, который сильно развивает математические способности.</p>
                   <div class="lesson-card__button">
-                    <button class="button button_white">Записаться</button>
+                    <button class="button button-open-auth-js button_white">Записаться</button>
                   </div>
                 </div>
           </div>
@@ -298,34 +345,34 @@
         </div>
         <div class="price-block__row">
           <div class="price-block__col"> 
-                <div class="price-card">
-                  <h5 class="price-card__title">Очное занятие</h5>
-                  <div class="price-card__price">990 ₽<span class="price-card__price-text">занятие</span></div>
+                <div class="price-card price-card_green">
+                  <h5 class="price-card__title">Занятия в группах</h5>
+                  <div class="price-card__price">990<span class="price-card__price-text"> ₽/занятие</span></div>
                   <div class="price-card__button">
-                    <button class="button">Записаться</button>
+                    <button class="button button-open-auth-js">Записаться</button>
                   </div>
                 </div>
           </div>
           <div class="price-block__col"> 
-                <div class="price-card">
+                <div class="price-card price-card_pink">
                   <h5 class="price-card__title">Общая подготовка</h5>
-                  <div class="price-card__price">1 190 ₽<span class="price-card__price-text">занятие</span></div>
+                  <div class="price-card__price">1 190<span class="price-card__price-text"> ₽/занятие</span></div>
                   <div class="price-card__button">
-                    <button class="button">Записаться</button>
+                    <button class="button button-open-auth-js">Записаться</button>
                   </div>
                 </div>
           </div>
           <div class="price-block__col"> 
-                <div class="price-card">
+                <div class="price-card price-card_purple">
                   <h5 class="price-card__title">Олимпиадная математика</h5>
-                  <div class="price-card__price">1 490 ₽<span class="price-card__price-text">занятие</span></div>
+                  <div class="price-card__price">1 490<span class="price-card__price-text"> ₽/занятие</span></div>
                   <div class="price-card__button">
-                    <button class="button">Записаться</button>
+                    <button class="button button-open-auth-js">Записаться</button>
                   </div>
                 </div>
           </div>
         </div>
-        <div class="price-block__description">Cтоимость указана за 2 академических часа</div>
+        <div class="price-block__description">На первом зантии определяем уровень и выявим места, на которые нужно сделать упор в подготовке</div>
       </div>
     </div>
     <div class="addresses-block">
@@ -415,6 +462,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
