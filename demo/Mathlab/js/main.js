@@ -43,7 +43,16 @@ document.addEventListener('DOMContentLoaded', function(){
     modalAuthRegCloseButton.addEventListener('click', closeModalAuth);
 
     
+    // Sticky Header
+    let header = document.querySelector('.header-js');
 
+    window.addEventListener('scroll', function(){
+        if(window.pageYOffset > 100){
+            header.classList.add('header_white');
+        }else if(window.pageYOffset < 100){
+            header.classList.remove('header_white');
+        }
+    });
 
     // Слайдер преподавателей
 
