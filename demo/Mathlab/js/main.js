@@ -22,22 +22,32 @@ document.addEventListener('DOMContentLoaded', function(){
     let buttonsOpenAuth = document.querySelectorAll('.button-open-auth-js');
     let modalAuthReg = document.querySelector('.modal-auth-reg-js');
     let modalAuthRegCloseButton = modalAuthReg.querySelector('.modal-auth-reg-close-js');
+    let buttonsMobileOpenAuth = document.querySelectorAll('.button-open-auth-mobile-js');
 
     let closeModalAuth = function(e){
         e.preventDefault()
         modalAuthReg.classList.remove('modal-auth-reg--active'); 
     }
 
+    let openModal = function(e){
+        e.preventDefault();
+        modalAuthReg.classList.add('modal-auth-reg--active');
+        document.addEventListener('keydown', function(){
+            if(event.code==='Escape'){
+                closeModalAuth(event);
+            }
+        });
+    }
+
     for(let i = 0; i < buttonsOpenAuth.length; i++){
-        buttonsOpenAuth[i].addEventListener('click', function(e){    
-            e.preventDefault();
-            modalAuthReg.classList.add('modal-auth-reg--active');
-            document.addEventListener('keydown', function(){
-                if(event.code==='Escape'){
-                    closeModalAuth(event);
-                }
-            });
-        })
+        buttonsOpenAuth[i].addEventListener('click', openModal)
+    }
+
+    // Модальное окно записи на мобильных после исчезновения импута
+    if(window.innerWidth < 761){
+        for(let i = 0; i < buttonsMobileOpenAuth.length; i++){
+            buttonsMobileOpenAuth[i].addEventListener('click', openModal)    
+        }
     }
     
     modalAuthRegCloseButton.addEventListener('click', closeModalAuth);
