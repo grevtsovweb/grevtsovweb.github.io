@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let progressBlock = document.querySelector('.page__progress-js');
 
     let replaceBlockToSidebar = function(elem){
-        if(window.innerWidth > 760 && elem){
+        if(elem){
             let sidebar = document.querySelector('.page__sidebar');
             
             if(sidebar){
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     let replaceCalendarDesktop = function(elem){
-        if(window.innerWidth > 992 && elem){
+        if(elem){
             let container = document.querySelector('.page__content-row-js');
             
 
@@ -25,17 +25,37 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     let replaceProgressBlock = function(elem){
-        if(window.innerWidth > 767 && elem){
+        if(elem){
             let container = document.querySelector('.page__grid-js');
             
-
             container.prepend(elem);
         }
     }
 
-    replaceBlockToSidebar(offer);
-    replaceBlockToSidebar(calendar);
-    replaceBlockToSidebar(socialNav);
-    replaceCalendarDesktop(calendar);
-    replaceProgressBlock(progressBlock);
+    let renderElements = function(){
+        let windowWidth = window.innerWidth;
+        if(windowWidth > 760 && windowWidth < 992) {
+            replaceProgressBlock(progressBlock);
+            replaceBlockToSidebar(offer);
+            replaceBlockToSidebar(calendar);
+            replaceBlockToSidebar(socialNav);
+        }else if(windowWidth > 992){
+            replaceBlockToSidebar(offer);
+            replaceCalendarDesktop(calendar);
+            replaceBlockToSidebar(socialNav);
+        }
+    }
+
+    renderElements();
+
+
+    window.addEventListener('resize', function(){
+        renderElements();
+    })
+
+    // replaceBlockToSidebar(offer);
+    // replaceBlockToSidebar(calendar);
+    // replaceBlockToSidebar(socialNav);
+    // replaceCalendarDesktop(calendar);
+    // replaceProgressBlock(progressBlock);
 });
