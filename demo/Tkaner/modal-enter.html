@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tkaner</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="page page--unscrollable">
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top-item header__top-item--phone"><a class="header__phone" href="tel:+78002002020"><span class="header__phone-icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
+                  </svg></span>8 800 200 20 20</a></div>
+        <div class="header__top-item"><a class="header__logo" href="#"><span class="header__logo-image"> <img src="img/logo/logo.jpg" alt="Tkaner"></span><span class="header__logo-text"> <img src="img/logo/logo-text.svg" alt="Tkaner"></span><span class="header__logo-description">Интернет магазин тканей</span></a></div>
+        <div class="header__top-item header__top-item--user-block">
+          <div class="header__user-block">
+            <div class="header__user-block-item"><a class="user-button" href="#"><span class="user-button__icon">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-heart-header"></use>
+                      </svg></span><span class="user-button__count">4</span></a></div>
+            <div class="header__user-block-item"><a class="user-button" href="#"><span class="user-button__icon">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-cart"></use>
+                      </svg></span></a></div>
+            <div class="header__user-block-item"><a class="user-button" href="#"><span class="user-button__icon">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+                      </svg></span></a></div>
+          </div>
+          <div class="header__user-block-mobile"><a class="user-button" href="#"><span class="user-button__icon">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-bars"></use>
+                    </svg></span></a></div>
+        </div>
+      </div>
+      <div class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item header__nav-list-item--catalog"><a class="header__nav-list-link header__nav-list-link--catalog" href="#"> <span class="header__nav-list-link-icon"> 
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-menu"></use>
+                    </svg></span>Каталог</a></li>
+          <li class="header__nav-list-item"> <a class="header__nav-list-link" href="#">Одежные ткани</a></li>
+          <li class="header__nav-list-item"> <a class="header__nav-list-link" href="#">Ткани для штор</a></li>
+          <li class="header__nav-list-item"> <a class="header__nav-list-link" href="#">Мебельные ткани</a></li>
+          <li class="header__nav-list-item"> <a class="header__nav-list-link" href="#">Заказ и возврат</a></li>
+          <li class="header__nav-list-item"> <a class="header__nav-list-link" href="#">Доставка</a></li>
+          <li class="header__nav-list-item"> <a class="header__nav-list-link" href="#">Контакты</a></li>
+        </ul>
+        <div class="header__search-block">
+              <div class="field field--search">
+                <input class="field__input" placeholder="Поиск" type="text" name="search">
+              </div>
+        </div>
+      </div>
+    </header>
+    <div class="page__content">
+      <div class="page__container"> 
+        <div class="breadcrumbs"><a class="breadcrumbs__link-back" href="#">Вернуться в корзину</a></div>
+        <div class="page__section-header">
+          <h2 class="title">Оформление заказа</h2>
+        </div>
+        <div class="page__card">
+          <div class="page__card-main"> 
+            <div class="page__card-section">
+              <div class="checkout">
+                <h2 class="checkout__title">Способ доставки</h2>
+                <div class="checkout__row">
+                  <div class="field-select">
+                    <label for="field-select">Тип доставки</label>
+                    <div class="field-select__wrapper">
+                      <select class="field-select__select" id="field-select">
+                        <option>Можайск</option>
+                        <option>Одинцово</option>
+                        <option>Красногорск</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__row">
+                  <div class="checkout__label">Транспортная компания</div>
+                  <div class="checkout__row-flex">
+                    <div class="checkout__row-flex-item">
+                      <label class="radio-delivery radio-delivery--company" for="radio-delivery">
+                        <input class="radio-delivery__input" type="radio" id="radio-delivery" name="color" value="red"><span class="radio-delivery__button"><img src="img/company/cdek.jpg" alt="CDEk"></span>
+                      </label>
+                    </div>
+                    <div class="checkout__row-flex-item">
+                      <label class="radio-delivery radio-delivery--company" for="radio-delivery1">
+                        <input class="radio-delivery__input" type="radio" id="radio-delivery1" name="color" value="red"><span class="radio-delivery__button"><img src="img/company/delovie.jpg" alt="Деловые линии"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__row">
+                  <div class="checkout__row-item"> 
+                    <button class="checkout__button-add"><span class="checkout__button-add-icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-place-2"></use>
+                            </svg></span>Добавить адрес</button>
+                  </div>
+                  <div class="checkout__row-item"> 
+                    <button class="checkout__button"><span class="checkout__button-icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-comments"></use>
+                            </svg></span>Комментарий курьеру</button>
+                  </div>
+                  <div class="checkout__row-item"> 
+                    <button class="checkout__button"><span class="checkout__button-icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+                            </svg></span>Иванов Иван, +7 929 123 43 54</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page__card-section">
+              <div class="checkout-list">
+                <div class="checkout-list__header">
+                  <div class="checkout-list__info">
+                    <div class="checkout-list__title">В пункте выдачи, 3 мая</div>
+                    <ul class="checkout-list__info-list">
+                      <li class="checkout-list__info-list-item">Со склада г. Москва</li>
+                      <li class="checkout-list__info-list-item">2 товара</li>
+                      <li class="checkout-list__info-list-item">900 гр</li>
+                    </ul>
+                  </div>
+                  <div class="checkout-list__price">420 р</div>
+                </div>
+                <div class="checkout-list__list">
+                  <div class="product-list">
+                    <div class="product-list__item product-list__item-header">
+                      <div class="product-list__info">Название</div>
+                      <div class="product-list__price">Цена</div>
+                      <div class="product-list__count">Количество</div>
+                      <div class="product-list__price product-list__sum">Сумма</div>
+                    </div>
+                    <div class="product-list__item"> 
+                      <div class="product-list__product-info product-list__info">
+                        <div class="product-list__card"> 
+                          <div class="product-list__card-image"><img src="img/products/product.jpg" alt=""></div>
+                          <div class="product-list__card-info"> 
+                            <div class="product-list__card-title">Трикотаж замша</div>
+                            <div class="product-list__card-color"> 
+                              <div class="product-list__card-color-example" style="background-color: #333B4E;"></div>
+                              <div class="product-list__card-color-text">Черный</div>
+                            </div>
+                            <div class="product-list__card-code">
+                               Арт:<span class="product-list__card-code-number">ПШО-7-22-10711.024</span></div>
+                            <div class="product-list__card-phone-mobile"><span class="product-list__card-phone-mobile-value">236</span><span class="product-list__card-phone-mobile-units">руб/м</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-list__product-price product-list__price"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                      <div class="product-list__product-count product-list__count"> 
+                        <div class="product-list__product-count-title">Колличество: </div>1 м
+                      </div>
+                      <div class="product-list__product-price product-list__price product-list__sum"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                    </div>
+                    <div class="product-list__item"> 
+                      <div class="product-list__product-info product-list__info">
+                        <div class="product-list__card"> 
+                          <div class="product-list__card-image"><img src="img/products/product.jpg" alt=""></div>
+                          <div class="product-list__card-info"> 
+                            <div class="product-list__card-title">Трикотаж замша</div>
+                            <div class="product-list__card-color"> 
+                              <div class="product-list__card-color-example" style="background-color: #333B4E;"></div>
+                              <div class="product-list__card-color-text">Черный</div>
+                            </div>
+                            <div class="product-list__card-code">
+                               Арт:<span class="product-list__card-code-number">ПШО-7-22-10711.024</span></div>
+                            <div class="product-list__card-phone-mobile"><span class="product-list__card-phone-mobile-value">236</span><span class="product-list__card-phone-mobile-units">руб/м</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-list__product-price product-list__price"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                      <div class="product-list__product-count product-list__count"> 
+                        <div class="product-list__product-count-title">Колличество: </div>1 м
+                      </div>
+                      <div class="product-list__product-price product-list__price product-list__sum"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                    </div>
+                    <div class="product-list__item"> 
+                      <div class="product-list__product-info product-list__info">
+                        <div class="product-list__card"> 
+                          <div class="product-list__card-image"><img src="img/products/product.jpg" alt=""></div>
+                          <div class="product-list__card-info"> 
+                            <div class="product-list__card-title">Трикотаж замша</div>
+                            <div class="product-list__card-color"> 
+                              <div class="product-list__card-color-example" style="background-color: #333B4E;"></div>
+                              <div class="product-list__card-color-text">Черный</div>
+                            </div>
+                            <div class="product-list__card-code">
+                               Арт:<span class="product-list__card-code-number">ПШО-7-22-10711.024</span></div>
+                            <div class="product-list__card-phone-mobile"><span class="product-list__card-phone-mobile-value">236</span><span class="product-list__card-phone-mobile-units">руб/м</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-list__product-price product-list__price"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                      <div class="product-list__product-count product-list__count"> 
+                        <div class="product-list__product-count-title">Колличество: </div>1 м
+                      </div>
+                      <div class="product-list__product-price product-list__price product-list__sum"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                    </div>
+                    <div class="product-list__item"> 
+                      <div class="product-list__product-info product-list__info">
+                        <div class="product-list__card"> 
+                          <div class="product-list__card-image"><img src="img/products/product.jpg" alt=""></div>
+                          <div class="product-list__card-info"> 
+                            <div class="product-list__card-title">Трикотаж замша</div>
+                            <div class="product-list__card-color"> 
+                              <div class="product-list__card-color-example" style="background-color: #333B4E;"></div>
+                              <div class="product-list__card-color-text">Черный</div>
+                            </div>
+                            <div class="product-list__card-code">
+                               Арт:<span class="product-list__card-code-number">ПШО-7-22-10711.024</span></div>
+                            <div class="product-list__card-phone-mobile"><span class="product-list__card-phone-mobile-value">236</span><span class="product-list__card-phone-mobile-units">руб/м</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-list__product-price product-list__price"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                      <div class="product-list__product-count product-list__count"> 
+                        <div class="product-list__product-count-title">Колличество: </div>1 м
+                      </div>
+                      <div class="product-list__product-price product-list__price product-list__sum"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                    </div>
+                    <div class="product-list__item"> 
+                      <div class="product-list__product-info product-list__info">
+                        <div class="product-list__card"> 
+                          <div class="product-list__card-image"><img src="img/products/product.jpg" alt=""></div>
+                          <div class="product-list__card-info"> 
+                            <div class="product-list__card-title">Трикотаж замша</div>
+                            <div class="product-list__card-color"> 
+                              <div class="product-list__card-color-example" style="background-color: #333B4E;"></div>
+                              <div class="product-list__card-color-text">Черный</div>
+                            </div>
+                            <div class="product-list__card-code">
+                               Арт:<span class="product-list__card-code-number">ПШО-7-22-10711.024</span></div>
+                            <div class="product-list__card-phone-mobile"><span class="product-list__card-phone-mobile-value">236</span><span class="product-list__card-phone-mobile-units">руб/м</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-list__product-price product-list__price"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                      <div class="product-list__product-count product-list__count"> 
+                        <div class="product-list__product-count-title">Колличество: </div>1 м
+                      </div>
+                      <div class="product-list__product-price product-list__price product-list__sum"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                    </div>
+                    <div class="product-list__item"> 
+                      <div class="product-list__product-info product-list__info">
+                        <div class="product-list__card"> 
+                          <div class="product-list__card-image"><img src="img/products/product.jpg" alt=""></div>
+                          <div class="product-list__card-info"> 
+                            <div class="product-list__card-title">Трикотаж замша</div>
+                            <div class="product-list__card-color"> 
+                              <div class="product-list__card-color-example" style="background-color: #333B4E;"></div>
+                              <div class="product-list__card-color-text">Черный</div>
+                            </div>
+                            <div class="product-list__card-code">
+                               Арт:<span class="product-list__card-code-number">ПШО-7-22-10711.024</span></div>
+                            <div class="product-list__card-phone-mobile"><span class="product-list__card-phone-mobile-value">236</span><span class="product-list__card-phone-mobile-units">руб/м</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-list__product-price product-list__price"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                      <div class="product-list__product-count product-list__count"> 
+                        <div class="product-list__product-count-title">Колличество: </div>1 м
+                      </div>
+                      <div class="product-list__product-price product-list__price product-list__sum"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                    </div>
+                    <div class="product-list__item"> 
+                      <div class="product-list__product-info product-list__info">
+                        <div class="product-list__card"> 
+                          <div class="product-list__card-image"><img src="img/products/product.jpg" alt=""></div>
+                          <div class="product-list__card-info"> 
+                            <div class="product-list__card-title">Трикотаж замша</div>
+                            <div class="product-list__card-color"> 
+                              <div class="product-list__card-color-example" style="background-color: #333B4E;"></div>
+                              <div class="product-list__card-color-text">Черный</div>
+                            </div>
+                            <div class="product-list__card-code">
+                               Арт:<span class="product-list__card-code-number">ПШО-7-22-10711.024</span></div>
+                            <div class="product-list__card-phone-mobile"><span class="product-list__card-phone-mobile-value">236</span><span class="product-list__card-phone-mobile-units">руб/м</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-list__product-price product-list__price"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                      <div class="product-list__product-count product-list__count"> 
+                        <div class="product-list__product-count-title">Колличество: </div>1 м
+                      </div>
+                      <div class="product-list__product-price product-list__price product-list__sum"><span class="product-list__product-price-value">236</span><span class="product-list__product-price-units">руб/м</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page__card-sidebar">
+            <div class="page__card-sticky"> 
+              <div class="product-sidebar product-sidebar--checkout">
+                <div class="product-sidebar__title">Ваша корзина</div>
+                <div class="product-sidebar__cart-row"> 
+                  <div class="product-sidebar__label">Вес заказа</div>
+                  <div class="product-sidebar__content">
+                    <div class="product-sidebar__content-value">10.7</div>
+                    <div class="product-sidebar__content-units">кг</div>
+                  </div>
+                </div>
+                <div class="product-sidebar__cart-row"> 
+                  <div class="product-sidebar__label">
+                     Товары <span class="product-sidebar__label-span">(2)</span></div>
+                  <div class="product-sidebar__content">
+                    <div class="product-sidebar__content-value">567</div>
+                    <div class="product-sidebar__content-units">руб</div>
+                  </div>
+                </div>
+                <div class="product-sidebar__cart-block">
+                  <div class="product-sidebar__cart-row"> 
+                    <div class="product-sidebar__label">Срок доставки</div>
+                    <div class="product-sidebar__content">
+                      <div class="product-sidebar__content-value">5</div>
+                      <div class="product-sidebar__content-units">дн</div>
+                    </div>
+                  </div>
+                  <div class="product-sidebar__cart-row"> 
+                    <div class="product-sidebar__label">Стоимость доставки</div>
+                    <div class="product-sidebar__content">
+                      <div class="product-sidebar__content-value">233</div>
+                      <div class="product-sidebar__content-units">руб</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sidebar__cart-row product-sidebar__cart-row--border-top"> 
+                  <div class="product-sidebar__label product-sidebar__label--total">К оплате</div>
+                  <div class="product-sidebar__content product-sidebar__content--total">
+                    <div class="product-sidebar__content-value">1021</div>
+                    <div class="product-sidebar__content-units">руб</div>
+                  </div>
+                </div>
+                <div class="product-sidebar__button-block"> 
+                  <div class="product-sidebar__button-block-item">
+                                  <button class="button button--full-width">Перейти к оформлению</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__overlay"> 
+      <div class="modal__wrapper">
+        <div class="modal">
+          <button class="modal__close"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Вход</div>
+          <div class="modal__form"> 
+            <form class="form" action="">
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Логин / E-mail">
+                      <label class="input__label">Логин / E-mail</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Пароль">
+                      <label class="input__label">Пароль</label>
+                    </div>
+              </div>
+              <div class="form__group"><a class="form__link-forget" href="#">Забыли пароль?</a></div>
+              <div class="form__button">
+                    <button class="button button--full-width">Войти</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__enter-with">Войти с помощью соц. сети</div>
+          <ul class="modal__social-list modal__social-list--pb-40">
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--facebook" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--vk" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--ok" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--google" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-google"></use>
+                    </svg></a></li>
+          </ul>
+          <div class="modal__registration-block"> <a class="button button--secondary" href="#"> Регистрация</a></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__logo-block">
+            <div class="footer__logo"> <img class="footer__logo-image" src="img/logo/logo.jpg" alt="Tkaner" width="92" height="54">
+              <div class="footer__logo-text-block"><img class="footer__logo-text" src="img/logo/logo-text.svg" alt="Tkaner">
+                <p class="footer__logo-description">Интернет магазин тканей</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-item">
+              <h4 class="footer__nav-title" tabindex="0">
+                 Каталог товаров<span class="footer__nav-title-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></h4>
+              <ul class="footer__nav-list"> 
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Одежные ткани</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Европейские ткани</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Рукоделие</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Ткани для дома</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Технические ткани</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Мебельные ткани</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Портьерные ткани</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <h4 class="footer__nav-title" tabindex="0">
+                 Помощь<span class="footer__nav-title-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></h4>
+              <ul class="footer__nav-list"> 
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Заказ и возврат</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Доставка</a></li>
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item footer__nav-item--contacts">
+              <h4 class="footer__nav-title" tabindex="0">
+                 Контакты<span class="footer__nav-title-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></h4>
+              <ul class="footer__nav-list"> 
+                <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"><span class="footer__nav-link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
+                          </svg></span>tkaner@mail.ru</a></li>
+                <li class="footer__nav-list-item"> 
+                  <div class="footer__nav-link-phone"><a class="footer__nav-link" href="#"><span class="footer__nav-link-icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
+                            </svg></span>8 800 200 20 20</a>
+                    <div class="footer__nav-link-phone-time">пн - пт 9:00 - 20:00</div>
+                  </div>
+                </li>
+              </ul>
+              <div class="footer__nav-social"> 
+                <ul class="social">
+                  <li class="social__item"> <a class="social__link social__link--telegram" href="#"> 
+                                      <svg aria-hidden="true" width="18" height="18">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                      </svg></a></li>
+                  <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                                      <svg aria-hidden="true" width="18" height="18">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                      </svg></a></li>
+                  <li class="social__item"> <a class="social__link social__link--instagram" href="#"> 
+                                      <svg aria-hidden="true" width="18" height="18">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-instagram"></use>
+                                      </svg></a></li>
+                  <li class="social__item"> <a class="social__link social__link--facebook" href="#"> 
+                                      <svg aria-hidden="true" width="18" height="18">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__info">
+          <p class="footer__info-text">© ООО «Tkaner» 2021. Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
