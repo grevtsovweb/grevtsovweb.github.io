@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body class="page">
+  <body class="page page-js">
     <header class="header">
       <div class="header__top">
         <div class="header__top-item header__top-item--phone"><a class="header__phone" href="tel:+78002002020"><span class="header__phone-icon">
@@ -330,13 +330,13 @@
             </div>
           </div>
           <div class="footer__nav">
-            <div class="footer__nav-item">
-              <h4 class="footer__nav-title" tabindex="0">
+            <div class="footer__nav-item footer__nav-item-js">
+              <h4 class="footer__nav-title footer__nav-title-js" tabindex="0">
                  Каталог товаров<span class="footer__nav-title-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
                       </svg></span></h4>
-              <ul class="footer__nav-list"> 
+              <ul class="footer__nav-list footer__nav-list-js">
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Одежные ткани</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Европейские ткани</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Рукоделие</a></li>
@@ -346,25 +346,24 @@
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Портьерные ткани</a></li>
               </ul>
             </div>
-            <div class="footer__nav-item">
-              <h4 class="footer__nav-title" tabindex="0">
+            <div class="footer__nav-item footer__nav-item-js">
+              <h4 class="footer__nav-title footer__nav-title-js" tabindex="0">
                  Помощь<span class="footer__nav-title-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
                       </svg></span></h4>
-              <ul class="footer__nav-list"> 
+              <ul class="footer__nav-list footer__nav-list-js">
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Заказ и возврат</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Доставка</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Контакты</a></li>
               </ul>
             </div>
-            <div class="footer__nav-item footer__nav-item--contacts">
-              <h4 class="footer__nav-title" tabindex="0">
-                 Контакты<span class="footer__nav-title-icon"> 
+            <div class="footer__nav-item footer__nav-item-js footer__nav-item--contacts">
+              <h4 class="footer__nav-title footer__nav-title-js" tabindex="0">Контакты<span class="footer__nav-title-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
                       </svg></span></h4>
-              <ul class="footer__nav-list"> 
+              <ul class="footer__nav-list footer__nav-list-js"> 
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"><span class="footer__nav-link-icon"> 
                           <svg aria-hidden="true" width="24" height="24">
                             <use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
@@ -406,5 +405,736 @@
         </div>
       </div>
     </footer>
+    <div class="modal__overlay modal__overlay-js">
+      <div class="modal__wrapper modal__wrapper-js">
+        <div class="modal modal-js modal--hidden modal-address-js">
+          <button class="modal__close modal__close-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Добавить адрес</div>
+          <div class="modal__form"> 
+            <form class="form" action="">
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Название">
+                      <label class="input__label">Название</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Город">
+                      <label class="input__label">Город</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Улица">
+                      <label class="input__label">Улица</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Дом">
+                      <label class="input__label">Дом</label>
+                    </div>
+              </div>
+              <div class="form__group">
+                <div class="form__group-row">
+                  <div class="form__group-col-2">
+                        <div class="input"> 
+                          <input class="input__field" placeholder="Этаж">
+                          <label class="input__label">Этаж</label>
+                        </div>
+                  </div>
+                  <div class="form__group-col-2">
+                        <div class="input"> 
+                          <input class="input__field" placeholder="Квартира/Офис">
+                          <label class="input__label">Квартира/Офис</label>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__button">
+                    <button class="button button--full-width">Сохранить и продолжить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal modal-js modal--hidden modal-registration-js">
+          <button class="modal__close modal__close-js"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Регистрация</div>
+          <div class="modal__form"> 
+            <form class="form" action="">
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Ваше имя">
+                      <label class="input__label">Ваше имя</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Ваш телефон">
+                      <label class="input__label">Ваш телефон</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="E-mail">
+                      <label class="input__label">E-mail</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Пароль">
+                      <label class="input__label">Пароль</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Повторите пароль">
+                      <label class="input__label">Повторите пароль</label>
+                    </div>
+              </div>
+              <div class="form__button form__mt-28">
+                    <button class="button button--full-width">Войти</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__enter-with">Войти с помощью соц. сети</div>
+          <ul class="modal__social-list"> 
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--facebook" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--vk" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--ok" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--google" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-google"></use>
+                    </svg></a></li>
+          </ul>
+        </div>
+        <div class="modal modal-js modal--hidden modal-enter-js">
+          <button class="modal__close modal__close-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Вход</div>
+          <div class="modal__form"> 
+            <form class="form" action="">
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Логин / E-mail">
+                      <label class="input__label">Логин / E-mail</label>
+                    </div>
+              </div>
+              <div class="form__group"> 
+                    <div class="input"> 
+                      <input class="input__field" placeholder="Пароль">
+                      <label class="input__label">Пароль</label>
+                    </div>
+              </div>
+              <div class="form__group"><a class="form__link-forget" href="#">Забыли пароль?</a></div>
+              <div class="form__button">
+                    <button class="button button--full-width">Войти</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__enter-with">Войти с помощью соц. сети</div>
+          <ul class="modal__social-list modal__social-list--pb-40">
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--facebook" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--vk" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--ok" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                    </svg></a></li>
+            <li class="modal__social-item"><a class="modal__social-link modal__social-link--google" href="#">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-google"></use>
+                    </svg></a></li>
+          </ul>
+          <div class="modal__registration-block"> <a class="button button--secondary button--open-modal-registration-js" href="#"> Регистрация</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__overlay modal__overlay--mobile-catalog modal-catalog-mobile-js">
+      <div class="modal__wrapper modal__wrapper-catalog">
+        <div class="modal modal__main-list-js">
+          <button class="modal__close modal__close-mobile-catalog-js"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Каталог</div>
+          <ul class="modal__list">
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">Одежные ткани<span class="modal__list-link-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a></li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Европейские ткани<span class="modal__list-link-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a></li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">Швейная фурнитура<span class="modal__list-link-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a></li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Ткание для дома<span class="modal__list-link-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a></li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Мебельные ткани<span class="modal__list-link-icon"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a></li>
+          </ul>
+        </div>
+        <div class="modal modal__catalog-inner modal__catalog-inner-js">
+          <button class="modal__back modal__back-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+          </button>
+          <button class="modal__close modal__close-mobile-catalog-js"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Одежные ткани</div>
+          <ul class="modal__list modal__list-js"> 
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Атлас<span class="modal__list-link-icon modal__list-link-icon--down">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Бархат<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Батист<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Блузочные<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Жаккард<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="modal modal__catalog-inner modal__catalog-inner-js">
+          <button class="modal__back modal__back-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+          </button>
+          <button class="modal__close modal__close-mobile-catalog-js"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Европейские ткани</div>
+          <ul class="modal__list modal__list-js"> 
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Атлас<span class="modal__list-link-icon modal__list-link-icon--down">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Бархат<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Батист<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Блузочные<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Жаккард<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="modal modal__catalog-inner modal__catalog-inner-js">
+          <button class="modal__back modal__back-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+          </button>
+          <button class="modal__close modal__close-mobile-catalog-js"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Швейная фурнитура</div>
+          <ul class="modal__list modal__list-js"> 
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Атлас<span class="modal__list-link-icon modal__list-link-icon--down">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Бархат<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Батист<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Блузочные<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Жаккард<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="modal modal__catalog-inner modal__catalog-inner-js">
+          <button class="modal__back modal__back-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+          </button>
+          <button class="modal__close modal__close-mobile-catalog-js"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Ткание для дома</div>
+          <ul class="modal__list modal__list-js"> 
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Атлас<span class="modal__list-link-icon modal__list-link-icon--down">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Бархат<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Батист<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Блузочные<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Жаккард<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="modal modal__catalog-inner modal__catalog-inner-js">
+          <button class="modal__back modal__back-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                </svg>
+          </button>
+          <button class="modal__close modal__close-mobile-catalog-js"> 
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Мебельные ткани</div>
+          <ul class="modal__list modal__list-js"> 
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Атлас<span class="modal__list-link-icon modal__list-link-icon--down">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Бархат<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Батист<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Блузочные<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+            <li class="modal__list-item"> <a class="modal__list-link modal__list-link-js" href="#">
+                 Жаккард<span class="modal__list-link-icon modal__list-link-icon--down"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
+                      </svg></span></a>
+              <ul class="modal__list modal__list--inner">
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+                <li class="modal__list-item"> <a class="modal__list-link" href="#">
+                     Атлас</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal__overlay modal-mobile-menu-js">
+      <div class="modal__wrapper">
+        <div class="modal">
+          <button class="modal__close modal__close-js">
+                <svg aria-hidden="true" width="28" height="28">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+          <div class="modal__header">Меню</div>
+          <ul class="modal__list modal__list--border">
+            <li class="modal__list-item"> <a class="modal__list-link" href="#">Заказ и возврат</a></li>
+            <li class="modal__list-item"> <a class="modal__list-link" href="#">Доставка</a></li>
+            <li class="modal__list-item"> <a class="modal__list-link" href="#">Контакты</a></li>
+          </ul>
+          <div class="modal__contacts"> <a class="modal__contacts-item" href="mailto:tkaner@mail.ru"> <span class="modal__contacts-icon"> 
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
+                    </svg></span>tkaner@mail.ru</a><a class="modal__contacts-item" href="tel:+78002002020"> <span class="modal__contacts-icon"> 
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-phone"></use>
+                    </svg></span><span class="modal__contacts-phone">
+                 8 800 200 20 20<span class="modal__contacts-date">пн - пт 9:00 - 20:00</span></span></a></div>
+          <div class="modal__social"> 
+            <div class="modal__social-title">Мы в соц. сетях</div>
+            <ul class="social">
+              <li class="social__item"> <a class="social__link social__link--telegram" href="#"> 
+                              <svg aria-hidden="true" width="18" height="18">
+                                <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                              </svg></a></li>
+              <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                              <svg aria-hidden="true" width="18" height="18">
+                                <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                              </svg></a></li>
+              <li class="social__item"> <a class="social__link social__link--instagram" href="#"> 
+                              <svg aria-hidden="true" width="18" height="18">
+                                <use xlink:href="img/sprite/sprite.svg#icon-instagram"></use>
+                              </svg></a></li>
+              <li class="social__item"> <a class="social__link social__link--facebook" href="#"> 
+                              <svg aria-hidden="true" width="18" height="18">
+                                <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

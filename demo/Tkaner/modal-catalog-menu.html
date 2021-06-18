@@ -25,13 +25,23 @@
             <div class="header__user-block-item"><a class="user-button" href="#"><span class="user-button__icon">
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-cart"></use>
-                      </svg></span></a></div>
+                      </svg></span><span class="user-button__count">2</span></a></div>
             <div class="header__user-block-item"><a class="user-button" href="#"><span class="user-button__icon">
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
-                      </svg></span></a></div>
+                      </svg></span></a>
+              <div class="header__user-block-item-dropdown"> 
+                <ul class="header__user-list">
+                  <li class="header__user-list-item"><a class="header__user-list-link" href="#">Мой кабинет</a></li>
+                  <li class="header__user-list-item"><a class="header__user-list-link" href="#">Адрес доставки</a></li>
+                  <li class="header__user-list-item"><a class="header__user-list-link" href="#">Личные данные</a></li>
+                  <li class="header__user-list-item"><a class="header__user-list-link" href="#">Заказы</a></li>
+                  <li class="header__user-list-item"><a class="header__user-list-link header__user-list-link--accent" href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="header__user-block-mobile"><a class="user-button" href="#"><span class="user-button__icon">
+          <div class="header__user-block-mobile"><a class="user-button user-button--mobile-menu-js" href="#"><span class="user-button__icon">
                     <svg aria-hidden="true" width="24" height="24">
                       <use xlink:href="img/sprite/sprite.svg#icon-bars"></use>
                     </svg></span></a></div>
@@ -39,7 +49,7 @@
       </div>
       <div class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-list-item header__nav-list-item--catalog"><a class="header__nav-list-link header__nav-list-link--catalog" href="#"> <span class="header__nav-list-link-icon"> 
+          <li class="header__nav-list-item header__nav-list-item--catalog"><a class="header__nav-list-link header__nav-list-link--catalog header__nav-list-link--catalog-js" href="#"><span class="header__nav-list-link-icon"> 
                     <svg aria-hidden="true" width="24" height="24">
                       <use xlink:href="img/sprite/sprite.svg#icon-menu"></use>
                     </svg></span>Каталог</a></li>
@@ -350,10 +360,10 @@
         </div>
       </div>
     </div>
-    <div class="modal__overlay"> 
+    <div class="modal__overlay modal-mobile-menu-js">
       <div class="modal__wrapper">
         <div class="modal">
-          <button class="modal__close"> 
+          <button class="modal__close modal__close-js">
                 <svg aria-hidden="true" width="28" height="28">
                   <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
                 </svg>
@@ -407,13 +417,13 @@
             </div>
           </div>
           <div class="footer__nav">
-            <div class="footer__nav-item">
-              <h4 class="footer__nav-title" tabindex="0">
+            <div class="footer__nav-item footer__nav-item-js">
+              <h4 class="footer__nav-title footer__nav-title-js" tabindex="0">
                  Каталог товаров<span class="footer__nav-title-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
                       </svg></span></h4>
-              <ul class="footer__nav-list"> 
+              <ul class="footer__nav-list footer__nav-list-js">
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Одежные ткани</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Европейские ткани</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Рукоделие</a></li>
@@ -423,25 +433,24 @@
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Портьерные ткани</a></li>
               </ul>
             </div>
-            <div class="footer__nav-item">
-              <h4 class="footer__nav-title" tabindex="0">
+            <div class="footer__nav-item footer__nav-item-js">
+              <h4 class="footer__nav-title footer__nav-title-js" tabindex="0">
                  Помощь<span class="footer__nav-title-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
                       </svg></span></h4>
-              <ul class="footer__nav-list"> 
+              <ul class="footer__nav-list footer__nav-list-js">
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Заказ и возврат</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Доставка</a></li>
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"> Контакты</a></li>
               </ul>
             </div>
-            <div class="footer__nav-item footer__nav-item--contacts">
-              <h4 class="footer__nav-title" tabindex="0">
-                 Контакты<span class="footer__nav-title-icon"> 
+            <div class="footer__nav-item footer__nav-item-js footer__nav-item--contacts">
+              <h4 class="footer__nav-title footer__nav-title-js" tabindex="0">Контакты<span class="footer__nav-title-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-arrow-down"></use>
                       </svg></span></h4>
-              <ul class="footer__nav-list"> 
+              <ul class="footer__nav-list footer__nav-list-js"> 
                 <li class="footer__nav-list-item"> <a class="footer__nav-link" href="#"><span class="footer__nav-link-icon"> 
                           <svg aria-hidden="true" width="24" height="24">
                             <use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
