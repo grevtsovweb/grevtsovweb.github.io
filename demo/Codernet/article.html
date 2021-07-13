@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codernet</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/github-dark-dimmed.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="page js-page">
+    <header class="header">
+      <div class="header__main">
+        <div class="header__container">
+          <nav class="header__main-nav"><a class="header__logo" href="#"><a class="logo" href="#">
+                <svg aria-hidden="true" width="25" height="30">
+                  <use xlink:href="img/logo/logo.svg#icon-logo"></use>
+                </svg><span class="logo__description">Codernet</span></a></a>
+            <ul class="header__main-nav-list">
+              <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Видео</a></li>
+              <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Статьи</a></li>
+              <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Книги</a></li>
+            </ul>
+            <div class="header__search-field">
+              <div class="input-search"><span class="input-search__icon"> 
+                                <svg aria-hidden="true" width="18" height="18">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-search"></use>
+                                </svg></span>
+                <input class="input-search__field" type="text" placeholder="Поиск на сайте">
+                <button class="input-search__button">Искать</button>
+              </div>
+            </div>
+            <div class="header__mobile-menu"> 
+              <button class="burger" data-modal="open" data-value="menu"><span></span></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="header__mobile-nav">
+        <button class="header__mobile-button-nav" data-modal="open" data-value="category"><span class="header__mobile-button-text">Java</span><span class="header__mobile-button-icon">
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                          </svg></span></button>
+      </div>
+    </header>
+    <div class="mobile-modal js-mobile-modal">
+      <div class="mobile-modal__inner"> 
+        <div class="mobile-modal__wrapper mobile-modal__wrapper--hidden js-menu">
+          <div class="mobile-modal__header"> 
+            <div class="mobile-modal__title">Меню</div>
+            <div class="mobile-modal__close">
+              <button class="burger burger--close" data-modal="close" data-value="menu"><span></span></button>
+            </div>
+          </div>
+          <div class="mobile-modal__search">
+            <div class="input-search input-search--medium"><span class="input-search__icon"> 
+                            <svg aria-hidden="true" width="18" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-search"></use>
+                            </svg></span>
+              <input class="input-search__field" type="text" placeholder="Поиск на сайте">
+            </div>
+          </div>
+          <ul class="mobile-modal__nav-list">
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+                                <svg aria-hidden="true" width="24" height="24">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-video"></use>
+                                </svg></span>Видео</span><span class="mobile-modal__nav-link-arrow"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                              </svg></span></a></li>
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+                                <svg aria-hidden="true" width="24" height="24">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-article"></use>
+                                </svg></span>Статьи</span><span class="mobile-modal__nav-link-arrow"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                              </svg></span></a></li>
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+                                <svg aria-hidden="true" width="24" height="24">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-book"></use>
+                                </svg></span>Книги</span><span class="mobile-modal__nav-link-arrow"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                              </svg></span></a></li>
+          </ul>
+        </div>
+        <div class="mobile-modal__wrapper mobile-modal__wrapper--hidden js-category">
+          <div class="mobile-modal__header"> 
+            <div class="mobile-modal__title">Выберите язык</div>
+            <div class="mobile-modal__close">
+              <button class="burger burger--close" data-modal="close" data-value="category"><span></span></button>
+            </div>
+          </div>
+          <ul class="mobile-modal__category-list">
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">C / C ++</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">CSS</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Git</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Go</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">HTML</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link mobile-modal__category-link--current" href="#">Java</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Linux</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">PHP</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Python</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Security</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">SQL</a></li>
+          </ul>
+          <div class="mobile-modal__ad">
+            <div style="min-height: 164px; background-color: #F5F5F5;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__container page__container--border">
+      <div class="page__breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+               Главная<span class="breadcrumbs__link-icon"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></a></li>
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+               Статьи<span class="breadcrumbs__link-icon"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></a></li>
+          <li class="breadcrumbs__item">Программа для математической статистики. Как подготовить статистику?</li>
+        </ul>
+      </div>
+      <div class="page__article-layout"> 
+        <div class="page__article-layout-main">
+          <div class="article"> 
+            <div class="article__header"> 
+              <div class="article__ticket"> 
+                <div class="ticket ticket--css">CSS </div>
+              </div>
+              <h1 class="article__title">JSX. Что это за расширение, где и для чего оно используется</h1>
+              <div class="article__data"> 
+                <div class="article__date">14 мая 2021</div>
+                <div class="article__social"> 
+                  <ul class="social">
+                    <li class="social__item"> <a class="social__link social__link--telegram" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--twitter" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-twitter"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--facebook" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--ok" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                                          </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article__main-img"> <img src="img/article/main-banner.webp" alt="Lorem ipsum dolor"></div>
+            <div class="article__body"> 
+              <p>Часто при изучении React пользователи сталкиваются с таким понятием, как «JSX». Возникает непонимание и вопрос: «А что это такое — JSX, и почему эту технологию так нахваливают?». Давайте разбираться вместе.</p>
+              <p>Хочется заметить, что React может функционировать и без JSX, но именно работа с этой технологией выделяет его среди подобных ему инструментов и делает привлекательным для его последователей. Кстати, этот технологический подход к программированию впервые был презентован во время использования библиотеки React.</p>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sed nec tortor nunc netus vel. Bibendum non sit lorem nulla tempor convallis. Non elementum ultricies tellus diam aliquet aenean. Habitasse neque posuere tellus ipsum id amet, egestas. Turpis neque, quam ultrices mauris. Eget rhoncus vehicula tempus urna, vivamus netus sed platea. Pretium commodo eleifend a ut nullam neque aliquam. Aenean aenean dolor diam cursus. Metus aliquam consectetur aliquet nunc egestas et in. Senectus ipsum vulputate ultrices massa est risus. Lorem cras donec purus faucibus.</p>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sed nec tortor nunc netus vel. Bibendum non sit lorem nulla tempor convallis. Non elementum ultricies tellus diam aliquet aenean. Habitasse neque posuere tellus ipsum id amet, egestas. Turpis neque, quam ultrices mauris. Eget rhoncus vehicula tempus urna, vivamus netus sed platea. Pretium commodo eleifend a ut nullam neque aliquam. Aenean aenean dolor diam cursus. Metus aliquam consectetur aliquet nunc egestas et in. Senectus ipsum vulputate ultrices massa est risus. Lorem cras donec purus faucibus.</p>
+              <pre><code>function $initHighlight(block, cls) {
+   try {
+       if (cls.search(/\bno\-highlight\b/) != -1)
+       return process(block, true, 0x0F) +
+               ` class="${cls}"`;
+   } catch (e) {
+       /* handle exception */
+   }
+   for (var i = 0 / 2; i < classes.length; i++) {
+       if (checkCondition(classes[i]) === undefined)
+       console.log('undefined');
+   }
+   return (
+       <div>                
+         <web-component>{block}</web-component>
+       </div>   
+   )
+   }
+   export  $initHighlight;</code></pre>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sed nec tortor nunc netus vel. Bibendum non sit lorem nulla tempor convallis. Non elementum ultricies tellus diam aliquet aenean. Habitasse neque posuere tellus ipsum id amet, egestas. Turpis neque, quam ultrices mauris. Eget rhoncus vehicula tempus urna, vivamus netus sed platea. Pretium commodo eleifend a ut nullam neque aliquam. Aenean aenean dolor diam cursus. Metus aliquam consectetur aliquet nunc egestas et in. Senectus ipsum vulputate ultrices massa est risus. Lorem cras donec purus faucibus.</p>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <figure> <img src="img/article/image-1.webp" alt="Lorem ipsum dolor"></figure>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis curabitur sed sem sed tortor leo ac. Cras vulputate imperdiet erat mauris augue dis. Mattis tempus eu id lorem pharetra, suspendisse vitae consectetur nunc. Eu fringilla id quis quis. Nunc tempor, eu mauris sodales nisl venenatis diam. Aliquam ornare massa ornare natoque. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis curabitur sed sem sed tortor leo ac. Cras vulputate imperdiet erat mauris augue dis. Mattis tempus eu id lorem pharetra, suspendisse vitae consectetur nunc. Eu fringilla id quis quis. Nunc tempor, eu mauris sodales nisl venenatis diam. Aliquam ornare massa ornare natoque. </li>
+              </ul>
+              <figure> <img src="img/article/image-1.webp" alt="Lorem ipsum dolor">
+                <figcaption>Lorem ipsum dolor</figcaption>
+              </figure>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sed nec tortor nunc netus vel. Bibendum non sit lorem nulla tempor convallis. Non elementum ultricies tellus diam aliquet aenean. <a href="#">Habitasse neque posuere</a>  tellus ipsum id amet, egestas. Turpis neque, quam ultrices mauris. Eget rhoncus vehicula tempus urna, vivamus netus sed platea. Pretium commodo eleifend a ut nullam neque aliquam. Aenean aenean dolor diam cursus. Metus aliquam consectetur aliquet nunc egestas et in. Senectus ipsum vulputate ultrices massa est risus. Lorem cras donec purus faucibus.</p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis curabitur sed sem sed tortor leo ac. Cras vulputate imperdiet erat mauris augue dis. Mattis tempus eu id lorem pharetra, suspendisse vitae consectetur nunc. Eu fringilla id quis quis. Nunc tempor, eu mauris sodales nisl venenatis diam. Aliquam ornare massa ornare natoque. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis curabitur sed sem sed tortor leo ac. Cras vulputate imperdiet erat mauris augue dis. Mattis tempus eu id lorem pharetra, suspendisse vitae consectetur nunc. Eu fringilla id quis quis. Nunc tempor, eu mauris sodales nisl venenatis diam. Aliquam ornare massa ornare natoque. </li>
+              </ul>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sed nec tortor nunc netus vel. Bibendum non sit lorem nulla tempor convallis. Non elementum ultricies tellus diam aliquet aenean. Habitasse neque posuere tellus ipsum id amet, egestas. Turpis neque, quam ultrices mauris. Eget rhoncus vehicula tempus urna, vivamus netus sed platea. Pretium commodo eleifend a ut nullam neque aliquam. Aenean aenean dolor diam cursus. Metus aliquam consectetur aliquet nunc egestas et in. Senectus ipsum vulputate ultrices massa est risus. Lorem cras donec purus faucibus.</p>
+              <ol> 
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis curabitur sed sem sed tortor leo ac. Cras vulputate imperdiet erat mauris augue dis. Mattis tempus eu id lorem pharetra, suspendisse vitae consectetur nunc. Eu fringilla id quis quis. Nunc tempor, eu mauris sodales nisl venenatis diam. Aliquam ornare massa ornare natoque. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In turpis curabitur sed sem sed tortor leo ac. Cras vulputate imperdiet erat mauris augue dis. Mattis tempus eu id lorem pharetra, suspendisse vitae consectetur nunc. Eu fringilla id quis quis. Nunc tempor, eu mauris sodales nisl venenatis diam. Aliquam ornare massa ornare natoque. </li>
+              </ol>
+            </div>
+            <div class="article__banner"> 
+              <div class="banner-offer">
+                <div class="banner-offer__logo"><img src="img/logo/logo-white.svg" alt="Codernet"></div>
+                <p class="banner-offer__title">Мы будем очень благодарны</p>
+                <p class="banner-offer__description">если под понравившемся материалом Вы нажмёте одну из кнопок социальных сетей и поделитесь с друзьями.</p>
+                <div class="banner-offer__social">
+                  <ul class="social">
+                    <li class="social__item"> <a class="social__link social__link--telegram" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--twitter" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-twitter"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--facebook" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--ok" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                                          </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__article-layout-aside">
+          <div class="page__article-layout-ad">
+            <div class="ad-banner" style="width: 100%; height: 412px; background-color: #F5F5F5;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page__more"> 
+        <h3 class="page__more-title">Схожие статьи</h3>
+        <div class="page__more-row"> 
+          <div class="page__more-col page__more-col-3-md">
+            <article class="card card--article"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Как в Python присвоить значение переменной? Мануал для новичков</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">11 мая 2021</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="page__more-col page__more-col-3-md"> 
+            <article class="card card--article"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Как в Python присвоить значение переменной? Мануал для новичков</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">11 мая 2021</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="page__more-col page__more-col-3-md"> 
+            <article class="card card--article"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Как в Python присвоить значение переменной? Мануал для новичков</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">11 мая 2021</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="page__more-col page__more-col-3-md"> 
+            <article class="card card--article"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Как в Python присвоить значение переменной? Мануал для новичков</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">11 мая 2021</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="page__banner"></div>
+    </div>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__item footer__item--logo">
+            <div class="footer__logo" href="#"><a class="logo" href="#">
+                <svg aria-hidden="true" width="25" height="30">
+                  <use xlink:href="img/logo/logo.svg#icon-logo"></use>
+                </svg><span class="logo__description">Codernet</span></a></div>
+          </div>
+          <div class="footer__item footer__item--social">
+            <div class="footer__social">
+              <ul class="social">
+                <li class="social__item"> <a class="social__link social__link--telegram" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--twitter" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-twitter"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--facebook" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--ok" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                                  </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item footer__item--copyright">
+            <div class="footer__copyright">© 2021 The CoderNet Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/highlight/highlight.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

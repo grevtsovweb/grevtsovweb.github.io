@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codernet</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body class="page js-page">
+    <header class="header">
+      <div class="header__main">
+        <div class="header__container">
+          <nav class="header__main-nav"><a class="header__logo" href="#"><a class="logo" href="#">
+                <svg aria-hidden="true" width="25" height="30">
+                  <use xlink:href="img/logo/logo.svg#icon-logo"></use>
+                </svg><span class="logo__description">Codernet</span></a></a>
+            <ul class="header__main-nav-list">
+              <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Видео</a></li>
+              <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Статьи</a></li>
+              <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Книги</a></li>
+            </ul>
+            <div class="header__search-field">
+              <div class="input-search"><span class="input-search__icon"> 
+                                <svg aria-hidden="true" width="18" height="18">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-search"></use>
+                                </svg></span>
+                <input class="input-search__field" type="text" placeholder="Поиск на сайте">
+                <button class="input-search__button">Искать</button>
+              </div>
+            </div>
+            <div class="header__mobile-menu"> 
+              <button class="burger" data-modal="open" data-value="menu"><span></span></button>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="header__mobile-nav">
+        <button class="header__mobile-button-nav" data-modal="open" data-value="category"><span class="header__mobile-button-text">Java</span><span class="header__mobile-button-icon">
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                          </svg></span></button>
+      </div>
+    </header>
+    <div class="mobile-modal js-mobile-modal">
+      <div class="mobile-modal__inner"> 
+        <div class="mobile-modal__wrapper mobile-modal__wrapper--hidden js-menu">
+          <div class="mobile-modal__header"> 
+            <div class="mobile-modal__title">Меню</div>
+            <div class="mobile-modal__close">
+              <button class="burger burger--close" data-modal="close" data-value="menu"><span></span></button>
+            </div>
+          </div>
+          <div class="mobile-modal__search">
+            <div class="input-search input-search--medium"><span class="input-search__icon"> 
+                            <svg aria-hidden="true" width="18" height="18">
+                              <use xlink:href="img/sprite/sprite.svg#icon-search"></use>
+                            </svg></span>
+              <input class="input-search__field" type="text" placeholder="Поиск на сайте">
+            </div>
+          </div>
+          <ul class="mobile-modal__nav-list">
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+                                <svg aria-hidden="true" width="24" height="24">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-video"></use>
+                                </svg></span>Видео</span><span class="mobile-modal__nav-link-arrow"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                              </svg></span></a></li>
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+                                <svg aria-hidden="true" width="24" height="24">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-article"></use>
+                                </svg></span>Статьи</span><span class="mobile-modal__nav-link-arrow"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                              </svg></span></a></li>
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+                                <svg aria-hidden="true" width="24" height="24">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-book"></use>
+                                </svg></span>Книги</span><span class="mobile-modal__nav-link-arrow"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                              </svg></span></a></li>
+          </ul>
+        </div>
+        <div class="mobile-modal__wrapper mobile-modal__wrapper--hidden js-category">
+          <div class="mobile-modal__header"> 
+            <div class="mobile-modal__title">Выберите язык</div>
+            <div class="mobile-modal__close">
+              <button class="burger burger--close" data-modal="close" data-value="category"><span></span></button>
+            </div>
+          </div>
+          <ul class="mobile-modal__category-list">
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">C / C ++</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">CSS</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Git</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Go</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">HTML</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link mobile-modal__category-link--current" href="#">Java</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Linux</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">PHP</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Python</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">Security</a></li>
+            <li class="mobile-modal__category-item"> <a class="mobile-modal__category-link" href="#">SQL</a></li>
+          </ul>
+          <div class="mobile-modal__ad">
+            <div style="min-height: 164px; background-color: #F5F5F5;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__container page__container--border">
+      <div class="page__breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+               Главная<span class="breadcrumbs__link-icon"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></a></li>
+          <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+               Статьи<span class="breadcrumbs__link-icon"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                            </svg></span></a></li>
+          <li class="breadcrumbs__item">Программа для математической статистики. Как подготовить статистику?</li>
+        </ul>
+      </div>
+      <div class="page__content-layout"> 
+        <div class="video"> 
+          <h1 class="video__title">Бесплатный курс CSS для начинающих с нуля</h1>
+          <div class="video__player"> 
+            <div class="player"> 
+              <div class="player__main">
+                 <iframe class="js-video" width="100%" height="100%" src="https://www.youtube.com/embed/hft4XYApT44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div class="player__aside">
+                <div class="player__aside-title">Список уроков</div>
+                <div class="player__list-mobile">
+                  <label class="player__snippet js-label-select" for="mobile-snippet"><span class="player__snippet-header"><span class="player__snippet-number js-number">Урок 1</span><span class="player__snippet-duration js-duration">00:08:12</span></span><span class="player__snippet-title js-title">Введение в CSS</span></label>
+                  <select class="player__list-mobile-select js-select-video" id="mobile-snippet">
+                    <option value="1" data-number="Урок 1" data-duration="00:08:12" data-title="Введение в CSS" data-link="https://www.youtube.com/embed/hft4XYApT44">Урок 1</option>
+                    <option value="2" data-number="Урок 2" data-duration="00:10:04" data-title="Введение в CSS 2" data-link="https://www.youtube.com/embed/DX9ITfNVM7I">Урок 2</option>
+                    <option value="3" data-number="Урок 3" data-duration="00:12:33" data-title="Введение в CSS 3" data-link="https://www.youtube.com/embed/LQxx5Z9XEdM">Урок 3</option>
+                    <option value="4" data-number="Урок 4" data-duration="00:13:42" data-title="Введение в CSS 4" data-link="https://www.youtube.com/embed/nZHrCDJEnw4">Урок 4</option>
+                    <option value="5" data-number="Урок 5" data-duration="00:14:02" data-title="Введение в CSS 5" data-link="https://www.youtube.com/embed/DX9ITfNVM7I">Урок 5</option>
+                    <option value="6" data-number="Урок 6" data-duration="00:02:10" data-title="Введение в CSS 6" data-link="https://www.youtube.com/embed/LQxx5Z9XEdM">Урок 6</option>
+                    <option value="7" data-number="Урок 7" data-duration="00:20:02" data-title="Введение в CSS 7" data-link="https://www.youtube.com/embed/hft4XYApT44">Урок 7</option>
+                    <option value="8" data-number="Урок 8" data-duration="00:11:14" data-title="Введение в CSS 8" data-link="https://www.youtube.com/embed/DX9ITfNVM7I">Урок 8</option>
+                    <option value="9" data-number="Урок 9" data-duration="00:05:12" data-title="Введение в CSS 9" data-link="https://www.youtube.com/embed/hft4XYApT44">Урок 9</option>
+                    <option value="10" data-number="Урок 10" data-duration="00:06:47" data-title="Введение в CSS 10" data-link="https://www.youtube.com/embed/LQxx5Z9XEdM">Урок 10</option>
+                    <option value="11" data-number="Урок 11" data-duration="00:18:10" data-title="Введение в CSS 11" data-link="https://www.youtube.com/embed/hft4XYApT44">Урок 11</option>
+                    <option value="12" data-number="Урок 12" data-duration="00:19:02" data-title="Введение в CSS 12" data-link="https://www.youtube.com/embed/LQxx5Z9XEdM">Урок 12</option>
+                  </select>
+                </div>
+                <ul class="player__list">
+                  <li class="player__item">
+                    <button class="player__snippet player__snippet--current js-button-lesson" value="1" data-number="Урок 1" data-duration="00:08:12" data-title="Введение в CSS" data-link="https://www.youtube.com/embed/hft4XYApT44"><span class="player__snippet-header"><span class="player__snippet-number">Урок 1</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/DX9ITfNVM7I"><span class="player__snippet-header"><span class="player__snippet-number">Урок 2</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/LQxx5Z9XEdM"><span class="player__snippet-header"><span class="player__snippet-number">Урок 3</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/nZHrCDJEnw4"><span class="player__snippet-header"><span class="player__snippet-number">Урок 4</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/DX9ITfNVM7I"><span class="player__snippet-header"><span class="player__snippet-number">Урок 5</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/LQxx5Z9XEdM"><span class="player__snippet-header"><span class="player__snippet-number">Урок 6</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/hft4XYApT44"><span class="player__snippet-header"><span class="player__snippet-number">Урок 7</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/DX9ITfNVM7I"><span class="player__snippet-header"><span class="player__snippet-number">Урок 8</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/hft4XYApT44"><span class="player__snippet-header"><span class="player__snippet-number">Урок 9</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/hft4XYApT44"><span class="player__snippet-header"><span class="player__snippet-number">Урок 10</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/DX9ITfNVM7I"><span class="player__snippet-header"><span class="player__snippet-number">Урок 11</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                  <li class="player__item">
+                    <button class="player__snippet js-button-lesson" data-link="https://www.youtube.com/embed/hft4XYApT44"><span class="player__snippet-header"><span class="player__snippet-number">Урок 12</span><span class="player__snippet-duration">00:08:12</span></span><span class="player__snippet-title">Введение в CSS</span></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__more"> 
+        <h3 class="page__more-title">Схожие видео</h3>
+        <div class="page__more-row"> 
+          <div class="page__more-col page__more-col-3-md">
+            <article class="card card--video"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Курс CSS для начинающих</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">8 уроков</div>
+                  <div class="card__footer-item card__footer-item--duration">164 мин</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="page__more-col page__more-col-3-md"> 
+            <article class="card card--video"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Курс CSS для начинающих</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">8 уроков</div>
+                  <div class="card__footer-item card__footer-item--duration">164 мин</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="page__more-col page__more-col-3-md"> 
+            <article class="card card--video"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Курс CSS для начинающих</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">8 уроков</div>
+                  <div class="card__footer-item card__footer-item--duration">164 мин</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="page__more-col page__more-col-3-md"> 
+            <article class="card card--video"><a class="card__link" href="#"> </a>
+              <div class="card__image"><img loading="lazy" src="img/card/card-image-1.webp" alt="Курс CSS для начинающих"></div>
+              <div class="card__content"> 
+                <div class="card__ticket">
+                  <div class="ticket ticket--css">CSS </div>
+                </div>
+                <h1 class="card__title">Курс CSS для начинающих</h1>
+                <div class="card__footer"> 
+                  <div class="card__footer-item">8 уроков</div>
+                  <div class="card__footer-item card__footer-item--duration">164 мин</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="page__banner"></div>
+    </div>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__item footer__item--logo">
+            <div class="footer__logo" href="#"><a class="logo" href="#">
+                <svg aria-hidden="true" width="25" height="30">
+                  <use xlink:href="img/logo/logo.svg#icon-logo"></use>
+                </svg><span class="logo__description">Codernet</span></a></div>
+          </div>
+          <div class="footer__item footer__item--social">
+            <div class="footer__social">
+              <ul class="social">
+                <li class="social__item"> <a class="social__link social__link--telegram" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--twitter" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-twitter"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--facebook" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
+                                  </svg></a></li>
+                <li class="social__item"> <a class="social__link social__link--ok" href="#"> 
+                                  <svg aria-hidden="true" width="18" height="18">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-ok"></use>
+                                  </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item footer__item--copyright">
+            <div class="footer__copyright">© 2021 The CoderNet Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
