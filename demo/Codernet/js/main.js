@@ -5,23 +5,25 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const selectVideoButton = document.querySelector('.js-select-video');
     const selectVideoData = document.querySelector('.js-label-select');
-    // const videoNumber = selectVideoData.querySelector('.js-number');
-    // const videoDuration = selectVideoData.querySelector('.js-duration');
-    // const videoTitle = selectVideoData.querySelector('.js-title');
+    const videoNumber = document.querySelector('.js-number');
+    const videoDuration = document.querySelector('.js-duration');
+    const videoTitle = document.querySelector('.js-title');
     const video = document.querySelector('.js-video'); 
     const selectVideoButtonDesktop = document.querySelectorAll('.js-button-lesson');
     const page = document.querySelector('.js-page');
 
-
-    // selectVideoButton.addEventListener('change', function(){
-    //     const selectedOption = selectVideoButton.options[selectVideoButton.selectedIndex];
-    //     const srcValue = selectVideoButton.options[selectVideoButton.selectedIndex].getAttribute('data-link');
-    //     videoNumber.innerHTML = selectedOption.getAttribute('data-number');
-    //     videoDuration.innerHTML = selectedOption.getAttribute('data-duration');
-    //     videoTitle.innerHTML = selectedOption.getAttribute('data-title');
+    if(selectVideoButton){
+        selectVideoButton.addEventListener('change', function(){
+            const selectedOption = selectVideoButton.options[selectVideoButton.selectedIndex];
+            const srcValue = selectVideoButton.options[selectVideoButton.selectedIndex].getAttribute('data-link');
+            videoNumber.innerHTML = selectedOption.getAttribute('data-number');
+            videoDuration.innerHTML = selectedOption.getAttribute('data-duration');
+            videoTitle.innerHTML = selectedOption.getAttribute('data-title');
+        
+            video.setAttribute('src', srcValue);
+        })
+    }
     
-    //     video.setAttribute('src', srcValue);
-    // })
     
 
 
@@ -84,8 +86,5 @@ document.addEventListener('DOMContentLoaded', function(){
     for(let i = 0; i < openModalButton.length; i++){
         openModal(openModalButton[i]);
     }
-
-
-    hljs.highlightAll();
 
 })
