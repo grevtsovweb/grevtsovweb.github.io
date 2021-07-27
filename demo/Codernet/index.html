@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codernet</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <link rel="stylesheet" href="styles/style.css">
+    <title>Codernet</title>
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Description">
+    <meta name="theme-color" content="#2f358f">
+    <link rel="icon" href="favicon.svg">
+    <link rel="mask-icon" href="mask-icon.svg" color="#30BE96">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preload" href="fonts/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/GilroySemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page js-page">
     <section class="page__main-header"> 
@@ -15,14 +22,14 @@
           <header class="header header--transparent">
             <div class="header__main">
               <div class="header__container">
-                <nav class="header__main-nav"><a class="header__logo" href="#"><a class="logo" href="#">
+                <nav class="header__main-nav"><a class="header__logo" href="#"><a class="logo" href="/">
                       <svg aria-hidden="true" width="25" height="30">
                         <use xlink:href="img/logo/logo.svg#icon-logo"></use>
                       </svg><span class="logo__description">Codernet</span></a></a>
                   <ul class="header__main-nav-list">
-                    <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Видео</a></li>
-                    <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Статьи</a></li>
-                    <li class="header__main-nav-item"><a class="header__main-nav-link" href="#">Книги</a></li>
+                    <li class="header__main-nav-item"><a class="header__main-nav-link" href="/videos.html">Видео</a></li>
+                    <li class="header__main-nav-item"><a class="header__main-nav-link" href="/articles.html">Статьи</a></li>
+                    <li class="header__main-nav-item"><a class="header__main-nav-link" href="/books.html">Книги</a></li>
                   </ul>
                   <div class="header__search-field">
                     <div class="input-search"><span class="input-search__icon"> 
@@ -62,21 +69,21 @@
             </div>
           </div>
           <ul class="mobile-modal__nav-list">
-            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="/videos.html"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
                                 <svg aria-hidden="true" width="24" height="24">
                                   <use xlink:href="img/sprite/sprite.svg#icon-video"></use>
                                 </svg></span>Видео</span><span class="mobile-modal__nav-link-arrow"> 
                               <svg aria-hidden="true" width="24" height="24">
                                 <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
                               </svg></span></a></li>
-            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="/articles.html"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
                                 <svg aria-hidden="true" width="24" height="24">
                                   <use xlink:href="img/sprite/sprite.svg#icon-article"></use>
                                 </svg></span>Статьи</span><span class="mobile-modal__nav-link-arrow"> 
                               <svg aria-hidden="true" width="24" height="24">
                                 <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
                               </svg></span></a></li>
-            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="#"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
+            <li class="mobile-modal__nav-item"> <a class="mobile-modal__nav-link" href="/books.html"><span class="mobile-modal__nav-link-title"> <span class="mobile-modal__nav-link-icon">
                                 <svg aria-hidden="true" width="24" height="24">
                                   <use xlink:href="img/sprite/sprite.svg#icon-book"></use>
                                 </svg></span>Книги</span><span class="mobile-modal__nav-link-arrow"> 
@@ -116,7 +123,7 @@
         <div class="feature-section__container">
           <div class="feature-section__row">
             <div class="feature-section__col"> 
-                    <div class="feature"><a class="feature__link" href="#"> </a>
+                    <div class="feature"><a class="feature__link" href="/books.html"> </a>
                       <div class="feature__header">
                         <div class="feature__icon"> 
                                       <svg aria-hidden="true" width="32" height="32">
@@ -132,7 +139,7 @@
                     </div>
             </div>
             <div class="feature-section__col"> 
-                    <div class="feature"><a class="feature__link" href="#"> </a>
+                    <div class="feature"><a class="feature__link" href="/videos.html"> </a>
                       <div class="feature__header">
                         <div class="feature__icon"> 
                                       <svg aria-hidden="true" width="32" height="32">
@@ -148,7 +155,7 @@
                     </div>
             </div>
             <div class="feature-section__col"> 
-                    <div class="feature"><a class="feature__link" href="#"> </a>
+                    <div class="feature"><a class="feature__link" href="/articles.html"> </a>
                       <div class="feature__header">
                         <div class="feature__icon"> 
                                       <svg aria-hidden="true" width="32" height="32">
@@ -286,7 +293,7 @@
       <div class="footer__container">
         <div class="footer__row">
           <div class="footer__item footer__item--logo">
-            <div class="footer__logo" href="#"><a class="logo" href="#">
+            <div class="footer__logo" href="#"><a class="logo" href="/">
                 <svg aria-hidden="true" width="25" height="30">
                   <use xlink:href="img/logo/logo.svg#icon-logo"></use>
                 </svg><span class="logo__description">Codernet</span></a></div>
