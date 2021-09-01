@@ -322,6 +322,31 @@
         </div>
       </div>
     </section>
+    <div class="level-section">
+      <div class="level-section__container">
+        <h2 class="level-section__title">Повышаем математический уровень и готовим к олимпиадам</h2>
+        <div class="level-section__row">
+          <div class="level-section__col">
+            <div class="level-card level-card_tall level-card_blue level-card_bg-3">
+              <h4 class="level-card__title">Повышение уровня</h4>
+              <p class="level-card__text">Если у вас пробелы в школьном материале или есть непонимание определенных тем, то преподаватели MathLabs смогут повысить уровень учащегося.</p>
+              <div class="level-card__button">
+                <button class="button button--white" data-modal="open" data-value="sign-up-lesson">Записаться</button>
+              </div>
+            </div>
+          </div>
+          <div class="level-section__col">
+            <div class="level-card level-card_tall level-card_dark level-card_bg-4">
+              <h4 class="level-card__title">Олимпиадная математика</h4>
+              <p class="level-card__text">Мы победили в самых известных олимпиадах в России и точно знаем, как подготовить школьника к призовым местам. Это интересный путь, который сильно развивает математические способности.</p>
+              <div class="level-card__button">
+                <button class="button button--white" data-modal="open" data-value="sign-up-lesson">Записаться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="price-section">
       <div class="price-section__container">
         <h2 class="price-section__title">Стоимость онлайн&nbsp;-&nbsp;занятий</h2>
@@ -787,25 +812,27 @@
                     <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
                   </svg>
             </button>
+            <div class="modal__button-online"> 
+              <button class="button" disabled>Онлайн занятия</button>
+            </div>
             <div class="modal__header">
-              <h4 class="modal__title">Записаться на занятие по математике</h4>
-              <p class="modal__subtitle">Сделаем упор на решение типовых сдач из профильной математики.</p>
+              <h4 class="modal__title">Запись на онлайн занятия</h4>
             </div>
             <div class="modal__form"> 
               <form class="form" action="#" method="post">
                 <div class="form__group">
                   <div class="field">
-                    <input class="field__input" placeholder="Как тебя зовут? *" type="text" name="name"/>
+                    <input class="field__input" placeholder="Телефон *" type="phone" name="phone"/>
                   </div>
                 </div>
                 <div class="form__group">
                   <div class="field">
-                    <input class="field__input" placeholder="Номер телефона *" type="phone" name="phone"/>
+                    <input class="field__input" placeholder="Почта *" type="email" name="email"/>
                   </div>
                 </div>
                 <div class="form__group">
                   <div class="field">
-                    <input class="field__input" placeholder="E-mail *" type="email" name="email"/>
+                    <input class="field__input" placeholder="Имя ученика *" type="text" name="name"/>
                   </div>
                 </div>
                 <div class="form__button"> 
