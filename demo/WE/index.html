@@ -10,12 +10,12 @@
     <link rel="icon" href="favicon.svg">
     <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/NeutralFaceBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page js-page">
     <section class="header-section">
       <div class="header-section__top"> 
-        <header class="header header--transparent">
+        <header class="header header--transparent js-header">
           <div class="header__container"> 
             <nav class="header__nav"> <a class="header__logo" href="#"> <img src="img/logo/logo-dark.svg" alt="WeSciense" width="100" height="28" title="WeSciense" aria-hidden="true"></a>
               <ul class="header__main-nav">
@@ -38,10 +38,10 @@
               </ul>
               <div class="header__user-block">
                 <div class="header__user-item mobile-hidden"><a class="header__phone" href="tel:+74953747723">+7 (495) 374-77-23</a></div>
-                <div class="header__user-item"> 
+                <div class="header__user-item header__user-item--sign-up"> 
                   <button class="button button--medium" data-modal="open" data-value="sign-up-lesson">Записаться</button>
                 </div>
-                <div class="header__user-item"> 
+                <div class="header__user-item tablet-hidden">
                   <button class="header__user-button" type="button"><span class="header__user-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-account"></use>
@@ -183,44 +183,36 @@
       <div class="program-section__container"> 
         <h2 class="program-section__title">Мы разработали эффективные программы обучения по важнейшим направлениям:</h2>
         <div class="program-section__grid">
-          <div class="program-section__col-6-sm">  
-            <div class="program-card program-card--purple">
-              <div class="program-card__image"> <img src="img/program-card/math.svg" alt="Математика"/></div>
-              <h5 class="program-card__title">Математика</h5>
-              <p class="program-card__description">Подготовим к сдаче ЕГЭ по математике. Сделаем упор на решение типовых сдач из профильной математики.</p>
-              <div class="program-card__button"> 
-                <button class="button">Узнать подробнее</button>
-              </div>
+          <div class="program-card program-card--purple">
+            <div class="program-card__image"> <img src="img/program-card/math.svg" alt="Математика"/></div>
+            <h5 class="program-card__title">Математика</h5>
+            <p class="program-card__description">Подготовим к сдаче ЕГЭ по математике. Сделаем упор на решение типовых сдач из профильной математики.</p>
+            <div class="program-card__button"> 
+              <button class="button">Узнать подробнее</button>
             </div>
           </div>
-          <div class="program-section__col-6-sm"> 
-            <div class="program-card program-card--green">
-              <div class="program-card__image"> <img src="img/program-card/physics.svg" alt="Физика"/></div>
-              <h5 class="program-card__title">Физика</h5>
-              <p class="program-card__description">Мы не обещаем объяснить в двух словах физику, но мы точно улучшим знания школьника за время занятий.</p>
-              <div class="program-card__button"> 
-                <button class="button">Узнать подробнее</button>
-              </div>
+          <div class="program-card program-card--green">
+            <div class="program-card__image"> <img src="img/program-card/physics.svg" alt="Физика"/></div>
+            <h5 class="program-card__title">Физика</h5>
+            <p class="program-card__description">Мы не обещаем объяснить в двух словах физику, но мы точно улучшим знания школьника за время занятий.</p>
+            <div class="program-card__button"> 
+              <button class="button">Узнать подробнее</button>
             </div>
           </div>
-          <div class="program-section__col-6-sm">  
-            <div class="program-card program-card--yellow">
-              <div class="program-card__image"> <img src="img/program-card/computer.svg" alt="Компьютерные&lt;br&gt;науки"/></div>
-              <h5 class="program-card__title">Компьютерные<br>науки</h5>
-              <p class="program-card__description">Хочешь научиться кодингу, но не знаешь, с чего начать? Тогда ты в правильном месте. Программирование – это легко.</p>
-              <div class="program-card__button"> 
-                <button class="button">Узнать подробнее</button>
-              </div>
+          <div class="program-card program-card--yellow">
+            <div class="program-card__image"> <img src="img/program-card/computer.svg" alt="Компьютерные&lt;br&gt;науки"/></div>
+            <h5 class="program-card__title">Компьютерные<br>науки</h5>
+            <p class="program-card__description">Хочешь научиться кодингу, но не знаешь, с чего начать? Тогда ты в правильном месте. Программирование – это легко.</p>
+            <div class="program-card__button"> 
+              <button class="button">Узнать подробнее</button>
             </div>
           </div>
-          <div class="program-section__col-6-sm"> 
-            <div class="program-card program-card--blue">
-              <div class="program-card__image"> <img src="img/program-card/english.svg" alt="Английский&lt;br&gt;язык"/></div>
-              <h5 class="program-card__title">Английский<br>язык</h5>
-              <p class="program-card__description">Тот самый язык, которого не нужно бояться. Начните изучать английский язык с WeScience уже сегодня.</p>
-              <div class="program-card__button"> 
-                <button class="button">Узнать подробнее</button>
-              </div>
+          <div class="program-card program-card--blue">
+            <div class="program-card__image"> <img src="img/program-card/english.svg" alt="Английский&lt;br&gt;язык"/></div>
+            <h5 class="program-card__title">Английский<br>язык</h5>
+            <p class="program-card__description">Тот самый язык, которого не нужно бояться. Начните изучать английский язык с WeScience уже сегодня.</p>
+            <div class="program-card__button"> 
+              <button class="button">Узнать подробнее</button>
             </div>
           </div>
         </div>
@@ -231,7 +223,7 @@
         <h2 class="why-section__title">Почему нас выбрали более 1000 учеников?</h2>
         <div class="why-section__main"> 
           <div class="why-card why-card--reverse why-card--motivation"> 
-            <div class="why-card__image"><img src="img/why-us/winners.svg" alt="Мотивируем на рост и улучшение знаний" width="254" height="148"></div>
+            <div class="why-card__image"><img src="img/why-us/motivation.svg" alt="Мотивируем на рост и улучшение знаний" width="254" height="148"></div>
             <div class="why-card__content"> 
               <h5 class="why-card__title">Мотивируем на рост и улучшение знаний</h5>
               <p class="why-card__description">Мы строго отбираем преподавателей не только по уровню знаний, но и по тому, как хорошо они мотивируют ученика к росту.</p>
@@ -259,7 +251,7 @@
         <div class="join-section__main">
           <div class="join-section__col-7-md">
             <div class="join-section__header">
-              <h2 class="join-section__title">Готовы присоединиться к занятиям?</h2>
+              <h2 class="join-section__title">Готовы присоединиться к&nbsp;занятиям?</h2>
               <p class="join-section__subtitle">Оставь заявку на пробный урок и максимально улучшай знания по кодингу!</p>
               <div class="join-section__image"> <img src="img/join-section/rocket.svg" alt="Человек на ракете" width="164" height="125"></div>
             </div>

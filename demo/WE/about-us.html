@@ -11,12 +11,12 @@
     <link rel="icon" href="favicon.svg">
     <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/NeutralFaceBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page js-page">
     <section class="header-section header-section--about-us">
       <div class="header-section__top"> 
-        <header class="header header--transparent">
+        <header class="header header--transparent js-header">
           <div class="header__container"> 
             <nav class="header__nav"> <a class="header__logo" href="#"> <img src="img/logo/logo-dark.svg" alt="WeSciense" width="100" height="28" title="WeSciense" aria-hidden="true"></a>
               <ul class="header__main-nav">
@@ -39,10 +39,10 @@
               </ul>
               <div class="header__user-block">
                 <div class="header__user-item mobile-hidden"><a class="header__phone" href="tel:+74953747723">+7 (495) 374-77-23</a></div>
-                <div class="header__user-item"> 
+                <div class="header__user-item header__user-item--sign-up"> 
                   <button class="button button--medium" data-modal="open" data-value="sign-up-lesson">Записаться</button>
                 </div>
-                <div class="header__user-item"> 
+                <div class="header__user-item tablet-hidden">
                   <button class="header__user-button" type="button"><span class="header__user-icon"> 
                       <svg aria-hidden="true" width="24" height="24">
                         <use xlink:href="img/sprite/sprite.svg#icon-account"></use>
@@ -184,13 +184,13 @@
     <section class="article-section">
       <div class="article-section__container"> 
         <div class="article-section__main"> 
-          <div class="article-block article-block--center-sm">
+          <div class="article-block article-block--lesson">
             <div class="article-block__content"> 
               <h2 class="article-block__title">Мы</h2>
               <p class="article-block__text">WeScience создан, чтобы каждый желающий мог познакомиться с наукой, увидеть её красоту и улучшить свои знания. </p>
               <p class="article-block__text">Мы разработали уникальные программы обучения для детей, школьников и взрослых таким образом, чтобы каждое занятие было максимально интересным.</p>
             </div>
-            <div class="article-block__image article-block__image--center-md article-block__image--gray article-block__image--full"><img src="img/article-block/logo-stroke.svg" alt="WeScience" width="131" height="131"></div>
+            <div class="article-block__image article-block__image--gray article-block__image--full"><img src="img/article-block/logo-stroke.svg" alt="WeScience" width="131" height="131"></div>
           </div>
         </div>
       </div>
@@ -359,7 +359,7 @@
         <div class="join-section__main">
           <div class="join-section__col-7-md">
             <div class="join-section__header">
-              <h2 class="join-section__title">Готовы присоединиться к занятиям?</h2>
+              <h2 class="join-section__title">Готовы присоединиться к&nbsp;занятиям?</h2>
               <p class="join-section__subtitle">Оставь заявку на пробный урок и максимально улучшай знания по кодингу!</p>
               <div class="join-section__image"> <img src="img/join-section/rocket.svg" alt="Человек на ракете" width="164" height="125"></div>
             </div>
