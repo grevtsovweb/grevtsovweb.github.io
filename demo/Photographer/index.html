@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>App</title>
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Description">
+    <meta name="theme-color" content="#E5E5E5">
+    <link rel="icon" href="favicon.svg">
+    <link rel="mask-icon" href="mask-icon.svg" color="#30BE96">
+    <link rel="preload" href="fonts/TTNorms-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/TTNorms-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/TTNorms-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/TTNorms-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/BerlingskeSerif-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/BerlingskeSerif-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page page-js">
+    <div class="page__header page__header--fixed js-header">
+      <nav class="main-nav">
+        <div class="main-nav__list">
+          <div class="main-nav__logo"><a class="logo" href="#"> 
+              <sapn class="logo__description">Фотограф в Воронеже</sapn><span class="logo__name">Екатерина Курдюмова</span></a></div>
+          <div class="main-nav__desktop-block">
+            <div class="main-nav__phone">+7(905) 050-90-70</div>
+            <div class="main-nav__call-button"> 
+              <button class="button button--medium" data-modal="open" data-value="registration">Перезвоните мне</button>
+            </div>
+          </div>
+          <div class="main-nav__menu">
+            <button class="main-nav__menu-button" data-modal="menu"><span></span></button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="page__side-social">
+      <ul class="social social--vertical">
+        <li class="social__item"> <a class="social__link social__link--instagram" href="#"> 
+                  <svg aria-hidden="true" width="18" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#icon-inst"></use>
+                  </svg></a></li>
+        <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                  <svg aria-hidden="true" width="18" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                  </svg></a></li>
+        <li class="social__item"> <a class="social__link social__link--whatsapp" href="#"> 
+                  <svg aria-hidden="true" width="18" height="18">
+                    <use xlink:href="img/sprite/sprite.svg#icon-whats"></use>
+                  </svg></a></li>
+      </ul>
+    </div>
+    <div class="page__section-header">
+      <div class="start-home">
+        <div class="start-home__container">
+          <h1 class="start-home__title">Эстетичные и&nbsp;чувственные съемки <span class="start-home__title--accent">для&nbsp;счастливых людей</span></h1>
+          <div class="start-home__blockquote-block"> 
+            <div class="start-home__avatar"> <img src="img/avatar.webp" alt="Катя Курдюмова"></div><span class="start-home__blockquote">Привет, я Катя Курдюмова. Это&nbsp;мой сайт, где можно узнать больше обо&nbsp;мне, записаться на&nbsp;съемку и&nbsp;оценить последние работы</span>
+          </div>
+        </div>
+        <div class="start-home__portfolio">
+          <div class="start-portfolio">
+            <div class="start-portfolio__col">
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo.webp"><img src="img/photo/photo.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo-2.webp"><img src="img/photo/photo-2.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+            </div>
+            <div class="start-portfolio__col">
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo-2.webp"><img src="img/photo/photo-2.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo.webp"><img src="img/photo/photo.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+            </div>
+            <div class="start-portfolio__col">
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo.webp"><img src="img/photo/photo.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo-2.webp"><img src="img/photo/photo-2.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+            </div>
+            <div class="start-portfolio__col">
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo-2.webp"><img src="img/photo/photo-2.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo.webp"><img src="img/photo/photo.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+            </div>
+            <div class="start-portfolio__col">
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo.webp"><img src="img/photo/photo.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo-2.webp"><img src="img/photo/photo-2.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+            </div>
+            <div class="start-portfolio__col">
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo-2.webp"><img src="img/photo/photo-2.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+              <div class="start-portfolio__item">
+                <div class="photo"><a class="photo__link" data-fancybox="gallery" href="img/photo/photo.webp"><img src="img/photo/photo.webp" alt=""><span class="photo__overlay"><span class="photo__icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-eye"></use>
+                              </svg></span></span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="start-home__button"> <a class="button button--secondary" href="#">Еще фото</a></div>
+      </div>
+    </div>
+    <div class="page__section"> 
+      <div class="form-section"> 
+        <div class="form-section__container">
+          <div class="form-section__header"> 
+            <h2 class="title">Понравились мои работы?</h2>
+            <p class="description">Оставьте заявку и я перезвоню, если не хотите ждать - пишите в <a href="#">WhatsApp </a></p>
+          </div>
+          <div class="form-section__form"> 
+            <form class="form" action=""> 
+              <div class="form__group">
+                <input class="field__input" placeholder="Ваше имя"/>
+              </div>
+              <div class="form__group">
+                <input class="field__input" placeholder="Ваш телефон"/>
+              </div>
+              <div class="form__button"> 
+                <button class="button">Перезвоните мне</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__section"> 
+      <div class="my-work-section"> 
+        <div class="my-work-section__container"> 
+          <div class="my-work-section__header"> 
+            <h2 class="title">Помочь раскрыть вашу красоту — моя работа</h2>
+            <p class="description">Я делаю все, чтобы фотосессия была комфортой, а Вы без стеснения открылись камере</p>
+          </div>
+          <div class="my-work-section__list"> 
+            <div class="my-work-section__item"> 
+              <div class="feature"><img src="img/feature/feature-1.webp" alt="От 1 часа на съемку" width="159" height="152">
+                <div class="feature__description">
+                  <h5>От 1 часа на съемку</h5>
+                  <p>Оптимальное время для небольшой индивидуальной фотосессии 1 - 1,5 часа</p>
+                </div>
+              </div>
+            </div>
+            <div class="my-work-section__item"> 
+              <div class="feature"><img src="img/feature/feature-2.webp" alt="15-20 снимков с авторской обработкой" width="159" height="152">
+                <div class="feature__description">
+                  <h5>15-20 снимков с авторской обработкой</h5>
+                  <p>Вы получите архив со снимками, а я обработаю самые лучшие, которые можем отобрать вместе</p>
+                </div>
+              </div>
+            </div>
+            <div class="my-work-section__item"> 
+              <div class="feature"><img src="img/feature/feature-3.webp" alt="Создаю дружелюбную атмосферу" width="159" height="152">
+                <div class="feature__description">
+                  <h5>Создаю дружелюбную атмосферу</h5>
+                  <p>Помогаю расслабиться, никогда не критикую и не пытаюсь навязать свое мнение</p>
+                </div>
+              </div>
+            </div>
+            <div class="my-work-section__item"> 
+              <div class="feature"><img src="img/feature/feature-4.webp" alt="Сделаю так, чтобы ты ни о чем не переживала" width="146" height="152">
+                <div class="feature__description">
+                  <h5>Сделаю так, чтобы ты ни о чем не переживала</h5>
+                  <p>Я беру на себя все: от выбора локации и образов до подбора креативных идей перед съемкой</p>
+                </div>
+              </div>
+            </div>
+            <div class="my-work-section__item"> 
+              <div class="feature"><img src="img/feature/feature-5.webp" alt="Использую лучшую технику" width="143" height="152">
+                <div class="feature__description">
+                  <h5>Использую лучшую технику</h5>
+                  <p>Писать непонятные названия камер и объективов не имеет смысла. Если нравится картинка - все отлично</p>
+                </div>
+              </div>
+            </div>
+            <div class="my-work-section__item"> 
+              <div class="feature"><img src="img/feature/feature-6.webp" alt="Трепетное отношение к каждому кадру" width="130" height="154">
+                <div class="feature__description">
+                  <h5>Трепетное отношение к каждому кадру</h5>
+                  <p>Умею поймать нужный момент, подскажу по позированию, считаю, что не бывает мелочей, которые не важны</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__section"> 
+      <div class="reviews-section">
+        <div class="reviews-section__container">
+          <div class="reviews-section__header"> 
+            <h2 class="title">Честные отзывы о моей работе</h2>
+          </div>
+          <div class="reviews-section__content">
+            <div class="reviews-section__review-list">
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review"> 
+                <div class="review__image"> <img src="img/review/review-1.webp" alt=" Фотограф Екатерина Курдюмова"></div>
+                <div class="review__info"> 
+                  <div class="review__author-wrap"> <a class="review__author" href="#">Фотограф Екатерина Курдюмова</a><span class="review__date">21.04.2021</span></div>
+                  <div class="review__content"> 
+                    <div class="review__text">Здесь вы можете оставить свой отзыв о моей работе!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-section__content-button"> 
+              <button class="button button--medium">Добавить отзыв</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__section"> 
+      <div class="stage-section"> 
+        <div class="stage-section__container"> 
+          <div class="stage-section__header"> 
+            <h2 class="title">Вот как все будет происходить:</h2>
+          </div>
+          <div class="stage-section__content">
+            <div class="stage-item stage-item--1">
+              <div class="stage-item__content">
+                <h5 class="stage-item__title">Подготовка</h5>
+                <p class="stage-item__text">Я всегда внимательно отношусь к выбору локации для съемок. Нужно будет определить время, примерную погоду, образы, подобрать референсы и согласовать множество мелочей, которые повлияют на итоговый результат</p>
+              </div>
+            </div>
+            <div class="stage-item stage-item--2">
+              <div class="stage-item__content">
+                <h5 class="stage-item__title">День съемки</h5>
+                <p class="stage-item__text">Сначала сделаем пробные снимки, подберем ракурсы и вы не успеете оглянуться, как войдете во вкус :)</p>
+              </div>
+            </div>
+            <div class="stage-item stage-item--3">
+              <div class="stage-item__content">
+                <h5 class="stage-item__title">Когда будет готово</h5>
+                <p class="stage-item__text">Обычно обработка фотографий занимает от двух до пяти рабочих дней</p>
+              </div>
+            </div>
+          </div>
+          <div class="stage-section__button"> 
+            <button class="button" data-modal="open" data-value="registration">Перезвоните мне</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__section"> 
+      <div class="price-section">
+        <div class="price-section__container">
+          <div class="price-section__header"> 
+            <h2 class="title">Тарифы</h2>
+          </div>
+          <div class="price-section__content"> 
+            <div class="price-card"> 
+              <div class="price-card__image"> 
+                <picture>
+                  <source srcset="img/price-card/portrait-md.webp" media="(min-width: 600px)"/><img src="img/price-card/portrait.webp" alt="Портретная фотосессия"/>
+                </picture>
+              </div>
+              <div class="price-card__body"> 
+                <h4 class="price-card__title">Портретная фотосессия</h4>
+                <div class="price-card__info"> 
+                  <div class="price-card__info-item">
+                    <div class="price-card__info-item-icon"> 
+                            <svg aria-hidden="true" width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-clock"></use>
+                            </svg>
+                    </div>
+                    <div class="price-card__info-text">1-1.5 часа</div>
+                  </div>
+                  <div class="price-card__info-item">
+                    <div class="price-card__info-item-icon"> 
+                            <svg aria-hidden="true" width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-image"></use>
+                            </svg>
+                    </div>
+                    <div class="price-card__info-text">15 - 20 обработанных фотографий</div>
+                  </div>
+                </div>
+                <div class="price-card__price">
+                  <div class="price-card__price-value">2500</div>
+                  <div class="price-card__price-currency">руб</div>
+                </div>
+                <div class="price-card__button"> 
+                  <button class="button button--full-width button--medium" data-modal="open" data-value="registration">Заказать фотосессиию</button>
+                </div>
+              </div>
+            </div>
+            <div class="price-card"> 
+              <div class="price-card__image"> 
+                <picture>
+                  <source srcset="img/price-card/love-md.webp" media="(min-width: 600px)"/><img src="img/price-card/love.webp" alt="Портретная фотосессия"/>
+                </picture>
+              </div>
+              <div class="price-card__body"> 
+                <h4 class="price-card__title">Портретная фотосессия</h4>
+                <div class="price-card__info"> 
+                  <div class="price-card__info-item">
+                    <div class="price-card__info-item-icon"> 
+                            <svg aria-hidden="true" width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-clock"></use>
+                            </svg>
+                    </div>
+                    <div class="price-card__info-text">1-1.5 часа</div>
+                  </div>
+                  <div class="price-card__info-item">
+                    <div class="price-card__info-item-icon"> 
+                            <svg aria-hidden="true" width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-image"></use>
+                            </svg>
+                    </div>
+                    <div class="price-card__info-text">15 - 20 обработанных фотографий</div>
+                  </div>
+                </div>
+                <div class="price-card__price">
+                  <div class="price-card__price-value">2500</div>
+                  <div class="price-card__price-currency">руб</div>
+                </div>
+                <div class="price-card__button"> 
+                  <button class="button button--full-width button--medium" data-modal="open" data-value="registration">Заказать фотосессиию</button>
+                </div>
+              </div>
+            </div>
+            <div class="price-card"> 
+              <div class="price-card__image"> 
+                <picture>
+                  <source srcset="img/price-card/wedding-md.webp" media="(min-width: 600px)"/><img src="img/price-card/wedding.webp" alt="Портретная фотосессия"/>
+                </picture>
+              </div>
+              <div class="price-card__body"> 
+                <h4 class="price-card__title">Портретная фотосессия</h4>
+                <div class="price-card__info"> 
+                  <div class="price-card__info-item">
+                    <div class="price-card__info-item-icon"> 
+                            <svg aria-hidden="true" width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-clock"></use>
+                            </svg>
+                    </div>
+                    <div class="price-card__info-text">13 часа</div>
+                  </div>
+                  <div class="price-card__info-item">
+                    <div class="price-card__info-item-icon"> 
+                            <svg aria-hidden="true" width="12" height="12">
+                              <use xlink:href="img/sprite/sprite.svg#icon-image"></use>
+                            </svg>
+                    </div>
+                    <div class="price-card__info-text">1-20 обработанных фотографий</div>
+                  </div>
+                </div>
+                <div class="price-card__price">
+                  <div class="price-card__price-value">5000</div>
+                  <div class="price-card__price-currency">руб</div>
+                </div>
+                <div class="price-card__button"> 
+                  <button class="button button--full-width button--medium" data-modal="open" data-value="registration">Заказать фотосессиию</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__section"> 
+      <div class="quiz-section">
+        <div class="quiz-section__container">
+          <div class="quiz-section__header"> 
+            <h2 class="title">Ответьте на несколько вопросов, чтобы заказать фотосессию</h2>
+          </div>
+          <form class="quiz-section__quiz">
+            <div class="quiz-section__quiz-row">
+              <div class="quiz-section__quiz-item"> 
+                <h5 class="quiz-section__quiz-title">Какая съемка вам нужна?</h5>
+                <div class="quiz-section__input"> 
+                  <input name="style" value="Свадьба" id="wedding" type="radio" checked="">
+                  <label for="wedding">Свадьба</label>
+                </div>
+                <div class="quiz-section__input"> 
+                  <input name="style" value="День рождения" id="birth_day" type="radio" checked="">
+                  <label for="birth_day">День рождения</label>
+                </div>
+                <div class="quiz-section__input"> 
+                  <input name="style" value="Индивидуальная съемка" id="individual" type="radio" checked="">
+                  <label for="individual">Индивидуальная съемка</label>
+                </div>
+              </div>
+              <div class="quiz-section__quiz-item"> 
+                <h5 class="quiz-section__quiz-title">Сколько будет человек?</h5>
+                <div class="quiz-section__input"> 
+                  <input name="people-number" value="1" id="one" type="radio" checked="">
+                  <label for="one">1</label>
+                </div>
+                <div class="quiz-section__input"> 
+                  <input name="people-number" value="2-5" id="two_five" type="radio" checked="">
+                  <label for="two_five">2-5</label>
+                </div>
+                <div class="quiz-section__input"> 
+                  <input name="people-number" value="company" id="company" type="radio" checked="">
+                  <label for="company">Большая компания</label>
+                </div>
+              </div>
+              <div class="quiz-section__quiz-item"> 
+                <h5 class="quiz-section__quiz-title">На какую дату?</h5>
+                <div class="quiz-section__date">
+                  <input class="input-date" name="date" type="date">
+                </div>
+              </div>
+            </div>
+            <div class="quiz-section__quiz-button"> 
+              <button class="button">Перезвоните мне</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="page__footer">
+      <div class="footer"> 
+        <div class="footer__container">
+          <div class="footer__row">
+            <div class="footer__left">
+              <div class="footer__logo"> <a class="logo" href="#"> 
+                  <sapn class="logo__description">Фотограф в Воронеже</sapn><span class="logo__name">Екатерина Курдюмова</span></a></div>
+              <div class="footer__social"> 
+                <ul class="social">
+                  <li class="social__item"> <a class="social__link social__link--instagram" href="#"> 
+                                      <svg aria-hidden="true" width="18" height="18">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-inst"></use>
+                                      </svg></a></li>
+                  <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                                      <svg aria-hidden="true" width="18" height="18">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                      </svg></a></li>
+                  <li class="social__item"> <a class="social__link social__link--whatsapp" href="#"> 
+                                      <svg aria-hidden="true" width="18" height="18">
+                                        <use xlink:href="img/sprite/sprite.svg#icon-whats"></use>
+                                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__social-info"><a class="footer__phone" href="tel:+79050509070">+7(905) 050-90-70</a><a class="footer__mail" href="#mailto:kurdyumova.katenka@yandex.ru">kurdyumova.katenka@yandex.ru</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__overlay js-modal hidden">
+      <div class="modal__wrapper modal__wrapper-js">
+        <div class="modal">
+          <div class="modal__inner js-registration hidden">
+            <button class="modal__close js-close-modal" data-modal="close" data-value="sign-up-lesson">
+                  <svg aria-hidden="true" width="28" height="28">
+                    <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                  </svg>
+            </button>
+            <div class="modal__header">
+              <h4 class="modal__title">Запись на консультацию</h4>
+            </div>
+            <div class="modal__form"> 
+              <form class="form" action="#" method="post">
+                <div class="form__group">
+                  <input class="field__input" placeholder="Ваше имя" type="text" name="name"/>
+                </div>
+                <div class="form__group">
+                  <input class="field__input" placeholder="Ваш Телефон" type="phone" name="phone"/>
+                </div>
+                <div class="form__button"> 
+                      <button class="button button--full-width">Записаться</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal__inner js-success hidden">
+            <button class="modal__close js-close-modal" data-modal="close" data-value="success">
+                  <svg aria-hidden="true" width="28" height="28">
+                    <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                  </svg>
+            </button>
+            <div class="modal__header">
+              <h4 class="modal__title">Ваша заявка принята!</h4>
+              <p class="modal__subtitle">Не уходите далеко! Скоро мы свяжемся с вами для уточнения деталей.</p>
+            </div>
+            <div class="modal__button"> 
+                  <button class="button button--full-width" data-modal="close" data-value="success">Отлично</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu js-menu hidden">
+      <div class="menu__container">
+        <div class="menu__content">
+          <ul class="menu__nav-list"> 
+            <li class="menu__nav-item"> <a href="#">Главная</a></li>
+            <li class="menu__nav-item"> <a href="#">Портфолио</a></li>
+            <li class="menu__nav-item"> <a href="#">Цены</a></li>
+            <li class="menu__nav-item"> <a href="#">Обо мне</a></li>
+            <li class="menu__nav-item"> <a href="#">Блог</a></li>
+            <li class="menu__nav-item"> <a class="active" href="#">Контакты</a></li>
+          </ul>
+          <div class="menu__info">
+            <div class="menu__info-person"> </div>
+            <div class="menu__contact-item">
+              <div class="contact-item">
+                <h3 class="contact-item__title">Контакты</h3><a href="tel:+79050509070">+7 (905) 050-90-70</a><a href="mailto:kurdyumova.katenka@yandex.ru ">kurdyumova.katenka@yandex.ru </a>
+              </div>
+            </div>
+            <div class="menu__contact-item">
+              <div class="contact-item">
+                <h3 class="contact-item__title">Cоц сети</h3>
+                <div class="contact-item__social">
+                  <ul class="social">
+                    <li class="social__item"> <a class="social__link social__link--instagram" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-inst"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--vk" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
+                                          </svg></a></li>
+                    <li class="social__item"> <a class="social__link social__link--whatsapp" href="#"> 
+                                          <svg aria-hidden="true" width="18" height="18">
+                                            <use xlink:href="img/sprite/sprite.svg#icon-whats"></use>
+                                          </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="menu__person-name">Екатерина Курдюмова</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
