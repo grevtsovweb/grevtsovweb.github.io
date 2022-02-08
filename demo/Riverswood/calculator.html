@@ -3,19 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Riverswood: Aвторская мебель из ценных пород</title>
     <meta name="description" content="Description">
     <meta name="keywords" content="Description">
     <meta name="theme-color" content="#FCFAF6">
     <link rel="icon" href="favicon.svg">
-    <link rel="preload" href="fonts/TTNorms-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/TTNorms-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/TTNorms-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/TTNorms-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/BerlingskeSerif-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/BerlingskeSerif-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/GilroySemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page page-js">
     <div class="page__header page__header--fixed">
@@ -273,5 +269,161 @@
         </div>
       </div>
     </div>
+    <div class="mobile-menu js-menu hidden">
+      <div class="mobile-menu__inner"> <a class="mobile-menu__link" href="#">
+           О нас<span class="mobile-menu__link-icon">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-left"></use>
+            </svg></span></a><a class="mobile-menu__link" href="#">
+           Блог<span class="mobile-menu__link-icon">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-left"></use>
+            </svg></span></a><a class="mobile-menu__link" href="#">
+           Каталог<span class="mobile-menu__link-icon">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-left"></use>
+            </svg></span></a><a class="mobile-menu__link" href="#">
+           Контакты<span class="mobile-menu__link-icon">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-left"></use>
+            </svg></span></a><a class="mobile-menu__link" href="#">
+           Оплата и возврат<span class="mobile-menu__link-icon">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-left"></use>
+            </svg></span></a><a class="mobile-menu__link" href="#">
+           Доставка<span class="mobile-menu__link-icon">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-left"></use>
+            </svg></span></a><a class="mobile-menu__link" href="#">
+           Политика конфеденциальности<span class="mobile-menu__link-icon">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-left"></use>
+            </svg></span></a>
+        <div class="mobile-menu__button"> 
+          <button class="button button--full-width">Расчитать стоимость</button>
+        </div>
+        <div class="mobile-menu__contacts"> 
+          <div class="contact-item contact-item--dark contact-item--medium"><a class="contact-item__content" href="tel:+79800910303">8 (980) 091-03-03</a>
+            <div class="contact-item__subtitle">Главный офис</div>
+          </div>
+          <div class="contact-item contact-item--dark contact-item--medium"><a class="contact-item__content" href="tel:+74732958921">8 (473) 295-8921</a>
+            <div class="contact-item__subtitle">Главный офис</div>
+          </div>
+          <div class="contact-item contact-item--dark contact-item--medium"><a class="contact-item__content" href="mail:contact@riverswood.ru">contact@riverswood.ru</a>
+            <div class="contact-item__subtitle">Главный офис</div>
+          </div>
+          <div class="contact-item contact-item--dark contact-item--medium">
+            <div class="contact-item__content">г. Воронеж, Ленинский пр-кт, 164</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__overlay js-modal hidden">
+      <div class="modal__wrapper modal__wrapper-js">
+        <div class="modal">
+          <div class="modal__inner js-registration hidden">
+            <button class="modal__close js-close-modal" data-modal="close" data-value="registration">
+                  <svg aria-hidden="true" width="20" height="20">
+                    <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                  </svg>
+            </button>
+            <div class="modal__header">
+              <h4 class="modal__title">Запись на консультацию</h4>
+            </div>
+            <div class="modal__form"> 
+              <form class="form" action="#" method="post">
+                <div class="form__group">
+                  <input class="field__input" placeholder="Ваше имя" type="text" name="name"/>
+                </div>
+                <div class="form__group">
+                  <input class="field__input" placeholder="Ваш Телефон" type="phone" name="phone"/>
+                </div>
+                <div class="form__button"> 
+                      <button class="button button--full-width">Записаться</button>
+                </div>
+                <p class="modal__policy">Отправляю данную форму даю согласие на обработку <a href="#">персональных данных</a></p>
+              </form>
+            </div>
+          </div>
+          <div class="modal__inner js-success hidden">
+            <button class="modal__close js-close-modal" data-modal="close" data-value="success">
+                  <svg aria-hidden="true" width="28" height="28">
+                    <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                  </svg>
+            </button>
+            <div class="modal__header">
+              <h4 class="modal__title">Ваша заявка принята!</h4>
+              <p class="modal__subtitle">Не уходите далеко! Скоро мы свяжемся с вами для уточнения деталей.</p>
+            </div>
+            <div class="modal__button"> 
+                  <button class="button button--full-width" data-modal="close" data-value="success">Отлично</button>
+            </div>
+          </div>
+          <div class="modal__inner js-payment hidden">
+            <button class="modal__close js-close-modal" data-modal="close" data-value="payment">
+                  <svg aria-hidden="true" width="28" height="28">
+                    <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                  </svg>
+            </button>
+            <div class="modal__header">
+              <h4 class="modal__title">Оплата</h4>
+              <ul class="modal__list"> 
+                <li class="modal__list-item">
+                  <div class="modal__list-icon">1</div>
+                  <div class="modal__list-content"> 
+                    <p class="modal__list-title">Аванс</p>
+                    <p class="modal__list-text">Оплата - 30%</p>
+                  </div>
+                </li>
+                <li class="modal__list-item">
+                  <div class="modal__list-icon">2</div>
+                  <div class="modal__list-content"> 
+                    <p class="modal__list-title">Второй платеж</p>
+                    <p class="modal__list-text">После согласования проекта и утверждения материала - 40%</p>
+                  </div>
+                </li>
+                <li class="modal__list-item">
+                  <div class="modal__list-icon modal__list-icon--accent">
+                        <svg aria-hidden="true" width="20" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check"></use>
+                        </svg>
+                  </div>
+                  <div class="modal__list-content"> 
+                    <p class="modal__list-title">Окончательная оплата</p>
+                    <p class="modal__list-text">После доставки, монтажа и подписания акта о приемке - 30%</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal__inner js-garantee hidden">
+            <button class="modal__close js-close-modal" data-modal="close" data-value="garantee">
+                  <svg aria-hidden="true" width="28" height="28">
+                    <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                  </svg>
+            </button>
+            <div class="modal__header">
+              <h4 class="modal__title">Гарантия</h4>
+            </div>
+            <div class="modal__content">
+              <p>На всю продукцию компании RiversWood распространяется гарантия 1 год с момента покупки. Клиент обязуется при этом обеспечивать надлежащие условия эксплуатации:</p>
+              <ul>
+                <li>Предельно допустимый температурный диапазон эксплуатации находится в пределах от +10 до +27 градусов Цельсия с относительной влажностью 35-70%. Нарушение приводит к расслоениям и короблениям.</li>
+                <li>От радиаторов, печей, каминов и обогревателей мебель должна стоять не ближе 120 см. Также она не может находиться на пути инфракрасных лучей.</li>
+                <li>Использование агрессивной бытовой химии запрещено. Особенно это относится к веществам, содержащим хлор и его производные, спирты, щелочи, углеводородные растворители.</li>
+                <li>Механическое воздействие, удары, использование абразивных материалов также строго запрещено. Это наждачная бумага, специальные тряпки и губки, а также порошки.</li>
+                <li>Для неоднородных эпоксидных поверхностей могут иметь разрушительные последствия резкие перепады температур. Это связано с неравномерным коэффициентом теплового расширения. Недопустимо попадание прямых солнечных лучей, способных оставлять пятна или вызывать отторжение лакокрасочных покрытий.</li>
+                <li>Мебель из цельных спилов не стоит заносить в помещение до окончания ремонтных работ из-за колебаний влажности и попадания абразивных частиц на полированные поверхности.</li>
+                <li>Перемещение собранного изделия производится вдвоём, без перекосов. Перетаскивать его волочением или толканием запрещено.</li>
+                <li>Для ухода рекомендуется применять специальные новые тряпки из микрофибры и соответствующие защитные полироли.</li>
+              </ul>
+              <p>При нарушении указанных условий гарантия не распространяется. К ним относятся все случаи, когда повреждения были нанесены владельцем случайно или специально. Исправление дефектов в данной ситуации возможно, но за дополнительную оплату. Срок гарантии может изменяться в зависимости от изделия по усмотрению компании RiversWood.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
