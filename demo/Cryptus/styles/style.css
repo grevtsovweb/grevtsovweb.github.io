@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "NeueMachinaBold";
+  src: url(../fonts/NeueMachina-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "NeueMachinaRegular";
+  src: url(../fonts/NeueMachina-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "BodyGrotesqueLargeTrialBold";
+  src: url(../fonts/BodyGrotesqueLargeTrial-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+.page {
+  margin: 0;
+  padding: 0; }
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  position: relative;
+  font-family: "BodyGrotesqueLargeTrialBold", sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: normal;
+  word-wrap: normal;
+  border: none;
+  background-color: #1D1E2C;
+  border: none;
+  border-radius: 45px;
+  color: #ffffff;
+  cursor: pointer;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.02em; }
+
+.header {
+  font-size: 22px;
+  line-height: 21px;
+  font-family: "NeueMachinaBold", sans-serif;
+  color: #1D1E2C;
+  padding-top: 73px; }
+  .header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px; }
+    @media screen and (min-width: 767px) {
+      .header__container {
+        padding-left: 32px;
+        padding-right: 32px; } }
+    @media screen and (min-width: 992px) {
+      .header__container {
+        padding-left: 40px;
+        padding-right: 40px; } }
+  .header__top-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(50% - 0px); }
+  .header__links {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(41.66667% - 0px);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__info-item {
+    margin-top: 0;
+    margin-bottom: 0; }
+    .header__info-item--inner {
+      display: block; }
+    .header__info-item--green {
+      color: #03C07B; }
+  .header__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .header__link {
+    color: #1D1E2C;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 22px; }
+    .header__link--yellow {
+      position: relative;
+      z-index: 0;
+      background-color: #FFFF85; }
+  .header__offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 132px;
+    display: flex;
+    padding-bottom: 220px; }
+  .header__offer-message {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 55px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .header__offer-logo img {
+    display: block; }
+  .header__offer-image {
+    position: relative;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+    .header__offer-image img {
+      position: absolute;
+      left: 0;
+      top: -68px; }
+  .header__offer-title {
+    font-size: 48px;
+    line-height: 64px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-family: "BodyGrotesqueLargeTrialBold", sans-serif;
+    max-width: 525px; }
+    .header__offer-title--highlight {
+      display: block; }
+    .header__offer-title--green {
+      position: relative;
+      z-index: 0; }
+      .header__offer-title--green::before {
+        content: '';
+        background-color: #00FFA2;
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 420px;
+        height: 35px;
+        z-index: -1; }
+    .header__offer-title--right {
+      text-align: right; }
+  .header__offer-text {
+    font-size: 28px;
+    line-height: 27px;
+    font-family: "NeueMachinaRegular", sans-serif;
+    max-width: 545px;
+    margin-top: 10px;
+    margin-bottom: 0; }
+  .header__offer-button {
+    margin-top: 47px; }
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  position: relative;
+  font-family: "BodyGrotesqueLargeTrialBold", sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: normal;
+  word-wrap: normal;
+  border: none;
+  background-color: #1D1E2C;
+  border: none;
+  border-radius: 45px;
+  color: #ffffff;
+  cursor: pointer;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.02em; }
+
+/*# sourceMappingURL=style.css.map */
