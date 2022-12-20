@@ -1,0 +1,26 @@
+<svg width="376" height="684" viewBox="0 0 376 684" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_206_1482)">
+<path d="M268 147V217" stroke="white" stroke-width="2"/>
+<path d="M302 182L234 182" stroke="white" stroke-width="2"/>
+<path d="M282.604 166.833L252.759 196.532" stroke="white" stroke-width="2"/>
+<path d="M252.759 166.833L282.604 196.532" stroke="white" stroke-width="2"/>
+<path d="M147.5 228V264" stroke="white" stroke-width="2"/>
+<path d="M165 246L130 246" stroke="white" stroke-width="2"/>
+<path d="M155.017 238.2L139.655 253.473" stroke="white" stroke-width="2"/>
+<path d="M139.655 238.2L155.017 253.473" stroke="white" stroke-width="2"/>
+<circle cx="43" cy="217" r="5" fill="white"/>
+<circle cx="376" cy="441" r="5" fill="white"/>
+<path d="M382.65 120L369.35 134" stroke="white" stroke-width="2"/>
+<path d="M383 133.65L369 120.35" stroke="white" stroke-width="2"/>
+<circle cx="0.5" cy="619.5" r="7.5" stroke="white" stroke-width="2"/>
+<circle cx="90.5" cy="159.5" r="7.5" stroke="white" stroke-width="2"/>
+<circle cx="343" cy="246" r="5" stroke="white" stroke-width="2"/>
+<circle cx="1" cy="264" r="5" stroke="white" stroke-width="2"/>
+<circle cx="374" cy="679" r="5" stroke="white" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_206_1482">
+<rect width="376" height="684" fill="white"/>
+</clipPath>
+</defs>
+</svg>
