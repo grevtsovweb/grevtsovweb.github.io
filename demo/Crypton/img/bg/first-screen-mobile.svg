@@ -3,14 +3,34 @@
 <path d="M310 135L242 135" stroke="white" stroke-width="2"/>
 <path d="M290.604 119.833L260.759 149.532" stroke="white" stroke-width="2"/>
 <path d="M260.759 119.833L290.604 149.532" stroke="white" stroke-width="2"/>
+<path d="M261 285V355" stroke="white" stroke-width="2"/>
+<path d="M295 320L227 320" stroke="white" stroke-width="2"/>
+<path d="M275.604 304.833L245.759 334.532" stroke="white" stroke-width="2"/>
+<path d="M245.759 304.833L275.604 334.532" stroke="white" stroke-width="2"/>
+<path d="M322 493V563" stroke="white" stroke-width="2"/>
+<path d="M356 528L288 528" stroke="white" stroke-width="2"/>
+<path d="M336.604 512.833L306.759 542.532" stroke="white" stroke-width="2"/>
+<path d="M306.759 512.833L336.604 542.532" stroke="white" stroke-width="2"/>
 <path d="M155.5 181V217" stroke="white" stroke-width="2"/>
 <path d="M173 199L138 199" stroke="white" stroke-width="2"/>
 <path d="M163.017 191.2L147.655 206.473" stroke="white" stroke-width="2"/>
 <path d="M147.655 191.2L163.017 206.473" stroke="white" stroke-width="2"/>
+<path d="M140.5 366V402" stroke="white" stroke-width="2"/>
+<path d="M158 384L123 384" stroke="white" stroke-width="2"/>
+<path d="M148.017 376.2L132.655 391.473" stroke="white" stroke-width="2"/>
+<path d="M132.655 376.2L148.017 391.473" stroke="white" stroke-width="2"/>
+<path d="M201.5 574V610" stroke="white" stroke-width="2"/>
+<path d="M219 592L184 592" stroke="white" stroke-width="2"/>
+<path d="M209.017 584.2L193.655 599.473" stroke="white" stroke-width="2"/>
+<path d="M193.655 584.2L209.017 599.473" stroke="white" stroke-width="2"/>
 <circle cx="51" cy="170" r="5" fill="white"/>
+<circle cx="36" cy="355" r="5" fill="white"/>
+<circle cx="97" cy="563" r="5" fill="white"/>
 <circle cx="384" cy="394" r="5" fill="white"/>
 <circle cx="8.5" cy="572.5" r="7.5" stroke="white" stroke-width="2"/>
 <circle cx="98.5" cy="112.5" r="7.5" stroke="white" stroke-width="2"/>
+<circle cx="83.5" cy="297.5" r="7.5" stroke="white" stroke-width="2"/>
+<circle cx="144.5" cy="505.5" r="7.5" stroke="white" stroke-width="2"/>
 <circle cx="351" cy="199" r="5" stroke="white" stroke-width="2"/>
 <circle cx="9" cy="217" r="5" stroke="white" stroke-width="2"/>
 <circle cx="382" cy="632" r="5" stroke="white" stroke-width="2"/>
