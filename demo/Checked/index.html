@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Checked </title>
+    <meta name="description" content="Checked">
+    <meta name="keywords" content="Checked">
+    <meta name="theme-color" content="#742DDB">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page page-js">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__nav-bar">
+          <div class="header__logo"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></div>
+          <div class="header__user-block">
+            <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
+            <button class="button button--tretiary button--small" data-modal="log-in">Войти</button>
+            <button class="button button--small" data-modal="sign-up">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="offer-section"> 
+      <div class="container grid-xl">
+        <div class="offer-section__header text-center">
+          <p class="subheading">Runtime AV checker</p>
+          <h1 class="h1">Автоматизированная проверка файлов на антивирусных системах и ОС Windows NT</h1>
+          <p class="supporting-text">Узнай реальную картину о состоянии файлов с помощью всех доступных  антивирусов. И проверь их работоспособность на разных версиях ОС Windows NT</p>
+          <div class="offer-section__button"> 
+            <button class="button" data-modal="log-in">Проверить файл</button>
+          </div>
+        </div>
+        <div class="offer-section__image-wrapper">
+          <div class="offer-section__image-inner"> <img src="img/interface/Chrome - Browsers White Mode.webp" alt="Checked-интерфейс"></div>
+        </div>
+      </div>
+    </div>
+    <div class="features-section">
+      <div class="container grid-xl">
+        <div class="features-section__header"> 
+          <p class="subheading">Преимущества</p>
+          <h2 class="h1 features-section__header-decor">Используй возможности <span class="features-section__header-decor--logo"><img src="img/logo/logo-accent.svg" alt="Checked"></span></h2>
+        </div>
+        <div class="features-section__content columns"> 
+          <div class="column col-4"> 
+            <div class="feature"> 
+              <div class="feature__icon"> <img src="img/icons/icon-incognito.svg" alt="Анонимность" width="48" height="48"></div>
+              <h5 class="feature__title title-lg">Анонимность</h5>
+              <p class="feature__text">Информация о  файлах не передается в облачные сервисы антивирусов </p>
+            </div>
+          </div>
+          <div class="column col-4">
+            <div class="feature"> 
+              <div class="feature__icon"> <img src="img/icons/icon-shield.svg" alt="Более 35+ антивирусов" width="48" height="48"></div>
+              <h5 class="feature__title title-lg">Более 35+ антивирусов</h5>
+              <p class="feature__text">Доступны все основные антивирусы</p>
+            </div>
+          </div>
+          <div class="column col-4">
+            <div class="feature"> 
+              <div class="feature__icon"> <img src="img/icons/icon-vnc.svg" alt="WebVNC доступ" width="48" height="48"></div>
+              <h5 class="feature__title title-lg">WebVNC доступ</h5>
+              <p class="feature__text">Прямой доступ к виртуальным машинам прямо из браузера</p>
+            </div>
+          </div>
+          <div class="column col-4">
+            <div class="feature"> 
+              <div class="feature__icon"> <img src="img/icons/icon-pafish.webp" alt="Недетектируемая виртуальная среда" width="48" height="48"></div>
+              <h5 class="feature__title title-lg">Недетектируемая виртуальная среда</h5>
+              <p class="feature__text">Проходит все тесты pafish</p>
+            </div>
+          </div>
+          <div class="column col-4">
+            <div class="feature"> 
+              <div class="feature__icon"> <img src="img/icons/icon-files.svg" alt="Поддержка множества расширений" width="48" height="48"></div>
+              <h5 class="feature__title title-lg">Поддержка множества расширений</h5>
+              <p class="feature__text">*.exe, *.dll, *.doc, *.docx, *.rtf, *.xls, *.xlsx, *.pdf, *.js, *.jse, *.vbs, *.vbe, *.wsf, *.msi, *.ps1, *.hta, *.zip</p>
+            </div>
+          </div>
+          <div class="column col-4">
+            <div class="feature"> 
+              <div class="feature__icon"> <img src="img/icons/icon-windows.svg" alt="Поддержка множества расширений" width="48" height="48"></div>
+              <h5 class="feature__title title-lg">Все версии Windows NT</h5>
+              <p class="feature__text">XP-11,Server 2k3-2k19, x32/x64</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-item-section">
+      <div class="container grid-xl">
+        <div class="feature-item-section__container">
+          <div class="feature-item-section__text"> 
+            <p class="subheading">Тестирование</p>
+            <h3 class="h1">Проверка работоспособности </h3>
+            <p class="supporting-text">Мы запускаем ехе/dll на всех версиях Windows и предоставляем отчет в виде скриншотов рабочего стола.</p>
+          </div>
+          <div class="feature-item-section__image">
+            <div class="feature-item-section__image-inner"><img src="img/interface/Chrome - Browsers White Mode.webp" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-item-section">
+      <div class="container grid-xl">
+        <div class="feature-item-section__container">
+          <div class="feature-item-section__image feature-item-section__image--left">
+            <div class="feature-item-section__image-inner"><img src="img/interface/Chrome - Browsers White Mode.webp" alt=""></div>
+          </div>
+          <div class="feature-item-section__text feature-item-section__text--right">
+            <p class="subheading">Удаленный доступ</p>
+            <h3 class="h1">Онлайн подключние к&nbsp;рабочему столу</h3>
+            <p class="supporting-text">Подключение к рабочему столу виртуальных машин по&nbsp;протоколу VNC прямо из браузера</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prices-section">
+      <div class="container grid-xl">
+        <div class="prices-section__header text-center">
+          <p class="subheading">Цены</p>
+          <h3 class="h1">Выбери свой тариф</h3>
+        </div>
+        <div class="columns">
+          <div class="column col-4"> 
+            <div class="price-card"> 
+              <div class="price-card__header"> 
+                <h4 class="price-card__title">Single</h4>
+                <p class="price-card__description">Разовая проверка файла</p>
+              </div>
+              <div class="price-card__body"> 
+                <p class="price-card__price">$13<span class="price-card__price--small">usd</span></p>
+                <p class="price-card__price-description">Одна проверка</p>
+                <div class="price-card__body-button"> 
+                  <button class="button button--full" data-modal="log-in">Выполнить проверку</button>
+                </div>
+              </div>
+              <div class="price-card__footer">
+                <ul class="price-card__footer-list">
+                  <li class="price-card__footer-list-item">Проверка на антивирусах</li>
+                  <li class="price-card__footer-list-item price-card__footer-list-item--false">Выгрузка PCAP файлов</li>
+                  <li class="price-card__footer-list-item price-card__footer-list-item--false">Видеозапись рабочего стола</li>
+                  <li class="price-card__footer-list-item price-card__footer-list-item--false">Проверка работоспособности на различных ОС</li>
+                  <li class="price-card__footer-list-item price-card__footer-list-item--false">Подключение к раб.столу виртуальных машин по WebVNC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column col-4"> 
+            <div class="price-card price-card--accent">
+              <div class="price-card__header"> 
+                <h4 class="price-card__title">VIP</h4>
+                <p class="price-card__description">Максимум функционала и&nbsp;возможностей для вашего удобства</p>
+              </div>
+              <div class="price-card__body"> 
+                <p class="price-card__price">$149<span class="price-card__price--small">usd</span></p>
+                <p class="price-card__price-description">Подписка на месяц + 0,05$ за 1 проверку на антивирусе/ОС</p>
+                <div class="price-card__body-button"> 
+                  <button class="button button--full" data-modal="log-in">Оформить VIP</button>
+                </div>
+              </div>
+              <div class="price-card__footer">
+                <ul class="price-card__footer-list">
+                  <li class="price-card__footer-list-item">Проверка на антивирусах</li>
+                  <li class="price-card__footer-list-item">Выгрузка PCAP файлов</li>
+                  <li class="price-card__footer-list-item">Видеозапись рабочего стола</li>
+                  <li class="price-card__footer-list-item">Проверка работоспособности на различных ОС</li>
+                  <li class="price-card__footer-list-item">Подключение к раб.столу виртуальных машин по WebVNC</li>
+                  <li class="price-card__footer-list-item">в 2 раза больше ресурсов на виртуальных машинах (по процессору и оперативной памяти)</li>
+                  <li class="price-card__footer-list-item">в 3 раза больше потоков проверки(быстрее результат)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column col-4"> 
+            <div class="price-card"> 
+              <div class="price-card__header"> 
+                <h4 class="price-card__title">Pro</h4>
+                <p class="price-card__description">Базовый набор возможностей</p>
+              </div>
+              <div class="price-card__body"> 
+                <p class="price-card__price">$99<span class="price-card__price--small">usd</span></p>
+                <p class="price-card__price-description">Подписка на месяц + 0,05$ за 1 проверку на антивирусе/ОС</p>
+                <div class="price-card__body-button"> 
+                  <button class="button button--full" data-modal="log-in">Оформить Pro</button>
+                </div>
+              </div>
+              <div class="price-card__footer">
+                <ul class="price-card__footer-list">
+                  <li class="price-card__footer-list-item">Проверка на антивирусах</li>
+                  <li class="price-card__footer-list-item">Выгрузка PCAP файлов</li>
+                  <li class="price-card__footer-list-item">Видеозапись рабочего стола</li>
+                  <li class="price-card__footer-list-item price-card__footer-list-item--false">Проверка работоспособности на различных ОС</li>
+                  <li class="price-card__footer-list-item price-card__footer-list-item--false">Подключение к раб.столу виртуальных машин по WebVNC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tools-section">
+      <div class="container grid-xl">
+        <div class="tools-section__header">
+          <div class="tools-section__header text-center">
+            <p class="subheading">Интсрументы</p>
+            <h3 class="h1">Более 35+ антивирусов и&nbsp;различных ОС</h3>
+          </div>
+        </div>
+        <div class="tools-section__content">
+          <div class="tools-section__subheader text-center">
+            <h4 class="h2">Антивирусы</h4>
+          </div>
+          <div class="tools-section__cards columns js-tools-section__cards">
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/360.webp" alt="360" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">360</div>
+                      <div class="antivirus-card__subtitle">Total Security Essential</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/AVG.webp" alt="AVG" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">AVG</div>
+                      <div class="antivirus-card__subtitle">Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/AhnLab.webp" alt="AhnLab" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">AhnLab</div>
+                      <div class="antivirus-card__subtitle">V3 Light</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Avast.webp" alt="Avast" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Avast</div>
+                      <div class="antivirus-card__subtitle">Premium Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Avira.webp" alt="Avira" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Avira</div>
+                      <div class="antivirus-card__subtitle">Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/BitDefender.webp" alt="BitDefender" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">BitDefender</div>
+                      <div class="antivirus-card__subtitle">Total Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Norton.webp" alt="Norton™" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Norton™</div>
+                      <div class="antivirus-card__subtitle">AntiVirus Plus</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Comodo.webp" alt="Comodo" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Comodo</div>
+                      <div class="antivirus-card__subtitle">Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/DrWeb-katana.webp" alt="Dr.Web" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Dr.Web</div>
+                      <div class="antivirus-card__subtitle">Security Space</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/DrWeb.webp" alt="Dr.Web" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Dr.Web</div>
+                      <div class="antivirus-card__subtitle">Katana</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Emsisoft.webp" alt="Emsisoft" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Emsisoft</div>
+                      <div class="antivirus-card__subtitle">Business Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Eset.webp" alt="Eset" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Eset</div>
+                      <div class="antivirus-card__subtitle">Smart Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/F-Secure.webp" alt="F-Secure" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">F-Secure</div>
+                      <div class="antivirus-card__subtitle">Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Fortinet.webp" alt="Fortinet" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Fortinet</div>
+                      <div class="antivirus-card__subtitle">Smart Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Malwarebytes.webp" alt="Malwarebytes" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Malwarebytes</div>
+                      <div class="antivirus-card__subtitle">Anti-Malware</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/McAfee.webp" alt="McAfee" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">McAfee</div>
+                      <div class="antivirus-card__subtitle">Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Panda.webp" alt="Panda" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Panda</div>
+                      <div class="antivirus-card__subtitle">Global Protection</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Sophos.webp" alt="Sophos" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Sophos</div>
+                      <div class="antivirus-card__subtitle">Smart Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Trend.webp" alt="Trend" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Trend</div>
+                      <div class="antivirus-card__subtitle">Micro Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Webroot.webp" alt="Webroot" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Webroot</div>
+                      <div class="antivirus-card__subtitle">SecureAnywhere</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Windows.webp" alt="Windows" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows</div>
+                      <div class="antivirus-card__subtitle">Defender</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Max-Total-Security.webp" alt="Max Total Security" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Max Total Security</div>
+                      <div class="antivirus-card__subtitle">Secure from Virus, Malware</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/eScan.webp" alt="eScan" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">eScan</div>
+                      <div class="antivirus-card__subtitle">Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/VIPRE.webp" alt="VIPRE" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">VIPRE</div>
+                      <div class="antivirus-card__subtitle">Ultimate Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Quick_Heal.webp" alt="Quick Heal" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Quick Heal</div>
+                      <div class="antivirus-card__subtitle">Internet Security</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/MyEmsisoft.webp" alt="MyEmsisoft" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">MyEmsisoft</div>
+                      <div class="antivirus-card__subtitle">Anti-Malware</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/GridinSoft.webp" alt="GridinSoft" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">GridinSoft</div>
+                      <div class="antivirus-card__subtitle">Anti-Malware</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/Adaware.webp" alt="Adaware" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Adaware</div>
+                      <div class="antivirus-card__subtitle">AntiVirus</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/NANO.webp" alt="NANO" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">NANO</div>
+                      <div class="antivirus-card__subtitle">Anti-Virus Pro</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3 js-antivirus-card d-hide">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/ZoneAlarm.webp" alt="ZoneAlarm" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">ZoneAlarm</div>
+                      <div class="antivirus-card__subtitle">FireWall</div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="tools-section__cards-button"> 
+            <button class="button button--medium button--secondary" data-show-hidden>Посмотреть все антивирусы</button>
+          </div>
+        </div>
+        <div class="tools-section__content">
+          <div class="tools-section__subheader text-center">
+            <h4 class="h2">Клиенты</h4>
+          </div>
+          <div class="tools-section__cards columns">
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-11.webp" alt="Windows 11" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 11</div>
+                      <div class="antivirus-card__subtitle">64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-10.webp" alt="Windows 10" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 10</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-8_1.webp" alt="Windows 8.1" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 8.1</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-8_1.webp" alt="Windows 8" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 8</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-7.webp" alt="Windows 7" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 7</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-vista.webp" alt="Windows Vista" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows Vista</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-xp.webp" alt="Windows XP" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows XP</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="tools-section__content">
+          <div class="tools-section__subheader text-center">
+            <h4 class="h2">Серверы</h4>
+          </div>
+          <div class="tools-section__cards columns">
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-2019.webp" alt="Windows 2019" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 2019</div>
+                      <div class="antivirus-card__subtitle">64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-2016.webp" alt="Windows 2016" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 2016</div>
+                      <div class="antivirus-card__subtitle">64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-2016.webp" alt="Windows 2012" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 2012</div>
+                      <div class="antivirus-card__subtitle">64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-2008.webp" alt="Windows 2008" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 2008</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="column col-3">
+                  <div class="antivirus-card">
+                    <div class="antivirus-card__image"> <img src="img/antivirus-card/win-2003.webp" alt="Windows 2003" loading="lazy"></div>
+                    <div class="antivirus-card__content">
+                      <div class="antivirus-card__title">Windows 2003</div>
+                      <div class="antivirus-card__subtitle">32-bit, 64-bit</div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container grid-xl"> 
+        <div class="footer__top"> 
+          <div class="footer__logo"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></div>
+          <div class="footer__top-button">
+            <button class="button button--small" data-modal="sign-up">Регистрация</button>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">Copyright by Checked! 2023</div>
+          <div class="footer__social"> 
+            <ul class="social-links">
+              <li><a class="social-links__link" href="#" target="_blank">
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                              </svg></a></li>
+              <li><a class="social-links__link" href="#" target="_blank">
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-jabber"></use>
+                              </svg></a></li>
+              <li><a class="social-links__link" href="#" target="_blank">
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                              </svg></a></li>
+            </ul>
+          </div>
+          <div class="footer__top-button">
+            <button class="button button--xs button--secondary"><span class="button__icon"><img src="img/icons/icon-tor.svg" alt="Наш сайт в Tor"></span>Наш сайт в Tor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-modal" id="modal-signup"><a class="modal-overlay" href="#close" aria-label="Close"></a>
+      <div class="modal-container">
+        <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                        </svg></a>
+          <div class="modal-title h5">Регистрация</div>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="input-nickname">Никнейм</label>
+              <input class="form-input" type="text" id="input-nickname-signup" placeholder="Введите ваш никнейм">
+            </div>
+            <div class="form-group has-error">
+              <label class="form-label" for="input-new-password">Новый пароль</label>
+              <input class="form-input" type="password" id="input-new-password-signup" placeholder="Введите придуманный пароль">
+              <p class="form-input-hint">The option is invalid.</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-repeat-password">Подтвердите пароль</label>
+              <input class="form-input" type="password" id="input-repeat-password-signup" placeholder="Повтортите новый пароль">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-contact">Контакт</label>
+              <input class="form-input" type="text" id="input-contact-signup" placeholder="Jabber, TOX или @telegram">
+            </div>
+            <div class="form-group columns">
+              <div class="column">
+                <label class="form-label" for="input-Captcha">Captcha</label>
+                <input class="form-input" type="password" id="input-Captcha-signup" placeholder="Введите символы с картинки">
+              </div>
+              <div class="column col-auto form-captcha"><img src="img/captcha/captcha.webp"><a class="small" href="#" data-action="refresh-captcha">Обновить</a></div>
+            </div>
+            <div class="modal-button">
+              <button class="button button--medium button--full" type="submit">Регистрация</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer"> 
+          <div class="modal-footer-text">Вы уже зарегестрированы? <a href="#" data-modal="log-in">Войти</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-modal" id="modal-login"><a class="modal-overlay" href="#close" aria-label="Close"></a>
+      <div class="modal-container">
+        <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                        </svg></a>
+          <div class="modal-title h5">Вход</div>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="input-nickname">Никнейм</label>
+              <input class="form-input" type="text" id="input-nickname-login" placeholder="Введите ваш никнейм">
+            </div>
+            <div class="form-group has-error">
+              <label class="form-label" for="input-password">Пароль</label>
+              <input class="form-input" type="password" id="input-password-login" placeholder="Введите пароль">
+              <p class="form-input-hint">The option is invalid.</p>
+            </div>
+            <div class="form-group columns">
+              <div class="column">
+                <label class="form-label" for="input-Captcha">Captcha</label>
+                <input class="form-input" type="password" id="input-Captcha-login" placeholder="Введите символы с картинки">
+              </div>
+              <div class="column col-auto form-captcha"><img src="img/captcha/captcha.webp"><a class="small" href="#" data-action="refresh-captcha">Обновить</a></div>
+            </div>
+            <div class="modal-button">
+              <button class="button button--medium button--full" type="submit">Войти</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer modal-footer-space-between"> <a href="#" data-modal="recovery">Востановить акаунт    </a><a href="#" data-modal="sign-up">Регистрация   </a></div>
+      </div>
+    </div>
+    <div class="modal js-modal" id="modal-recovery"><a class="modal-overlay" href="#close" aria-label="Close"></a>
+      <div class="modal-container">
+        <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                        </svg></a>
+          <div class="modal-title h5">Востановление акаунта</div>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="input-nickname">Никнейм</label>
+              <input class="form-input" type="text" id="input-nickname-recovery" placeholder="Введите ваш никнейм">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-code">Код востановления</label>
+              <input class="form-input" type="password" id="input-password-recovery" placeholder="Выданный при регистрации код">
+            </div>
+            <div class="form-group has-error">
+              <label class="form-label" for="input-new-password">Новый пароль</label>
+              <input class="form-input" type="password" id="input-new-password-recovery" placeholder="Введите придуманный пароль">
+              <p class="form-input-hint">The option is invalid.</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-repeat-password">Подтвердите пароль</label>
+              <input class="form-input" type="password" id="input-repeat-password-recovery" placeholder="Повтортите новый пароль">
+            </div>
+            <div class="form-group columns">
+              <div class="column">
+                <label class="form-label" for="input-Captcha">Captcha</label>
+                <input class="form-input" type="password" id="input-Captcha-recovery" placeholder="Введите символы с картинки">
+              </div>
+              <div class="column col-auto form-captcha"><img src="img/captcha/captcha.webp"><a class="small" href="#" data-action="refresh-captcha">Обновить</a></div>
+            </div>
+            <div class="modal-button">
+              <button class="button button--medium button--full" type="submit">Войти</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer modal-footer-space-between"> <a href="#" data-modal="log-in">Войти</a><a href="#" data-modal="sign-up">Регистрация    </a></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
