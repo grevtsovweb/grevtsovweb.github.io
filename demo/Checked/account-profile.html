@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Checked </title>
+    <meta name="description" content="Checked">
+    <meta name="keywords" content="Checked">
+    <meta name="theme-color" content="#742DDB">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page page-js">
+    <div class="account"> 
+      <div class="account__header">
+        <header class="header-account">
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></a>
+            <ul class="header-account__nav">
+              <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Тарифы</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Планировщик</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">WebVNC</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">API</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">FAQ</a></li>
+            </ul>
+            <div class="header-account__user-block">
+              <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
+              <button class="button-icon"> <span class="button-icon__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                  </svg></span></button>
+              <button class="button-wallet"> <span class="button-wallet__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                  </svg></span>$ 150   </button>
+              <div class="header-account__dropdown-item">
+                <button class="button-icon">T</button>
+                <div class="header-account__dropdown">
+                  <ul class="dropdown-menu"> 
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+                          </svg></span>Профиль</a></li>
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-exit"></use>
+                          </svg></span>Выйти</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="account__content">
+        <div class="container grid-xl">
+          <div class="account__breadcrumbs"> 
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="#">Главная</a>
+                <svg aria-hidden="true" width="16" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                </svg>
+              </li>
+              <li class="breadcrumbs__item">Профиль
+                <svg aria-hidden="true" width="16" height="16">
+                  <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="account__block">
+            <div class="account__block-tab-nav">
+              <ul class="tab">
+                <li class="tab__item"><a class="tab__link active" href="#">Профиль</a></li>
+                <li class="tab__item"><a class="tab__link" href="#">Пресеты</a></li>
+              </ul>
+            </div>
+            <div class="account__block-tab-content">
+              <div class="account__block-tab-item">
+                <div class="account__container-md">
+                  <div class="block">
+                    <div class="block__section">
+                      <div class="block__title">
+                        <h3 class="h3">Никнэйм</h3>
+                      </div>
+                      <div class="block__form">
+                        <form class="form">
+                          <div class="form-group">
+                            <label class="form-label" for="input-nickname">Никнейм</label>
+                            <input class="form-input" type="text" id="input-nickname" placeholder="Введите ваш никнейм">
+                          </div>
+                          <div class="form__button">
+                            <button class="button button--medium" type="submit" disabled>Сохранить</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="block__section">
+                      <div class="block__title">
+                        <h3 class="h3">Сменить пароль</h3>
+                      </div>
+                      <div class="block__form">
+                        <form class="form">
+                          <div class="form-group">
+                            <label class="form-label" for="input-old-password">Ваш пароль</label>
+                            <input class="form-input" type="password" id="input-old-password" placeholder="Действующий пароль" value="password">
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label" for="input-new-password">Новый пароль</label>
+                            <input class="form-input" type="password" id="input-new-password" placeholder="Введите придуманный пароль">
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label" for="input-nickname">Введите придуманный пароль</label>
+                            <input class="form-input" type="password" id="input-new-password" placeholder="Повторите придуманный пароль">
+                          </div>
+                          <div class="form__button">
+                            <button class="button button--medium" type="submit" disabled>Сохранить</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="block__section">
+                      <div class="block__title">
+                        <h3 class="h3">Контактная информация</h3>
+                      </div>
+                      <div class="block__form">
+                        <form class="form">
+                          <div class="form-group">
+                            <label class="form-label" for="input-jabber">Jabber</label>
+                            <input class="form-input" type="text" id="input-jabber" placeholder="Jabber">
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label" for="input-tox">Tox ID</label>
+                            <input class="form-input" type="text" id="input-tox" placeholder="Tox ID">
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label" for="input-tg">Telegram</label>
+                            <input class="form-input" type="text" id="input-tg" placeholder="@telegram">
+                          </div>
+                          <div class="form__button">
+                            <button class="button button--medium" type="submit">Сохранить</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="block__section">
+                      <div class="block__title">
+                        <h3 class="h3">API</h3>
+                      </div>
+                      <div class="block__form">
+                        <form class="form">
+                          <div class="form-group">
+                            <label class="form-label" for="input-token">Token</label>
+                            <input class="form-input" type="text" id="input-token" placeholder="Ваш токен">
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label" for="input-mutex">Mutex</label>
+                            <input class="form-input" type="text" id="input-mutex" placeholder="Mutex">
+                          </div>
+                          <div class="form__button">
+                            <button class="button button--medium" type="submit">Сохранить</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="block__section">
+                      <div class="block__title">
+                        <h3 class="h3">Удалить аккаунт</h3>
+                      </div>
+                      <p>Это приведет к окончательному удалению вашего аккаунта и всех его данных. Вы&nbsp;не&nbsp;сможете повторно активировать этот аккаунт.</p>
+                      <div class="block__button">
+                        <button class="button button--medium button--warning" type="submit">Удалить учетную запись</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account__block-tab-item" style="display: none;">
+                <div class="table">
+                  <table class="table__inner">
+                    <colgroup>
+                      <col style="min-width: 180px;">
+                      <col style="min-width: 300px;">
+                      <col style="min-width: 300px;">
+                      <col style="min-width: 300px;">
+                      <col style="min-width: 132px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>Пресет</th>
+                        <th class="table--min-w-300px">Антивирусы</th>
+                        <th class="table--min-w-300px">Клиенты</th>
+                        <th class="table--min-w-300px">ОС</th>
+                        <th class="table--min-w-132px table--align-right">Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Пресет 1</td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag tag--value">+12</div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 8.1<span class="tag__secondary">32-bit</span>
+                            </div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 2016<span class="tag__secondary">64-bit</span>
+                            </div></span></td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr>
+                        <td>Пресет 2</td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag tag--value">+2</div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 8.1<span class="tag__secondary">32-bit</span>
+                            </div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 2016<span class="tag__secondary">64-bit</span>
+                            </div></span></td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
