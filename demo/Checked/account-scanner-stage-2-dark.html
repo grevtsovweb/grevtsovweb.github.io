@@ -18,11 +18,11 @@
     <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body class="page page--unscrollable">
+  <body class="page page--dark">
     <div class="account"> 
       <div class="account__header">
         <header class="header-account">
-          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></a>
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo-white.svg" alt="Checked" width="122" height="32"></a>
             <ul class="header-account__nav">
               <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
               <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
@@ -36,7 +36,7 @@
               <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
               <button class="button-icon"> <span class="button-icon__icon">
                   <svg aria-hidden="true" width="24" height="24">
-                    <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
                   </svg></span></button>
               <button class="button-wallet"> <span class="button-wallet__icon">
                   <svg aria-hidden="true" width="24" height="24">
@@ -614,7 +614,7 @@
                   </div>
                   <div class="result-block__footer">
                     <div class="result-block__buttons"> 
-                      <button class="button-icon"><span class="button-icon__icon">
+                      <button class="button-icon button-icon--secondary"><span class="button-icon__icon">
                           <svg aria-hidden="true" width="20" height="20">
                             <use xlink:href="img/sprite/sprite.svg#icon-save"></use>
                           </svg></span></button>
@@ -625,37 +625,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal js-modal active" id="modal-recovery"><a class="modal-overlay" href="#close" aria-label="Close"></a>
-      <div class="modal-container">
-        <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close">
-            <svg aria-hidden="true" width="24" height="24">
-              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
-            </svg></a>
-          <div class="modal-title h5">Выбор пресета</div>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label class="form-label" for="select-preset">Сохраненные пресеты</label>
-              <div class="select-form"><span class="select-form__icon"> 
-                  <svg aria-hidden="true" width="16" height="16">
-                    <use xlink:href="img/sprite/sprite.svg#icon-chevron-bottom"></use>
-                  </svg></span>
-                <select class="form-input" id="select-preset">
-                  <option>Пресет 1</option>
-                  <option>Пресет 2</option>
-                  <option>Пресет 3</option>
-                  <option>Пресет 4</option>
-                </select>
-              </div>
-            </div>
-            <div class="modal-button">
-              <button class="button button--medium button--full" type="submit">Выбрать </button>
-            </div>
-          </form>
         </div>
       </div>
     </div>

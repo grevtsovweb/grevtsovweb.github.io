@@ -18,11 +18,11 @@
     <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body class="page">
+  <body class="page page--dark">
     <div class="account"> 
       <div class="account__header">
         <header class="header-account">
-          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></a>
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo-white.svg" alt="Checked" width="122" height="32"></a>
             <ul class="header-account__nav">
               <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
               <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
@@ -36,7 +36,7 @@
               <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
               <button class="button-icon"> <span class="button-icon__icon">
                   <svg aria-hidden="true" width="24" height="24">
-                    <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
                   </svg></span></button>
               <button class="button-wallet"> <span class="button-wallet__icon">
                   <svg aria-hidden="true" width="24" height="24">
@@ -62,7 +62,7 @@
         </header>
       </div>
       <div class="account__content">
-        <div class="account__container-md">
+        <div class="container grid-xl">
           <div class="account__breadcrumbs"> 
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item"><a href="#">Главная</a>
@@ -70,27 +70,38 @@
                   <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
                 </svg>
               </li>
-              <li class="breadcrumbs__item">API
+              <li class="breadcrumbs__item">WebVNC
                 <svg aria-hidden="true" width="16" height="16">
                   <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <div class="account__block">
-            <div class="account__text">
-              <h3 class="h3"><span class="header-link">Параметры<a class="header-link__link" href="#">  
-                    <svg aria-hidden="true" width="20" height="20">
-                      <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
-                    </svg></a></span></h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p><code>jq '.[] | {title: .title, authorID: .user.id}' data.json</code>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.p Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p>
-              <h3 class="h3"><span class="header-link">Параметры<a class="header-link__link" href="#">  
-                    <svg aria-hidden="true" width="20" height="20">
-                      <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
-                    </svg></a></span></h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p><code>jq '.[] | {title: .title, authorID: .user.id}' data.json</code>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.p Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p>
+          <div class="account__section"> 
+            <div class="vnc">
+              <div class="vnc__header"> 
+                <div class="vnc__client">Windows 11 <span class="vnc__client--bit">64-bit</span></div>
+                <div class="vnc__user-block">
+                  <div class="vnc__timer">4:29</div>
+                  <div class="vnc__user-block-button"> 
+                    <button class="button-icon button-icon--accent"> <span class="button-icon__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-off"></use>
+                        </svg></span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="vnc__player"> 
+                <div class="vnc__video"></div>
+                <div class="vnc__toolbar">
+                  <div class="vnc__toolbar-fullscreen"> 
+                    <button class="button-icon button-icon--secondary"><span class="button-icon__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-focus"></use>
+                        </svg></span></button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

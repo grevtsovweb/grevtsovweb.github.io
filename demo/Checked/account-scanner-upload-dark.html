@@ -18,11 +18,11 @@
     <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body class="page">
+  <body class="page page--dark">
     <div class="account"> 
       <div class="account__header">
         <header class="header-account">
-          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></a>
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo-white.svg" alt="Checked" width="122" height="32"></a>
             <ul class="header-account__nav">
               <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
               <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
@@ -36,7 +36,7 @@
               <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
               <button class="button-icon"> <span class="button-icon__icon">
                   <svg aria-hidden="true" width="24" height="24">
-                    <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
                   </svg></span></button>
               <button class="button-wallet"> <span class="button-wallet__icon">
                   <svg aria-hidden="true" width="24" height="24">
@@ -62,7 +62,7 @@
         </header>
       </div>
       <div class="account__content">
-        <div class="account__container-md">
+        <div class="container grid-xl">
           <div class="account__breadcrumbs"> 
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item"><a href="#">Главная</a>
@@ -70,27 +70,76 @@
                   <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
                 </svg>
               </li>
-              <li class="breadcrumbs__item">API
+              <li class="breadcrumbs__item">Сканер
                 <svg aria-hidden="true" width="16" height="16">
                   <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <div class="account__block">
-            <div class="account__text">
-              <h3 class="h3"><span class="header-link">Параметры<a class="header-link__link" href="#">  
-                    <svg aria-hidden="true" width="20" height="20">
-                      <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
-                    </svg></a></span></h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p><code>jq '.[] | {title: .title, authorID: .user.id}' data.json</code>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.p Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p>
-              <h3 class="h3"><span class="header-link">Параметры<a class="header-link__link" href="#">  
-                    <svg aria-hidden="true" width="20" height="20">
-                      <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
-                    </svg></a></span></h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p><code>jq '.[] | {title: .title, authorID: .user.id}' data.json</code>
-              <p>Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.p Lorem ipsum dolor sit amet consectetur. Aliquet blandit dictum non ipsum vehicula nec. A non et tellus dapibus velit velit urna elementum aliquet. Est aliquam ante duis aliquet id magna. Suscipit at vitae vestibulum erat laoreet.</p>
+          <div class="account__section"> 
+            <div class="account__section-title"> 
+              <h3 class="h3">Новое сканирование</h3>
+            </div>
+            <div class="account__section-description">
+              <h5 class="h5">Поддерживаемые файлы:</h5>
+              <p>*.exe, *.dll, *.doc, *.docx, *.rtf, *.xls, *.xlsx, *.pdf, *.js, *.jse, *.vbs, *.vbe, *.wsf, *.msi, *.ps1, *.hta, *.zip</p>
+              <p class="account__section-description--light">Максимальный размер загружаемого файла 25 MB</p>
+            </div>
+            <div class="account__section-description">
+              <p>Для загрузки файла большего размера, упакуйте его в ZIP архив, файл не должен превышать размер 1 GB</p>
+              <p> <span class="account__section-description--notice">Внимание! </span>В архиве должен находиться <b>1 файл, </b>с разрешенным для загрузки расширением.</p>
+            </div>
+            <div class="account__section-upload"> 
+              <div class="upload"> 
+                <div class="upload__process">
+                  <div class="file-loader"> 
+                    <div class="badge-item"> 
+                      <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                      <div class="badge-item__info"> 
+                        <div class="badge-item__title">New_file.doc</div>
+                        <div class="badge-item__description">23 Mb</div>
+                      </div>
+                    </div>
+                    <button class="file-loader__close">
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                      </svg>
+                    </button>
+                    <div class="file-loader__process">
+                      <div class="file-loader__process-bar"> 
+                        <div class="file-loader__process-bar-inner" style="transform: translateX(20%)"></div>
+                      </div>20%
+                    </div>
+                  </div>
+                </div>
+                <div class="upload__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-upload"></use>
+                  </svg>
+                </div>
+                <div class="upload__title">Загрузить с компьютера</div>
+                <div class="upload__description">Загрузите файл для сканирования с помощью диалога выбора файлов или перетащив нужный файл в выделенную область</div>
+                <div class="upload__button">
+                  <button class="button button--medium">Выбрать файл</button>
+                </div>
+              </div><span class="account__section-separate"> <span class="account__section-separate-text">или</span></span>
+              <div class="upload"> 
+                <div class="upload__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-cloud"></use>
+                  </svg>
+                </div>
+                <div class="upload__title">Загрузить по ссылке</div>
+                <div class="upload__field">
+                  <div class="form-group">
+                    <input class="form-input" type="text" id="input-file" placeholder="Например, https://example.com/path/to/file.exe">
+                  </div>
+                </div>
+                <div class="upload__button">
+                  <button class="button button--medium">Загрузить файл</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

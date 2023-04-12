@@ -18,11 +18,11 @@
     <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body class="page">
+  <body class="page page--dark">
     <div class="account"> 
       <div class="account__header">
         <header class="header-account">
-          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></a>
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo-white.svg" alt="Checked" width="122" height="32"></a>
             <ul class="header-account__nav">
               <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
               <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
@@ -36,7 +36,7 @@
               <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
               <button class="button-icon"> <span class="button-icon__icon">
                   <svg aria-hidden="true" width="24" height="24">
-                    <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
                   </svg></span></button>
               <button class="button-wallet"> <span class="button-wallet__icon">
                   <svg aria-hidden="true" width="24" height="24">
@@ -80,111 +80,154 @@
           <div class="account__block">
             <div class="account__block-tab-nav">
               <ul class="tab">
-                <li class="tab__item"><a class="tab__link" href="#">Профиль</a></li>
-                <li class="tab__item"><a class="tab__link active" href="#">Пресеты</a></li>
+                <li class="tab__item"><a class="tab__link active" href="#">Новая задача</a></li>
+                <li class="tab__item"><a class="tab__link" href="#">Текущие задачи</a></li>
               </ul>
             </div>
             <div class="account__block-tab-content">
-              <div class="account__block-tab-item" style="display: none;">
-                <div class="account__container-md">
-                  <div class="block">
-                    <div class="block__section">
-                      <div class="block__title">
-                        <h3 class="h3">Никнэйм</h3>
+              <div class="account__block-tab-item">
+                <div class="steps">
+                  <div class="steps__header"> 
+                    <div class="step-item step-item--done">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
                       </div>
-                      <div class="block__form">
-                        <form class="form">
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Никнейм</label>
-                            <input class="form-input" type="text" id="input-nickname-recovery" placeholder="Введите ваш никнейм">
-                          </div>
-                          <div class="form__button">
-                            <button class="button button--medium" type="submit">Сохранить</button>
-                          </div>
-                        </form>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
                       </div>
-                    </div>
-                    <div class="block__section">
-                      <div class="block__title">
-                        <h3 class="h3">Сменить пароль</h3>
-                      </div>
-                      <div class="block__form">
-                        <form class="form">
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Ваш пароль</label>
-                            <input class="form-input" type="password" id="input-nickname-recovery" placeholder="Действующий пароль" value="password">
-                          </div>
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Новый пароль</label>
-                            <input class="form-input" type="password" id="input-nickname-recovery" placeholder="Введите придуманный пароль">
-                          </div>
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Введите придуманный пароль</label>
-                            <input class="form-input" type="password" id="input-nickname-recovery" placeholder="Повторите придуманный пароль">
-                          </div>
-                          <div class="form__button">
-                            <button class="button button--medium" type="submit">Сохранить</button>
-                          </div>
-                        </form>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">1.</div>Выбор файла
                       </div>
                     </div>
-                    <div class="block__section">
-                      <div class="block__title">
-                        <h3 class="h3">Контактная информация</h3>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item step-item--done">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
                       </div>
-                      <div class="block__form">
-                        <form class="form">
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Jabber</label>
-                            <input class="form-input" type="text" id="input-nickname-recovery" placeholder="Jabber">
-                          </div>
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Tox ID</label>
-                            <input class="form-input" type="text" id="input-nickname-recovery" placeholder="Tox ID">
-                          </div>
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Telegram</label>
-                            <input class="form-input" type="text" id="input-nickname-recovery" placeholder="@telegram">
-                          </div>
-                          <div class="form__button">
-                            <button class="button button--medium" type="submit">Сохранить</button>
-                          </div>
-                        </form>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file-check"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">2.</div>Условия запуска
                       </div>
                     </div>
-                    <div class="block__section">
-                      <div class="block__title">
-                        <h3 class="h3">API</h3>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item step-item--done">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
                       </div>
-                      <div class="block__form">
-                        <form class="form">
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Token</label>
-                            <input class="form-input" type="text" id="input-nickname-recovery" placeholder="Ваш токен">
-                          </div>
-                          <div class="form-group">
-                            <label class="form-label" for="input-nickname">Mutex</label>
-                            <input class="form-input" type="text" id="input-nickname-recovery" placeholder="Mutex">
-                          </div>
-                          <div class="form__button">
-                            <button class="button button--medium" type="submit">Сохранить</button>
-                          </div>
-                        </form>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-results"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">3.</div>Результаты
                       </div>
                     </div>
-                    <div class="block__section">
-                      <div class="block__title">
-                        <h3 class="h3">Удалить аккаунт</h3>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item step-item--current">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
                       </div>
-                      <p>Это приведет к окончательному удалению вашего аккаунта и всех его данных. Вы&nbsp;не&nbsp;сможете повторно активировать этот аккаунт.</p>
-                      <div class="block__button">
-                        <button class="button button--medium button--warning" type="submit">Удалить учетную запись</button>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file-text"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">4.</div>Детали
+                      </div>
+                    </div>
+                  </div>
+                  <div class="steps__body steps__body--md"> 
+                    <div class="steps__body-title"> 
+                      <h3 class="h3">Детали</h3>
+                    </div>
+                    <div class="steps__body-row">
+                      <div class="file-loader"> 
+                        <div class="badge-item"> 
+                          <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                          <div class="badge-item__info"> 
+                            <div class="badge-item__title">New_file.doc</div>
+                            <div class="badge-item__description">23 Mb</div>
+                          </div>
+                        </div>
+                        <button class="file-loader__close">
+                          <svg aria-hidden="true" width="20" height="20">
+                            <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="result-list">
+                      <div class="result-list__row">
+                        <div class="result-list__item">Имя</div>
+                        <div class="result-list__item">Пресет #1</div>
+                      </div>
+                      <div class="result-list__row">
+                        <div class="result-list__item">Условия</div>
+                        <div class="result-list__item">При изменении  hash, каждые&nbsp;6&nbsp;часов</div>
+                      </div>
+                      <div class="result-list__row">
+                        <div class="result-list__item">Увеломление</div>
+                        <div class="result-list__item">Отправлять в Telegram</div>
+                      </div>
+                      <div class="result-list__row">
+                        <div class="result-list__item">Проверок в день</div>
+                        <div class="result-list__item">5</div>
+                      </div>
+                      <div class="result-list__row">
+                        <div class="result-list__item">Колличество дней </div>
+                        <div class="result-list__item">30</div>
+                      </div>
+                    </div>
+                    <div class="steps__body-result">
+                      <div class="result-list">
+                        <div class="result-list__row">
+                          <div class="result-list__item">Стоимость</div>
+                          <div class="result-list__item result-list__item--lg">100 $</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="steps__nav">
+                      <button class="button button--secondary button--medium"> <span class="button__icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-arrow-left"></use>
+                          </svg></span>Назад</button>
+                      <div class="steps__nav-right">
+                        <button class="button button--secondary button--medium">Отмена</button>
+                        <button class="button button--medium">Запустить задачу</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="account__block-tab-item">
+              <div class="account__block-tab-item" style="display: none;">
                 <div class="table">
                   <table class="table__inner table__inner--auto-layout">
                     <colgroup>

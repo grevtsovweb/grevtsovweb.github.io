@@ -18,11 +18,11 @@
     <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body class="page">
+  <body class="page page--dark">
     <div class="account"> 
       <div class="account__header">
         <header class="header-account">
-          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="122" height="32"></a>
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo-white.svg" alt="Checked" width="122" height="32"></a>
             <ul class="header-account__nav">
               <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
               <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
@@ -36,7 +36,7 @@
               <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
               <button class="button-icon"> <span class="button-icon__icon">
                   <svg aria-hidden="true" width="24" height="24">
-                    <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
                   </svg></span></button>
               <button class="button-wallet"> <span class="button-wallet__icon">
                   <svg aria-hidden="true" width="24" height="24">
@@ -126,7 +126,7 @@
                       <th>Сумма</th>
                       <th>Адресат</th>
                       <th>TxID</th>
-                      <th class="table--align-right">Статус</th>
+                      <th>Статус</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -136,10 +136,11 @@
                       <td>$1012<span class="td-gray">0,004 BTC</span></td>
                       <td>bc1q52...q3mj6</td>
                       <td>cca69...85298</td>
-                      <td class="table--align-right"> <span class="table__row table__row--right">
-                          <div class="status status--pending">
-                            <div class="status__indicator"> </div>Ожидание
-                          </div></span></td>
+                      <td> 
+                        <div class="status status--pending">
+                          <div class="status__indicator"> </div>Ожидание
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>2023-02-21 13:14</td>
@@ -147,10 +148,11 @@
                       <td>$1012<span class="td-gray"> 0,004 BTC</span></td>
                       <td>bc1q52...q3mj6</td>
                       <td>cca69...85298</td>
-                      <td class="table--align-right"> <span class="table__row table__row--right">
-                          <div class="status status--done">
-                            <div class="status__indicator"> </div>Выполнено
-                          </div></span></td>
+                      <td> 
+                        <div class="status status--done">
+                          <div class="status__indicator"> </div>Выполнено
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>2023-02-21 13:14</td>
@@ -158,10 +160,11 @@
                       <td>$1012    <span class="td-gray"> 0,004 BTC</span></td>
                       <td>bc1q52...q3mj6</td>
                       <td>cca69...85298</td>
-                      <td class="table--align-right"> <span class="table__row table__row--right">
-                          <div class="status status--cancel">
-                            <div class="status__indicator"> </div>Отменено
-                          </div></span></td>
+                      <td> 
+                        <div class="status status--cancel">
+                          <div class="status__indicator"> </div>Отменено
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>2023-02-21 13:14</td>
@@ -169,10 +172,11 @@
                       <td>$1012<span class="td-gray">0,004 BTC</span></td>
                       <td>bc1q52...q3mj6</td>
                       <td>cca69...85298</td>
-                      <td class="table--align-right"> <span class="table__row table__row--right">
-                          <div class="status status--pending">
-                            <div class="status__indicator"> </div>Ожидание
-                          </div></span></td>
+                      <td> 
+                        <div class="status status--pending">
+                          <div class="status__indicator"> </div>Ожидание
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>2023-02-21 13:14</td>
@@ -180,10 +184,11 @@
                       <td>$1012<span class="td-gray"> 0,004 BTC</span></td>
                       <td>bc1q52...q3mj6</td>
                       <td>cca69...85298</td>
-                      <td class="table--align-right"> <span class="table__row table__row--right"> 
-                          <div class="status status--done">
-                            <div class="status__indicator"> </div>Выполнено
-                          </div></span></td>
+                      <td> 
+                        <div class="status status--done">
+                          <div class="status__indicator"> </div>Выполнено
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>2023-02-21 13:14</td>
@@ -191,10 +196,11 @@
                       <td>$1012    <span class="td-gray"> 0,004 BTC</span></td>
                       <td>bc1q52...q3mj6</td>
                       <td>cca69...85298</td>
-                      <td class="table--align-right"> <span class="table__row table__row--right"> 
-                          <div class="status status--cancel">
-                            <div class="status__indicator"> </div>Отменено
-                          </div></span></td>
+                      <td> 
+                        <div class="status status--cancel">
+                          <div class="status__indicator"> </div>Отменено
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                       <td>2023-02-21 13:14</td>
@@ -202,10 +208,11 @@
                       <td>$1012<span class="td-gray">0,004 BTC</span></td>
                       <td>bc1q52...q3mj6</td>
                       <td>cca69...85298</td>
-                      <td class="table--align-right"> <span class="table__row table__row--right">
-                          <div class="status status--pending">
-                            <div class="status__indicator"> </div>Ожидание
-                          </div></span></td>
+                      <td> 
+                        <div class="status status--pending">
+                          <div class="status__indicator"> </div>Ожидание
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -228,6 +235,72 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="modal js-modal active" id="modal-recovery"><a class="modal-overlay" href="#close" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header"><a class="btn btn-clear float-right" href="#close" aria-label="Close">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                </svg></a>
+              <div class="modal-title h5">Пополнение</div>
+            </div>
+            <form class="form">
+              <div class="form-group">
+                <div class="field-dropdown">
+                  <label class="field-dropdown__label" for="field">Валюта</label>
+                  <div class="field-dropdown__wrapper"> 
+                    <div class="field-dropdown__input">
+                      <div class="field-dropdown__logo"> <img src="img/currency/btc.svg" alt="BTC" width="24" height="24">BTC</div>
+                      <div class="field-dropdown__input-icon"> 
+                        <svg aria-hidden="true" width="20" height="20">
+                          <use xlink:href="img/sprite/sprite.svg#icon-chevron-bottom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="field-dropdown__inner" style="display: none;">
+                      <div class="field-dropdown__item-wrapper"> 
+                        <button class="field-dropdown__item-button"> 
+                          <div class="field-dropdown__logo"> <img src="img/currency/btc.svg" alt="BTC" width="24" height="24">BTC</div>
+                        </button>
+                      </div>
+                      <div class="field-dropdown__item-wrapper"> 
+                        <button class="field-dropdown__item-button"> 
+                          <div class="field-dropdown__logo"> <img src="img/currency/LTC.svg" alt="LTC" width="24" height="24">LTC</div>
+                        </button>
+                      </div>
+                      <div class="field-dropdown__item-wrapper"> 
+                        <button class="field-dropdown__item-button"> 
+                          <div class="field-dropdown__logo"> <img src="img/currency/XMR.svg" alt="XMR" width="24" height="24">XMR</div>
+                        </button>
+                      </div>
+                      <div class="field-dropdown__item-wrapper"> 
+                        <button class="field-dropdown__item-button"> 
+                          <div class="field-dropdown__logo"> <img src="img/currency/Etherium.svg" alt="Etherium" width="24" height="24">Etherium</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="address">
+                  <div class="address__label">Адрес</div>
+                  <div class="address__data">
+                    <div class="address__value">12NuA1hyVhgERLdaQtCCdbKf5LgPE36W</div>
+                    <div class="address__buttons"> 
+                      <div class="address__button-wrapper">
+                        <button class="address__button address__button--copy tooltip" data-tooltip="Копировать адрес">
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-copy"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
