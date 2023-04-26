@@ -15,11 +15,11 @@
     <link rel="preload" href="fonts/ApercuPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ApercuPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body class="page">
+  <body class="page page--dark page--unscrollable">
     <div class="account"> 
       <div class="account__sidebar">
         <aside class="sidebar">
-          <div class="sidebar__logo"><a class="sidebar__logo-link" href="#"><img src="img/logo/logo.svg" alt="AnonymVPN" width="148" height="32"></a></div>
+          <div class="sidebar__logo"><a class="sidebar__logo-link" href="#"><img src="img/logo/logo-dark-mode.svg" alt="AnonymVPN" width="148" height="32"></a></div>
           <ul class="sidebar__main-menu">
             <li><a class="sidebar__main-menu-link active" href="#"> <span class="sidebar__main-menu-icon"> 
                   <svg aria-hidden="true" width="24" height="24">
@@ -76,22 +76,20 @@
             </div>
             <div class="account__content-row">
               <div class="account__content-col">
-                <div class="account__content-col">
-                  <div class="balance">
-                    <div class="balance__data">
-                      <div class="balance__data-icon">
-                        <svg aria-hidden="true" width="24" height="24">
-                          <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
-                        </svg>
-                      </div>
-                      <div class="balance__data-value">Ваш счет
-                        <div class="balance__data-account">231 $</div>
-                      </div>
+                <div class="balance">
+                  <div class="balance__data">
+                    <div class="balance__data-icon">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                      </svg>
                     </div>
-                    <div class="balance__controlls">
-                      <button class="button">Пополнить</button>
-                      <button class="button button--tretiary">Вывести</button>
+                    <div class="balance__data-value">Ваш счет
+                      <div class="balance__data-account">231 $</div>
                     </div>
+                  </div>
+                  <div class="balance__controlls">
+                    <button class="button">Пополнить</button>
+                    <button class="button button--tretiary">Вывести</button>
                   </div>
                 </div>
               </div>
@@ -165,6 +163,78 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal active"><a class="modal__overlay" href="#close" aria-label="Close"></a>
+      <div class="modal__container">
+        <div class="modal__header"><a class="modal__close" href="#close" aria-label="Close">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+            </svg></a>
+          <div class="modal__title h3">Вывод</div>
+        </div>
+        <div class="modal__body">
+          <form class="form">
+            <div class="form__group">
+              <div class="field-dropdown">
+                <label class="field-dropdown__label" for="field">Валюта</label>
+                <div class="field-dropdown__wrapper"> 
+                  <div class="field-dropdown__input">
+                    <div class="field-dropdown__logo"> <img src="img/currency/btc.svg" alt="BTC" width="24" height="24">BTC</div>
+                    <div class="field-dropdown__input-icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-down"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="field-dropdown__inner" style="display: none;">
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/btc.svg" alt="BTC" width="24" height="24">BTC</div>
+                      </button>
+                    </div>
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/LTC.svg" alt="LTC" width="24" height="24">LTC</div>
+                      </button>
+                    </div>
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/XMR.svg" alt="XMR" width="24" height="24">XMR</div>
+                      </button>
+                    </div>
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/Etherium.svg" alt="Etherium" width="24" height="24">Etherium</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="field">
+                <label class="field__label" for="input-adress">Адрес</label>
+                <input class="field__input" type="text" id="input-adress" placeholder="Адрес получателя">
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="field">
+                <label class="field__label" for="input-sum">Сумма</label>
+                <input class="field__input" type="number" id="input-sum" placeholder="Минимальная сумма: 0.0001">
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="form__balance-label">Баланс</div>
+              <div class="form__balance-value">$12
+                <div class="form__balance-value-currency">0,0002 BTC</div>
+              </div>
+            </div>
+            <div class="modal__button">
+              <button class="button button--lg button--full" type="submit">Отправить</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

@@ -44,11 +44,15 @@
                     <input type="radio" id="2" name="setting">
                     <label for="2">Готовые цепочки</label>
                   </div>
+                  <div class="button-group__item">
+                    <input type="radio" id="3" checked name="setting">
+                    <label for="3">Динамически</label>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="chain-selection__tab-content">
-              <div class="chain-selection__tab-content-item">
+              <div class="chain-selection__tab-content-item" style="display: none;">
                 <form class="chain-selection__form"> 
                   <div class="chain-selection__form-field">
                     <div class="field-dropdown">
@@ -259,6 +263,57 @@
                     <div class="chain__data">
                        Общий пинг
                       <div class="chain__data-value">17ms</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chain-selection__tab-content-item">
+                <div class="chain-selection__chain">
+                  <div class="chain">
+                    <div class="chain__list">
+                      <div class="chain__item"> 
+                        <div class="chain__item-inner">
+                          <div class="chain__icon">
+                            <svg aria-hidden="true" width="32" height="32">
+                              <use xlink:href="img/sprite/sprite.svg#icon-person"></use>
+                            </svg>
+                          </div>
+                          <div class="chain__label">Вы</div>
+                        </div>
+                      </div>
+                      <div class="chain__route"> </div>
+                      <div class="chain__item"> 
+                        <div class="chain__item-inner">
+                          <div class="chain__icon">
+                            <svg aria-hidden="true" width="32" height="32">
+                              <use xlink:href="img/sprite/sprite.svg#icon-web"></use>
+                            </svg>
+                          </div>
+                          <div class="chain__label">Провайдер</div>
+                        </div>
+                      </div>
+                      <div class="chain__route chain__route--accent chain__route--accent-1"></div>
+                      <div class="chain__item chain__item--dinamic chain__item--dinamic-1">
+                        <div class="chain__item-inner">
+                          <div class="chain__icon">
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-server"></use>
+                            </svg>
+                          </div>
+                          <div class="chain__label">Оптимальный сервер</div>
+                        </div>
+                      </div>
+                      <div class="chain__route chain__route--accent chain__route--accent-2"></div>
+                      <div class="chain__item chain__item--dinamic chain__item--dinamic-2">
+                        <div class="chain__item-inner">
+                          <div class="chain__icon">
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-http"></use>
+                            </svg>
+                          </div>
+                          <div class="chain__label">Страница</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
