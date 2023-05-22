@@ -15,7 +15,7 @@
     <link rel="preload" href="fonts/ApercuPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ApercuPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body class="page">
+  <body class="page page--dark">
     <div class="account"> 
       <div class="account__sidebar">
         <aside class="sidebar">
@@ -76,72 +76,25 @@
       <div class="account__content">
         <div class="account__content-container">
           <div class="account__content-title">
-            <h1 class="h1">Тарифы</h1>
+            <h1 class="h1">Контакты</h1>
           </div>
           <div class="account__content-section">
             <div class="account__content-section-header">
-              <h2 class="h2">Текущий тариф</h2>
-            </div>
-            <div class="account__content-row">
-              <div class="account__content-col account__content-col--3">
-                <div class="current-tariff">
-                  <div class="current-tariff__header"> 
-                    <h4 class="current-tariff__title">1 Месяц</h4>
-                  </div>
-                  <div class="current-tariff__body"> 
-                    <p class="current-tariff__price">10 $<span class="current-tariff__price--small">/ Месяц </span></p>
-                  </div>
-                  <div class="current-tariff__footer">
-                    <div class="current-tariff__date"> 
-                      <div class="current-tariff__date-title">Оплачено до</div>26 марта 2023 г, 17:23
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">Все тарифы</h2>
-            </div>
-            <div class="account__content-row">
-              <div class="price-card"> 
-                <div class="price-card__header"> 
-                  <h4 class="price-card__title">1 месяц</h4>
-                </div>
-                <div class="price-card__body"> 
-                  <p class="price-card__price">10 $<span class="price-card__price--small">/Месяц</span></p>
-                </div>
-                <div class="price-card__footer">
-                  <button class="button button--secondary button--full">Купить</button>
-                </div>
-              </div>
-              <div class="price-card price-card--accent">
-                <div class="price-card__header"> 
-                  <h4 class="price-card__title">12 Месяцев</h4>
-                  <p class="price-card__economy">Экономия 50%</p>
-                </div>
-                <div class="price-card__body"> 
-                  <p class="price-card__price">6 $<span class="price-card__price--small">/Месяц</span></p>
-                  <p class="price-card__price-description"> <span class="price-card__price-description--old">120 </span>72 $ за 12 месяцев   </p>
-                </div>
-                <div class="price-card__footer">
-                  <button class="button button--full">Купить</button>
-                </div>
-              </div>
-              <div class="price-card"> 
-                <div class="price-card__header"> 
-                  <h4 class="price-card__title">6 Месяцев</h4>
-                  <p class="price-card__economy">Экономия 40%</p>
-                </div>
-                <div class="price-card__body"> 
-                  <p class="price-card__price">7 $<span class="price-card__price--small">/Месяц</span></p>
-                  <p class="price-card__price-description"><span class="price-card__price-description--old">60 </span>42 $ за 6 месяцев</p>
-                </div>
-                <div class="price-card__footer">
-                  <button class="button button--secondary button--full">Купить</button>
-                </div>
-              </div>
+              <h2 class="h2">Наши месседжеры</h2>
+              <ul class="social-links">
+                <li><a class="social-links__link" href="#" target="_blank">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
+                                  </svg></a></li>
+                <li><a class="social-links__link" href="#" target="_blank">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-jabber"></use>
+                                  </svg></a></li>
+                <li><a class="social-links__link" href="#" target="_blank">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#icon-tox"></use>
+                                  </svg></a></li>
+              </ul>
             </div>
           </div>
         </div>
