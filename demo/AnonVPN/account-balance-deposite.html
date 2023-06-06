@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>AnonymVPN </title>
+    <meta name="description" content="AnonymVPN">
+    <meta name="keywords" content="AnonymVPN">
+    <meta name="theme-color" content="#4169F4">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/ApercuPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ApercuPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page page--unscrollable">
+    <div class="account"> 
+      <div class="account__sidebar">
+        <aside class="sidebar">
+          <div class="sidebar__logo"><a class="sidebar__logo-link" href="#"><img src="img/logo/logo.svg" alt="AnonymVPN" width="186" height="32"></a></div>
+          <ul class="sidebar__main-menu">
+            <li><a class="sidebar__main-menu-link active" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-web"></use>
+                  </svg></span>Подключение</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                  </svg></span>Баланс</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-money"></use>
+                  </svg></span>Тарифы</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-api"></use>
+                  </svg></span>API</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-contacts"></use>
+                  </svg></span>Контакты</a></li>
+            <li class="sidebar__dark-mode">
+              <div class="sidebar__main-menu-link sidebar__main-menu-link--mode"><span class="sidebar__main-menu-link-inner"><span class="sidebar__main-menu-icon"> 
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                    </svg></span>Темный режим</span>
+                <label class="toggle">
+                  <input type="checkbox"><span class="toggle__slider"></span>
+                </label>
+              </div>
+            </li>
+            <li><a class="sidebar__main-menu-link sidebar__main-menu-link--ads" href="#"><span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
+                  </svg></span>Checked - Runtime AV checker</a></li>
+          </ul>
+          <div class="sidebar__user-block">
+            <div class="sidebar__user" tabindex="0">
+              <div class="sidebar__user-avatar">n</div>
+              <div class="sidebar__user-nickname">Nickname77</div>
+              <div class="sidebar__user-dropdown">
+                <div class="sidebar__user-dropdown-list"><a class="sidebar__user-dropdown-link" href="#"><span class="sidebar__user-dropdown-link-icon">
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-person"></use>
+                      </svg></span>Профиль</a></div>
+                <div class="sidebar__user-dropdown-button"> 
+                  <button class="button button--s button--full">Выйти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="account__content">
+        <div class="account__content-container">
+          <div class="account__content-title">
+            <h1 class="h1">Баланс</h1>
+          </div>
+          <div class="account__content-section">
+            <div class="account__content-section-header">
+              <h2 class="h2">Текущий тариф</h2>
+            </div>
+            <div class="account__content-row">
+              <div class="account__content-col">
+                <div class="balance">
+                  <div class="balance__data">
+                    <div class="balance__data-icon">
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                      </svg>
+                    </div>
+                    <div class="balance__data-value">Ваш счет
+                      <div class="balance__data-account">231 $</div>
+                    </div>
+                  </div>
+                  <div class="balance__controlls">
+                    <button class="button">Пополнить</button>
+                    <button class="button button--tretiary">Вывести</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account__content-section">
+            <div class="account__content-section-header">
+              <h2 class="h2">Пополнение</h2>
+            </div>
+            <div class="account__content-row">
+              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/btc.svg" alt="Bitcoin" width="48" height="48"></span><span class="currency-card__title">Bitcoin</span></button>
+              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/LTC.svg" alt="LTC" width="48" height="48"></span><span class="currency-card__title">LTC</span></button>
+              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/XMR.svg" alt="XMR" width="48" height="48"></span><span class="currency-card__title">XMR</span></button>
+              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/Etherium.svg" alt="Etherium" width="48" height="48"></span><span class="currency-card__title">Etherium</span></button>
+            </div>
+          </div>
+          <div class="account__content-section">
+            <div class="account__content-section-header">
+              <h2 class="h2">История</h2>
+              <div class="account__content-row">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Дата</th>
+                      <th>Валюта</th>
+                      <th>Сумма</th>
+                      <th>Адресат</th>
+                      <th>TxID</th>
+                      <th>Статус</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2023-02-21 13:14</td>
+                      <td>BTC</td>
+                      <td>$1012<span class="td-gray">0,004 BTC</span></td>
+                      <td>bc1q52...q3mj6</td>
+                      <td>cca69...85298</td>
+                      <td> 
+                        <div class="status status--pending">
+                          <div class="status__indicator"> </div>Ожидание
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2023-02-21 13:14</td>
+                      <td>BTC</td>
+                      <td>$1012<span class="td-gray"> 0,004 BTC</span></td>
+                      <td>bc1q52...q3mj6</td>
+                      <td>cca69...85298</td>
+                      <td> 
+                        <div class="status status--done">
+                          <div class="status__indicator"> </div>Выполнено
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2023-02-21 13:14</td>
+                      <td>BTC</td>
+                      <td>$1012    <span class="td-gray"> 0,004 BTC</span></td>
+                      <td>bc1q52...q3mj6</td>
+                      <td>cca69...85298</td>
+                      <td> 
+                        <div class="status status--cancel">
+                          <div class="status__indicator"> </div>Отменено
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal active"><a class="modal__overlay" href="#close" aria-label="Close"></a>
+      <div class="modal__container">
+        <div class="modal__header"><a class="modal__close" href="#close" aria-label="Close">
+            <svg aria-hidden="true" width="24" height="24">
+              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+            </svg></a>
+          <div class="modal__title h3">Пополнение</div>
+        </div>
+        <div class="modal__body">
+          <form class="form">
+            <div class="form__group">
+              <div class="field-dropdown">
+                <label class="field-dropdown__label" for="field">Валюта</label>
+                <div class="field-dropdown__wrapper"> 
+                  <div class="field-dropdown__input">
+                    <div class="field-dropdown__logo"> <img src="img/currency/btc.svg" alt="BTC" width="24" height="24">BTC</div>
+                    <div class="field-dropdown__input-icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-down"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="field-dropdown__inner" style="display: none;">
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/btc.svg" alt="BTC" width="24" height="24">BTC</div>
+                      </button>
+                    </div>
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/LTC.svg" alt="LTC" width="24" height="24">LTC</div>
+                      </button>
+                    </div>
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/XMR.svg" alt="XMR" width="24" height="24">XMR</div>
+                      </button>
+                    </div>
+                    <div class="field-dropdown__item-wrapper"> 
+                      <button class="field-dropdown__item-button"> 
+                        <div class="field-dropdown__logo"> <img src="img/currency/Etherium.svg" alt="Etherium" width="24" height="24">Etherium</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="address">
+                <div class="address__label">Адрес</div>
+                <div class="address__data">
+                  <div class="address__value">12NuA1hyVhgERLdaQtCCdbKf5LgPE36W</div>
+                  <div class="address__buttons"> 
+                    <div class="address__button-wrapper">
+                      <button class="address__button address__button--copy">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-copy"></use>
+                        </svg>
+                      </button>
+                      <div class="tooltip tooltip--top">
+                        <div class="tooltip__title">Копировать&nbsp;адрес</div>
+                      </div>
+                    </div>
+                    <div class="address__button-wrapper">
+                      <button class="address__button address__button--qr">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-qr"></use>
+                        </svg>
+                      </button>
+                      <div class="tooltip tooltip--bottom">
+                        <div class="tooltip__title">Отсканируйте&nbsp;код</div>
+                        <div class="tooltip__data"> <img src="img/qr/qr.png" alt="qr"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
