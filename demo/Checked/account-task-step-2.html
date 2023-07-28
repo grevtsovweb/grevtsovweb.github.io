@@ -82,7 +82,7 @@
               <div class="account__block-tab-item">
                 <div class="steps">
                   <div class="steps__header"> 
-                    <div class="step-item step-item--done">
+                    <div class="step-item step-item--current">
                       <div class="step-item__icon step-item__icon--done">
                         <svg aria-hidden="true" width="24" height="24">
                           <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
@@ -102,7 +102,47 @@
                         <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
                       </svg>
                     </div>
-                    <div class="step-item step-item--current">
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-layer"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">2.</div>Выбор ПО
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">3.</div>Настройка ПО
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
                       <div class="step-item__icon step-item__icon--done">
                         <svg aria-hidden="true" width="24" height="24">
                           <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
@@ -114,7 +154,7 @@
                         </svg>
                       </div>
                       <div class="step-item__text"> 
-                        <div class="step-item__text-number">2.</div>Условия запуска
+                        <div class="step-item__text-number">4.</div>Условия запуска
                       </div>
                     </div>
                     <div class="step-item__separator"> 
@@ -134,7 +174,7 @@
                         </svg>
                       </div>
                       <div class="step-item__text"> 
-                        <div class="step-item__text-number">3.</div>Результаты
+                        <div class="step-item__text-number">5.</div>Результаты
                       </div>
                     </div>
                     <div class="step-item__separator"> 
@@ -154,46 +194,171 @@
                         </svg>
                       </div>
                       <div class="step-item__text"> 
-                        <div class="step-item__text-number">4.</div>Детали
+                        <div class="step-item__text-number">6.</div>Детали
                       </div>
                     </div>
                   </div>
                   <div class="steps__body steps__body--md"> 
-                    <div class="steps__body-title"> 
-                      <h3 class="h3">Условия запуска</h3>
-                    </div>
-                    <label class="checkbox-field">
-                      <input class="checkbox-field__input" type="radio" name="radio-terms"><span class="checkbox-field__inner"><span class="checkbox-field__text">При изменении hash</span><span class="checkbox-field__icon-wrapper"><span class="checkbox-field__icon"></span></span></span>
-                    </label>
-                    <label class="checkbox-field">
-                      <input class="checkbox-field__input" type="radio" name="radio-terms"><span class="checkbox-field__inner"><span class="checkbox-field__text">Через заданный интервал</span><span class="checkbox-field__icon-wrapper"><span class="checkbox-field__icon"></span></span></span>
-                    </label>
-                    <div class="form-group disabled">
-                      <label class="form-label" for="time">Запускать каждые</label>
-                      <input class="form-input" type="number" id="time" placeholder="6 часов" disabled>
-                    </div>
-                    <label class="checkbox-field">
-                      <input class="checkbox-field__input" type="radio" name="radio-terms"><span class="checkbox-field__inner"><span class="checkbox-field__text">Через заданный интервал</span><span class="checkbox-field__icon-wrapper"><span class="checkbox-field__icon"></span></span></span>
-                    </label>
-                    <div class="form-group">
-                      <label class="form-label" for="time">Запускать каждые</label>
-                      <input class="form-input" type="number" id="time" placeholder="6 часов" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="timeout">Таймаут выполнения</label>
-                      <input class="form-input" type="number" id="timeout" placeholder="от 1 до 10 мин" max="10" min="1">
-                    </div>
-                    <div class="form-group columns">
-                      <div class="column">
-                        <label class="form-label" for="time">Время выполнения</label>
-                        <input class="form-input" type="number" id="duration" placeholder="5 дней">
+                    <div class="steps__presets-block">
+                      <div class="presets-block">
+                        <div class="presets-block__data">Сохраненные пресеты</div>
+                        <div class="presets-block__buttons"> 
+                          <button class="button button--medium button--secondary">Выбрать пресет</button>
+                        </div>
                       </div>
-                      <div class="column"> 
-                        <div class="steps__date"> 
-                          <div class="steps__date-title">Завершение задачи</div>
-                          <div class="steps__date-data">
-                            <div class="steps__date-day">12.06.2023</div>
-                            <div class="steps__date-time">17:22</div>
+                    </div>
+                    <div class="steps__select-block">
+                      <div class="select-block"> 
+                        <div class="select-block__label">Проверка на детекты</div>
+                        <div class="select-block__wrapper">
+                          <div class="select-block__inner">
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Все
+                            </label>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-block"> 
+                        <div class="select-block__label">Тест работоспособности</div>
+                        <div class="select-block__wrapper">
+                          <div class="select-block__inner">
+                            <div class="select-block__top">
+                              <label class="form-checkbox">
+                                <input type="checkbox"><i class="form-icon"> </i>Все
+                              </label>
+                              <label class="form-checkbox">
+                                <input type="checkbox"><i class="form-icon"> </i>х64
+                              </label>
+                              <label class="form-checkbox">
+                                <input type="checkbox"><i class="form-icon"> </i>х32
+                              </label>
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-block"> 
+                        <div class="select-block__label">Серверные ОС</div>
+                        <div class="select-block__wrapper">
+                          <div class="select-block__inner">
+                            <div class="select-block__top">
+                              <label class="form-checkbox">
+                                <input type="checkbox"><i class="form-icon"> </i>Все
+                              </label>
+                              <label class="form-checkbox">
+                                <input type="checkbox"><i class="form-icon"> </i>х64
+                              </label>
+                              <label class="form-checkbox">
+                                <input type="checkbox"><i class="form-icon"> </i>х32
+                              </label>
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag active" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag" tabindex="0">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
                           </div>
                         </div>
                       </div>
