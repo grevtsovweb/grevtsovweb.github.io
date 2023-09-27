@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/styles/base16/3024.min.css">
     <title>AnonymVPN </title>
     <meta name="description" content="AnonymVPN">
     <meta name="keywords" content="AnonymVPN">
@@ -76,97 +77,36 @@
       <div class="account__content">
         <div class="account__content-container">
           <div class="account__content-title">
-            <h1 class="h1">Профиль</h1>
+            <h1 class="h1">Подключение</h1>
+            <p class="account__content-subtitle">Воспользуйтесь подробной инструкцией по настройке и подключению к различным протоколам VPN.</p>
           </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">Никнэйм</h2>
+          <div class="account__wizard-section">
+            <div class="account__wizard-header">
+              <h2 class="h2">Выберите протокол</h2>
             </div>
-            <div class="account__content-row">
-              <div class="account__content-form">
-                <form class="form">
-                  <div class="form__group">
-                    <div class="field">
-                      <label class="field__label" for="input">Сменить никнэйм</label>
-                      <input class="field__input" type="text" placeholder="Ваш никнэйм" id="input" value="Nickname77">
-                    </div>
-                  </div>
-                  <button class="button button--lg button--full" disabled>Сохранить изменения</button>
-                </form>
+            <div class="account__wizard-block">
+              <div class="wizard-block">
+                <div class="wizard-block__buttons"><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">PPTP</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">L2TP 8</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">IKEv2</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">OpenVPN</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a></div>
               </div>
+              <div class="account__wizard-back"><a class="button button--tretiary button--lg" href="#">Назад</a></div>
             </div>
-          </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">Сменить пароль</h2>
-            </div>
-            <div class="account__content-row">
-              <div class="account__content-form">
-                <form class="form">
-                  <div class="form__group">
-                    <div class="field">
-                      <label class="field__label" for="input">Старый пароль</label>
-                      <input class="field__input" type="password" placeholder="Ваш никнэйм" id="input" value="Nickname77">
-                    </div>
-                  </div>
-                  <div class="form__group">
-                    <div class="field">
-                      <label class="field__label" for="input">Новый пароль</label>
-                      <input class="field__input" type="text" placeholder="Придумайте пароль" id="input">
-                    </div>
-                  </div>
-                  <div class="form__group">
-                    <div class="field">
-                      <label class="field__label" for="input">Подтвердите пароль</label>
-                      <input class="field__input" type="text" placeholder="Повторите пароль" id="input">
-                    </div>
-                  </div>
-                  <button class="button button--lg button--full" disabled>Сохранить изменения</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">Контакты</h2>
-            </div>
-            <div class="account__content-row">
-              <div class="account__content-form">
-                <form class="form">
-                  <div class="form__group">
-                    <div class="field">
-                      <label class="field__label" for="input">Jabber</label>
-                      <input class="field__input" type="text" placeholder="Jabber" id="input" value="Jabber">
-                    </div>
-                  </div>
-                  <div class="form__group">
-                    <div class="field">
-                      <label class="field__label" for="input">Tox ID</label>
-                      <input class="field__input" type="text" placeholder="Tox ID" id="input" value="Tox">
-                    </div>
-                  </div>
-                  <div class="form__group">
-                    <div class="field">
-                      <label class="field__label" for="input">Telegram</label>
-                      <input class="field__input" type="text" placeholder="@telegram" id="input" value="@telegram">
-                    </div>
-                  </div>
-                  <button class="button button--lg button--full" disabled>Сохранить изменения</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">Удалить аккаунт</h2>
-            </div>
-            <div class="account__content-section-support-text">
-              <p class="text">Это приведет к окончательному удалению вашего аккаунта и всех его данных. Вы не сможете повторно активировать этот аккаунт.</p>
-            </div>
-            <button class="button button--lg button--warning">Удалить учетную запись</button>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

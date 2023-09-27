@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/styles/base16/3024.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
     <title>AnonymVPN </title>
     <meta name="description" content="AnonymVPN">
     <meta name="keywords" content="AnonymVPN">
     <meta name="theme-color" content="#4169F4">
     <link rel="icon" type="image/svg" href="favicon.svg">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/webp" href="favicon.webp">
     <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.webp">
     <link rel="preload" href="fonts/ApercuPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ApercuPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
@@ -76,22 +78,37 @@
       <div class="account__content">
         <div class="account__content-container">
           <div class="account__content-title">
-            <h1 class="h1">API</h1>
+            <h1 class="h1">Подключение</h1>
+            <p class="account__content-subtitle">Воспользуйтесь подробной инструкцией по настройке и подключению к различным протоколам VPN.</p>
           </div>
-          <div class="account__content-text">
-            <h2 class="h2"> <span class="header-link">Параметры<a class="header-link__link" href="#">
-                  <svg aria-hidden="true" width="20" height="20">
-                    <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
-                  </svg></a></span></h2>
-            <p>Это приведет к окончательному удалению вашего аккаунта и всех его данных. Вы не сможете повторно активировать этот аккаунт.</p><code class="code">jq '.[] | {title: .title, authorID: .user.id}' data.json</code>
-            <h2 class="h2"> <span class="header-link">Параметры<a class="header-link__link" href="#">
-                  <svg aria-hidden="true" width="20" height="20">
-                    <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
-                  </svg></a></span></h2>
-            <p>Это приведет к окончательному удалению вашего аккаунта и всех его данных. Вы не сможете повторно активировать этот аккаунт.</p><code class="code">jq '.[] | {title: .title, authorID: .user.id}' data.json</code>
+          <div class="account__wizard-section">
+            <div class="account__wizard-header">
+              <h2 class="h2">Выберите нужную ОС</h2>
+            </div>
+            <div class="account__wizard-block">
+              <div class="wizard-block">
+                <div class="wizard-block__buttons"><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__logo"><img src="img/os/win-10.webp" alt="Windows 10" width="22" height="22"></span><span class="button-next__text">Windows 10</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__logo"><img src="img/os/win-8.webp" alt="Windows 8" width="22" height="22"></span><span class="button-next__text">Windows 8</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__logo"><img src="img/os/win-7.webp" alt="Windows 7" width="22" height="22"></span><span class="button-next__text">Windows 7</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__logo"><img src="img/os/mac.webp" alt="Mac" width="22" height="22"></span><span class="button-next__text">MacOS</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__logo"><img src="img/os/ubuntu.webp" alt="Ubuntu" width="22" height="22"></span><span class="button-next__text">Ubuntu</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

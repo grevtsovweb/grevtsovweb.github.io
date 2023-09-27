@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/styles/base16/3024.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
+    <title>AnonymVPN </title>
+    <meta name="description" content="AnonymVPN">
+    <meta name="keywords" content="AnonymVPN">
+    <meta name="theme-color" content="#4169F4">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/ApercuPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ApercuPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page">
+    <div class="account"> 
+      <div class="account__sidebar">
+        <aside class="sidebar">
+          <div class="sidebar__logo"><a class="sidebar__logo-link" href="#"><img src="img/logo/logo.svg" alt="AnonymVPN" width="186" height="32"></a></div>
+          <ul class="sidebar__main-menu">
+            <li><a class="sidebar__main-menu-link active" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-web"></use>
+                  </svg></span>Подключение</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                  </svg></span>Баланс</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-money"></use>
+                  </svg></span>Тарифы</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-api"></use>
+                  </svg></span>API</a></li>
+            <li><a class="sidebar__main-menu-link" href="#"> <span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-contacts"></use>
+                  </svg></span>Контакты</a></li>
+            <li class="sidebar__dark-mode">
+              <div class="sidebar__main-menu-link sidebar__main-menu-link--mode"><span class="sidebar__main-menu-link-inner"><span class="sidebar__main-menu-icon"> 
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#icon-moon"></use>
+                    </svg></span>Темный режим</span>
+                <label class="toggle">
+                  <input type="checkbox"><span class="toggle__slider"></span>
+                </label>
+              </div>
+            </li>
+            <li><a class="sidebar__main-menu-link sidebar__main-menu-link--ads" href="#"><span class="sidebar__main-menu-icon"> 
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-link"></use>
+                  </svg></span>Checked - Runtime AV checker</a></li>
+          </ul>
+          <div class="sidebar__user-block">
+            <div class="sidebar__user" tabindex="0">
+              <div class="sidebar__user-avatar">n</div>
+              <div class="sidebar__user-nickname">Nickname77</div>
+              <div class="sidebar__user-dropdown" style="display: none;">
+                <div class="sidebar__user-dropdown-list"><a class="sidebar__user-dropdown-link" href="#"><span class="sidebar__user-dropdown-link-icon">
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-person"></use>
+                      </svg></span>Профиль</a></div>
+                <div class="sidebar__user-dropdown-button"> 
+                  <button class="button button--s button--full">Выйти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="account__content">
+        <div class="account__content-container">
+          <div class="account__content-title">
+            <h1 class="h1">Подключение</h1>
+            <p class="account__content-subtitle">Воспользуйтесь подробной инструкцией по настройке и подключению к различным протоколам VPN.</p>
+          </div>
+          <div class="account__wizard-section">
+            <div class="account__wizard-header">
+              <h2 class="h2">Настройка PPTP</h2>
+            </div>
+            <div class="account__wizard-text">
+              <p>Выполните правой кнопкой клик на значке сетевого соединения в системном трее (значок с изображением компьютера слева от часов), а затем выберите «Центр управления сетями и общим доступом» из появившегося контекстного меню</p>
+              <ol>
+                <li>Выполните правой кнопкой клик на значке сетевого соединения в системном трее (значок с изображением компьютера слева от часов), а затем выберите «Центр управления сетями и общим доступом» из появившегося контекстного меню</li>
+                <li>
+                   Перейдите в раздел «Изменение сетевых параметров» и выберите «Создание и настройка нового подключения или сети»<img src="img/wizard/image.png" alt="Пример"></li>
+                <li>Выполните правой кнопкой клик на значке сетевого соединения в системном трее (значок с изображением компьютера слева от часов), а затем выберите «Центр управления сетями и общим доступом» из появившегося контекстного меню</li>
+                <li>
+                   Перейдите в раздел «Изменение сетевых параметров» и выберите «Создание и настройка нового подключения или сети»<img src="img/wizard/image.png" alt="Пример"></li>
+              </ol>
+              <ul>
+                <li>Выполните правой кнопкой клик на значке сетевого соединения в системном трее (значок с изображением компьютера слева от часов), а затем выберите «Центр управления сетями и общим доступом» из появившегося контекстного меню</li>
+                <li>
+                   Перейдите в раздел «Изменение сетевых параметров» и выберите «Создание и настройка нового подключения или сети»<img src="img/wizard/image.png" alt="Пример"></li>
+                <li>Выполните правой кнопкой клик на значке сетевого соединения в системном трее (значок с изображением компьютера слева от часов), а затем выберите «Центр управления сетями и общим доступом» из появившегося контекстного меню</li>
+                <li>
+                   Перейдите в раздел «Изменение сетевых параметров» и выберите «Создание и настройка нового подключения или сети»<img src="img/wizard/image.png" alt="Пример"></li>
+              </ul>
+              <p>Выполните правой кнопкой клик на значке сетевого соединения в системном трее (значок с изображением компьютера слева от часов), а затем выберите «Центр управления сетями и общим доступом» из появившегося контекстного меню</p><img src="img/wizard/image.png" alt="Пример">
+              <figure><img src="img/wizard/image.png" alt="Пример">
+                <figcaption>Выполните правой кнопкой клик</figcaption>
+              </figure><pre>
+    <code class="hljs language-shell">kali@kalipi:~$ ip a
+: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:b0:07:ca brd ff:ff:ff:ff:ff:ff
+    inet 192.168.42.19/24 brd 192.168.42.255 scope global dynamic eth0
+       valid_lft 63997sec preferred_lft 63997sec
+    inet6 fe80::dea6:32ff:feb0:7ca/64 scope link
+       valid_lft forever preferred_lft forever
+3: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether 2a:54:d3:ee:62:95 brd ff:ff:ff:ff:ff:ff permaddr dc:a6:32:b0:07:cb
+    </code>
+</pre>
+            </div>
+            <div class="account__wizard-back"><a class="button button--tretiary button--lg" href="#">Назад</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

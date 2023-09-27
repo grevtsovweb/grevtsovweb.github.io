@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/styles/base16/3024.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.8.0/highlight.min.js"></script>
     <title>AnonymVPN </title>
     <meta name="description" content="AnonymVPN">
     <meta name="keywords" content="AnonymVPN">
@@ -76,105 +78,35 @@
       <div class="account__content">
         <div class="account__content-container">
           <div class="account__content-title">
-            <h1 class="h1">Баланс</h1>
+            <h1 class="h1">Подключение</h1>
+            <p class="account__content-subtitle">Воспользуйтесь подробной инструкцией по настройке и подключению к различным протоколам VPN.</p>
           </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">Текущий тариф</h2>
+          <div class="account__wizard-section">
+            <div class="account__wizard-header">
+              <h2 class="h2">Выберите протокол</h2>
             </div>
-            <div class="account__content-row">
-              <div class="account__content-col">
-                <div class="account__content-col">
-                  <div class="balance">
-                    <div class="balance__data">
-                      <div class="balance__data-icon">
-                        <svg aria-hidden="true" width="24" height="24">
-                          <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
-                        </svg>
-                      </div>
-                      <div class="balance__data-value">Ваш счет
-                        <div class="balance__data-account">231 $</div>
-                      </div>
-                    </div>
-                    <div class="balance__controlls">
-                      <button class="button">Пополнить</button>
-                      <button class="button button--tretiary">Вывести</button>
-                    </div>
-                  </div>
-                </div>
+            <div class="account__wizard-block">
+              <div class="wizard-block">
+                <div class="wizard-block__buttons"><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">PPTP</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">L2TP 8</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">IKEv2</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a><a class="button-next" href="#"><span class="button-next__content"><span class="button-next__text">OpenVPN</span></span><span class="button-next__icon"> 
+                      <svg aria-hidden="true" width="20" height="20">
+                        <use xlink:href="img/sprite/sprite.svg#icon-chevron-right"></use>
+                      </svg></span></a></div>
               </div>
-            </div>
-          </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">Пополнение</h2>
-            </div>
-            <div class="account__content-row">
-              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/btc.svg" alt="Bitcoin" width="48" height="48"></span><span class="currency-card__title">Bitcoin</span></button>
-              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/LTC.svg" alt="LTC" width="48" height="48"></span><span class="currency-card__title">LTC</span></button>
-              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/XMR.svg" alt="XMR" width="48" height="48"></span><span class="currency-card__title">XMR</span></button>
-              <button class="currency-card"><span class="currency-card__logo"> <img src="img/currency/Etherium.svg" alt="Etherium" width="48" height="48"></span><span class="currency-card__title">Etherium</span></button>
-            </div>
-          </div>
-          <div class="account__content-section">
-            <div class="account__content-section-header">
-              <h2 class="h2">История</h2>
-              <div class="account__content-row">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Дата</th>
-                      <th>Валюта</th>
-                      <th>Сумма</th>
-                      <th>Адресат</th>
-                      <th>TxID</th>
-                      <th>Статус</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2023-02-21 13:14</td>
-                      <td>BTC</td>
-                      <td>$1012<span class="td-gray">0,004 BTC</span></td>
-                      <td>bc1q52...q3mj6</td>
-                      <td>cca69...85298</td>
-                      <td> 
-                        <div class="status status--pending">
-                          <div class="status__indicator"> </div>Ожидание
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2023-02-21 13:14</td>
-                      <td>BTC</td>
-                      <td>$1012<span class="td-gray"> 0,004 BTC</span></td>
-                      <td>bc1q52...q3mj6</td>
-                      <td>cca69...85298</td>
-                      <td> 
-                        <div class="status status--done">
-                          <div class="status__indicator"> </div>Выполнено
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2023-02-21 13:14</td>
-                      <td>BTC</td>
-                      <td>$1012    <span class="td-gray"> 0,004 BTC</span></td>
-                      <td>bc1q52...q3mj6</td>
-                      <td>cca69...85298</td>
-                      <td> 
-                        <div class="status status--cancel">
-                          <div class="status__indicator"> </div>Отменено
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <div class="account__wizard-back"><a class="button button--tretiary button--lg" href="#">Назад</a></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
