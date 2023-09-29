@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Polygon </title>
+    <meta name="description" content="Checked">
+    <meta name="keywords" content="Checked">
+    <meta name="theme-color" content="#742DDB">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page page--dark">
+    <div class="account"> 
+      <div class="account__banner"> <a class="banner" href="#">
+          <div class="banner__content"> 
+            <div class="banner__icon"> <img src="img/ads/logo-dark-theme.svg" alt="anonymVPN" height="20"></div>- защищеные VPN серверы
+          </div>
+          <button class="banner__close"> 
+            <svg aria-hidden="true" width="16" height="16">
+              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+            </svg>
+          </button></a></div>
+      <div class="account__header">
+        <header class="header-account">
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="170" height="26"></a>
+            <ul class="header-account__nav">
+              <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Тарифы</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Планировщик</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">WebVNC</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">API</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">FAQ</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Контакты</a></li>
+            </ul>
+            <div class="header-account__user-block">
+              <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
+              <button class="button-icon"> <span class="button-icon__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
+                  </svg></span></button>
+              <button class="button-wallet"> <span class="button-wallet__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                  </svg></span>$ 150   </button>
+              <div class="header-account__dropdown-item">
+                <button class="button-icon">T</button>
+                <div class="header-account__dropdown">
+                  <ul class="dropdown-menu"> 
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+                          </svg></span>Профиль</a></li>
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-exit"></use>
+                          </svg></span>Выйти</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="account__content">
+        <div class="container grid-xl">
+          <div class="account__section"> 
+            <div class="account__section-title"> 
+              <h3 class="h3">Новое сканирование</h3>
+            </div>
+            <div class="account__section-description">
+              <div class="account__section-header-block"> 
+                <h5 class="h5">Поддерживаемые файлы</h5><span class="help">max 25MB<span class="help__icon"> 
+                    <svg aria-hidden="true" width="20" height="20">
+                      <use xlink:href="img/sprite/sprite.svg#icon-question-circle"></use>
+                    </svg>
+                    <div class="tooltip-block tooltip-block--bottom">
+                      <p>Для загрузки файла большего размера, упакуйте его в ZIP архив, файл не должен превышать размер 1&nbsp;GB</p>
+                      <p class="text-secondary"> <span class="text-orange">Внимание! </span>В архиве должен находиться <b class="text-dark">1 файл, </b>с разрешенным для загрузки расширением.</p>
+                    </div></span></span>
+                <p>*.exe, *.dll, *.doc, *.docx, *.rtf, *.xls, *.xlsx, *.pdf, *.js, *.jse, *.vbs, *.vbe, *.wsf, *.msi, *.ps1, *.hta, *.zip</p>
+              </div>
+            </div>
+            <div class="account__section-upload"> 
+              <div class="upload"> 
+                <div class="upload__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-upload"></use>
+                  </svg>
+                </div>
+                <div class="upload__title">Загрузить с компьютера</div>
+                <div class="upload__description">Загрузите файл для сканирования с помощью диалога выбора файлов или перетащив нужный файл в выделенную область</div>
+                <div class="upload__button">
+                  <button class="button button--medium">Выбрать файл</button>
+                </div>
+              </div><span class="account__section-separate"> <span class="account__section-separate-text">или</span></span>
+              <div class="upload"> 
+                <div class="upload__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-cloud"></use>
+                  </svg>
+                </div>
+                <div class="upload__title">Загрузить по ссылке</div>
+                <div class="upload__field">
+                  <div class="form-group">
+                    <input class="form-input" type="text" id="input-file" placeholder="Например, https://example.com/path/to/file.exe">
+                  </div>
+                </div>
+                <div class="upload__button">
+                  <button class="button button--medium">Загрузить файл</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

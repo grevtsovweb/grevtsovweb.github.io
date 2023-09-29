@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Polygon </title>
+    <meta name="description" content="Checked">
+    <meta name="keywords" content="Checked">
+    <meta name="theme-color" content="#742DDB">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page page--dark">
+    <div class="account"> 
+      <div class="account__banner"> <a class="banner" href="#">
+          <div class="banner__content"> 
+            <div class="banner__icon"> <img src="img/ads/logo-dark-theme.svg" alt="anonymVPN" height="20"></div>- защищеные VPN серверы
+          </div>
+          <button class="banner__close"> 
+            <svg aria-hidden="true" width="16" height="16">
+              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+            </svg>
+          </button></a></div>
+      <div class="account__header">
+        <header class="header-account">
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="170" height="26"></a>
+            <ul class="header-account__nav">
+              <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Тарифы</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Планировщик</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">WebVNC</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">API</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">FAQ</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Контакты</a></li>
+            </ul>
+            <div class="header-account__user-block">
+              <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
+              <button class="button-icon"> <span class="button-icon__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
+                  </svg></span></button>
+              <button class="button-wallet"> <span class="button-wallet__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                  </svg></span>$ 150   </button>
+              <div class="header-account__dropdown-item">
+                <button class="button-icon">T</button>
+                <div class="header-account__dropdown">
+                  <ul class="dropdown-menu"> 
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+                          </svg></span>Профиль</a></li>
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-exit"></use>
+                          </svg></span>Выйти</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="account__content">
+        <div class="container grid-xl">
+          <div class="account__block">
+            <div class="account__block-tab-nav">
+              <ul class="tab">
+                <li class="tab__item"><a class="tab__link active" href="#">Новая задача</a></li>
+                <li class="tab__item"><a class="tab__link" href="#">Текущие задачи</a></li>
+              </ul>
+            </div>
+            <div class="account__block-tab-content">
+              <div class="account__block-tab-item">
+                <div class="steps">
+                  <div class="steps__header"> 
+                    <div class="step-item step-item--current">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">1.</div>Выбор файла
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-layer"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">2.</div>Выбор ПО
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">3.</div>Настройка ПО
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file-check"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">4.</div>Условия запуска
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-results"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">5.</div>Результаты
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file-text"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">6.</div>Детали
+                      </div>
+                    </div>
+                  </div>
+                  <div class="steps__body steps__body--md"> 
+                    <div class="steps__body-title"> 
+                      <h3 class="h3">Проверка на детекты</h3>
+                    </div>
+                    <div class="steps__check"> 
+                      <div class="steps__check-list">
+                        <div class="antivirus-card antivirus-card--small-horizontal antivirus-card--horizontal">
+                          <div class="antivirus-card__image"> <img src="img/antivirus-card/Eset.webp" alt="Eset" loading="lazy"></div>
+                          <div class="antivirus-card__content">
+                            <div class="antivirus-card__title">Eset</div>
+                            <div class="antivirus-card__subtitle">Smart Security</div>
+                          </div>
+                          <div class="antivirus-card__checkboxes">
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Trace Network
+                            </label>
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Session record (.mp4)
+                            </label>
+                          </div>
+                          <button class="antivirus-card__remove"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="antivirus-card antivirus-card--small-horizontal antivirus-card--horizontal">
+                          <div class="antivirus-card__image"> <img src="img/antivirus-card/Eset.webp" alt="Eset" loading="lazy"></div>
+                          <div class="antivirus-card__content">
+                            <div class="antivirus-card__title">Eset</div>
+                            <div class="antivirus-card__subtitle">Smart Security</div>
+                          </div>
+                          <div class="antivirus-card__checkboxes">
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Trace Network
+                            </label>
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Session record (.mp4)
+                            </label>
+                          </div>
+                          <button class="antivirus-card__remove"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="antivirus-card antivirus-card--small-horizontal antivirus-card--horizontal">
+                          <div class="antivirus-card__image"> <img src="img/antivirus-card/Eset.webp" alt="Eset" loading="lazy"></div>
+                          <div class="antivirus-card__content">
+                            <div class="antivirus-card__title">Eset</div>
+                            <div class="antivirus-card__subtitle">Smart Security</div>
+                          </div>
+                          <div class="antivirus-card__checkboxes">
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Trace Network
+                            </label>
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Session record (.mp4)
+                            </label>
+                          </div>
+                          <button class="antivirus-card__remove"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="antivirus-card antivirus-card--small-horizontal antivirus-card--horizontal">
+                          <div class="antivirus-card__image"> <img src="img/antivirus-card/Eset.webp" alt="Eset" loading="lazy"></div>
+                          <div class="antivirus-card__content">
+                            <div class="antivirus-card__title">Eset</div>
+                            <div class="antivirus-card__subtitle">Smart Security</div>
+                          </div>
+                          <div class="antivirus-card__checkboxes">
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Trace Network
+                            </label>
+                            <label class="form-checkbox">
+                              <input type="checkbox"><i class="form-icon"> </i>Session record (.mp4)
+                            </label>
+                          </div>
+                          <button class="antivirus-card__remove"> 
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="steps__select-fields">
+                        <div class="field-dropdown">
+                          <label class="field-dropdown__label" for="field">Integrity Level</label>
+                          <div class="field-dropdown__wrapper"> 
+                            <div class="field-dropdown__input">
+                              <div class="field-dropdown__logo"> <img src="img/icons/admin.webp" alt="Medium" width="24" height="24">Medium</div>
+                              <div class="field-dropdown__input-icon"> 
+                                <svg aria-hidden="true" width="20" height="20">
+                                  <use xlink:href="img/sprite/sprite.svg#icon-chevron-bottom"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="field-dropdown__inner" style="display: none;">
+                              <div class="field-dropdown__item-wrapper"> 
+                                <button class="field-dropdown__item-button"> 
+                                  <div class="field-dropdown__logo"> <img src="img/icons/admin.webp" alt="Medium" width="24" height="24">Medium</div>
+                                </button>
+                              </div>
+                              <div class="field-dropdown__item-wrapper"> 
+                                <button class="field-dropdown__item-button"> 
+                                  <div class="field-dropdown__logo"> <img src="img/icons/admin.webp" alt="Medium" width="24" height="24">Medium</div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="checkbox-field">
+                          <input class="checkbox-field__input" type="checkbox" name="Log-DebugView"><span class="checkbox-field__inner"><span class="checkbox-field__image"><img src="img/icons/debug.webp" alt="Medium" width="24" height="24"></span><span class="checkbox-field__text">Log DebugView</span><span class="checkbox-field__icon-wrapper"><span class="checkbox-field__icon checkbox-field__icon--checkbox"></span></span></span>
+                        </label>
+                        <div class="form-group">
+                          <label class="form-label" for="timeout">Таймаут выполнения</label>
+                          <input class="form-input" type="number" id="timeout" placeholder="от 1 до 10 мин" max="10" min="1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="steps__nav">
+                      <button class="button button--secondary button--medium"> <span class="button__icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-arrow-left"></use>
+                          </svg></span>Назад</button>
+                      <div class="steps__nav-right">
+                        <button class="button button--secondary button--medium">Отмена</button>
+                        <button class="button button--medium">Далее<span class="button__icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg></span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account__block-tab-item" style="display: none;">
+                <div class="table">
+                  <table class="table__inner table__inner--auto-layout">
+                    <colgroup>
+                      <col style="min-width: 180px;">
+                      <col style="min-width: 300px;">
+                      <col style="min-width: 300px;">
+                      <col style="min-width: 300px;">
+                      <col style="min-width: 132px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>Пресет</th>
+                        <th>Антивирусы</th>
+                        <th>Клиенты</th>
+                        <th>ОС</th>
+                        <th class="table--align-right">Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Пресет 1</td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag tag--value">+12</div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 8.1<span class="tag__secondary">32-bit</span>
+                            </div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 2016<span class="tag__secondary">64-bit</span>
+                            </div></span></td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr>
+                        <td>Пресет 2</td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/360.webp" width="24" height="24" alt="360"></div>360
+                            </div>
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/BitDefender.webp" width="24" height="24" alt="360"></div>BitDefender
+                            </div>
+                            <div class="tag tag--value">+2</div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 8.1<span class="tag__secondary">32-bit</span>
+                            </div></span></td>
+                        <td><span class="table__row">
+                            <div class="tag">
+                              <div class="tag__image"><img src="img/antivirus-card/win-10.webp" width="24" height="24" alt="360"></div>Win 2016<span class="tag__secondary">64-bit</span>
+                            </div></span></td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-settings"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

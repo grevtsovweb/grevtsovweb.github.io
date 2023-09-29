@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Polygon </title>
+    <meta name="description" content="Checked">
+    <meta name="keywords" content="Checked">
+    <meta name="theme-color" content="#742DDB">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body class="page page--dark">
+    <div class="account"> 
+      <div class="account__banner"> <a class="banner" href="#">
+          <div class="banner__content"> 
+            <div class="banner__icon"> <img src="img/ads/logo-dark-theme.svg" alt="anonymVPN" height="20"></div>- защищеные VPN серверы
+          </div>
+          <button class="banner__close"> 
+            <svg aria-hidden="true" width="16" height="16">
+              <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
+            </svg>
+          </button></a></div>
+      <div class="account__header">
+        <header class="header-account">
+          <div class="header-account__container"><a class="header-account__logo" href="#"><img src="img/logo/logo.svg" alt="Checked" width="170" height="26"></a>
+            <ul class="header-account__nav">
+              <li class="header-account__nav-item"><a class="header-account__nav-link active" href="#">Сканер</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Отчеты</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Тарифы</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Планировщик</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">WebVNC</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">API</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">FAQ</a></li>
+              <li class="header-account__nav-item"><a class="header-account__nav-link" href="#">Контакты</a></li>
+            </ul>
+            <div class="header-account__user-block">
+              <button class="button button--tretiary button--small button--language">Eng<span class="button__icon"><img src="img/icons/icon-gb.svg" alt="English"></span></button>
+              <button class="button-icon"> <span class="button-icon__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-sun"></use>
+                  </svg></span></button>
+              <button class="button-wallet"> <span class="button-wallet__icon">
+                  <svg aria-hidden="true" width="24" height="24">
+                    <use xlink:href="img/sprite/sprite.svg#icon-wallet"></use>
+                  </svg></span>$ 150   </button>
+              <div class="header-account__dropdown-item">
+                <button class="button-icon">T</button>
+                <div class="header-account__dropdown">
+                  <ul class="dropdown-menu"> 
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-user"></use>
+                          </svg></span>Профиль</a></li>
+                    <li> <a class="dropdown-menu__link" href="#"> <span class="dropdown-menu__link-icon"> 
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-exit"></use>
+                          </svg></span>Выйти</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="account__content">
+        <div class="container grid-xl">
+          <div class="account__block">
+            <div class="account__block-tab-nav">
+              <ul class="tab">
+                <li class="tab__item"><a class="tab__link" href="#">Новая задача</a></li>
+                <li class="tab__item"><a class="tab__link active" href="#">Текущие задачи</a></li>
+              </ul>
+            </div>
+            <div class="account__block-tab-content">
+              <div class="account__block-tab-item" style="display: none;">
+                <div class="steps">
+                  <div class="steps__header"> 
+                    <div class="step-item step-item--current">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">1.</div>Выбор файла
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file-check"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">2.</div>Условия запуска
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-results"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">3.</div>Результаты
+                      </div>
+                    </div>
+                    <div class="step-item__separator"> 
+                      <svg aria-hidden="true" width="24" height="24">
+                        <use xlink:href="img/sprite/sprite.svg#icon-angle-right"></use>
+                      </svg>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-item__icon step-item__icon--done">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__icon">
+                        <svg aria-hidden="true" width="24" height="24">
+                          <use xlink:href="img/sprite/sprite.svg#icon-file-text"></use>
+                        </svg>
+                      </div>
+                      <div class="step-item__text"> 
+                        <div class="step-item__text-number">4.</div>Детали
+                      </div>
+                    </div>
+                  </div>
+                  <div class="steps__body"> 
+                    <div class="account__section-title"> 
+                      <h3 class="h3">Выбор файла</h3>
+                    </div>
+                    <div class="account__section-description">
+                      <h5 class="h5">Поддерживаемые файлы:</h5>
+                      <p>*.exe, *.dll, *.doc, *.docx, *.rtf, *.xls, *.xlsx, *.pdf, *.js, *.jse, *.vbs, *.vbe, *.wsf, *.msi, *.ps1, *.hta, *.zip</p>
+                      <p class="account__section-description--light">Максимальный размер загружаемого файла 25 MB</p>
+                    </div>
+                    <div class="account__section-description">
+                      <p>Для загрузки файла большего размера, упакуйте его в ZIP архив, файл не должен превышать размер 1 GB</p>
+                      <p> <span class="account__section-description--notice">Внимание! </span>В архиве должен находиться <b>1 файл, </b>с разрешенным для загрузки расширением.</p>
+                    </div>
+                    <div class="account__section-upload"> 
+                      <div class="upload"> 
+                        <div class="upload__icon">
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-upload"></use>
+                          </svg>
+                        </div>
+                        <div class="upload__title">Загрузить с компьютера</div>
+                        <div class="upload__description">Загрузите файл для сканирования с помощью диалога выбора файлов или перетащив нужный файл в выделенную область</div>
+                        <div class="upload__button">
+                          <button class="button button--medium">Выбрать файл</button>
+                        </div>
+                      </div><span class="account__section-separate"> <span class="account__section-separate-text">или</span></span>
+                      <div class="upload"> 
+                        <div class="upload__icon">
+                          <svg aria-hidden="true" width="24" height="24">
+                            <use xlink:href="img/sprite/sprite.svg#icon-cloud"></use>
+                          </svg>
+                        </div>
+                        <div class="upload__title">Загрузить по ссылке</div>
+                        <div class="upload__field">
+                          <div class="form-group">
+                            <input class="form-input" type="text" id="input-file" placeholder="Например, https://example.com/path/to/file.exe">
+                          </div>
+                        </div>
+                        <div class="upload__button">
+                          <button class="button button--medium">Загрузить файл</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="steps__nav">
+                      <div class="steps__nav-right">
+                        <button class="button button--secondary button--medium">Отмена</button>
+                        <button class="button button--medium">Далее<span class="button__icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg></span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="account__block-tab-item">
+                <div class="table">
+                  <table class="table__inner">
+                    <colgroup>
+                      <col style="width: 22.5%; min-width: 250px">
+                      <col style="width: 22.5%; min-width: 100px;">
+                      <col style="width: 22.5%; min-width: 250px;">
+                      <col style="width: 22.5%; min-width: 100px;">
+                      <col style="width: 10%; min-width: 100px;">
+                    </colgroup>
+                    <thead>   
+                      <tr>
+                        <th>Файл</th>
+                        <th>Название</th>
+                        <th>Проверки</th>
+                        <th>Статус</th>
+                        <th class="table--align-right">Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">0</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--pending">
+                            <div class="status__indicator"> </div>В процессе
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">30</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--done">
+                            <div class="status__indicator"> </div>Выполнено
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">0</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--pending">
+                            <div class="status__indicator"> </div>В процессе
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">30</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--done">
+                            <div class="status__indicator"> </div>Выполнено
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">0</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--pending">
+                            <div class="status__indicator"> </div>В процессе
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">30</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--done">
+                            <div class="status__indicator"> </div>Выполнено
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">0</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--pending">
+                            <div class="status__indicator"> </div>В процессе
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">30</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--done">
+                            <div class="status__indicator"> </div>Выполнено
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">0</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--pending">
+                            <div class="status__indicator"> </div>В процессе
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">30</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--done">
+                            <div class="status__indicator"> </div>Выполнено
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">0</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--pending">
+                            <div class="status__indicator"> </div>В процессе
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                      <tr> 
+                        <td>
+                          <div class="badge-item"> 
+                            <div class="badge-item__icon"> <img src="img/docs/doc.svg" alt="doc"></div>
+                            <div class="badge-item__info"> 
+                              <div class="badge-item__title">New_file.doc</div>
+                              <div class="badge-item__description">23 Mb</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>Задача</td>
+                        <td> 
+                          <div class="status-item">
+                            <div class="status-item__data"> 
+                              <div class="status-item__data-state">30</div>/ 30
+                            </div>
+                          </div>
+                        </td>
+                        <td> 
+                          <div class="status status--done">
+                            <div class="status__indicator"> </div>Выполнено
+                          </div>
+                        </td>
+                        <td class="table--align-right"> <span class="table__row table__row--right">
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-pause"></use>
+                              </svg>
+                            </button>
+                            <button class="button-table">
+                              <svg aria-hidden="true" width="20" height="20">
+                                <use xlink:href="img/sprite/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="table__pagination">
+                    <div class="pagination">
+                      <div class="pagination__prev">
+                        <button class="button button--secondary button--medium"> <span class="button__icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow-left"></use>
+                            </svg></span>Назад</button>
+                      </div>
+                      <div class="pagination__nav"><a class="pagination__nav-link active" href="#">1</a><a class="pagination__nav-link" href="#">2</a><a class="pagination__nav-link" href="#">3</a><span class="pagination__nav-separator">...</span><a class="pagination__nav-link" href="#">8</a><a class="pagination__nav-link" href="#">9</a><a class="pagination__nav-link" href="#">10</a></div>
+                      <div class="pagination__next">
+                        <button class="button button--secondary button--medium">Вперед<span class="button__icon"> 
+                            <svg aria-hidden="true" width="24" height="24">
+                              <use xlink:href="img/sprite/sprite.svg#icon-arrow-right"></use>
+                            </svg></span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
