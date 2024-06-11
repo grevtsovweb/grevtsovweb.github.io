@@ -7155,7 +7155,9 @@ button,
 .button {
   font-size: 11px;
   line-height: 11px;
-  letter-spacing: 0.02em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
