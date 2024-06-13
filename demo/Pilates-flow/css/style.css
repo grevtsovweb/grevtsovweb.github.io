@@ -1375,7 +1375,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1328px;
   margin: 0 auto;
   padding: 0 24px;
   position: relative;
@@ -1508,6 +1508,10 @@ button,
   border-top: 1px solid transparent;
   flex-grow: 1;
   height: 100%;
+}
+
+.container--transparent {
+  background-color: transparent;
 }
 
 .header {
@@ -3164,6 +3168,8 @@ button,
 .main {
   background-color: #f8f9fa;
   font-family: "Manrope", "Arial", sans-serif;
+  padding-top: 24px;
+  padding-bottom: 100px !important;
 }
 
 .main__header {
@@ -3919,22 +3925,14 @@ button,
   border-radius: 50%;
 }
 
-.video::before {
-  height: 720px;
-  display: block;
-  content: "";
-  margin-bottom: 40px;
-}
-
-.video__video-box {
-  position: absolute;
-  top: -1px;
-  left: 0;
+.video {
+  background-color: #ffffff;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 .video__video-box img {
   width: 100%;
-  top: 0;
 }
 
 .video__video-loader {
@@ -3979,38 +3977,77 @@ button,
   max-width: 264px;
 }
 
-.video-header {
-  width: 74.9%;
-  margin-bottom: 40px;
+.video__description {
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 
-.video-header--with-comments {
-  margin-bottom: 28px;
+.video__description-section {
+  margin-top: 40px;
 }
 
-.video-header__wrapper {
-  display: grid;
-  grid-template-columns: 1fr -webkit-max-content;
-  grid-template-columns: 1fr max-content;
-  align-items: center;
-  border-bottom: 1px solid #c4c4c4;
+.video__description-section:first-child {
+  margin-top: 0;
+}
+
+.video__description-section-title {
+  margin-bottom: 24px;
+  font-size: 21px;
+  line-height: 1.15em;
+  font-weight: 500;
+  margin-top: 0;
   margin-bottom: 24px;
 }
 
-.video-header__wrapper--active {
-  margin-bottom: 19px;
+.video__description-chips-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
 }
 
-.video-header__title {
+.video__descritption-section-text {
+  max-width: 600px;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.video__description-header {
+  margin-bottom: 40px;
+}
+
+.video__description-header--with-comments {
+  margin-bottom: 28px;
+}
+
+.video__description-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 16px;
+}
+
+.video__description-header-title {
   margin: 0;
-  margin-bottom: 16px;
   padding: 0;
   font-weight: 500;
   font-size: 25px;
   line-height: 115%;
 }
 
-.video-header__sub-title {
+.video__description-header-sub-title {
   font-weight: 500;
   font-size: 21px;
   line-height: 115%;
@@ -4019,33 +4056,33 @@ button,
   padding: 0;
 }
 
-.video-header__text {
+.video__description-header-text {
   width: 520px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
 }
 
-.video-header__text--wide {
+.video__description-header--wide {
   max-width: 608px;
   width: auto;
 }
 
-.video-header__like-text {
+.video__description-header-like-text {
   font-weight: 500;
 }
 
-.video-header__desc {
+.video__description-header-desc {
   margin-bottom: 35px;
 }
 
-.video-header__desc p {
+.video__description-header-desc p {
   margin: 0;
   margin-bottom: 1em;
   padding: 0;
 }
 
-.video-header__desc p:last-child {
+.video__description-header-desc p:last-child {
   margin-bottom: 0;
 }
 
@@ -4871,7 +4908,6 @@ button,
   -webkit-column-gap: 8px;
   -moz-column-gap: 8px;
   column-gap: 8px;
-  margin-right: 5px;
 }
 
 .like-btn svg {
@@ -7193,6 +7229,57 @@ button,
   width: 100%;
 }
 
+.recommend-slider__slider {
+  position: relative;
+}
+
+.recommend-slider__slider .swiper-wrapper {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.recommend-slider__slider .swiper-slide {
+  width: 296px;
+}
+
+.recommend-slider__slider .cards-slider__button--favorites-slider-back {
+  top: 50%;
+  left: -8px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.recommend-slider__slider .cards-slider__button--favorites-slider-next {
+  top: 50%;
+  right: -8px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.chips {
+  display: flex;
+  align-items: center;
+}
+
+.chips__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.chips__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.chips__text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
 @media (min-width: 1024px) {
   .header--bottom-menu .main-nav__link-icon {
     display: none;
@@ -7223,16 +7310,11 @@ button,
   .header--bottom-menu .main-nav__link--user-login {
     right: 26px;
   }
-
-  .video::before {
-    height: 56vw;
-    margin-bottom: 40px;
-  }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 10px;
+    padding: 0;
   }
 
   .container--account-profile {
@@ -7348,7 +7430,7 @@ button,
 
   .header--bottom-menu {
     position: fixed;
-    bottom: 16px;
+    bottom: 10px;
     z-index: 100;
     width: 100%;
     min-height: 0;
@@ -8019,13 +8101,12 @@ button,
   }
 
   .main {
-    background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ffffff));
-    background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
+    background-color: #f5f5f5;
+    padding-top: 0;
   }
 
   .main__header {
-    padding-top: 20px;
-    padding-left: 24px;
+    padding: 24px;
   }
 
   .main__header--marathon-page-without-playlist-list {
@@ -8176,37 +8257,20 @@ button,
     padding-left: 16px;
   }
 
-  .video::before {
-    height: 56vw;
-    margin-bottom: 32px;
-  }
-
   .video__lock-text {
     padding-bottom: 40px;
   }
 
-  .video-header {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .video-header--with-comments {
+  .video__description-header--with-comments {
     margin-bottom: 30px;
   }
 
-  .video-header__wrapper--active {
-    margin-bottom: 24px;
+  .video__description-header-title {
+    max-width: 420px;
+    font-size: 25px;
   }
 
-  .video-header__wrapper {
-    margin-right: 20px;
-  }
-
-  .video-header__title {
-    width: 75%;
-  }
-
-  .video-header__text {
+  .video__description-header-text {
     max-width: 520px;
     width: 100%;
   }
@@ -8443,7 +8507,6 @@ button,
 
   .like-btn {
     align-self: end;
-    margin-bottom: 13px;
   }
 
   .product {
@@ -8730,6 +8793,10 @@ button,
   }
 
   .link-icon__text {
+    display: none;
+  }
+
+  .recommend-slider__slider .cards-slider__button {
     display: none;
   }
 }
@@ -9556,9 +9623,9 @@ button,
     padding-left: 18px;
   }
 
-  .video::before {
-    height: 56vw;
-    margin-bottom: 24px;
+  .video {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
   }
 
   .video__lock--next {
@@ -9582,43 +9649,51 @@ button,
     padding-bottom: 5px;
   }
 
-  .video-header {
-    margin-bottom: 22px;
+  .video__description {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
   }
 
-  .video-header--with-comments {
+  .video__description-section {
+    margin-top: 32px;
+  }
+
+  .video__description-header {
+    margin-bottom: 32px;
+  }
+
+  .video__description-header--with-comments {
     margin-bottom: 38px;
   }
 
-  .video-header--with-comments .video-header__title {
+  .video__description-header--with-comments .video__description-header-title {
     width: 100%;
     padding-right: 42px;
     font-size: 23px;
-    margin-bottom: 19px;
   }
 
-  .video-header--with-comments .video-header__wrapper {
+  .video__description-header--with-comments .video__description-header-wrapper {
     margin-bottom: 34px;
   }
 
-  .video-header__wrapper {
-    grid-template-columns: 1fr;
-    margin-right: 0;
-    margin-bottom: 16px;
+  .video__description-header-inner {
+    display: block;
   }
 
-  .video-header__title {
+  .video__description-header-title {
     width: 100%;
-    padding-right: 42px;
     font-size: 21px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
+    line-height: 1.15em;
   }
 
-  .video-header__sub-title {
+  .video__description-header-sub-title {
     font-size: 19px;
   }
 
-  .video-header__text {
+  .video__description-header-text {
     font-size: 15px;
     line-height: 20px;
     padding: 0 2px;
@@ -9708,10 +9783,6 @@ button,
 
   .favorites-top-block .favorites-top-block__title {
     font-size: 17px;
-  }
-
-  .like-btn {
-    margin-bottom: 16px;
   }
 
   .product {
