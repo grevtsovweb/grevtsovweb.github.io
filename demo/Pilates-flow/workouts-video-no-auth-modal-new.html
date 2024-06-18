@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Мой каталог - Pilates Flow</title>
+    <title>Мой профиль - Pilates Flow</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +17,7 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body></body>
+  <body style="overflow: hidden"></body>
   <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 <linearGradient id="paint0_linear_4606_4808" x1="7" y1="101.128" x2="197" y2="101.128" gradientUnits="userSpaceOnUse">
 <stop offset="0" stop-color="#F185D0"/>
@@ -770,7 +770,7 @@
 </symbol></svg>
   </div>
   <div class="wrapper">
-    <header class="header header--bottom-menu header--is-authorised">
+    <header class="header header--bottom-menu">
       <div class="container header__container"><a class="header__logo" href="index.html" aria-label="Переход на главную"><img src="img/svg/logo-new.svg" width="19" height="19" alt=""></a>
         <nav class="main-nav">
           <button class="main-nav__toggle btn-reset" type="button" aria-label="Открыть меню" aria-pressed="false" data-open="открыть меню" data-close="закрыть меню">
@@ -796,160 +796,268 @@
                   </svg>Мой поток</a>
               </li>
             </ul>
-            <div class="main-nav__user user-menu"><a class="user-menu__link" href="#"><img src="img/svg/icon-avatar.svg" width="32" height="32" alt="аватар">Светлана</a></div>
+            <div class="main-nav__user user-menu"><a class="user-menu__link" href="#"><img src="img/svg/icon-avatar.svg" width="32" height="32" alt="аватар"></a></div>
           </div>
         </nav>
       </div>
     </header>
     <main class="main">
-      <div class="container main__header"><a class="main__link-back" href="#" target="_blank" rel="nofollow noopener">
+      <div class="container main__header main__header--workout"><a class="main__link-back" href="#" target="_blank" rel="nofollow noopener">
           <svg width="32" height="32" aria-hidden="true">
             <use xlink:href="#icon-back-arrow"></use>
-          </svg></a>
-        <h1 class="main__title title">Мой каталог</h1>
-      </div>
-      <div class="container container--account">
-        <!--+additionalBlock(addBlock, "isLong")-->
-        <section class="block-info"> 
-          <h2 class="visually-hidden">Предложения</h2>
-          <div class="block-info__wrapper"> 
-            <h3 class="block-info__title">— 15%  на оборудование и курсы, воспользуйтесь купоном KARTA</h3>
-          </div>
-        </section>
-        <section class="content-block content-block--catalog">
-          <h2 class="visually-hidden title">Список курсов</h2>
-          <!--+filterList-->
-          <div class="filter-list filter-list--catalog swiper-container">
-            <ul class="filter-list__list swiper-wrapper">
-              <li class="filter-list__item swiper-slide"><a class="filter-list__link filter-list__link--active" href="#">Курсы</a></li>
-              <li class="filter-list__item swiper-slide"><a class="filter-list__link" href="#">Оборудование</a></li>
-              <li class="filter-list__item swiper-slide"><a class="filter-list__link" href="#">Клубные карты</a></li>
-              <li class="filter-list__item swiper-slide"><a class="filter-list__link" href="#">Книги</a></li>
-            </ul>
-          </div>
-          <ul class="layout layout--grid">
-            <li>
-              <div class="product-card"><a href="/" target="_blank" rel="nofollow noopener">
-                  <div class="product-card__img-wrapper">
-                    <!--if productCardMod === 'product-card--promo'p.product-card__discount-label.discount-label <span class="visually-hidden">Скидка:</span> - 50%
-                    -->
-                    <p class="product-card__discount-label discount-label"><span class="visually-hidden">Скидка:</span> - 50%</p><img src="img/content/products/product-card-bc.jpg" srcset="img/content/products/product-card-bc@2x.jpg 2x" width="592" height="592" alt="Базовый пилатес курс">
+          </svg></a></div>
+      <div class="container">
+        <div class="container__content">
+          <section class="video">
+            <div class="video__video-box">
+              <div class="video__lock">
+                <div class="video__lock-content">
+                  <div class="video__lock-icon"> 
+                    <svg width="72" height="72" aria-hidden="true">
+                      <use xlink:href="#icon-lock"></use>
+                    </svg>
                   </div>
-                  <div class="product-card__text-wrapper">
-                    <div class="product-card__price-wrapper">
-                      <!--if productCardMod === 'product-card--club'+specialOffer(offersList)
-                      -->
-                      <!--if productCardMod === 'product-card--card'+cardOffer
-                      -->
-                      <div class="product-card__price-container">
-                        <p class="product-card__price product-card__price--old"><span class="visually-hidden">Старая цена:</span> 4000 <span class="rouble">o</span></p>
-                        <p class="product-card__price"><span class="visually-hidden">Цена:</span> 1000 <span class="rouble">o</span></p>
+                  <div class="video__lock-text">Зарегистрируйтесь и начните заниматься бесплатно 🎁</div>
+                  <div class="video__lock-button"> 
+                    <button class="button button--rounded button--gradient">Зарегистрироваться</button>
+                  </div>
+                </div>
+              </div><a href="#"></a><img src="img/content/products/pilates-player.jpg" srcset="img/content/products/pilates-player@2x.jpg 2x" width="1280" height="720" alt="pilates-player">
+            </div>
+            <div class="video__description">
+              <div class="video__description-header">
+                <div class="video__description-header-inner">
+                  <h1 class="video__description-header-title">Раскрытие тазобедренных суставов</h1><a class="video__description-header-like like-btn" href="#" data-like-button>
+                    <svg width="14" height="13" aria-hidden="true">
+                      <use xlink:href="#icon-like"></use>
+                    </svg><span class="video__description-header-like-text">Избранное</span></a>
+                </div>
+              </div>
+              <div class="video__description-section-container">
+                <div class="video__description-section-main">
+                  <div class="video__description-section">
+                    <div class="video__description-title-container video__description-title-container--margin-s">
+                      <h2 class="video__description-title">Описание </h2>
+                    </div>
+                    <div class="video__description-section-content">
+                      <ul class="video__description-chips-list">
+                        <li> 
+                          <div class="chips">
+                            <div class="chips__icon">
+                              <svg width="28" height="28" aria-hidden="true">
+                                <use xlink:href="#icon-clock"></use>
+                              </svg>
+                            </div>
+                            <div class="chips__text">~35 минут</div>
+                          </div>
+                        </li>
+                        <li> 
+                          <div class="chips">
+                            <div class="chips__icon">
+                              <svg width="28" height="28" aria-hidden="true">
+                                <use xlink:href="#icon-chart"></use>
+                              </svg>
+                            </div>
+                            <div class="chips__text">Средний уровень </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <p class="video__descritption-section-text">Идеальное сочетание из пилатес зарядок  на эти выходные для всех нас. Прекрасно подходит для тех, кто много сидел.</p>
+                    </div>
+                  </div>
+                  <div class="video__description-section">
+                    <div class="video__description-section-main">
+                      <div class="video__description-title-container">
+                        <h2 class="video__description-title">Рекомендуем добавить</h2>
+                      </div>
+                      <div class="video__description-section-slider">
+                        <div class="recommend-slider">
+                          <div class="recommend-slider__slider recommend-slider__slider--js swiper">
+                            <ul class="recommend-slider__slider-inner swiper-wrapper layout layout--row">
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-pg.jpg" srcset="img/content/workout-cards/workout-card-pg@2x.jpg 2x" width="296" height="178" alt="Серия с акцентом на пресс">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия с акцентом на пресс</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-rts.jpg" srcset="img/content/workout-cards/workout-card-rts@2x.jpg 2x" width="296" height="178" alt="Раскрытие тазобедренных суставов">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Раскрытие тазобедренных суставов</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-sdn.jpg" srcset="img/content/workout-cards/workout-card-sdn@2x.jpg 2x" width="296" height="178" alt="Серия для начинающих">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия для начинающих</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-sd.jpg" srcset="img/content/workout-cards/workout-card-sd@2x.jpg 2x" width="296" height="178" alt="Серия для начинающих">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия для начинающих</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-sd.jpg" srcset="img/content/workout-cards/workout-card-sd@2x.jpg 2x" width="296" height="178" alt="Серия для начинающих">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия для начинающих</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-pg.jpg" srcset="img/content/workout-cards/workout-card-pg@2x.jpg 2x" width="296" height="178" alt="Серия с акцентом на пресс">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия с акцентом на пресс</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-rts.jpg" srcset="img/content/workout-cards/workout-card-rts@2x.jpg 2x" width="296" height="178" alt="Раскрытие тазобедренных суставов">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Раскрытие тазобедренных суставов</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-sdn.jpg" srcset="img/content/workout-cards/workout-card-sdn@2x.jpg 2x" width="296" height="178" alt="Серия для начинающих">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия для начинающих</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-sd.jpg" srcset="img/content/workout-cards/workout-card-sd@2x.jpg 2x" width="296" height="178" alt="Серия для начинающих">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия для начинающих</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="recommend-slider__slider-item swiper-slide">
+                                <div class="workout-card-base"><a class="workout-card-base__link" href="/" target="_blank" rel="nofollow noopener"></a>
+                                  <div class="workout-card-base__content-wrapper">
+                                    <div class="workout-card-base__content"><span class="workout-card-base__time-label">23 мин</span>
+                                      <div class="workout-card-base__img-container"><img src="img/content/workout-cards/workout-card-sd.jpg" srcset="img/content/workout-cards/workout-card-sd@2x.jpg 2x" width="296" height="178" alt="Серия для начинающих">
+                                      </div>
+                                      <h3 class="workout-card-base__title">Серия для начинающих</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <button class="cards-slider__button cards-slider__button--favorites-slider cards-slider__button--favorites-slider-next"><span class="visually-hidden">следующая карточка</span></button>
+                            <button class="cards-slider__button cards-slider__button--favorites-slider cards-slider__button--favorites-slider-back"><span class="visually-hidden">следующая карточка</span></button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <h3 class="product-card__title">Базовый пилатес курс</h3>
-                  </div></a></div>
-            </li>
-            <li>
-              <div class="product-card"><a href="/" target="_blank" rel="nofollow noopener">
-                  <div class="product-card__img-wrapper">
-                    <!--if productCardMod === 'product-card--promo'p.product-card__discount-label.discount-label <span class="visually-hidden">Скидка:</span> - 50%
-                    -->
-                    <p class="product-card__discount-label discount-label"><span class="visually-hidden">Скидка:</span> - 50%</p><img src="img/content/products/product-card-t.jpg" srcset="img/content/products/product-card-t@2x.jpg 2x" width="592" height="592" alt="Базовый пилатес курс">
                   </div>
-                  <div class="product-card__text-wrapper">
-                    <div class="product-card__price-wrapper">
-                      <!--if productCardMod === 'product-card--club'+specialOffer(offersList)
-                      -->
-                      <!--if productCardMod === 'product-card--card'+cardOffer
-                      -->
-                      <div class="product-card__price-container">
-                        <p class="product-card__price product-card__price--old"><span class="visually-hidden">Старая цена:</span> 4000 <span class="rouble">o</span></p>
-                        <p class="product-card__price"><span class="visually-hidden">Цена:</span> 2990 <span class="rouble">o</span></p>
-                      </div>
-                    </div>
-                    <h3 class="product-card__title">Базовый пилатес курс</h3>
-                  </div></a></div>
-            </li>
-            <li>
-              <div class="product-card"><a href="/" target="_blank" rel="nofollow noopener">
-                  <div class="product-card__img-wrapper">
-                    <!--if productCardMod === 'product-card--promo'p.product-card__discount-label.discount-label <span class="visually-hidden">Скидка:</span> 
-                    --><img src="img/content/products/product-card-ps.jpg" srcset="img/content/products/product-card-ps@2x.jpg 2x" width="592" height="592" alt="Базовый пилатес курс">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="login-section">
+            <div class="login-section__content">
+              <div class="form form--reg">
+                <h2 class="form__title form__title--large">Зарегистрируйтесь и начните заниматься бесплатно</h2>
+                <form>
+                  <div class="form__input">
+                    <label for="name">Имя</label>
+                    <input name="name" id="name" type="text" required="required"/>
                   </div>
-                  <div class="product-card__text-wrapper">
-                    <div class="product-card__price-wrapper">
-                      <!--if productCardMod === 'product-card--club'+specialOffer(offersList)
-                      -->
-                      <!--if productCardMod === 'product-card--card'+cardOffer
-                      -->
-                      <div class="product-card__price-container">
-                        <p class="product-card__price"><span class="visually-hidden">Цена:</span> 2990 <span class="rouble">o</span></p>
-                      </div>
-                    </div>
-                    <h3 class="product-card__title">Базовый пилатес курс</h3>
-                  </div></a></div>
-            </li>
-            <li>
-              <div class="product-card"><a href="/" target="_blank" rel="nofollow noopener">
-                  <div class="product-card__img-wrapper">
-                    <!--if productCardMod === 'product-card--promo'p.product-card__discount-label.discount-label <span class="visually-hidden">Скидка:</span> 
-                    --><img src="img/content/products/product-card-bh.jpg" srcset="img/content/products/product-card-bh@2x.jpg 2x" width="592" height="592" alt="Базовый пилатес курс">
+                  <div class="form__input">
+                    <label for="email">Электронная почта</label>
+                    <input name="email" id="email" type="email" required="required"/>
                   </div>
-                  <div class="product-card__text-wrapper">
-                    <div class="product-card__price-wrapper">
-                      <!--if productCardMod === 'product-card--club'+specialOffer(offersList)
-                      -->
-                      <!--if productCardMod === 'product-card--card'+cardOffer
-                      -->
-                      <div class="product-card__price-container">
-                        <p class="product-card__price"><span class="visually-hidden">Цена:</span> 2990 <span class="rouble">o</span></p>
-                      </div>
+                  <div class="form__footer">
+                    <div class="form__button">
+                      <button class="button button--full-width">Зарегистрироваться</button>
                     </div>
-                    <h3 class="product-card__title">Базовый пилатес курс</h3>
-                  </div></a></div>
-            </li>
-            <li>
-              <div class="product-card"><a href="/" target="_blank" rel="nofollow noopener">
-                  <div class="product-card__img-wrapper">
-                    <!--if productCardMod === 'product-card--promo'p.product-card__discount-label.discount-label <span class="visually-hidden">Скидка:</span> 
-                    --><img src="img/content/products/product-card-hb.jpg" srcset="img/content/products/product-card-hb@2x.jpg 2x" width="592" height="592" alt="Базовый пилатес курс">
+                    <div class="form__links-vertical">
+                      <div class="form__links-item"><span class="form__link-text">Не помните пароль?</span><a class="form__link" href="#">Восстановите пароль</a></div>
+                      <div class="form__links-item"><span class="form__link-text">Есть учетная запись?</span><a class="form__link" href="#"> Войдите</a></div>
+                    </div>
                   </div>
-                  <div class="product-card__text-wrapper">
-                    <div class="product-card__price-wrapper">
-                      <!--if productCardMod === 'product-card--club'+specialOffer(offersList)
-                      -->
-                      <!--if productCardMod === 'product-card--card'+cardOffer
-                      -->
-                      <div class="product-card__price-container">
-                        <p class="product-card__price"><span class="visually-hidden">Цена:</span> 2990 <span class="rouble">o</span></p>
-                      </div>
-                    </div>
-                    <h3 class="product-card__title">Базовый пилатес курс</h3>
-                  </div></a></div>
-            </li>
-            <li>
-              <div class="product-card"><a href="/" target="_blank" rel="nofollow noopener">
-                  <div class="product-card__img-wrapper">
-                    <!--if productCardMod === 'product-card--promo'p.product-card__discount-label.discount-label <span class="visually-hidden">Скидка:</span> 
-                    --><img src="img/content/products/product-card-hb-2.jpg" srcset="img/content/products/product-card-hb-2@2x.jpg 2x" width="592" height="592" alt="Базовый пилатес курс">
-                  </div>
-                  <div class="product-card__text-wrapper">
-                    <div class="product-card__price-wrapper">
-                      <!--if productCardMod === 'product-card--club'+specialOffer(offersList)
-                      -->
-                      <!--if productCardMod === 'product-card--card'+cardOffer
-                      -->
-                      <div class="product-card__price-container">
-                        <p class="product-card__price"><span class="visually-hidden">Цена:</span> 2990 <span class="rouble">o</span></p>
-                      </div>
-                    </div>
-                    <h3 class="product-card__title">Базовый пилатес курс</h3>
-                  </div></a></div>
-            </li>
-          </ul>
-        </section>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
+    <section class="modal-block is-active" data-modal="modal-5">
+      <div class="modal-block__content">
+        <div class="modal-block__close"> 
+          <button class="modal-block__close-button"></button>
+        </div>
+        <div class="modal-block__container">
+          <div class="modal-block__content-inner">
+            <div class="form form--reg">
+              <h2 class="form__title form__title--large">Регистрация</h2>
+              <form>
+                <div class="form__input">
+                  <label for="name">Имя</label>
+                  <input name="name" id="name" type="text" required="required"/>
+                </div>
+                <div class="form__input">
+                  <label for="email">Электронная почта</label>
+                  <input name="email" id="email" type="email" required="required"/>
+                </div>
+                <div class="form__footer">
+                  <div class="form__button">
+                    <button class="button button--full-width">Зарегистрироваться</button>
+                  </div>
+                  <div class="form__links-vertical">
+                    <div class="form__links-item"><span class="form__link-text">Не помните пароль?</span><a class="form__link" href="#">Восстановите пароль</a></div>
+                    <div class="form__links-item"><span class="form__link-text">Есть учетная запись?</span><a class="form__link" href="#"> Войдите</a></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </div>
