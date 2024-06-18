@@ -3180,7 +3180,7 @@ button,
   background-color: #f8f9fa;
   font-family: "Manrope", "Arial", sans-serif;
   padding-top: 24px;
-  padding-bottom: 132px !important;
+  padding-bottom: 124px !important;
 }
 
 .main__header {
@@ -7717,7 +7717,7 @@ button,
 
   .header--bottom-menu {
     position: fixed;
-    bottom: 32px;
+    bottom: 16px;
     z-index: 100;
     width: 100%;
     min-height: 0;
