@@ -1915,6 +1915,12 @@ button,
 
 .content-block {
   padding-top: 40px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .content-block--personal-area {
@@ -3174,7 +3180,7 @@ button,
   background-color: #f8f9fa;
   font-family: "Manrope", "Arial", sans-serif;
   padding-top: 24px;
-  padding-bottom: 140px !important;
+  padding-bottom: 132px !important;
 }
 
 .main__header {
@@ -9264,6 +9270,13 @@ button,
 
   .layout--grid-mod {
     grid-template-columns: 1fr;
+  }
+
+  .content-block {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .content-block {
