@@ -7221,7 +7221,7 @@ button,
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: calc(100% - 80px);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 1000;
@@ -7238,8 +7238,6 @@ button,
 
 .modal-block__container {
   width: 100%;
-  height: calc(100vh - 80px);
-  overflow-y: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 32px;
@@ -7251,10 +7249,12 @@ button,
   background-color: #ffffff;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  height: 100%;
 }
 
 .modal-block__content-wrapper {
   overflow-y: auto;
+  height: 100%;
 }
 
 .modal-block__content-inner {
