@@ -822,7 +822,7 @@
                     <button class="button button--rounded button--gradient">Зарегистрироваться</button>
                   </div>
                 </div>
-              </div><a href="#"></a><img src="img/content/products/pilates-player.jpg" srcset="img/content/products/pilates-player@2x.jpg 2x" width="1280" height="720" alt="pilates-player">
+              </div><a class="video__preview" href="#"><img src="img/content/products/pilates-player.jpg" srcset="img/content/products/pilates-player@2x.jpg 2x" width="1280" height="720" alt="pilates-player"></a>
             </div>
             <div class="video__description">
               <div class="video__description-header">
@@ -1030,29 +1030,31 @@
         <div class="modal-block__close"> 
           <button class="modal-block__close-button"></button>
         </div>
-        <div class="modal-block__container">
-          <div class="modal-block__content-inner">
-            <div class="form form--reg">
-              <h2 class="form__title form__title--large">Регистрация</h2>
-              <form>
-                <div class="form__input">
-                  <label for="name">Имя</label>
-                  <input name="name" id="name" type="text" required="required"/>
-                </div>
-                <div class="form__input">
-                  <label for="email">Электронная почта</label>
-                  <input name="email" id="email" type="email" required="required"/>
-                </div>
-                <div class="form__footer">
-                  <div class="form__button">
-                    <button class="button button--full-width">Зарегистрироваться</button>
+        <div class="modal-block__content-wrapper">
+          <div class="modal-block__container">
+            <div class="modal-block__content-inner">
+              <div class="form form--reg">
+                <h2 class="form__title form__title--large">Регистрация</h2>
+                <form>
+                  <div class="form__input">
+                    <label for="name">Имя</label>
+                    <input name="name" id="name" type="text" required="required"/>
                   </div>
-                  <div class="form__links-vertical">
-                    <div class="form__links-item"><span class="form__link-text">Не помните пароль?</span><a class="form__link" href="#">Восстановите пароль</a></div>
-                    <div class="form__links-item"><span class="form__link-text">Есть учетная запись?</span><a class="form__link" href="#"> Войдите</a></div>
+                  <div class="form__input">
+                    <label for="email">Электронная почта</label>
+                    <input name="email" id="email" type="email" required="required"/>
                   </div>
-                </div>
-              </form>
+                  <div class="form__footer">
+                    <div class="form__button">
+                      <button class="button button--full-width">Зарегистрироваться</button>
+                    </div>
+                    <div class="form__links-vertical">
+                      <div class="form__links-item"><span class="form__link-text">Не помните пароль?</span><a class="form__link" href="#">Восстановите пароль</a></div>
+                      <div class="form__links-item"><span class="form__link-text">Есть учетная запись?</span><a class="form__link" href="#"> Войдите</a></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
