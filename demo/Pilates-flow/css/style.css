@@ -7070,6 +7070,15 @@ button,
   color: #6C757D;
 }
 
+.button--shadow:hover {
+  color: #343a40;
+}
+
+.button--shadow:disabled {
+  cursor: default;
+  color: #ADB5BD;
+}
+
 .button--outline-gradient {
   display: flex;
   padding: 1px;
@@ -8303,6 +8312,26 @@ button,
 
 .field-promo input:active {
   opacity: 0.8;
+}
+
+.field-promo input::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.field-promo input::-moz-placeholder {
+  font-weight: 400;
+}
+
+.field-promo input:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.field-promo input::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.field-promo input::placeholder {
+  font-weight: 400;
 }
 
 .field-promo__button {
