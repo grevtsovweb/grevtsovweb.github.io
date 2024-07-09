@@ -7647,6 +7647,7 @@ button,
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
+  overflow-y: auto;
 }
 
 .my-activities__tabs-button {
@@ -7666,6 +7667,7 @@ button,
   border: none;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .my-activities__tabs-button:hover {
@@ -7673,27 +7675,51 @@ button,
   color: #ffffff;
 }
 
+.my-activities__tabs-button--courses .my-activities__tabs-button-icon {
+  background-image: url("../img/icon/icon-medal.svg");
+}
+
+.my-activities__tabs-button--courses:hover .my-activities__tabs-button-icon,
+.my-activities__tabs-button--courses.active .my-activities__tabs-button-icon {
+  background-image: url("../img/icon/icon-medal-white.svg");
+}
+
+.my-activities__tabs-button--weeks .my-activities__tabs-button-icon {
+  background-image: url("../img/icon/icon-calendar.svg");
+}
+
+.my-activities__tabs-button--weeks:hover .my-activities__tabs-button-icon,
+.my-activities__tabs-button--weeks.active .my-activities__tabs-button-icon {
+  background-image: url("../img/icon/icon-calendar-white.svg");
+}
+
+.my-activities__tabs-button--series .my-activities__tabs-button-icon {
+  background-image: url("../img/icon/icon-layer.svg");
+}
+
+.my-activities__tabs-button--series:hover .my-activities__tabs-button-icon,
+.my-activities__tabs-button--series.active .my-activities__tabs-button-icon {
+  background-image: url("../img/icon/icon-layer-white.svg");
+}
+
 .my-activities__tabs-button.active {
   background-color: #7C70FF;
   color: #ffffff;
-}
-
-.my-activities__tabs-button.active svg {
-  fill: #ffffff;
 }
 
 .my-activities__tabs-button-icon {
   width: 22px;
   height: 22px;
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   margin-right: 16px;
-}
-
-.my-activities__tabs-button-icon svg {
-  width: 100%;
-  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .my-activities__tabs-item {
@@ -11707,6 +11733,10 @@ button,
 
   .my-activities__tabs-buttons {
     margin-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
   .my-activities__tabs-button {
@@ -11716,6 +11746,10 @@ button,
     padding-bottom: 10px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .my-activities__tabs-button-icon {
+    display: none;
   }
 
   .my-activities__tabs-item {
