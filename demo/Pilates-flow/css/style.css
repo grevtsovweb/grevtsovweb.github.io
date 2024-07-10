@@ -1018,12 +1018,10 @@ button,
   border-radius: 24px;
   background-color: #ffffff;
   padding: 82px 201px;
-  margin-top: 20px;
 }
 
 .container--activity {
   background-color: #ffffff;
-  margin-top: 22px;
   border-radius: 24px;
   padding: 0 26px;
   padding-bottom: 44px;
@@ -1043,7 +1041,6 @@ button,
 
 .container--course-page-with-playlist {
   background-color: #ffffff;
-  margin-top: 24px;
   padding: 0 26px;
   padding-bottom: 50px;
   border-radius: 24px;
@@ -1079,7 +1076,6 @@ button,
 
 .container--favorites {
   background-color: #ffffff;
-  margin-top: 36px;
   padding: 26px 26px 26px 26px;
   border-radius: 24px;
   flex-grow: 1;
@@ -1088,7 +1084,6 @@ button,
 
 .container--product {
   background-color: #ffffff;
-  margin-top: 24px;
   padding: 0 130px 0 40px;
   padding-bottom: 50px;
   border-radius: 24px;
@@ -1116,7 +1111,6 @@ button,
 
 .container--my-flow {
   background-color: #ffffff;
-  margin-top: 23px;
   border-radius: 16px;
   padding: 24px 24px;
   border-top: 1px solid transparent;
@@ -3180,7 +3174,8 @@ button,
 }
 
 .rouble {
-  font-family: "Rouble", "Arial", sans-serif;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 500;
 }
 
 .workouts-video {
@@ -7351,6 +7346,7 @@ button,
 
 .personal-program {
   background-color: #ffffff;
+  position: relative;
   border-radius: 16px;
   padding: 32px;
   display: grid;
@@ -7438,6 +7434,16 @@ button,
   object-fit: cover;
 }
 
+.personal-program__link-mobile {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
 .bot-assistant {
   background: url("../img/content/background/sport-items.svg") no-repeat center;
   background-size: cover;
@@ -7502,6 +7508,7 @@ button,
 }
 
 .daily-list__item {
+  position: relative;
   flex: 1 1 0;
   background-color: #ffffff;
   border-radius: 16px;
@@ -7515,6 +7522,16 @@ button,
 
 .daily-list__item-header {
   margin-bottom: 24px;
+  position: relative;
+}
+
+.daily-list__item-header-link {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .daily-list__item-content {
@@ -8146,7 +8163,7 @@ button,
 .checkout-block__title {
   font-size: 25px;
   line-height: 1.15em;
-  margin-top: 0;
+  margin-top: 24px;
   margin-bottom: 0;
   font-weight: 600;
 }
@@ -8222,6 +8239,7 @@ button,
   font-size: 13px;
   line-height: 1.3em;
   font-weight: 500;
+  display: none;
 }
 
 .checkout-block__message-container {
@@ -8632,7 +8650,6 @@ button,
   }
 
   .container--product {
-    margin-top: 20px;
     padding: 0 40px;
   }
 
@@ -9104,7 +9121,7 @@ button,
   }
 
   .title.title--activity {
-    padding-bottom: 24px;
+    padding-bottom: 0;
   }
 
   .title.title--sub-title {
@@ -9323,7 +9340,10 @@ button,
   }
 
   .main__header {
-    padding: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .main__header--marathon-page-without-playlist-list {
@@ -10042,6 +10062,10 @@ button,
     height: 294px;
   }
 
+  .personal-program__link-mobile {
+    display: block;
+  }
+
   .bot-assistant__container {
     flex-direction: column;
     padding-left: 0;
@@ -10150,6 +10174,10 @@ button,
   .club-card-block__image {
     max-width: 245px;
   }
+
+  .checkout-block__message {
+    display: block;
+  }
 }
 
 @media (max-width: 1023px) and (max-width: 767px) {
@@ -10197,7 +10225,6 @@ button,
 
   .container--assistant-page {
     padding: 24px 10px;
-    margin-top: 35px;
   }
 
   .container--activity {
@@ -10259,7 +10286,6 @@ button,
 
   .container--my-flow {
     padding: 10px;
-    margin-top: 3px;
   }
 
   .header--bottom-menu .header__container {
@@ -10559,7 +10585,7 @@ button,
 
   .title.title--activity {
     font-size: 21px;
-    padding-bottom: 22px;
+    padding-bottom: 0;
   }
 
   .title.title--sub-title {
