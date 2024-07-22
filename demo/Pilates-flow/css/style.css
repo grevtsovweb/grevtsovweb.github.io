@@ -1127,6 +1127,12 @@ button,
   row-gap: 16px;
 }
 
+.container__my-account-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -7446,14 +7452,14 @@ button,
 .bot-assistant {
   background: url("../img/content/background/sport-items.svg") no-repeat center;
   background-size: cover;
-  padding-top: 64px;
-  padding-bottom: 64px;
   background-color: #ffffff;
   border-radius: 24px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 24px;
   padding-right: 24px;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 
 .bot-assistant__container {
@@ -7643,6 +7649,7 @@ button,
   padding-bottom: 40px;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 0;
 }
 
 .my-activities__header {
@@ -7744,6 +7751,15 @@ button,
   -webkit-column-gap: 16px;
   -moz-column-gap: 16px;
   column-gap: 16px;
+}
+
+.my-activities__content {
+  padding-bottom: 20px;
+}
+
+.my-activities__bot-section {
+  margin-left: -24px;
+  margin-right: -24px;
 }
 
 .price-block {
@@ -8672,6 +8688,11 @@ button,
   .container--my-flow {
     padding-top: 23px;
     margin-top: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .container__my-account-info {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -10067,6 +10088,11 @@ button,
 
   .personal-program__link-mobile {
     display: block;
+  }
+
+  .bot-assistant {
+    padding-bottom: 92px;
+    padding-top: 64px;
   }
 
   .bot-assistant__container {
@@ -11702,6 +11728,13 @@ button,
     padding-right: 16px;
   }
 
+  .bot-assistant {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+
   .bot-assistant__container {
     row-gap: 40px;
   }
@@ -11748,7 +11781,7 @@ button,
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 0;
   }
 
   .my-activities__header {
@@ -11785,6 +11818,11 @@ button,
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+  }
+
+  .my-activities__bot-section {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .my-account-personal__image {
