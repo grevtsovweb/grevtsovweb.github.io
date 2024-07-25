@@ -10317,6 +10317,11 @@ button,
     padding: 10px;
   }
 
+  .container__my-account-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .header--bottom-menu .header__container {
     padding: 2px;
   }
@@ -10653,6 +10658,10 @@ button,
 
   .account-header__text {
     padding-top: 0;
+  }
+
+  .my-account-header {
+    padding-left: 16px;
   }
 
   .my-account-header__cart {
@@ -11778,8 +11787,8 @@ button,
   }
 
   .my-activities {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 24px;
     padding-bottom: 0;
   }
@@ -11795,10 +11804,10 @@ button,
 
   .my-activities__tabs-buttons {
     margin-bottom: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 
   .my-activities__tabs-button {
