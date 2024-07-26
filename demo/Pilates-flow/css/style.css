@@ -2661,9 +2661,12 @@ button,
   line-height: 1.4em;
 }
 
+.course-card__image-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .course-card__image {
-  margin-left: 10px;
-  margin-right: 10px;
   aspect-ratio: 16/9;
   border-radius: 16px;
   overflow: hidden;
@@ -10444,7 +10447,7 @@ button,
   }
 
   .content-block--workout-list {
-    padding-top: 17px;
+    padding-top: 24px;
   }
 
   .content-block__header--workout-list {
@@ -11096,7 +11099,7 @@ button,
   }
 
   .introduction-block__header {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .introduction-block__slider-container {
@@ -11165,7 +11168,7 @@ button,
   }
 
   .workout-list-top-block {
-    padding: 20px 16px 20px 24px;
+    padding: 24px;
   }
 
   .workout-list-top-block h1 {
