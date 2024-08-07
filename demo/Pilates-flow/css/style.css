@@ -2645,6 +2645,7 @@ button,
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 .course-card__header {
@@ -3801,6 +3802,20 @@ button,
   font-weight: 500;
   color: #333333;
   margin-bottom: 0;
+}
+
+.video__description-header-points {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.video__description-header-points-title {
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #6c757d;
 }
 
 .video__description-header {
@@ -7533,15 +7548,6 @@ button,
   position: relative;
 }
 
-.daily-list__item-header-link {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
 .daily-list__item-content {
   margin-top: auto;
 }
@@ -7588,13 +7594,14 @@ button,
   max-width: 248px;
 }
 
-.daily-list__task-link {
+.daily-list__item-link {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 
 .daily-list__task-time {
@@ -8568,6 +8575,20 @@ button,
   font-size: 15px;
   line-height: normal;
   font-weight: 500;
+}
+
+.ticket {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#ee59c1), to(#64a6f9));
+  background: linear-gradient(90deg, #ee59c1 0%, #64a6f9 100%);
+  color: #ffffff;
+  border-radius: 50px;
 }
 
 @media (min-width: 1024px) {
@@ -10242,6 +10263,14 @@ button,
 }
 
 @media (max-width: 767px) {
+  .wrapper--app .header {
+    display: none;
+  }
+
+  .wrapper--app .main {
+    padding-bottom: 40px !important;
+  }
+
   .container--no-padding {
     padding: 0;
   }
