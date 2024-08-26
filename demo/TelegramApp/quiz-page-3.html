@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Telegram Mini App </title>
+    <meta name="description" content="Telegram Mini App">
+    <meta name="keywords" content="Telegram Mini App">
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__content">
+        <div class="quiz-section">
+          <div class="quiz-section__header">
+            <div class="quiz-section__header-steps">Шаг 3 из 3</div>
+            <div class="quiz-section__header-title">
+              <h1 class="title">Уведомления о тренировках</h1>
+              <p class="description">Выберите время, когда вам присылать новые упражения</p>
+            </div>
+          </div>
+          <form class="quiz-section__form" action="">
+            <input class="time-input" type="time" value="08:00" onfocus="this.showPicker()" disabled>
+            <label class="switch"><span class="switch__label">Получать уведомления</span>
+              <input type="checkbox"><span class="switch__checkbox-wrapper"><span class="switch__checkbox-toggle"></span></span>
+            </label>
+          </form>
+        </div>
+        <div class="app__button-panel"><a class="button button--full-width" href="#"><span class="button__text">Сохранить</span></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
