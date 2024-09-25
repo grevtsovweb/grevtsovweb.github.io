@@ -11,13 +11,17 @@
     <link rel="icon" type="image/svg" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preload" href="fonts/BBManualMonoProHeadline-SemiRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/BBManualMonoProHeadline-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/BBManualMonoProText-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page">
-    <div class="hero-section" id="main">
+    <div class="hero-section" id="hero">
+      <div class="hero-section__loader hero-section__loader">
+        <div class="hero-section__loader-bar hero-section__loader-bar--loading hero-section__loader-bar--js"></div>
+      </div>
       <div class="hero-section__header">
         <header class="header">
           <div class="header__container">
@@ -34,59 +38,80 @@
           </div>
         </header>
       </div>
-      <div class="hero-section__list hero-section__list--js">
-        <div class="hero-section__item-container hero-section__item-container--js">
-          <div class="hero-section__item hero-section__item--1 hero-section__item--js">
-            <div class="hero-section__container">
-              <div class="hero-section__content">
-                <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+      <div class="hero-section__list hero-section__list--js swiper">
+        <div class="hero-section__item-container hero-section__item-container--js swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-section__item hero-section__item--js">
+              <div class="hero-section__container">
+                <div class="hero-section__content">
+                  <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+                </div>
+                <div class="hero-section__image hero-section__image--1 parallax-image" data-speed="3"></div>
               </div>
             </div>
           </div>
-          <div class="hero-section__item hero-section__item--2 hero-section__item--js">
-            <div class="hero-section__container">
-              <div class="hero-section__content">
-                <p class="hero-section__text">Работники фонда помогут оказать вам психологическую поддержку,  если вы находитесь в трудной жизненной ситуации или у вас появляются депрессивные мысли.</p>
+          <div class="swiper-slide">
+            <div class="hero-section__item hero-section__item--js">
+              <div class="hero-section__container">
+                <div class="hero-section__content">
+                  <p class="hero-section__text">Работники фонда помогут оказать вам психологическую поддержку,  если вы находитесь в трудной жизненной ситуации или у вас появляются депрессивные мысли.</p>
+                </div>
+                <div class="hero-section__image hero-section__image--2 parallax-image" data-speed="3"></div>
               </div>
             </div>
           </div>
-          <div class="hero-section__item hero-section__item--3 hero-section__item--js">
-            <div class="hero-section__container">
-              <div class="hero-section__content">
-                <p class="hero-section__text">Работники фонда помогут оказать вам психологическую поддержку,  если вы находитесь в трудной жизненной ситуации или у вас появляются депрессивные мысли.</p>
+          <div class="swiper-slide">
+            <div class="hero-section__item hero-section__item--js">
+              <div class="hero-section__container">
+                <div class="hero-section__content">
+                  <p class="hero-section__text">Работники фонда помогут оказать вам психологическую поддержку,  если вы находитесь в трудной жизненной ситуации или у вас появляются депрессивные мысли.</p>
+                </div>
+              </div>
+              <div class="hero-section__image hero-section__image--3 parallax-image" data-speed="3"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-section__item hero-section__item--js">
+              <div class="hero-section__container">
+                <div class="hero-section__content">
+                  <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+                </div>
+                <div class="hero-section__image hero-section__image--4 parallax-image" data-speed="3"></div>
               </div>
             </div>
           </div>
-          <div class="hero-section__item hero-section__item--4 hero-section__item--js">
-            <div class="hero-section__container">
-              <div class="hero-section__content">
-                <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+          <div class="swiper-slide">
+            <div class="hero-section__item hero-section__item--js">
+              <div class="hero-section__container">
+                <div class="hero-section__content">
+                  <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+                </div>
+                <div class="hero-section__image hero-section__image--5 parallax-image" data-speed="3"></div>
               </div>
             </div>
           </div>
-          <div class="hero-section__item hero-section__item--5 hero-section__item--js">
-            <div class="hero-section__container">
-              <div class="hero-section__content">
-                <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+          <div class="swiper-slide">
+            <div class="hero-section__item hero-section__item--js">
+              <div class="hero-section__container">
+                <div class="hero-section__content">
+                  <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+                </div>
+                <div class="hero-section__image hero-section__image--6 parallax-image" data-speed="3"></div>
               </div>
             </div>
           </div>
-          <div class="hero-section__item hero-section__item--6 hero-section__item--js">
-            <div class="hero-section__container">
-              <div class="hero-section__content">
-                <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
-              </div>
-            </div>
-          </div>
-          <div class="hero-section__item hero-section__item--7 hero-section__item--js">
-            <div class="hero-section__container">
-              <div class="hero-section__content">
-                <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+          <div class="swiper-slide">
+            <div class="hero-section__item hero-section__item--js">
+              <div class="hero-section__container">
+                <div class="hero-section__content">
+                  <p class="hero-section__text">Благотворительный фонд помощи пострадавшим в&nbsp;результате боевых действий, беженцам, ветеранам и&nbsp;их&nbsp;семьям.</p>
+                </div>
+                <div class="hero-section__image hero-section__image--7 parallax-image" data-speed="3"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="hero-section__bullets hero-section__bullets--js"><a class="hero-section__bullets-link active" href="#">милость мира</a><a class="hero-section__bullets-link" href="#">психологическая помощь</a><a class="hero-section__bullets-link" href="#">материальная поддержка</a><a class="hero-section__bullets-link" href="#">помощь в реадаптации</a><a class="hero-section__bullets-link" href="#">помощь в трудоустройстве</a><a class="hero-section__bullets-link" href="#">юридическая помощь</a><a class="hero-section__bullets-link" href="#">духовная помощь</a></div>
+        <div class="swiper-pagination hero-section__bullets hero-section__bullets--js" tabindex><a class="hero-section__bullets-link active" href="#">милость мира</a><a class="hero-section__bullets-link" href="#">психологическая помощь</a><a class="hero-section__bullets-link" href="#">материальная поддержка</a><a class="hero-section__bullets-link" href="#">помощь в реадаптации</a><a class="hero-section__bullets-link" href="#">помощь в трудоустройстве</a><a class="hero-section__bullets-link" href="#">юридическая помощь</a><a class="hero-section__bullets-link" href="#">духовная помощь</a></div>
       </div>
       <div class="hero-section__nav">
             <ul class="nav">
@@ -97,24 +122,13 @@
               <li class="nav__item"><a class="nav__link" href="#contacts">контакты</a></li>
             </ul>
       </div>
-      <div class="hero-section__nav-mobile"> 
-        <div class="select">
-          <select class="select__input" id="select-help" name="" value="main"> 
-            <option value="main">главная</option>
-            <option value="about">о фонде</option>
-            <option value="partners">партнёры</option>
-            <option value="docs">отчёты и документы</option>
-            <option value="contacts">контакты</option>
-          </select>
-        </div>
-      </div>
     </div>
     <div class="offer-section">
       <div class="offer-section__container">
         <div class="donation-block">
           <h2 class="donation-block__header">благотворительное пожертвование</h2>
           <div class="donation-block__form-block">
-            <form class="donation-block__form-block" action="">
+            <form class="donation-block__form-block donation-block--js" action="">
               <div class="donation-block__form-radio">
                 <div class="radio-button">
                   <input class="radio-button__input" type="radio" value="250" id="250-1" name="donation-block">
@@ -160,6 +174,7 @@
           </div>
         </div>
       </div>
+      <div class="about-section__image parallax-image" data-speed="3"></div>
     </div>
     <div class="sponsor-section" id="sponsors">
       <div class="sponsor-section__container"> 
@@ -168,42 +183,61 @@
             <h2 class="sponsor-section__title">Попечители</h2>
           </div>
           <div class="sponsor-section__text">
-            <div class="sponsor-section__list">
-                  <div class="sponsor sponsor--js active">
-                    <div class="sponsor__image"> <img src="img/sponsors/1.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
-                    <div class="sponsor__data">
-                      <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
-                      <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+            <div class="sponsor-section__list sponsor-section__tab--js">
+              <div class="sponsor-section__tab-items">
+                    <div class="sponsor sponsor--js active">
+                      <div class="sponsor__image"> <img src="img/sponsors/1.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                      <div class="sponsor__data">
+                        <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
+                        <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="sponsor sponsor--js">
-                    <div class="sponsor__image"> <img src="img/sponsors/2.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
-                    <div class="sponsor__data">
-                      <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
-                      <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                    <div class="sponsor sponsor--js">
+                      <div class="sponsor__image"> <img src="img/sponsors/2.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                      <div class="sponsor__data">
+                        <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
+                        <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="sponsor sponsor--js">
-                    <div class="sponsor__image"> <img src="img/sponsors/3.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
-                    <div class="sponsor__data">
-                      <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
-                      <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                    <div class="sponsor sponsor--js">
+                      <div class="sponsor__image"> <img src="img/sponsors/3.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                      <div class="sponsor__data">
+                        <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
+                        <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="sponsor sponsor--js">
-                    <div class="sponsor__image"> <img src="img/sponsors/4.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
-                    <div class="sponsor__data">
-                      <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
-                      <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                    <div class="sponsor sponsor--js">
+                      <div class="sponsor__image"> <img src="img/sponsors/4.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                      <div class="sponsor__data">
+                        <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
+                        <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="sponsor sponsor--js">
-                    <div class="sponsor__image"> <img src="img/sponsors/5.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
-                    <div class="sponsor__data">
-                      <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
-                      <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                    <div class="sponsor sponsor--js">
+                      <div class="sponsor__image"> <img src="img/sponsors/5.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                      <div class="sponsor__data">
+                        <div class="sponsor__name">Дейнес Серафим Юрьевич</div>
+                        <div class="sponsor__info">Исполнительный директор и основатель БФ “Милость Мира”. Священник РПЦ, настоятель храма Спас на Каменке.</div>
+                      </div>
                     </div>
-                  </div>
+              </div>
+              <div class="sponsor-section__tab-thumbs">
+                    <div class="sponsor-thumb sponsor-thumb--js active">
+                      <div class="sponsor-thumb__image"> <img src="img/sponsors/1.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                    </div>
+                    <div class="sponsor-thumb sponsor-thumb--js">
+                      <div class="sponsor-thumb__image"> <img src="img/sponsors/2.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                    </div>
+                    <div class="sponsor-thumb sponsor-thumb--js">
+                      <div class="sponsor-thumb__image"> <img src="img/sponsors/3.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                    </div>
+                    <div class="sponsor-thumb sponsor-thumb--js">
+                      <div class="sponsor-thumb__image"> <img src="img/sponsors/4.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                    </div>
+                    <div class="sponsor-thumb sponsor-thumb--js">
+                      <div class="sponsor-thumb__image"> <img src="img/sponsors/5.jpg" alt="Дейнес Серафим Юрьевич" width="64" height="64"></div>
+                    </div>
+              </div>
             </div>
           </div>
         </div>
@@ -226,7 +260,7 @@
                   </div>
                 </div>
                 <div class="program-card__button"> 
-                  <button class="button">узнать подробности</button>
+                  <button class="button" data-fancybox data-src="#more-modal">узнать подробности</button>
                 </div>
               </article>
               <article class="program-card">
@@ -237,7 +271,7 @@
                   </div>
                 </div>
                 <div class="program-card__button"> 
-                  <button class="button">узнать подробности</button>
+                  <button class="button" data-fancybox data-src="#more-modal">узнать подробности</button>
                 </div>
               </article>
             </div>
@@ -328,6 +362,7 @@
           </div>
         </div>
       </div>
+      <div class="docs-section__image parallax-image" data-speed="3"></div>
     </div>
     <div class="contacts-section" id="contacts">
       <div class="contacts-section__container"> 
@@ -394,7 +429,7 @@
             <div class="modal__donation-block">
               <div class="donation-block">
                 <div class="donation-block__form-block">
-                  <form class="donation-block__form-block">
+                  <form class="donation-block__form-block donation-block--js" action="#">
                     <div class="donation-block__form-radio">
                       <div class="radio-button">
                         <input class="radio-button__input" type="radio" value="250" id="250-2" name="donation-block">
@@ -418,10 +453,10 @@
                       </div>
                     </div>
                     <div class="donation-block__form-button">
-                              <div class="radio">
-                                <input id="modal-radio" name="modal-radio" type="checkbox">
-                                <label class="radio__label" for="modal-radio">Соглашаюсь с условиями оферты</label>
-                              </div>
+                          <div class="radio">
+                            <input id="modal-radio" name="modal-radio" type="checkbox">
+                            <label class="radio__label" for="modal-radio">Соглашаюсь с условиями оферты</label>
+                          </div>
                       <button class="button" disabled>помочь</button>
                     </div>
                   </form>
@@ -432,9 +467,7 @@
           <div class="modal__tab-item">
             <div class="modal__volunteer-block">
               <p class="modal__volunteer-text">Заполните анкету по ссылке в гугл-форме. Мы вернёмся с ответом в течение 7 дней.</p>
-              <div class="donation-block__form-button">
-                <button class="button">помочь</button>
-              </div>
+              <div class="donation-block__form-button"><a class="button" href="#">помочь</a></div>
             </div>
           </div>
         </div>
@@ -456,8 +489,8 @@
                 <select class="select__input" id="select-help" name="help" value="1"> 
                   <option value="1">психологическая помощь</option>
                   <option value="2">материальная поддержка</option>
-                  <option value="3">помощь В реадаптации</option>
-                  <option value="4">помощь В трудоустройстве</option>
+                  <option value="3">помощь в реадаптации</option>
+                  <option value="4">помощь в трудоустройстве</option>
                   <option value="5">юридическая помощь</option>
                   <option value="6">духовная помощь</option>
                 </select>
@@ -476,10 +509,48 @@
         <div class="modal__header-mobile-logo"> <img src="img/logo/logo.svg" alt="Милость мира" width="82" height="32"></div>
       </div>
       <div class="modal__content">
-        <div class="modal__mobile-links modal__mobile-links--js"><a class="modal__mobile-link active" href="#">Милость Мира</a><a class="modal__mobile-link" href="#">Психологическая Помощь</a><a class="modal__mobile-link" href="#">Материальная Поддержка</a><a class="modal__mobile-link" href="#">Помощь В Реадаптации</a><a class="modal__mobile-link" href="#">Помощь В Трудоустройстве</a><a class="modal__mobile-link" href="#">Юридическая Помощь</a><a class="modal__mobile-link" href="#">Духовная Помощь</a></div>
+        <div class="modal__mobile-links modal__mobile-links--js"><a class="modal__mobile-link" href="#hero">главная</a><a class="modal__mobile-link" href="#partners">партнёры</a><a class="modal__mobile-link" href="#docs">отчёты и документы</a><a class="modal__mobile-link" href="#contacts">контакты</a></div>
         <div class="modal__mobile-buttons"> 
           <button class="button" data-fancybox data-src="#help-modal">хочу помочь</button>
           <button class="button button--secondary" data-fancybox data-src="#need-help-modal">нужна помощь</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--js modal--more" id="more-modal" style="display: none;">
+      <div class="modal__header-mobile">
+        <div class="modal__header-mobile-logo"> <img src="img/logo/logo.svg" alt="Checked" width="82" height="32"></div>
+      </div>
+      <div class="modal__content">
+        <div class="modal__header"> 
+          <h3 class="modal__title">Лети! мы поможем</h3>
+        </div>
+        <div class="modal__description">
+          <p>Благотворительный фонд “Милость мира” создан в июле 2023 года иереем Серафимом Дейнесом, настоятелем храма в честь Воздвижения Честного и Животворящего Крестя Господня. Цель фонда — помочь ветеранам боевых действий, членам их семей и пострадавшим от боевых действий мирным жителям.</p>
+        </div>
+        <div class="modal__file-upload">
+          <form action="#" enctype="multipart/form-data"><div class="upload-files-container">
+    <div class="drag-file-area">
+        <div class="upload-icon"></div>
+        <p class="dynamic-message">Перетащите изображение сюда</h3>
+    </div>
+    <label class="label">   
+        <span class="browse-files"> 
+            <input type="file" class="default-file-input"/> 
+            <span class="browse-files-text">Прикрепить файл</span> 
+        </span> 
+    </label>
+        <span class="cannot-upload-message">Прикрепите файл<span class="cancel-alert-button">Закрыть</span> </span>
+    <div class="file-block">
+        <div class="file-info"> 
+            <span class="file-name"> </span> | <span class="file-size">  </span> 
+        </div>
+        <span class="remove-file-icon">Удалить</span>
+        <div class="progress-bar"> </div>
+    </div>
+    <button type="button" class="button upload-button" disabled>готово</button>
+</div>
+
+          </form>
         </div>
       </div>
     </div>

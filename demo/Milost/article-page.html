@@ -118,7 +118,7 @@
         <div class="donation-block">
           <h2 class="donation-block__header">благотворительное пожертвование</h2>
           <div class="donation-block__form-block">
-            <form class="donation-block__form-block" action="">
+            <form class="donation-block__form-block donation-block--js" action="">
               <div class="donation-block__form-radio">
                 <div class="radio-button">
                   <input class="radio-button__input" type="radio" value="250" id="250-1" name="donation-block">
@@ -172,7 +172,7 @@
             <div class="modal__donation-block">
               <div class="donation-block">
                 <div class="donation-block__form-block">
-                  <form class="donation-block__form-block">
+                  <form class="donation-block__form-block donation-block--js" action="#">
                     <div class="donation-block__form-radio">
                       <div class="radio-button">
                         <input class="radio-button__input" type="radio" value="250" id="250-2" name="donation-block">
@@ -196,10 +196,10 @@
                       </div>
                     </div>
                     <div class="donation-block__form-button">
-                              <div class="radio">
-                                <input id="modal-radio" name="modal-radio" type="checkbox">
-                                <label class="radio__label" for="modal-radio">Соглашаюсь с условиями оферты</label>
-                              </div>
+                          <div class="radio">
+                            <input id="modal-radio" name="modal-radio" type="checkbox">
+                            <label class="radio__label" for="modal-radio">Соглашаюсь с условиями оферты</label>
+                          </div>
                       <button class="button" disabled>помочь</button>
                     </div>
                   </form>
@@ -210,9 +210,7 @@
           <div class="modal__tab-item">
             <div class="modal__volunteer-block">
               <p class="modal__volunteer-text">Заполните анкету по ссылке в гугл-форме. Мы вернёмся с ответом в течение 7 дней.</p>
-              <div class="donation-block__form-button">
-                <button class="button">помочь</button>
-              </div>
+              <div class="donation-block__form-button"><a class="button" href="#">помочь</a></div>
             </div>
           </div>
         </div>
@@ -234,8 +232,8 @@
                 <select class="select__input" id="select-help" name="help" value="1"> 
                   <option value="1">психологическая помощь</option>
                   <option value="2">материальная поддержка</option>
-                  <option value="3">помощь В реадаптации</option>
-                  <option value="4">помощь В трудоустройстве</option>
+                  <option value="3">помощь в реадаптации</option>
+                  <option value="4">помощь в трудоустройстве</option>
                   <option value="5">юридическая помощь</option>
                   <option value="6">духовная помощь</option>
                 </select>
@@ -254,7 +252,7 @@
         <div class="modal__header-mobile-logo"> <img src="img/logo/logo.svg" alt="Милость мира" width="82" height="32"></div>
       </div>
       <div class="modal__content">
-        <div class="modal__mobile-links modal__mobile-links--js"><a class="modal__mobile-link active" href="#">Милость Мира</a><a class="modal__mobile-link" href="#">Психологическая Помощь</a><a class="modal__mobile-link" href="#">Материальная Поддержка</a><a class="modal__mobile-link" href="#">Помощь В Реадаптации</a><a class="modal__mobile-link" href="#">Помощь В Трудоустройстве</a><a class="modal__mobile-link" href="#">Юридическая Помощь</a><a class="modal__mobile-link" href="#">Духовная Помощь</a></div>
+        <div class="modal__mobile-links modal__mobile-links--js"><a class="modal__mobile-link" href="#hero">главная</a><a class="modal__mobile-link" href="#partners">партнёры</a><a class="modal__mobile-link" href="#docs">отчёты и документы</a><a class="modal__mobile-link" href="#contacts">контакты</a></div>
         <div class="modal__mobile-buttons"> 
           <button class="button" data-fancybox data-src="#help-modal">хочу помочь</button>
           <button class="button button--secondary" data-fancybox data-src="#need-help-modal">нужна помощь</button>
