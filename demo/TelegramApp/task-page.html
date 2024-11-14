@@ -29,11 +29,20 @@
               <p class="text">Получите ссылку на актуальное задание в чат с ботом.</p>
             </div>
             <div class="task-section__card-list"> 
-              <div class="task-card"><a class="task-card__link" href="#"></a>
-                <div class="task-card__thumb-image"><img src="img/task-card/thumb.jpg" alt="Упражнение для лопаток"></div>
+              <div class="task-card" tabindex>
+                <div class="task-card__thumb-image"><img src="img/task-card/thumb.webp" alt="Упражнение для лопаток"><span class="task-card__complete-indicator"><span class="task-card__complete-indicator-icon">
+                                    <svg aria-hidden="true" width="20" height="20">
+                                      <use xlink:href="img/sprite/sprite.svg#check-circle"></use>
+                                    </svg></span></span></div>
                 <div class="task-card__content">
-                  <div class="task-card__title">Класс для устранения скованности в лопатках</div>
-                  <div class="task-card__time">8 минут</div>
+                  <div class="task-card__title">Гибкость запястий</div>
+                  <div class="task-card__time"> 
+                    <div class="task-card__time-icon"> 
+                                    <svg aria-hidden="true" width="16" height="16">
+                                      <use xlink:href="img/sprite/sprite.svg#clock"></use>
+                                    </svg>
+                    </div>8 минут
+                  </div>
                 </div>
               </div>
             </div>
@@ -52,19 +61,27 @@
           <div class="nav-bar"> 
             <button class="nav-bar__item active">
               <div class="nav-bar__item-icon">
-                <svg aria-hidden="true" width="24" height="24">
-                  <use xlink:href="img/sprite/sprite.svg#clipboard-notes"></use>
-                </svg>
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#clipboard-notes"></use>
+                              </svg>
               </div>
               <div class="nav-bar__item-label">Задания</div>
             </button>
             <button class="nav-bar__item">
               <div class="nav-bar__item-icon">
-                <svg aria-hidden="true" width="24" height="24">
-                  <use xlink:href="img/sprite/sprite.svg#gift"></use>
-                </svg>
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#gift"></use>
+                              </svg>
               </div>
               <div class="nav-bar__item-label">Подарки</div>
+            </button>
+            <button class="nav-bar__item">
+              <div class="nav-bar__item-icon">
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#external-link"></use>
+                              </svg>
+              </div>
+              <div class="nav-bar__item-label">Аккаунт</div>
             </button>
           </div>
         </div>
