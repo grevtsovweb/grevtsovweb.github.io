@@ -9,14 +9,52 @@
     <meta name="keywords" content="Telegram Mini App">
   </head>
   <body>
+    <style type="text/css">
+      li {
+          padding-top: 8px;
+          padding-bottom: 8px;
+      }
+      
+      a {
+          color: #000000;
+          text-decoration: none;
+      }
+      
+      ul, ol {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-right: 16px;
+      }
+      
+      .new {
+          background-color: #e0ffe6;
+      }
+    </style>
     <ol>
       <li><a href="loading-page.html">Экран загрузки </a></li>
       <li><a href="greeting-page.html">Страница приветствия</a></li>
       <li><a href="index.html">Главная </a></li>
-      <li><a href="gift-page.html">Подарки</a></li>
-      <li><a href="task-page.html">Задание на сегодня (Old)</a></li>
-      <li><a href="task-page-v2.html">Задание на сегодня V2 (New)</a></li>
-      <li><a href="task-page-v3.html">Задание на сегодня V3 (Видео) (New)</a></li>
+      <li class="new"><a href="gift-page-v2.html">Подарки страница</a>
+        <ul> 
+          <li> <a href="bottom-sheet-subscribe.html">Подарок (За подписку)</a>
+            <ul> 
+              <li> <a href="bottom-sheet-subscribe-checking.html"> Подарок (За подписку) / Начать проверку</a></li>
+              <li> <a href="bottom-sheet-subscribe-processing.html"> Подарок (За подписку) /Процесс проверки</a></li>
+              <li> <a href="bottom-sheet-subscribe-success.html">Подарок (За подписку) / Успешно, забрать подарок</a></li>
+            </ul>
+          </li>
+          <li> <a href="bottom-sheet-club-card.html">Подарок за Email</a>
+            <ul> 
+              <li> <a href="gift-page-success-mail.html"> Уведомление "Подарок отправлен"</a></li>
+            </ul>
+          </li>
+          <li> <a href="bottom-sheet-flow-3-days.html">Подарки "3 дня в потоке"</a></li>
+          <li> <a href="bottom-sheet-flow-5-days.html">Подарки "5 дней в потоке"</a></li>
+          <li> <a href="bottom-sheet-flow-7-days.html">Подарки "7 дней в потоке"</a></li>
+        </ul>
+      </li>
+      <li class="new"><a href="product-page.html">Продукты</a></li>
+      <li><a href="task-page-v2.html">Задание на сегодня</a></li>
       <li><a href="workout-page.html">Видео упражнение</a></li>
       <li><a href="quiz-page-1.html">Вопрос 1</a></li>
       <li><a href="quiz-page-2.html">Вопрос 2</a></li>

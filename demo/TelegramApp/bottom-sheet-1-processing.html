@@ -9,7 +9,7 @@
     <meta name="description" content="Telegram Mini App">
     <meta name="keywords" content="Telegram Mini App">
   </head>
-  <body>
+  <body style="overflow: hidden;">
     <div class="app">
       <div class="app__content">
         <div class="task-section">
@@ -25,10 +25,7 @@
             </div>
           </div>
           <div class="task-section__current-task">
-            <div class="jumbo-card">
-              <div class="jumbo-card__video">   
-                <video src="video/video.mp4" type="video/mp4" autoplay loop muted playsinline> </video>
-              </div>
+            <div class="jumbo-card" style="background-image: url('img/jumbo-card/day-1.webp')">
               <div class="jumbo-card__content">
                 <div class="jumbo-card__description"> 
                   <div class="jumbo-card__description-header">
@@ -212,6 +209,51 @@
                   </div>
                   <div class="lesson-card__content-description">Супер-серии из сочетания двух классов для устранения дискомфорта </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-sheet__overlay active">
+          <div class="bottom-sheet active">
+            <button class="bottom-sheet__close-button">
+                            <svg aria-hidden="true" width="16" height="16">
+                              <use xlink:href="img/sprite/sprite.svg#multiply"></use>
+                            </svg>
+            </button>
+            <div class="achieve-section">
+              <div class="achieve-section__image" style="background-image: url('img/achieve/food.webp')"></div>
+              <div class="achieve-section__content">
+                <div class="achieve-section__header"> 
+                  <div class="achieve-section__title">
+                    <div class="title title--l">Рационы питания</div>
+                  </div>
+                  <div class="achieve-section__header-label">
+                    <div class="chips">
+                      <div class="chips__icon">
+                                      <svg aria-hidden="true" width="16" height="16">
+                                        <use xlink:href="img/sprite/sprite.svg#telegram"></use>
+                                      </svg>
+                      </div>
+                      <div class="chips__text">Нужна подписка</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="achieve-section__about">
+                  <div class="achieve-section__about-header">
+                    <div class="title title--m">О подарке</div>
+                  </div>
+                  <ul class="achieve-section__about-list">
+                    <li class="achieve-section__about-list-item">Рацион здорового человека, включающий все пищевые группы.</li>
+                    <li class="achieve-section__about-list-item">Рацион сбалансирован и учитывает потребности организма в основных микро и макроэлементах ( витаминах и минералах, а также жирах, белках и углеводах)</li>
+                    <li class="achieve-section__about-list-item">Помимо этого, содержимое вашей тарелки будет способствовать формированию здоровой и разнообразной микрофлоры кишечника!</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="achieve-section__footer-fixed"> 
+                            <button class="button button--full-width button--processing" href="#" disabled><span class="button__text">Проверяем…</span><span class="button__icon">
+                                              <svg aria-hidden="true" width="20" height="20">
+                                                <use xlink:href="img/sprite/sprite.svg#loader"></use>
+                                              </svg></span></button>
               </div>
             </div>
           </div>
