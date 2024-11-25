@@ -11,10 +11,24 @@
   <body>
     <div class="app">
       <div class="app__content">
-        <div class="intro-section">
-          <div class="intro-section__image"><img srcset="img/intro-section/intro@3x.webp 3x" src="img/intro-section/intro@2x.webp" alt="Подтянутое тело и королевская осанка"></div>
-          <div class="intro-section__title"> 
-            <h1 class="title">Ответьте на 3 простых вопроса, мы адаптируем марафон под вас!</h1>
+        <div class="greeting-section">
+          <div class="greeting-section__video">   
+            <video src="video/video.mp4" type="video/mp4" autoplay loop muted playsinline> </video>
+          </div>
+          <div class="greeting-section__dialog">
+            <div class="greeting-dialog">
+              <div class="greeting-dialog__body">
+                <div class="greeting-dialog__avatar"> <img src="img/avatar/avatar.webp" alt="Елена Еленина"></div>
+                <div class="greeting-dialog__text"> 
+                  <h1 class="title title--inverse">Здравствуйте, Елена</h1>
+                  <p class="text text--secondary-inverse">Ответьте на 3 простых вопроса, мы адаптируем марафон под вас</p>
+                </div>
+              </div>
+              <div class="greeting-dialog__footer"> 
+                <button class="button" href="#"><span class="button__text">Давайте начнем!</span></button>
+                <button class="button button--tertiary-inverse" href="#"><span class="button__text">Пропустить</span></button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="app__button-panel">
