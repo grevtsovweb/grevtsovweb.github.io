@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{new Swiper(".calendar-section__block-slider--js",{loop:!1,spaceBetween:16,slidesPerView:"1.1"})}));

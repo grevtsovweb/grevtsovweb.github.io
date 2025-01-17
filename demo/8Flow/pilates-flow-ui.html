@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Telegram Mini App </title>
+    <meta name="description" content="Telegram Mini App">
+    <meta name="keywords" content="Telegram Mini App">
+  </head>
+  <body>
+    <button class="button"><span class="button__text">Начать занятие</span></button>
+    <button class="button button--secondary"><span class="button__text">Начать занятие</span></button>
+    <button class="button button--secondary-positive"><span class="button__text">Начать занятие</span></button>
+    <div class="tabs"> 
+      <button class="tabs__button active">1 неделя</button>
+      <button class="tabs__button">2 неделя</button>
+      <button class="tabs__button">3 неделя</button>
+      <button class="tabs__button">4 неделя</button>
+      <button class="tabs__button">5 неделя</button>
+    </div>
+    <div class="exercise-day">
+      <div class="exercise-day__date"><span>1 </span><span class="exercise-day__date-text">день</span></div>
+      <div class="exercise-card__block">
+        <div class="exercise-card">
+          <div class="exercise-card__data">
+            <div class="exercise-card__data-title">Супер-серия</div>
+            <div class="exercise-card__data-time">20 мин</div>
+          </div>
+          <div class="exercise-card__list">
+            <div class="exercise-card__item" tabindex="tabindex"><a class="exercise-card__item-link" href="#"> </a><span class="exercise-card__item-thumb"> <img src="img/exercise/exercise.webp" alt="Улучшаем подвижность позвоночника"/></span><span class="exercise-card__item-title">Улучшаем подвижность позвоночника </span></div>
+            <div class="exercise-card__item" tabindex="tabindex"><a class="exercise-card__item-link" href="#"> </a><span class="exercise-card__item-thumb"> <img src="img/exercise/exercise.webp" alt="Улучшаем подвижность позвоночника"/></span><span class="exercise-card__item-title">Гибкость и баланс</span></div>
+          </div>
+          <div class="exercise-card__button">
+            <button class="button button--full-width button--l"><span class="button__text">Выполнить</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="exercise-day">
+      <div class="exercise-day__date"><span>1 </span><span class="exercise-day__date-text">день</span></div>
+      <div class="exercise-card__block">
+        <div class="exercise-card exercise-card--complete">
+          <div class="exercise-card__data">
+            <div class="exercise-card__data-title">Супер-серия</div>
+            <div class="exercise-card__data-time">20 мин</div>
+          </div>
+          <div class="exercise-card__list">
+            <div class="exercise-card__item" tabindex="tabindex"><a class="exercise-card__item-link" href="#"> </a><span class="exercise-card__item-thumb"> <span class="exercise-card__item-done"><span class="exercise-card__item-done-icon">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#check-circle"></use>
+                    </svg></span></span><img src="img/exercise/exercise.webp" alt="Улучшаем подвижность позвоночника"/></span><span class="exercise-card__item-title">Улучшаем подвижность позвоночника </span></div>
+            <div class="exercise-card__item" tabindex="tabindex"><a class="exercise-card__item-link" href="#"> </a><span class="exercise-card__item-thumb"> <span class="exercise-card__item-done"><span class="exercise-card__item-done-icon">
+                    <svg aria-hidden="true" width="24" height="24">
+                      <use xlink:href="img/sprite/sprite.svg#check-circle"></use>
+                    </svg></span></span><img src="img/exercise/exercise.webp" alt="Улучшаем подвижность позвоночника"/></span><span class="exercise-card__item-title">Гибкость и баланс</span></div>
+          </div>
+          <div class="exercise-card__button">
+            <button class="button button--secondary-positive button--full-width button--l" href="#"><span class="button__text">Выполнить</span><span class="button__icon">
+                <svg aria-hidden="true" width="20" height="20">
+                  <use xlink:href="img/sprite/sprite.svg#check"></use>
+                </svg></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar"> 
+      <button class="nav-bar__item active">
+        <div class="nav-bar__item-icon">
+          <svg aria-hidden="true" width="24" height="24">
+            <use xlink:href="img/sprite/sprite.svg#clipboard-notes"></use>
+          </svg>
+        </div>
+        <div class="nav-bar__item-label">Анонсы</div>
+      </button>
+      <button class="nav-bar__item">
+        <div class="nav-bar__item-icon">
+          <svg aria-hidden="true" width="24" height="24">
+            <use xlink:href="img/sprite/sprite.svg#layers"></use>
+          </svg>
+        </div>
+        <div class="nav-bar__item-label">Календарь</div>
+      </button>
+      <button class="nav-bar__item">
+        <div class="nav-bar__item-icon">
+          <svg aria-hidden="true" width="24" height="24">
+            <use xlink:href="img/sprite/sprite.svg#user"></use>
+          </svg>
+        </div>
+        <div class="nav-bar__item-label">Аккаунт</div>
+      </button>
+    </div>
+    <div class="coach-block">
+      <div class="coach-block__header"> 
+        <div class="coach-block__title">Коуч-сессия </div>
+        <div class="coach-block__date">15 ноября</div>
+      </div>
+      <div class="coach-block__description">Для быстрого и эффективного достижения целей заполните небольшую анкету и программа будет адаптированна на основе ваших данных.</div>
+      <div class="coach-block__button"> 
+        <button class="button button--full-width"><span class="button__text">Пройти коуч-сессию</span></button>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-card__title">43</div>
+      <div class="info-card__subtitle">дня в потоке</div>
+    </div>
+  </body>
+</html>

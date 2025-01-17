@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Telegram Mini App </title>
+    <meta name="description" content="Telegram Mini App">
+    <meta name="keywords" content="Telegram Mini App">
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__content">
+        <div class="account-section">
+          <div class="account-section__header">
+            <div class="avatar-label-group">
+              <div class="avatar-label-group__avatar"><img src="img/avatar/avatar.webp" alt="Елена"></div>
+              <div class="avatar-label-group__info">
+                <div class="avatar-label-group__name">Светлана Грин</div>
+              </div>
+            </div>
+          </div>
+          <div class="account-section__nav-list"> <a class="account-section__nav-item" href="#"><span class="account-section__nav-item-content"><span class="account-section__nav-item-icon"> 
+                  <svg aria-hidden="true" width="20" height="20">
+                    <use xlink:href="img/sprite/sprite.svg#comment-question"></use>
+                  </svg></span>Задать вопрос</span><span class="account-section__nav-item-chevron"> 
+                <svg aria-hidden="true" width="20" height="20">
+                  <use xlink:href="img/sprite/sprite.svg#angle-right"></use>
+                </svg></span></a></div>
+          <div class="account-section__block">
+            <div class="account-section__block-header"> 
+              <h1 class="title">Подарки</h1>
+            </div>
+            <div class="account-section__block-list">
+              <div class="offer-card offer-card--food" tabindex><a class="offer-card__link" href="#"> </a>
+                <div class="offer-card__content">
+                  <div class="offer-card__header"> 
+                    <div class="offer-card__title">Сбалансированные рационы питания за подписку на 8Flow</div>
+                  </div>
+                  <div class="offer-card__button">Забрать подарок</div>
+                </div>
+              </div>
+              <div class="offer-card offer-card--card" tabindex><a class="offer-card__link" href="#"> </a>
+                <div class="offer-card__content">
+                  <div class="offer-card__header"> 
+                    <div class="offer-card__title">Пробный доступ по клубной карте на 3 дня</div>
+                  </div>
+                  <div class="offer-card__button">Забрать подарок</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-sheet__overlay active">
+          <div class="bottom-sheet active">
+            <button class="bottom-sheet__close-button">
+              <svg aria-hidden="true" width="16" height="16">
+                <use xlink:href="img/sprite/sprite.svg#multiply"></use>
+              </svg>
+            </button>
+            <div class="achieve-section">
+              <div class="achieve-section__image" style="background-image: url('img/product/telegram.webp')"></div>
+              <div class="achieve-section__content">
+                <div class="achieve-section__header"> 
+                  <div class="achieve-section__title">
+                    <div class="title">Присоединяйтесь к сообществу Pilates Flow</div>
+                  </div>
+                  <p class="description">В сообществе показываем, как эффективно решить проблемы со спиной и создать подтянутое тело.</p>
+                </div>
+                <div class="achieve-section__block">
+                  <div class="achieve-section__block-header">
+                    <div class="title">Получите рационы питания в подарок при подписке</div>
+                  </div>
+                  <ul>
+                    <li>Полноценный недельный рацион, включающий в себя все пищевые группы.</li>
+                    <li>Рацион сбалансирован и учитывает потребности организма в основных микро и макроэлементах (витаминах и минералах, а также жирах, белках и углеводах)</li>
+                    <li>Формирование здоровой и разнообразной микрофлоры кишечника начинается со сбалансированного питания.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="achieve-section__footer-fixed"> 
+                <button class="button button--full-width button--processing" href="#" disabled="disabled"><span class="button__text">Проверяем</span><span class="button__icon">
+                    <svg aria-hidden="true" width="20" height="20">
+                      <use xlink:href="img/sprite/sprite.svg#loader"></use>
+                    </svg></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__nav-bar">
+        <div class="app__nav-bar-content">
+          <div class="nav-bar"> 
+            <button class="nav-bar__item active">
+              <div class="nav-bar__item-icon">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#clipboard-notes"></use>
+                </svg>
+              </div>
+              <div class="nav-bar__item-label">Анонсы</div>
+            </button>
+            <button class="nav-bar__item">
+              <div class="nav-bar__item-icon">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#layers"></use>
+                </svg>
+              </div>
+              <div class="nav-bar__item-label">Календарь</div>
+            </button>
+            <button class="nav-bar__item">
+              <div class="nav-bar__item-icon">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <div class="nav-bar__item-label">Аккаунт</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

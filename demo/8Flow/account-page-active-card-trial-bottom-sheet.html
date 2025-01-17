@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Telegram Mini App </title>
+    <meta name="description" content="Telegram Mini App">
+    <meta name="keywords" content="Telegram Mini App">
+  </head>
+  <body>
+    <div class="app">
+      <div class="app__content">
+        <div class="account-section">
+          <div class="account-section__header">
+            <div class="avatar-label-group">
+              <div class="avatar-label-group__avatar"><img src="img/avatar/avatar.webp" alt="Елена"></div>
+              <div class="avatar-label-group__info">
+                <div class="avatar-label-group__name">Светлана Грин</div>
+              </div>
+            </div>
+          </div>
+          <div class="account-section__nav-list"> <a class="account-section__nav-item" href="#"><span class="account-section__nav-item-content"><span class="account-section__nav-item-icon"> 
+                  <svg aria-hidden="true" width="20" height="20">
+                    <use xlink:href="img/sprite/sprite.svg#comment-question"></use>
+                  </svg></span>Задать вопрос</span><span class="account-section__nav-item-chevron"> 
+                <svg aria-hidden="true" width="20" height="20">
+                  <use xlink:href="img/sprite/sprite.svg#angle-right"></use>
+                </svg></span></a></div>
+          <div class="account-section__block">
+            <div class="account-section__block-list">
+              <div class="info-card">
+                <div class="info-card__title">43</div>
+                <div class="info-card__subtitle">дня в потоке</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-sheet__overlay active">
+          <div class="bottom-sheet active">
+            <button class="bottom-sheet__close-button">
+              <svg aria-hidden="true" width="16" height="16">
+                <use xlink:href="img/sprite/sprite.svg#multiply"></use>
+              </svg>
+            </button>
+            <div class="club-card-section">
+              <div class="club-card-section__image" style="background-image: url('img/product/club-card-sale.webp')">
+                <div class="club-card-section__pill">
+                  <div class="pill pill--accent-primary">-35%</div>
+                </div>
+              </div>
+              <div class="club-card-section__content">
+                <div class="club-card-section__header"> 
+                  <div class="club-card-section__title">
+                    <h1 class="title">Откройте доступ к плафторме Pilates Flow по Клубной карте</h1>
+                  </div>
+                </div>
+                <div class="club-card-section__list"> 
+                              <div class="list-item">
+                                <div class="list-item__icon">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#calendar"></use>
+                                  </svg>
+                                </div>
+                                <div class="list-item__text">Более 200 классов по 5 направлениям: пилатес, растяжка, МФР, балет, функицональный тренинг</div>
+                              </div>
+                              <div class="list-item">
+                                <div class="list-item__icon">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#layers"></use>
+                                  </svg>
+                                </div>
+                                <div class="list-item__text">Доступ к уникальным супер-сериям для комплексной проработки всего тела</div>
+                              </div>
+                              <div class="list-item">
+                                <div class="list-item__icon">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#user-check"></use>
+                                  </svg>
+                                </div>
+                                <div class="list-item__text">Тематические недели с заданиями от экспертов</div>
+                              </div>
+                              <div class="list-item">
+                                <div class="list-item__icon">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#comment-check"></use>
+                                  </svg>
+                                </div>
+                                <div class="list-item__text">Поддержка и забота кураторов команды Pilates Flow</div>
+                              </div>
+                </div>
+                <div class="club-card-section__price-form">
+                  <form class="form" action="#">
+                    <div class="form__fields">
+                      <label class="radio-button">
+                        <input type="radio" name="price" value="790" id="price-1"><span class="radio-button__content"> <span class="radio-button__text"> 1 месяц за <span class="radio-button__text-price"><span class="radio-button__text-price-old">600 ₽</span>750 ₽</span></span><span class="radio-button__checkbox">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span>
+                      </label>
+                      <label class="radio-button">
+                        <input type="radio" name="price" value="790" id="price-2"><span class="radio-button__content"> <span class="radio-button__text"> 3 месяц за <span class="radio-button__text-price"><span class="radio-button__text-price-old">3000 ₽</span>2070 ₽</span></span><span class="radio-button__checkbox">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span>
+                      </label>
+                      <label class="radio-button">
+                        <input type="radio" name="price" value="790" id="price-3"><span class="radio-button__content"> <span class="radio-button__text"> 9 месяц за<span class="radio-button__text-price"><span class="radio-button__text-price-old">5000 ₽</span>4070 ₽</span></span><span class="radio-button__checkbox">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span>
+                      </label>
+                    </div>
+                    <div class="form__button">
+                      <button class="button button--full-width button--l"><span class="button__text">Оформить за 790 ₽</span></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__nav-bar">
+        <div class="app__nav-bar-content">
+          <div class="nav-bar"> 
+            <button class="nav-bar__item active">
+              <div class="nav-bar__item-icon">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#clipboard-notes"></use>
+                </svg>
+              </div>
+              <div class="nav-bar__item-label">Анонсы</div>
+            </button>
+            <button class="nav-bar__item">
+              <div class="nav-bar__item-icon">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#layers"></use>
+                </svg>
+              </div>
+              <div class="nav-bar__item-label">Календарь</div>
+            </button>
+            <button class="nav-bar__item">
+              <div class="nav-bar__item-icon">
+                <svg aria-hidden="true" width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <div class="nav-bar__item-label">Аккаунт</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
