@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Pilates Flow</title>
+    <meta name="description" content="Pilates Flow">
+    <meta name="keywords" content="Pilates Flow">
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__header">
+        <div class="header header--sign">
+          <div class="header__container">
+            <div class="header__content">
+              <div class="header__logo"><a class="header__logo-link" href="index.html" aria-label="Переход на главную"><img src="img/logo/logo.svg" width="32" height="32" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__layout-main">
+        <div class="page__container page__container--s">
+          <div class="modal">
+            <div class="modal__header">
+              <div class="modal__header-with-icon">
+                <div class="modal__header-icon"> 
+                            <div class="feature-icon feature-icon--blue">
+                                        <svg aria-hidden="true" width="32" height="32">
+                                          <use xlink:href="img/sprite/sprite.svg#user-exclamation"></use>
+                                        </svg>
+                            </div>
+                </div>
+                <div class="modal__header-with-subtitle">
+                  <h3 class="modal__title">Пожалуйста, авторизируйтесь</h3>
+                  <p class="modal__subtitle">Вы уже были у нас на сайте или совершали покупки</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal__body"> 
+              <div class="modal__form-contacts">
+                <from class="form"> 
+                  <div class="form__body">
+                    <div class="form__fieldset">
+                      <div class="form__field">
+                                  <div class="field"> 
+                                    <label class="field__label" for="name">Email</label>
+                                    <div class="field__input-container">
+                                      <input class="field__input" type="text" placeholder="Например, pilates@flow.ru" id="name">
+                                    </div><span class="field__supporting-text">Что-то пошло не так</span>
+                                  </div>
+                      </div>
+                      <div class="form__field">
+                                  <div class="field field--password"> 
+                                    <label class="field__label" for="password">Пароль</label>
+                                    <div class="field__input-container">
+                                      <input class="field__input" type="password" placeholder="" id="password" value="">
+                                      <button class="field__button" onclick="togglePassword()"><span class="field__button-icon"> 
+                                                    <svg aria-hidden="true" width="24" height="24">
+                                                      <use xlink:href="img/sprite/sprite.svg#eye"></use>
+                                                    </svg></span></button>
+                                    </div><span class="field__supporting-text">Что-то пошло не так</span>
+                                  </div>
+                                  <script>
+                                    function togglePassword() {
+                                        var input = document.getElementById('password');
+                                        input.type = (input.type === 'password') ? 'text' : 'password';
+                                    }
+                                  </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__footer">
+                    <div class="form__button-block">
+                                <button class="button button--full-width button--l"><span class="button__text">Авторизоваться</span></button><a class="link" href="#">Я забыл(а) пароль, хочу восстановить!</a>
+                    </div>
+                  </div>
+                </from>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

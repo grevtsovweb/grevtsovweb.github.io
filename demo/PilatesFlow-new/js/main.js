@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{new Swiper(".task-section__offer-slider--js",{loop:!1,spaceBetween:12,slidesPerView:"1.1"})}));

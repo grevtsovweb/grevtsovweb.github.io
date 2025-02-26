@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Pilates Flow</title>
+    <meta name="description" content="Pilates Flow">
+    <meta name="keywords" content="Pilates Flow">
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__header">
+        <div class="header header--sign">
+          <div class="header__container">
+            <div class="header__content">
+              <div class="header__logo"><a class="header__logo-link" href="index.html" aria-label="Переход на главную"><img src="img/logo/logo.svg" width="32" height="32" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__layout-main">
+        <div class="page__container page__container--s">
+          <div class="modal">
+            <div class="modal__header"> 
+              <h3 class="modal__title">Оформление покупки</h3>
+            </div>
+            <div class="modal__body"> 
+              <div class="modal__product-list"> 
+                <div class="cart-summary">
+                  <div class="cart-summary__item"> 
+                    <div class="cart-summary__item-header">
+                      <div class="cart-summary__item-title">Персональная программа </div>
+                                      <div class="pill pill--s pill--pink"> 
+                                        <div class="pill__text">- 35% для вас</div>
+                                      </div>
+                    </div>
+                    <div class="cart-summary__item-desciption"> + 🎁  Клубная карта Pilates Flow на 1 месяц в подарок</div>
+                  </div>
+                  <div class="cart-summary__total"> 
+                    <div class="cart-summary__total-title">Итого:</div>
+                    <div class="cart-summary__total-value"> 
+                      <div class="cart-summary__total-value-old">2 840 ₽</div>
+                      <div class="cart-summary__total-value-current">2 840 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__promo-field">
+                          <div class="field field--has-button"> 
+                            <div class="field__input-container">
+                              <input class="field__input" type="text" placeholder="Промокод" id="promo1" value="">
+                              <button class="field__apply-button">Применить</button>
+                            </div><span class="field__supporting-text">Что-то пошло не так</span>
+                          </div>
+                          <div class="field field--has-button field--value-applied"> 
+                            <div class="field__input-container">
+                              <input class="field__input" type="text" placeholder="Промокод" id="promo2" value="PilatesPromo">
+                              <button class="field__apply-button">Удалить</button>
+                            </div><span class="field__supporting-text">Что-то пошло не так</span>
+                          </div>
+                          <div class="field field--has-button field--value-applied field--positive"> 
+                            <div class="field__input-container">
+                              <input class="field__input" type="text" placeholder="Промокод" id="promo3" value="PilatesPromo">
+                              <button class="field__apply-button">Удалить</button>
+                            </div><span class="field__supporting-text">Промокод успешно применен</span>
+                          </div>
+              </div>
+              <div class="modal__form-contacts">
+                <form class="form"> 
+                  <div class="form__header"> 
+                    <div class="form__title">Контактные данные</div>
+                  </div>
+                  <div class="form__body">
+                    <div class="form__fieldset">
+                      <div class="form__field">
+                                  <div class="field"> 
+                                    <label class="field__label" for="name">Имя</label>
+                                    <div class="field__input-container">
+                                      <input class="field__input" type="text" placeholder="Например, Евгения" id="name">
+                                    </div><span class="field__supporting-text">Что-то пошло не так</span>
+                                  </div>
+                      </div>
+                      <div class="form__field">
+                                  <div class="field field--negative"> 
+                                    <label class="field__label" for="mail1">E-mail</label>
+                                    <div class="field__input-container">
+                                      <input class="field__input" type="mail" placeholder="Например, pilates@flow.ru" id="mail1">
+                                    </div><span class="field__supporting-text">Что-то пошло не так</span>
+                                  </div>
+                      </div>
+                      <div class="form__field">
+                                  <div class="field field--positive"> 
+                                    <label class="field__label" for="mail2">E-mail</label>
+                                    <div class="field__input-container">
+                                      <input class="field__input" type="mail" placeholder="Например, pilates@flow.ru" id="mail2">
+                                    </div><span class="field__supporting-text">Сообщение успешно отправлено</span>
+                                  </div>
+                      </div>
+                      <div class="form__field">
+                        <label class="checkbox">
+                          <input class="checkbox__input" type="checkbox" id="checkbox"><span class="checkbox__control"><span class="checkbox__control-box">
+                                                      <svg aria-hidden="true" width="20" height="20">
+                                                        <use xlink:href="img/sprite/sprite.svg#check"></use>
+                                                      </svg></span></span><span class="checkbox__label-block"><span class="checkbox__label-title">Я прочитал(а) и соглашаюсь с правилами сайта правила и&nbsp;условиями&nbsp;*</span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form__alert"> 
+                      <div class="alert alert--info alert--with-icon">
+                        <div class="alert__icon">
+                                                <svg aria-hidden="true" width="24" height="24">
+                                                  <use xlink:href="img/sprite/sprite.svg#exclamation-circle"></use>
+                                                </svg>
+                        </div>
+                        <div class="alert__content">
+                          <div class="alert__title">Для оформления заказа необходимо указать контактные данные.</div>
+                        </div>
+                        <div class="alert__close"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__footer"> 
+                              <button class="button button--full-width button--l button--promo"><span class="button__text">Перейти к оплате</span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
