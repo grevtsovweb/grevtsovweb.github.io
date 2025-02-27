@@ -46,7 +46,7 @@
                                   <div class="field"> 
                                     <label class="field__label" for="name">Email</label>
                                     <div class="field__input-container">
-                                      <input class="field__input" type="text" placeholder="Например, pilates@flow.ru" id="name">
+                                      <input class="field__input" type="text" placeholder="Например, pilates@flow.ru" id="name" disabled="">
                                     </div><span class="field__supporting-text">Что-то пошло не так</span>
                                   </div>
                       </div>
@@ -55,16 +55,24 @@
                                     <label class="field__label" for="password">Пароль</label>
                                     <div class="field__input-container">
                                       <input class="field__input" type="password" placeholder="" id="password" value="">
-                                      <button class="field__button" onclick="togglePassword()"><span class="field__button-icon"> 
+                                      <button class="field__button" onclick="togglePassword(this)"><span class="field__button-icon"> 
                                                     <svg aria-hidden="true" width="24" height="24">
                                                       <use xlink:href="img/sprite/sprite.svg#eye"></use>
                                                     </svg></span></button>
                                     </div><span class="field__supporting-text">Что-то пошло не так</span>
                                   </div>
                                   <script>
-                                    function togglePassword() {
-                                        var input = document.getElementById('password');
-                                        input.type = (input.type === 'password') ? 'text' : 'password';
+                                    function togglePassword(button) {
+                                        let input = button.closest('.field__input-container').querySelector('.field__input');
+                                        let icon = button.querySelector('.field__button-icon use');
+                                    
+                                        if (input.type === 'password') {
+                                            input.type = 'text';
+                                            icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye-slash');
+                                        } else {
+                                            input.type = 'password';
+                                            icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye');
+                                        }
                                     }
                                   </script>
                       </div>

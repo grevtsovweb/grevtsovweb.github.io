@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Telegram Mini App </title>
+    <meta name="description" content="Telegram Mini App">
+    <meta name="keywords" content="Telegram Mini App">
+    <style type="text/css">
+      .page-ui {
+          background-color: #f5f5f6;
+          min-height: 100vh;
+      }
+      
+      .page-ui__content {
+          display: flex;
+          height: 100%;
+      }
+      .page-ui__sidebar {
+          position: sticky;
+          left: 0;
+          top: 0;
+          height: 100vh;
+      }
+      
+      .page-ui__main {
+          padding: 32px;
+          width: 100%;
+      }
+      
+      .page-ui__main-title {
+          font-size: 40px;
+          color: #101823;
+          font-family: Manrope-SemiBold, sans-serif;
+          margin-bottom: 40px;
+      }
+      
+      .page-ui__container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 48px;
+          max-width: 1600px;
+      }
+      
+      .sidebar-ui {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          background-color: #ffffff;
+          width: 296px;
+          border-right: 1px solid #ebebeb;
+      }
+      
+      .sidebar-ui__logo {
+          padding-left: 28px;
+          padding-right: 28px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          border-bottom: 1px solid #ebebeb;
+          display: flex;
+          column-gap: 16px;
+          align-items: center;
+      
+          img {
+              display: block;
+          }
+      }
+      
+      .sidebar-ui__list {
+          display: flex;
+          flex-direction: column;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          
+          a {
+              color: #101823;
+              text-decoration: none;
+              font-family: Manrope-SemiBold, sans-serif;
+              display: flex;
+              align-items: center;
+              height: 44px;
+              padding-left: 16px;
+              padding-right: 16px;
+              border-radius: 16px;
+              transition: all .15s;
+          }
+      
+          a:hover {
+              color: #4697fa;
+              background-color: #eff8ff;
+          }
+      }
+      
+      .table-ui {
+          display: flex;
+          flex-direction: column;
+          row-gap: 16px;
+      }
+      
+      .table-ui__title {
+          font-size: 24px;
+          font-family: Manrope-SemiBold, sans-serif;
+      }
+      
+      .table-ui__inner {
+          display: flex; 
+          flex-direction :column;
+          border-radius: 20px;
+          background-color: #ffffff;
+          border: 1px solid #ebebeb;
+      }
+      
+      .table-ui__block{
+          display: flex;
+          flex-direction: column;
+          padding: 32px;
+          min-height: 72px;
+          box-sizing: border-box;
+      }
+      
+      .table-ui__row-label {
+          font-size: 20px;
+          font-family: Manrope-SemiBold, sans-serif;
+          margin-bottom: 16px;
+      }
+      
+      .table-ui__state {
+          min-height: 72px;
+          box-sizing: border-box;
+          font-family: Manrope-SemiBold, sans-serif;
+          font-size: 16px;
+      }
+      
+      .table-ui__component {
+          box-sizing: border-box;
+          display: flex;
+          gap: 32px;
+          flex-wrap: wrap;
+      }
+      
+      .table-ui__description {
+          font-size: 14px;
+          font-family: Manrope-Medium, sans-serif;
+          padding-left: 32px;
+          padding-right: 32px;
+          padding-bottom: 32px;
+          padding-top: 0;
+      
+      }
+      
+      code {
+          font-family: monospace;
+          font-size: 14px;
+          background-color: rgba(0, 0, 0, .04);
+          color: rgba(27, 31, 59, .65);
+          padding: 4px 8px;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, .16);
+          white-space: pre-wrap; 
+          word-break: break-word;
+          display: inline-block;
+          flex-shrink: 0;
+          flex-grow: 0;
+          margin-left: 8px;
+          margin-right: 8px;
+      }
+      
+      .sidebar-ui__logo-text {
+          font-size: 18px;
+          font-family: Manrope-SemiBold, sans-serif;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="page-ui">
+      <div class="page-ui__content">
+        <div class="page-ui__sidebar">
+          <div class="sidebar-ui">
+            <div class="sidebar-ui__logo"> <img src="img/logo/logo.svg" alt="">
+              <div class="sidebar-ui__logo-text">PilatesFlow UI</div>
+            </div>
+            <div class="sidebar-ui__list"><a class="sidebar-ui__link" href="pilates-flow-ui-button.html">Buttons / Кнопки</a><a class="sidebar-ui__link" href="pilates-flow-ui-fields.html">Fields / Инпуты</a><a class="sidebar-ui__link" href="pilates-flow-ui-checkbox.html">Checkbox / Чекбокс</a><a class="sidebar-ui__link" href="pilates-flow-ui-header.html">Header / Шапка сайта</a></div>
+          </div>
+        </div>
+        <div class="page-ui__main">
+          <div class="page-ui__main-title">Checkboxes / Чекбоксы</div>
+          <div class="page-ui__container">
+            <div class="table-ui">
+              <div class="table-ui__title">Типы</div>
+              <div class="table-ui__inner">
+                <div class="table-ui__block">
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="checkbox"/><span class="checkbox__control"><span class="checkbox__control-box">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span><span class="checkbox__label-block"><span class="checkbox__label-title">Я прочитал(а) и соглашаюсь</span><span class="checkbox__label-description">Короткий текст с описанием</span></span>
+                      </label>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="checkbox"/><span class="checkbox__control"><span class="checkbox__control-box">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span><span class="checkbox__label-block"><span class="checkbox__label-title">Я прочитал(а) и соглашаюсь</span></span>
+                      </label>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="checkbox"/><span class="checkbox__control"><span class="checkbox__control-box">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-ui">
+              <div class="table-ui__title">Состояния</div>
+              <div class="table-ui__inner">
+                <div class="table-ui__block">
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <label class="checkbox disabled">
+                        <input class="checkbox__input" type="checkbox" id="checkbox" disabled="disabled"/><span class="checkbox__control"><span class="checkbox__control-box">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span><span class="checkbox__label-block"><span class="checkbox__label-title">Я прочитал(а) и соглашаюсь</span><span class="checkbox__label-description">Короткий текст с описанием</span></span>
+                      </label>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <label class="checkbox disabled">
+                        <input class="checkbox__input" type="checkbox" id="checkbox" disabled="disabled"/><span class="checkbox__control"><span class="checkbox__control-box">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span><span class="checkbox__label-block"><span class="checkbox__label-title">Я прочитал(а) и соглашаюсь</span></span>
+                      </label>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <label class="checkbox disabled">
+                        <input class="checkbox__input" type="checkbox" id="checkbox" disabled="disabled"/><span class="checkbox__control"><span class="checkbox__control-box">
+                            <svg aria-hidden="true" width="20" height="20">
+                              <use xlink:href="img/sprite/sprite.svg#check"></use>
+                            </svg></span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__description"><span>Используется класс<code>.disabled</code>вместе с атрибутом<code>disabled</code>для скрытого тега<code>input</code></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

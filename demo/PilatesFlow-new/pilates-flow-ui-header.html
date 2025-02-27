@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Telegram Mini App </title>
+    <meta name="description" content="Telegram Mini App">
+    <meta name="keywords" content="Telegram Mini App">
+    <style type="text/css">
+      .page-ui {
+          background-color: #f5f5f6;
+          min-height: 100vh;
+      }
+      
+      .page-ui__content {
+          display: flex;
+          height: 100%;
+      }
+      .page-ui__sidebar {
+          position: sticky;
+          left: 0;
+          top: 0;
+          height: 100vh;
+      }
+      
+      .page-ui__main {
+          padding: 32px;
+          width: 100%;
+      }
+      
+      .page-ui__main-title {
+          font-size: 40px;
+          color: #101823;
+          font-family: Manrope-SemiBold, sans-serif;
+          margin-bottom: 40px;
+      }
+      
+      .page-ui__container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 48px;
+          max-width: 1600px;
+      }
+      
+      .sidebar-ui {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          background-color: #ffffff;
+          width: 296px;
+          border-right: 1px solid #ebebeb;
+      }
+      
+      .sidebar-ui__logo {
+          padding-left: 28px;
+          padding-right: 28px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          border-bottom: 1px solid #ebebeb;
+          display: flex;
+          column-gap: 16px;
+          align-items: center;
+      
+          img {
+              display: block;
+          }
+      }
+      
+      .sidebar-ui__list {
+          display: flex;
+          flex-direction: column;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          
+          a {
+              color: #101823;
+              text-decoration: none;
+              font-family: Manrope-SemiBold, sans-serif;
+              display: flex;
+              align-items: center;
+              height: 44px;
+              padding-left: 16px;
+              padding-right: 16px;
+              border-radius: 16px;
+              transition: all .15s;
+          }
+      
+          a:hover {
+              color: #4697fa;
+              background-color: #eff8ff;
+          }
+      }
+      
+      .table-ui {
+          display: flex;
+          flex-direction: column;
+          row-gap: 16px;
+      }
+      
+      .table-ui__title {
+          font-size: 24px;
+          font-family: Manrope-SemiBold, sans-serif;
+      }
+      
+      .table-ui__inner {
+          display: flex; 
+          flex-direction :column;
+          border-radius: 20px;
+          background-color: #ffffff;
+          border: 1px solid #ebebeb;
+      }
+      
+      .table-ui__block{
+          display: flex;
+          flex-direction: column;
+          padding: 32px;
+          min-height: 72px;
+          box-sizing: border-box;
+      }
+      
+      .table-ui__row-label {
+          font-size: 20px;
+          font-family: Manrope-SemiBold, sans-serif;
+          margin-bottom: 16px;
+      }
+      
+      .table-ui__state {
+          min-height: 72px;
+          box-sizing: border-box;
+          font-family: Manrope-SemiBold, sans-serif;
+          font-size: 16px;
+      }
+      
+      .table-ui__component {
+          box-sizing: border-box;
+          display: flex;
+          gap: 32px;
+          flex-wrap: wrap;
+      }
+      
+      .table-ui__description {
+          font-size: 14px;
+          font-family: Manrope-Medium, sans-serif;
+          padding-left: 32px;
+          padding-right: 32px;
+          padding-bottom: 32px;
+          padding-top: 0;
+      
+      }
+      
+      code {
+          font-family: monospace;
+          font-size: 14px;
+          background-color: rgba(0, 0, 0, .04);
+          color: rgba(27, 31, 59, .65);
+          padding: 4px 8px;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, .16);
+          white-space: pre-wrap; 
+          word-break: break-word;
+          display: inline-block;
+          flex-shrink: 0;
+          flex-grow: 0;
+          margin-left: 8px;
+          margin-right: 8px;
+      }
+      
+      .sidebar-ui__logo-text {
+          font-size: 18px;
+          font-family: Manrope-SemiBold, sans-serif;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="page-ui">
+      <div class="page-ui__content">
+        <div class="page-ui__sidebar">
+          <div class="sidebar-ui">
+            <div class="sidebar-ui__logo"> <img src="img/logo/logo.svg" alt="">
+              <div class="sidebar-ui__logo-text">PilatesFlow UI</div>
+            </div>
+            <div class="sidebar-ui__list"><a class="sidebar-ui__link" href="pilates-flow-ui-button.html">Buttons / Кнопки</a><a class="sidebar-ui__link" href="pilates-flow-ui-fields.html">Fields / Инпуты</a><a class="sidebar-ui__link" href="pilates-flow-ui-checkbox.html">Checkbox / Чекбокс</a><a class="sidebar-ui__link" href="pilates-flow-ui-header.html">Header / Шапка сайта</a></div>
+          </div>
+        </div>
+        <div class="page-ui__main">
+          <div class="page-ui__main-title">Header / Шапка сайта</div>
+          <div class="page-ui__container">
+            <div class="table-ui">
+              <div class="table-ui__title">Виды</div>
+              <div class="table-ui__inner" style="background-color: rgba(26,26,31,1); color:rgb(225, 225, 225);">
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Пользователь залогинен</div>
+                  <div class="table-ui__component"> 
+                    <div class="header">
+                      <div class="header__container">
+                        <div class="header__content">
+                          <div class="header__logo"><a class="header__logo-link" href="index.html" aria-label="Переход на главную"><img src="img/logo/logo.svg" width="32" height="32" alt=""></a></div>
+                          <div class="header__nav"><a class="header__nav-link active" href="#">Курсы</a><a class="header__nav-link" href="#">Клубные карты</a></div>
+                          <div class="header__user-block">
+                            <div class="header__user-block-item">
+                              <div class="header__avatar" tabindex="0"> 
+                                <div class="header__avatar-letter">A</div>
+                              </div>
+                            </div>
+                            <div class="header__user-block-item"><a class="button-cart" href="#"><span class="button-cart__icon">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#cart"></use>
+                                  </svg></span><span class="button-cart__count">2</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Пользователь залогинен c аватаркой</div>
+                  <div class="table-ui__component"> 
+                    <div class="header">
+                      <div class="header__container">
+                        <div class="header__content">
+                          <div class="header__logo"><a class="header__logo-link" href="index.html" aria-label="Переход на главную"><img src="img/logo/logo.svg" width="32" height="32" alt=""></a></div>
+                          <div class="header__nav"><a class="header__nav-link active" href="#">Курсы</a><a class="header__nav-link" href="#">Клубные карты</a></div>
+                          <div class="header__user-block">
+                            <div class="header__user-block-item">
+                              <div class="header__avatar" tabindex="0"> 
+                                <div class="header__avatar-letter">A</div>
+                                <div class="header__avatar-image"> <img src="img/avatar/avatar.jpg" alt="Светлана С"></div>
+                              </div>
+                            </div>
+                            <div class="header__user-block-item"><a class="button-cart" href="#"><span class="button-cart__icon">
+                                  <svg aria-hidden="true" width="24" height="24">
+                                    <use xlink:href="img/sprite/sprite.svg#cart"></use>
+                                  </svg></span><span class="button-cart__count">2</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Пользователь не залогинен</div>
+                  <div class="table-ui__component"> 
+                    <div class="header">
+                      <div class="header__container">
+                        <div class="header__content">
+                          <div class="header__logo"><a class="header__logo-link" href="index.html" aria-label="Переход на главную"><img src="img/logo/logo.svg" width="32" height="32" alt=""></a></div>
+                          <div class="header__nav"><a class="header__nav-link active" href="#">Курсы</a><a class="header__nav-link" href="#">Клубные карты</a></div>
+                          <div class="header__user-block">
+                            <button class="button button--m"><span class="button__text">Войти</span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Без навигации</div>
+                  <div class="table-ui__component"> 
+                    <div class="header header--sign">
+                      <div class="header__container">
+                        <div class="header__content">
+                          <div class="header__logo"><a class="header__logo-link" href="index.html" aria-label="Переход на главную"><img src="img/logo/logo.svg" width="32" height="32" alt=""></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

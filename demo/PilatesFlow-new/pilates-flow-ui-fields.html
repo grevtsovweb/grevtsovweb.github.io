@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Telegram Mini App </title>
+    <meta name="description" content="Telegram Mini App">
+    <meta name="keywords" content="Telegram Mini App">
+    <style type="text/css">
+      .page-ui {
+          background-color: #f5f5f6;
+          min-height: 100vh;
+      }
+      
+      .page-ui__content {
+          display: flex;
+          height: 100%;
+      }
+      .page-ui__sidebar {
+          position: sticky;
+          left: 0;
+          top: 0;
+          height: 100vh;
+      }
+      
+      .page-ui__main {
+          padding: 32px;
+          width: 100%;
+      }
+      
+      .page-ui__main-title {
+          font-size: 40px;
+          color: #101823;
+          font-family: Manrope-SemiBold, sans-serif;
+          margin-bottom: 40px;
+      }
+      
+      .page-ui__container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 48px;
+          max-width: 1600px;
+      }
+      
+      .sidebar-ui {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          background-color: #ffffff;
+          width: 296px;
+          border-right: 1px solid #ebebeb;
+      }
+      
+      .sidebar-ui__logo {
+          padding-left: 28px;
+          padding-right: 28px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          border-bottom: 1px solid #ebebeb;
+          display: flex;
+          column-gap: 16px;
+          align-items: center;
+      
+          img {
+              display: block;
+          }
+      }
+      
+      .sidebar-ui__list {
+          display: flex;
+          flex-direction: column;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          
+          a {
+              color: #101823;
+              text-decoration: none;
+              font-family: Manrope-SemiBold, sans-serif;
+              display: flex;
+              align-items: center;
+              height: 44px;
+              padding-left: 16px;
+              padding-right: 16px;
+              border-radius: 16px;
+              transition: all .15s;
+          }
+      
+          a:hover {
+              color: #4697fa;
+              background-color: #eff8ff;
+          }
+      }
+      
+      .table-ui {
+          display: flex;
+          flex-direction: column;
+          row-gap: 16px;
+      }
+      
+      .table-ui__title {
+          font-size: 24px;
+          font-family: Manrope-SemiBold, sans-serif;
+      }
+      
+      .table-ui__inner {
+          display: flex; 
+          flex-direction :column;
+          border-radius: 20px;
+          background-color: #ffffff;
+          border: 1px solid #ebebeb;
+      }
+      
+      .table-ui__block{
+          display: flex;
+          flex-direction: column;
+          padding: 32px;
+          min-height: 72px;
+          box-sizing: border-box;
+      }
+      
+      .table-ui__row-label {
+          font-size: 20px;
+          font-family: Manrope-SemiBold, sans-serif;
+          margin-bottom: 16px;
+      }
+      
+      .table-ui__state {
+          min-height: 72px;
+          box-sizing: border-box;
+          font-family: Manrope-SemiBold, sans-serif;
+          font-size: 16px;
+      }
+      
+      .table-ui__component {
+          box-sizing: border-box;
+          display: flex;
+          gap: 32px;
+          flex-wrap: wrap;
+      }
+      
+      .table-ui__description {
+          font-size: 14px;
+          font-family: Manrope-Medium, sans-serif;
+          padding-left: 32px;
+          padding-right: 32px;
+          padding-bottom: 32px;
+          padding-top: 0;
+      
+      }
+      
+      code {
+          font-family: monospace;
+          font-size: 14px;
+          background-color: rgba(0, 0, 0, .04);
+          color: rgba(27, 31, 59, .65);
+          padding: 4px 8px;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, .16);
+          white-space: pre-wrap; 
+          word-break: break-word;
+          display: inline-block;
+          flex-shrink: 0;
+          flex-grow: 0;
+          margin-left: 8px;
+          margin-right: 8px;
+      }
+      
+      .sidebar-ui__logo-text {
+          font-size: 18px;
+          font-family: Manrope-SemiBold, sans-serif;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="page-ui">
+      <div class="page-ui__content">
+        <div class="page-ui__sidebar">
+          <div class="sidebar-ui">
+            <div class="sidebar-ui__logo"> <img src="img/logo/logo.svg" alt="">
+              <div class="sidebar-ui__logo-text">PilatesFlow UI</div>
+            </div>
+            <div class="sidebar-ui__list"><a class="sidebar-ui__link" href="pilates-flow-ui-button.html">Buttons / Кнопки</a><a class="sidebar-ui__link" href="pilates-flow-ui-fields.html">Fields / Инпуты</a><a class="sidebar-ui__link" href="pilates-flow-ui-checkbox.html">Checkbox / Чекбокс</a><a class="sidebar-ui__link" href="pilates-flow-ui-header.html">Header / Шапка сайта</a></div>
+          </div>
+        </div>
+        <div class="page-ui__main">
+          <div class="page-ui__main-title">Fields / Инпуты</div>
+          <div class="page-ui__container">
+            <div class="table-ui">
+              <div class="table-ui__title">Типы</div>
+              <div class="table-ui__inner">
+                <div class="table-ui__block">
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field"> 
+                        <label class="field__label" for="name1">Текстовое поле</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Например, Евгения" id="name1"/>
+                        </div><span class="field__supporting-text"></span>
+                      </div>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--password"> 
+                        <label class="field__label" for="password1">Поле для пароля</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="password" placeholder="" id="password1" value=""/>
+                          <button class="field__button" onclick="togglePassword(this)"><span class="field__button-icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#eye"></use>
+                              </svg></span></button>
+                        </div><span class="field__supporting-text"></span>
+                      </div>
+                      <script>
+                        function togglePassword(button) {
+                            let input = button.closest('.field__input-container').querySelector('.field__input');
+                            let icon = button.querySelector('.field__button-icon use');
+                        
+                            if (input.type === 'password') {
+                                input.type = 'text';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye-slash');
+                            } else {
+                                input.type = 'password';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye');
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button"> 
+                        <label class="field__label" for="promo1">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo1"/>
+                          <button class="field__apply-button">Применить</button>
+                        </div><span class="field__supporting-text"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-ui">
+              <div class="table-ui__title">Состояния</div>
+              <div class="table-ui__inner">
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Default</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field"> 
+                        <label class="field__label" for="name2">Текстовое поле</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Например, Евгения" id="name2"/>
+                        </div><span class="field__supporting-text"></span>
+                      </div>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--password"> 
+                        <label class="field__label" for="password3">Поле для пароля</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="password" placeholder="" id="password3" value=""/>
+                          <button class="field__button" onclick="togglePassword(this)"><span class="field__button-icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#eye"></use>
+                              </svg></span></button>
+                        </div><span class="field__supporting-text"></span>
+                      </div>
+                      <script>
+                        function togglePassword(button) {
+                            let input = button.closest('.field__input-container').querySelector('.field__input');
+                            let icon = button.querySelector('.field__button-icon use');
+                        
+                            if (input.type === 'password') {
+                                input.type = 'text';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye-slash');
+                            } else {
+                                input.type = 'password';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye');
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button"> 
+                        <label class="field__label" for="promo4">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo4"/>
+                          <button class="field__apply-button">Применить</button>
+                        </div><span class="field__supporting-text"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__description"><span>Используйте клавишу<code>Tab</code>для состояния<code>:focus</code></span></div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Positive</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--positive"> 
+                        <label class="field__label" for="name5">Текстовое поле</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Например, Евгения" id="name5"/>
+                        </div><span class="field__supporting-text">Все прошло успешно</span>
+                      </div>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--password field--positive"> 
+                        <label class="field__label" for="password">Поле для пароля</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="password6" placeholder="" id="password" value=""/>
+                          <button class="field__button" onclick="togglePassword(this)"><span class="field__button-icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#eye"></use>
+                              </svg></span></button>
+                        </div><span class="field__supporting-text">Все прошло успешно</span>
+                      </div>
+                      <script>
+                        function togglePassword(button) {
+                            let input = button.closest('.field__input-container').querySelector('.field__input');
+                            let icon = button.querySelector('.field__button-icon use');
+                        
+                            if (input.type === 'password') {
+                                input.type = 'text';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye-slash');
+                            } else {
+                                input.type = 'password';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye');
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button field--positive"> 
+                        <label class="field__label" for="promo7">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo7"/>
+                          <button class="field__apply-button">Применить</button>
+                        </div><span class="field__supporting-text">Все прошло успешно</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Negative</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--negative"> 
+                        <label class="field__label" for="name8">Текстовое поле</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Например, Евгения" id="name8"/>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--password field--negative"> 
+                        <label class="field__label" for="password">Поле для пароля</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="password9" placeholder="" id="password" value=""/>
+                          <button class="field__button" onclick="togglePassword(this)"><span class="field__button-icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#eye"></use>
+                              </svg></span></button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                      <script>
+                        function togglePassword(button) {
+                            let input = button.closest('.field__input-container').querySelector('.field__input');
+                            let icon = button.querySelector('.field__button-icon use');
+                        
+                            if (input.type === 'password') {
+                                input.type = 'text';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye-slash');
+                            } else {
+                                input.type = 'password';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye');
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button field--negative"> 
+                        <label class="field__label" for="promo10">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo10"/>
+                          <button class="field__apply-button">Применить</button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__description"><span>Класс<code>.field--negative</code>добавляет обводку и анимацию ошибки</span></div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">:Disabled</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field disabled"> 
+                        <label class="field__label" for="name11">Текстовое поле</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Например, Евгения" id="name11" disabled="disabled"/>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--password disabled"> 
+                        <label class="field__label" for="password">Поле для пароля</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="password12" placeholder="" id="password" value="" disabled="disabled"/>
+                          <button class="field__button" onclick="togglePassword(this)" disabled="disabled"><span class="field__button-icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#eye"></use>
+                              </svg></span></button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                      <script>
+                        function togglePassword(button) {
+                            let input = button.closest('.field__input-container').querySelector('.field__input');
+                            let icon = button.querySelector('.field__button-icon use');
+                        
+                            if (input.type === 'password') {
+                                input.type = 'text';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye-slash');
+                            } else {
+                                input.type = 'password';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye');
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button disabled"> 
+                        <label class="field__label" for="promo13">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo13" disabled="disabled"/>
+                          <button class="field__apply-button" disabled="disabled">Применить</button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__description"><span>Необходимо использовать с классом<code>.disabled</code></span></div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Без label</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field"> 
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Например, Евгения" id="name14"/>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--password"> 
+                        <div class="field__input-container">
+                          <input class="field__input" type="password15" placeholder="" id="password" value=""/>
+                          <button class="field__button" onclick="togglePassword(this)"><span class="field__button-icon"> 
+                              <svg aria-hidden="true" width="24" height="24">
+                                <use xlink:href="img/sprite/sprite.svg#eye"></use>
+                              </svg></span></button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                      <script>
+                        function togglePassword(button) {
+                            let input = button.closest('.field__input-container').querySelector('.field__input');
+                            let icon = button.querySelector('.field__button-icon use');
+                        
+                            if (input.type === 'password') {
+                                input.type = 'text';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye-slash');
+                            } else {
+                                input.type = 'password';
+                                icon.setAttribute('xlink:href', 'img/sprite/sprite.svg#eye');
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button "> 
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo16"/>
+                          <button class="field__apply-button">Применить</button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Значение введено</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;"></div>
+                    <div class="form__field" style="width: 320px;"></div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button"> 
+                        <label class="field__label" for="promo17">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo17" value="PilatesPromo"/>
+                          <button class="field__apply-button">Применить</button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Значение применено / Сообщение об успехе</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;"></div>
+                    <div class="form__field" style="width: 320px;"></div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button field--value-applied field--positive"> 
+                        <label class="field__label" for="promo18">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo18" value="PilatesPromo"/>
+                          <button class="field__apply-button">Удалить</button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-ui__description"><span>Класс <code>.field--value-applied </code>изменяет состояние внутренне кнопки.
+                    Класс <code>.field--positive</code>необходимо удалять после нескольких секунд</span></div>
+                <div class="table-ui__block">
+                  <div class="table-ui__row-label">Значение применено</div>
+                  <div class="table-ui__component"> 
+                    <div class="form__field" style="width: 320px;"></div>
+                    <div class="form__field" style="width: 320px;"></div>
+                    <div class="form__field" style="width: 320px;">
+                      <div class="field field--has-button field--value-applied"> 
+                        <label class="field__label" for="promo19">Поле с кнопкой ввода</label>
+                        <div class="field__input-container">
+                          <input class="field__input" type="text" placeholder="Промокод" id="promo19" value="PilatesPromo"/>
+                          <button class="field__apply-button">Удалить</button>
+                        </div><span class="field__supporting-text">Произошла какая-то ошибка</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
