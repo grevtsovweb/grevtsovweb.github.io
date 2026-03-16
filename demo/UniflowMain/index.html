@@ -31,14 +31,14 @@
                 <div class="main-menu__list-wrapper main-menu__list-wrapper--dropdown-inner">
                   <ul class="main-menu__list main-menu__list--dropdown-inner">
                     <li> <a href="#">Сезонные активности</a></li>
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">Направления</a></li>
-                    <li><a href="#">Занятия по Клубной Карте</a></li>
-                    <li><a href="#">Фундаментальные курсы</a></li>
-                    <li><a href="#">Экспресс-курсы</a></li>
-                    <li><a href="#">Команда</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Часто задаваемые вопросы</a></li>
+                    <li><a href="#benefit">Преимущества</a></li>
+                    <li><a href="#direction">Направления</a></li>
+                    <li><a href="#club-card">Занятия по Клубной Карте</a></li>
+                    <li><a href="#fundamental-courses">Фундаментальные курсы</a></li>
+                    <li><a href="#express-courses">Экспресс-курсы</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#faq">Часто задаваемые вопросы</a></li>
                   </ul>
                 </div>
               </li>
@@ -48,10 +48,13 @@
                   <svg aria-hidden="true" width="16" height="16">
                     <use xlink:href="img/sprite/sprite.svg#person"></use>
                   </svg></span>Войти </a>
-              <div class="main-menu__user-block-item main-menu__user-block-item--mobile-only"><a class="button-icon button__open-mobile-menu-js" href="#">
+              <div class="main-menu__user-block-item main-menu__user-block-item--mobile-only">
+                <button class="button-icon button__open-mobile-menu-js" href="#">
                   <svg aria-hidden="true" width="20" height="20">
                     <use xlink:href="img/sprite/sprite.svg#burger"></use>
-                  </svg></a></div>
+                  </svg>
+                </button>
+              </div>
               <div class="main-menu__user-block-item main-menu__user-block-item--desktop-only">
                 <button class="button button--main button--s" href="#"><span class="button__content">   <span class="button__text">Начать заниматься</span></span></button>
               </div>
@@ -73,7 +76,7 @@
         </div>
       </div>
     </div>
-    <div class="benefit-section">
+    <div class="benefit-section" id="benefit">
       <div class="benefit-section__container">
         <div class="benefit-section__header"> 
           <div class="benefit-section__subtitle"> 
@@ -148,7 +151,7 @@
         </div>
       </div>
     </div>
-    <div class="direction-section">
+    <div class="direction-section" id="direction">
       <div class="direction-section__container">
         <div class="direction-section__header-block"> 
           <div class="direction-section__subtitle"> 
@@ -421,7 +424,7 @@
             </div>
           </div>
           <div class="program-section__courses">
-            <div class="courses-section">
+            <div class="courses-section" id="fundamental-courses">
               <div class="courses-section__inner">
                 <div class="courses-section__container">
                   <div class="courses-section__header">
@@ -545,7 +548,7 @@
                 </div>
               </div>
             </div>
-            <div class="courses-section">
+            <div class="courses-section" id="express-courses">
               <div class="courses-section__inner">
                 <div class="courses-section__container">
                   <div class="courses-section__header">
@@ -697,7 +700,7 @@
         </video>
       </div>
     </div>
-    <div class="team-section">
+    <div class="team-section" id="team">
       <div class="team-section__container">
         <div class="team-section__header">
           <div class="team-section__subtitle"> 
@@ -734,7 +737,7 @@
         </div>
       </div>
     </div>
-    <div class="community-section">
+    <div class="community-section" id="feedback">
       <div class="community-section__container">
         <div class="community-section__header">
           <div class="community-section__subtitle"> 
@@ -862,7 +865,7 @@
       </div>
     </div>
     <div class="white-section white-section--round-top">
-      <div class="faq-section">
+      <div class="faq-section" id="faq">
         <div class="faq-section__container">
           <div class="faq-section__header-block"> 
             <div class="faq-section__subtitle"> 
@@ -1009,20 +1012,14 @@
           <div class="mobile-menu__logo"> <img src="img/logo.svg" alt="Uniflow" width="110" height="24"></div>
           <ul class="mobile-menu__list-nav">
             <li> <a href="#">Сезонные активности</a></li>
-            <li><a href="#">Преимущества</a></li>
-            <li><a href="#">Направления</a></li>
-            <li><a href="#">Занятия по Клубной Карте</a></li>
-            <li><a href="#">Фундаментальные курсы</a></li>
-            <li><a href="#">Экспресс-курсы</a></li>
-            <li><a href="#">Команда</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Часто задаваемые вопросы</a></li>
-            <li><a href="#">Занятия по Клубной Карте</a></li>
-            <li><a href="#">Фундаментальные курсы</a></li>
-            <li><a href="#">Экспресс-курсы</a></li>
-            <li><a href="#">Команда</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Часто задаваемые вопросы</a></li>
+            <li><a class="mobile-menu__link" href="#benefit">Преимущества</a></li>
+            <li><a class="mobile-menu__link" href="#direction">Направления</a></li>
+            <li><a class="mobile-menu__link" href="#club-card">Занятия по Клубной Карте</a></li>
+            <li><a class="mobile-menu__link" href="#fundamental-courses">Фундаментальные курсы</a></li>
+            <li><a class="mobile-menu__link" href="#express-courses">Экспресс-курсы</a></li>
+            <li><a class="mobile-menu__link" href="#team">Команда</a></li>
+            <li><a class="mobile-menu__link" href="#feedback">Отзывы</a></li>
+            <li><a href="#faq">Часто задаваемые вопросы</a></li>
           </ul>
         </div>
         <div class="mobile-menu__footer"> 
