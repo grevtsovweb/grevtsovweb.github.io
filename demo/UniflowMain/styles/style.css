@@ -2000,6 +2000,11 @@ p + p {
   justify-content: flex-end;
   padding-top: 162px;
 }
+@media screen and (min-width: 600px) {
+  .program-block {
+    padding-top: 330px;
+  }
+}
 @media screen and (min-width: 1199px) {
   .program-block {
     aspect-ratio: 1/1;
@@ -4202,7 +4207,7 @@ p + p {
   flex-direction: column;
   gap: 16px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1199px) {
   .program-section__right {
     gap: 120px;
   }
@@ -4508,11 +4513,17 @@ p + p {
   background-color: #FFEFF9;
   border-radius: 20px;
   padding-top: 150px;
+  background-image: url("../img/bg/decor-feed.svg");
+  background-repeat: no-repeat;
+  background-size: 212px 212px;
+  background-position: right -80px top -100px;
 }
 @media screen and (min-width: 600px) {
   .team-section__info {
     padding: 30px;
     padding-top: 160px;
+    background-position: right -60px top -180px;
+    background-size: 358px 358px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -4524,6 +4535,9 @@ p + p {
     -ms-flex-order: -1;
     order: -1;
     padding: 60px;
+    bacground-image: url("../img/bg/decor-feed.svg");
+    background-position: right -70px bottom -70px;
+    background-size: 358px 358px;
   }
 }
 .team-section__name {
