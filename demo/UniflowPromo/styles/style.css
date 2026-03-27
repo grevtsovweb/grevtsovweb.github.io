@@ -23,6 +23,13 @@ p + p {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url(../fonts/Manrope-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,12 +51,12 @@ p + p {
   align-items: center;
   border: none;
   border-radius: 100px;
-  font: 600 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-SemiBold", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .button {
-    font: 600 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-SemiBold", sans-serif;
   }
 }
 .button {
@@ -117,7 +124,7 @@ p + p {
 }
 
 .tag {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -132,7 +139,7 @@ p + p {
 }
 @media (min-width: 600px) {
   .tag {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 
@@ -176,7 +183,7 @@ p + p {
 }
 @media screen and (min-width: 1599px) {
   .background-card__title {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 
@@ -237,13 +244,13 @@ p + p {
   white-space: nowrap;
 }
 .price-card__price {
-  font: 700 28px/115% "Manrope", sans-serif;
+  font: 28px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media screen and (min-width: 600px) {
   .price-card__price {
-    font: 700 45px/105% "Manrope", sans-serif;
+    font: 45px/105% "Manrope-Bold", sans-serif;
   }
 }
 .price-card__price--old {
@@ -251,7 +258,7 @@ p + p {
   text-decoration: line-through;
 }
 .price-card__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: rgba(6, 0, 72, 0.6);
   max-width: 220px;
 }
@@ -357,12 +364,12 @@ p + p {
   height: 20px;
 }
 .promo-card__title {
-  font: 700 16px/135% "Manrope", sans-serif;
+  font: 16px/135% "Manrope-Bold", sans-serif;
   color: #060048;
 }
 @media screen and (min-width: 1599px) {
   .promo-card__title {
-    font: 700 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Bold", sans-serif;
   }
 }
 .promo-card__button {
@@ -398,17 +405,17 @@ p + p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .feature-card__counter {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .feature-card__counter {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .feature-card__counter {
@@ -429,13 +436,13 @@ p + p {
   color: #060048;
 }
 .feature-card__title {
-  font: 700 18px/120% "Manrope", sans-serif;
+  font: 18px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .feature-card__title {
-    font: 700 20px/120% "Manrope", sans-serif;
+    font: 20px/120% "Manrope-Bold", sans-serif;
   }
 }
 .feature-card__body {
@@ -465,17 +472,17 @@ p + p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .feature-card__item {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .feature-card__item {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .feature-card__item {
@@ -515,7 +522,7 @@ p + p {
   fill: #060048;
 }
 .feature-card__item-label {
-  font: 500 16px/135% "Manrope", sans-serif;
+  font: 16px/135% "Manrope-Medium", sans-serif;
 }
 .feature-card--pink {
   background: #F8D6EB, #FFEFF9;
@@ -608,13 +615,13 @@ p + p {
   transition: 0.2s ease-in;
 }
 .focus-card__title {
-  font: 700 18px/120% "Manrope", sans-serif;
+  font: 18px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .focus-card__title {
-    font: 700 20px/120% "Manrope", sans-serif;
+    font: 20px/120% "Manrope-Bold", sans-serif;
   }
 }
 .focus-card__title {
@@ -624,17 +631,17 @@ p + p {
   margin-bottom: 20px;
 }
 .focus-card__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .focus-card__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .focus-card__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .focus-card__description {
@@ -755,12 +762,12 @@ p + p {
   }
 }
 .feature-item__title {
-  font: 700 20px/120% "Manrope", sans-serif;
+  font: 20px/120% "Manrope-Bold", sans-serif;
   letter-spacing: -0.02em;
 }
 @media (max-width: 600px) {
   .feature-item__title {
-    font: 700 18px/120% "Manrope", sans-serif;
+    font: 18px/120% "Manrope-Bold", sans-serif;
   }
 }
 @media (max-width: 600px) {
@@ -804,13 +811,13 @@ p + p {
   }
 }
 .result-block__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .result-block__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .result-block__title {
@@ -831,17 +838,17 @@ p + p {
   row-gap: 20px;
 }
 .result-block__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .result-block__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .result-block__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .result-block__row {
@@ -1033,7 +1040,7 @@ p + p {
   height: 20px;
 }
 .highlight__text {
-  font: 700 16px/135% "Manrope", sans-serif;
+  font: 16px/135% "Manrope-Bold", sans-serif;
 }
 
 .offer-block {
@@ -1116,7 +1123,7 @@ p + p {
   }
 }
 .offer-block__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -1131,17 +1138,17 @@ p + p {
 }
 @media (min-width: 600px) {
   .offer-block__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .offer-block__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .offer-block__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .offer-block__title--highlight-light {
@@ -1174,17 +1181,17 @@ p + p {
   align-items: center;
 }
 .offer-block__features-list-item p {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .offer-block__features-list-item p {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .offer-block__features-list-item p {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .offer-block__features-list-icon {
@@ -1217,12 +1224,12 @@ p + p {
   }
 }
 .offer-block .price-card__price {
-  font: 700 28px/115% "Manrope", sans-serif;
+  font: 28px/115% "Manrope-Bold", sans-serif;
   letter-spacing: -0.04em;
 }
 @media screen and (min-width: 600px) {
   .offer-block .price-card__price {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .offer-block__decor-item {
@@ -1381,17 +1388,17 @@ p + p {
   background-color: #FFFFFF;
 }
 .faq-list__item-title {
-  font: 700 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Bold", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .faq-list__item-title {
-    font: 700 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Bold", sans-serif;
   }
 }
 @media screen and (min-width: 1199px) {
   .faq-list__item-title {
-    font: 700 18px/135% "Manrope", sans-serif;
+    font: 18px/135% "Manrope-Bold", sans-serif;
   }
 }
 .faq-list__item-body {
@@ -1400,17 +1407,17 @@ p + p {
   padding-top: 0;
   color: #060048;
   display: none;
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .faq-list__item-body {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .faq-list__item-body {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 
@@ -1457,13 +1464,13 @@ p + p {
   z-index: 1;
 }
 .format-card__title {
-  font: 700 18px/120% "Manrope", sans-serif;
+  font: 18px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .format-card__title {
-    font: 700 20px/120% "Manrope", sans-serif;
+    font: 20px/120% "Manrope-Bold", sans-serif;
   }
 }
 .format-card__title {
@@ -1504,13 +1511,13 @@ p + p {
   border-radius: 20px;
 }
 .feature-item-data__title {
-  font: 700 28px/115% "Manrope", sans-serif;
+  font: 28px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .feature-item-data__title {
-    font: 700 45px/105% "Manrope", sans-serif;
+    font: 45px/105% "Manrope-Bold", sans-serif;
   }
 }
 .feature-item-data__title {
@@ -1525,17 +1532,17 @@ p + p {
   display: inline-flex;
 }
 .feature-item-data__text {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .feature-item-data__text {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .feature-item-data__text {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .feature-item-data__text {
@@ -1676,13 +1683,13 @@ p + p {
   max-width: 500px;
 }
 .hero-section__title {
-  font: 700 28px/115% "Manrope", sans-serif;
+  font: 28px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .hero-section__title {
-    font: 700 45px/105% "Manrope", sans-serif;
+    font: 45px/105% "Manrope-Bold", sans-serif;
   }
 }
 .hero-section__features-block {
@@ -1789,7 +1796,7 @@ p + p {
   max-width: 580px;
 }
 .pain-section__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -1804,31 +1811,31 @@ p + p {
 }
 @media (min-width: 600px) {
   .pain-section__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .pain-section__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .pain-section__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .pain-section__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .pain-section__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .pain-section__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .pain-section__description {
@@ -1922,7 +1929,7 @@ p + p {
   max-width: 580px;
 }
 .format-section__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -1937,31 +1944,31 @@ p + p {
 }
 @media (min-width: 600px) {
   .format-section__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .format-section__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .format-section__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .format-section__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .format-section__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .format-section__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .format-section__description {
@@ -2097,7 +2104,7 @@ p + p {
   max-width: 580px;
 }
 .efficiency-section__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -2112,31 +2119,31 @@ p + p {
 }
 @media (min-width: 600px) {
   .efficiency-section__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .efficiency-section__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .efficiency-section__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .efficiency-section__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .efficiency-section__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .efficiency-section__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .efficiency-section__description {
@@ -2242,7 +2249,7 @@ p + p {
   }
 }
 .focus-section__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -2257,31 +2264,31 @@ p + p {
 }
 @media (min-width: 600px) {
   .focus-section__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .focus-section__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .focus-section__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .focus-section__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .focus-section__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .focus-section__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .focus-section__description {
@@ -2392,7 +2399,7 @@ p + p {
   }
 }
 .results-section__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -2407,31 +2414,31 @@ p + p {
 }
 @media (min-width: 600px) {
   .results-section__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .results-section__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .results-section__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .results-section__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .results-section__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .results-section__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .results-section__description {
@@ -2588,7 +2595,7 @@ p + p {
   }
 }
 .faq-section__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -2603,17 +2610,17 @@ p + p {
 }
 @media (min-width: 600px) {
   .faq-section__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .faq-section__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .faq-section__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .coach-section {
@@ -2694,7 +2701,7 @@ p + p {
   max-width: 580px;
 }
 .coach-section__subtitle {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, from(#4598FB), color-stop(#826CE7), to(#D15EAE));
@@ -2709,31 +2716,31 @@ p + p {
 }
 @media (min-width: 600px) {
   .coach-section__subtitle {
-    font: 700 16px/120% "Manrope", sans-serif;
+    font: 16px/120% "Manrope-Bold", sans-serif;
   }
 }
 .coach-section__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   color: #060048;
   letter-spacing: -0.04em;
 }
 @media (min-width: 600px) {
   .coach-section__title {
-    font: 700 38px/115% "Manrope", sans-serif;
+    font: 38px/115% "Manrope-Bold", sans-serif;
   }
 }
 .coach-section__description {
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
 }
 @media (min-width: 600px) {
   .coach-section__description {
-    font: 500 16px/135% "Manrope", sans-serif;
+    font: 16px/135% "Manrope-Medium", sans-serif;
   }
 }
 @media screen and (min-width: 1599px) {
   .coach-section__description {
-    font: 500 17px/135% "Manrope", sans-serif;
+    font: 17px/135% "Manrope-Medium", sans-serif;
   }
 }
 .coach-section__description {
@@ -2816,11 +2823,11 @@ p + p {
   margin-bottom: 16px;
 }
 .footer__cards-text {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   font-weight: 400;
 }
 .footer__title {
-  font: 700 24px/115% "Manrope", sans-serif;
+  font: 24px/115% "Manrope-Bold", sans-serif;
   font-weight: normal;
   margin-bottom: 38px;
 }
@@ -2835,7 +2842,7 @@ p + p {
   gap: 26px;
 }
 .footer__link {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   color: #060048;
   text-decoration: none;
   text-transform: uppercase;
@@ -2845,7 +2852,7 @@ p + p {
   text-decoration: underline;
 }
 .footer__text-promo {
-  font-size: 700 18px/120% "Manrope", sans-serif;
+  font-size: 18px/120% "Manrope-Bold", sans-serif;
   text-transform: uppercase;
   line-height: -0.01em;
   color: #060048;
@@ -2854,7 +2861,7 @@ p + p {
   margin-bottom: 32px;
 }
 .footer__policy {
-  font: 700 13px/120% "Manrope", sans-serif;
+  font: 13px/120% "Manrope-Bold", sans-serif;
   font-weight: 400;
   text-align: center;
   margin-top: 64px;
@@ -2862,7 +2869,7 @@ p + p {
 
 body, html {
   margin: 0;
-  font: 500 15px/135% "Manrope", sans-serif;
+  font: 15px/135% "Manrope-Medium", sans-serif;
   color: #060048;
   overflow-x: hidden;
 }
