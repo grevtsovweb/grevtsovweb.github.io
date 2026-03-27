@@ -2823,11 +2823,11 @@ p + p {
   margin-bottom: 16px;
 }
 .footer__cards-text {
-  font: 13px/120% "Manrope-Bold", sans-serif;
+  font: 13px/120% "Manrope-Regular", sans-serif;
   font-weight: 400;
 }
 .footer__title {
-  font: 24px/115% "Manrope-Bold", sans-serif;
+  font: 24px/115% "Manrope-Regular", sans-serif;
   font-weight: normal;
   margin-bottom: 38px;
 }
@@ -2842,7 +2842,7 @@ p + p {
   gap: 26px;
 }
 .footer__link {
-  font: 13px/120% "Manrope-Bold", sans-serif;
+  font: 13px/120% "Manrope-Regular", sans-serif;
   color: #060048;
   text-decoration: none;
   text-transform: uppercase;
@@ -2852,7 +2852,7 @@ p + p {
   text-decoration: underline;
 }
 .footer__text-promo {
-  font-size: 18px/120% "Manrope-Bold", sans-serif;
+  font-size: 18px/120% "Manrope-Regular", sans-serif;
   text-transform: uppercase;
   line-height: -0.01em;
   color: #060048;
@@ -2861,7 +2861,7 @@ p + p {
   margin-bottom: 32px;
 }
 .footer__policy {
-  font: 13px/120% "Manrope-Bold", sans-serif;
+  font: 13px/120% "Manrope-Regular", sans-serif;
   font-weight: 400;
   text-align: center;
   margin-top: 64px;
